@@ -9,8 +9,9 @@
     <title>Document</title>
 </head>
 
-<body class="bg-primary100">
+<body class="">
 
+    <x-header/>
     {{-- <div class="flex flex-wrap gap-6 p-6">
         <x-card-bg-biru image="storage/assets/card-bg-biru.png"
             title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan" date="18-Februari-2025 09.30"
