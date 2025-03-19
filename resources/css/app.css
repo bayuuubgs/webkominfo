@@ -1,27 +1,4 @@
-@import 'bootstrap/dist/css/bootstrap.min.css';
-@import '@fortawesome/fontawesome-free/css/all.min.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Custom styles */
-:root {
-  --primary: #1a237e;
-  --secondary: #d32f2f;
-}
-
-.bg-primary-dark {
-  background-color: var(--primary);
-}
-
-.text-primary-dark {
-  color: var(--primary);
-}
-
-.bg-secondary-dark {
-  background-color: var(--secondary);
-}
-
-.text-secondary-dark {
-  color: var(--secondary);
-}
