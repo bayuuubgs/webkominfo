@@ -8,7 +8,7 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                jakarta: ["'Plus Jakarta Sans'", "sans-serif"],
+                jakarta: ["Plus Jakarta Sans", "sans-serif"],
             },
             fontSize: {
                 display: ["64px", { lineHeight: "64px" }],

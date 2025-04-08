@@ -5,7 +5,6 @@
     </div>
 
     <style>
-        /* Sembunyikan scrollbar secara default */
         .hide-scrollbar::-webkit-scrollbar {
             width: 0px;
             height: 0px;
@@ -15,7 +14,6 @@
             scrollbar-width: none;
         }
 
-        /* Tampilkan scrollbar saat hover */
         .show-scrollbar::-webkit-scrollbar {
             width: 8px;
             height: 8px;
@@ -31,7 +29,6 @@
         document.addEventListener("DOMContentLoaded", function() {
             const scrollContainer = document.querySelector('[x-data]');
 
-            //kondisi awal scrollbar ter hide
             scrollContainer.classList.add('hide-scrollbar');
 
             scrollContainer.addEventListener('mouseenter', () => {
