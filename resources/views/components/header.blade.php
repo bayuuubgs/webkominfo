@@ -30,34 +30,38 @@
                     aria-current="page">HOME</a>
                 <a href="#"
                     class="rounded-md px-3 py-2 font-jakarta text-p font-medium text-gray50 hover:text-white hover:drop-shadow-2lx transition duration-200 ease-out">PROFIL</a>
-                <a href="#"
-                    class="flex items-center space-x-1 rounded-md px-3 py-2 font-jakarta text-p font-medium text-gray50 transition duration-200 ease-out hover:text-white group">
-                    <span>PROGRAM</span>
-                    <img src="/storage/assets/dropdown.png" alt="Dropdown"
-                        class="w-4 h-4 brightness-50 transition duration-200 ease-out group-hover:brightness-100">
-                </a>
-                <a href="#"
-                    class="flex items-center space-x-1 rounded-md px-3 py-2 font-jakarta text-p font-medium text-gray50 transition duration-200 ease-out hover:text-white group">
-                    <span>LAPORAN</span>
-                    <img src="/storage/assets/dropdown.png" alt="Dropdown"
-                        class="w-4 h-4 brightness-50 transition duration-200 ease-out group-hover:brightness-100">
-                </a>
-                <a href="#"
-                    class="flex items-center space-x-1 rounded-md px-3 py-2 font-jakarta text-p font-medium text-gray50 transition duration-200 ease-out hover:text-white group">
-                    <span>LAYANAN</span>
-                    <img src="/storage/assets/dropdown.png" alt="Dropdown"
-                        class="w-4 h-4 brightness-50 transition duration-200 ease-out group-hover:brightness-100">
-                </a>
+
+                <!-- Flyout Menus -->
+                <x-flyoutmenu title="PROGRAM" :items="[
+                    ['text' => 'Rencana Strategi', 'link' => '/rencana-strategi'],
+                    ['text' => 'Indikator Kinerja Utama', 'link' => '/indikator-kinerja'],
+                    ['text' => 'Perjanjian Kinerja', 'link' => '/perjanjian-kinerja'],
+                    ['text' => 'Rencana Anggaran', 'link' => '/rencana-anggaran'],
+                ]"/>
+
+                <x-flyoutmenu title="LAPORAN" :items="[
+                    ['text' => 'Laporan Tahunan', 'link' => '/laporan-tahunan'],
+                    ['text' => 'Laporan Bulanan', 'link' => '/laporan-bulanan'],
+                    ['text' => 'Audit Keuangan', 'link' => '/audit-keuangan'],
+                ]"/>
+
+                <x-flyoutmenu title="LAYANAN" :items="[
+                    ['text' => 'E-Government', 'link' => '/e-government'],
+                    ['text' => 'Layanan Publik', 'link' => '/layanan-publik'],
+                    ['text' => 'Pengaduan', 'link' => '/pengaduan'],
+                ]"/>
+
                 <a href="#"
                     class="rounded-md px-3 py-2 font-jakarta text-p font-medium text-gray50 hover:text-white hover:drop-shadow-2lx transition duration-200 ease-out">REGULASI</a>
                 <a href="#"
                     class="rounded-md px-3 py-2 font-jakarta text-p font-medium text-gray50 hover:text-white hover:drop-shadow-2lx transition duration-200 ease-out">PPID</a>
-                <a href="#"
-                    class="flex items-center space-x-1 rounded-md px-3 py-2 font-jakarta text-p font-medium text-gray50 transition duration-200 ease-out hover:text-white group">
-                    <span>PUBLIKASI</span>
-                    <img src="/storage/assets/dropdown.png" alt="Dropdown"
-                        class="w-4 h-4 brightness-50 transition duration-200 ease-out group-hover:brightness-100">
-                </a>
+
+                <x-flyoutmenu title="PUBLIKASI" :items="[
+                    ['text' => 'Berita', 'link' => '/berita'],
+                    ['text' => 'Galeri Foto', 'link' => '/galeri-foto'],
+                    ['text' => 'Dokumen', 'link' => '/dokumen'],
+                ]"/>
+
                 <a href="#"
                     class="rounded-md px-3 py-2 font-jakarta text-p font-medium text-gray50 hover:text-white hover:drop-shadow-2lx transition duration-200 ease-out">SELEKSI</a>
             </div>
