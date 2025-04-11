@@ -1,6 +1,7 @@
 <div x-data="{ scrolling: false }" @mouseenter="scrolling = true" @mouseleave="scrolling = false"
     class="w-full overflow-x-auto py-4 relative">
-    <div class="flex gap-[55px] whitespace-nowrap">
+
+    <div class="grid grid-flow-col gap-x-[55px] gap-y-[40px] {{ $rowclass }}">
         {{ $slot }}
     </div>
 
@@ -27,18 +28,20 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            const scrollContainer = document.querySelector('[x-data]');
+            const scrollContainers = document.querySelectorAll('[x-data]');
 
-            scrollContainer.classList.add('hide-scrollbar');
-
-            scrollContainer.addEventListener('mouseenter', () => {
-                scrollContainer.classList.add('show-scrollbar');
-                scrollContainer.classList.remove('hide-scrollbar');
-            });
-
-            scrollContainer.addEventListener('mouseleave', () => {
+            scrollContainers.forEach(scrollContainer => {
                 scrollContainer.classList.add('hide-scrollbar');
-                scrollContainer.classList.remove('show-scrollbar');
+
+                scrollContainer.addEventListener('mouseenter', () => {
+                    scrollContainer.classList.add('show-scrollbar');
+                    scrollContainer.classList.remove('hide-scrollbar');
+                });
+
+                scrollContainer.addEventListener('mouseleave', () => {
+                    scrollContainer.classList.add('hide-scrollbar');
+                    scrollContainer.classList.remove('show-scrollbar');
+                });
             });
         });
     </script>

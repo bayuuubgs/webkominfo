@@ -5,6 +5,13 @@ export default {
         "./resources/js/**/*.vue",
         "./resources/**/*.js",
     ],
+    safelist: [
+        'text-gray10', 'text-gray70',
+        'text-gray-300', 'text-gray-600',
+        'group-hover:border-gray-300',
+        'group-hover:border-primary30',
+        'grid-rows-2', 'grid-rows-1'
+    ],
     theme: {
         extend: {
             fontFamily: {
