@@ -8,17 +8,15 @@ use Illuminate\View\Component;
 
 class CardSlider extends Component
 {
-    /**
-     * Create a new component instance.
-     */
-    public function __construct()
+    public $rows;
+    public $rowclass;
+
+    public function __construct($rows = 1)
     {
-        //
+        $this->rows = $rows;
+        $this->rowclass = $rows == 2 ? 'grid-rows-2' : 'grid-rows-1';
     }
 
-    /**
-     * Get the view / contents that represent the component.
-     */
     public function render(): View|Closure|string
     {
         return view('components.card-slider');
