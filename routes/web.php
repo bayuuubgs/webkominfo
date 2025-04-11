@@ -31,3 +31,39 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function (){
     return view('index');
 });
+
+Route::prefix('home')->name('home.')->group(function () {
+    Route::get('/', function () {
+        return view('home');
+    })->name('index');
+
+    Route::get('/profil', function () {
+        return view('profil');
+    })->name('profil');
+
+    Route::get('/berita', function () {
+        return view('berita');
+    })->name('berita');
+
+    Route::get('/galerifoto', function () {
+        return view('galerifoto');
+    })->name('galerifoto');
+
+    Route::get('/video', function () {
+        return view('video');
+    })->name('video');
+
+    Route::get('/download', function () {
+        return view('download');
+    })->name('download');
+
+    Route::get('/majalah', function () {
+        return view('majalah');
+    })->name('majalah');
+});
+
+
+
+use App\Http\Controllers\VideoController;
+
+Route::get('/video', [VideoController::class, 'show']);
