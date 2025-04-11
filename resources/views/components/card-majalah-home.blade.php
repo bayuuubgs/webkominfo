@@ -1,9 +1,7 @@
-@props(['image', 'title', 'date'])
+<!-- @props(['image', 'title', 'date']) -->
 
 <div 
-    x-data="{ active: false }"
-    @click="active = !active"
-    class="w-[332px] h-[554px] bg-[#1F185F] rounded-2xl shadow-md p-4 border-2 border-transparent transition-all duration-300 cursor-pointer hover:border-blue-500 flex flex-col items-center"
+    class="w-[332px] h-[554px] bg-transparant rounded-2xl shadow-md p-4 border-2 border-transparent transition-all duration-300 cursor-pointer hover:border-blue-500 flex flex-col items-center"
     :class="{ 'border-blue-500': active }"
 >
     <img src="{{ $image }}" alt="Majalah Cover" 
