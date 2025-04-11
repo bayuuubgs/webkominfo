@@ -1,9 +1,17 @@
-@props(['videos' => []])
+<!-- @props([
+    'videos' => [],
+    'title' => 'Video Lainnya' // default title
+])
 
-<div class="w-[474px] bg-white rounded-2xl shadow-md p-4 mx-auto">
-<h2 class="text-lg font-semibold mb-3 text-center">
-    <span class="text-[#181818]">Video</span> 
-    <span class="text-[#1F185F]">Lainnya</span>
-</h2>
+@php
+    $parts = explode(' ', $title, 2); 
+@endphp
+
+<div class="w-[474px] bg-gray10 rounded-2xl shadow-md p-4 mx-auto">
+    <h2 class="text-lg font-semibold mb-3 text-center">
+        <span class="text-gray90">{{ $parts[0] ?? '' }}</span> 
+        <span class="text-primary50">{{ $parts[1] ?? '' }}</span>
+    </h2>
+    
     <x-list-video-lainnya :videos="$videos" />
-</div>
+</div> -->

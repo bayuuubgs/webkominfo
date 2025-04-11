@@ -1,8 +1,7 @@
-<div class="w-[1440px] h-[309px] bg-[#1D1D57] text-white mx-auto py-6 flex flex-col justify-center">
+<div class="w-[1440px] h-[309px] bg-primary100 text-white mx-auto py-6 flex flex-col justify-center"> 
     <div class="container mx-auto px-10">
         <div class="grid grid-cols-[1.5fr_1fr_1fr_1fr_1.2fr] gap-x-10 text-[14px] leading-snug">
             
-            <!-- DISKOMINFO JATIM (Lebih ke kiri) -->
             <div class="flex flex-col">
                 <h3 class="text-[24px] font-bold mb-3">DISKOMINFO JATIM</h3>
                 <p class="text-gray-300">
@@ -14,32 +13,43 @@
                     Email: kominfo@jatimprov.go.id
                 </p>
                 <div class="flex gap-3 mt-3">
-                    <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-facebook"></i></a>
-                    <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="text-gray-300 hover:text-white">
+                        <img src="{{ asset('storage/assets/Path.png') }}" alt="Path" class="w-6 h-6">
+                    </a>
+                    <a href="#" class="text-gray-300 hover:text-white">
+                        <img src="{{ asset('storage/assets/x.png') }}" alt="X" class="w-6 h-6">
+                    </a>
+                    <a href="#" class="text-gray-300 hover:text-white">
+                        <img src="{{ asset('storage/assets/youtube.png') }}" alt="YouTube" class="w-6 h-6">
+                    </a>
                 </div>
                 <p class="text-gray-400 mt-3">
                     © {{ date('Y') }} Dinas Komunikasi dan Informatika
                 </p>
             </div>
 
-        <!-- HUBUNGI KAMI -->
-        <div class="flex flex-col">
-            <h3 class="text-[18px] font-bold mb-2">Hubungi Kami</h3>
-            <div class="grid grid-cols-[20px_auto] gap-x-2 gap-y-2">
-                <i class="fab fa-instagram text-sm w-fit text-gray-300"></i> 
-                <p class="text-gray-300">@kominfojatim</p>
+            <div class="flex flex-col">
+                <h3 class="text-[18px] font-bold mb-2">Hubungi Kami</h3>
+                <div class="grid grid-cols-[20px_auto] gap-x-2 gap-y-2 text-gray-300">
 
-                <i class="fas fa-phone-alt text-sm w-fit text-gray-300"></i> 
-                <p class="text-gray-300">(031) 8294608</p>
+                    <a href="https://www.instagram.com/kominfojatim" target="_blank" class="flex items-center gap-2 col-span-2">
+                        <img src="{{ asset('storage/assets/instagram.png') }}" alt="Instagram" class="w-5 h-5">
+                        @kominfojatim
+                    </a>
 
-                <i class="fas fa-envelope text-sm w-fit text-gray-300"></i> 
-                <p class="text-gray-300 break-words leading-snug">kominfo@jatimprov.go.id</p>
+                    <img src="{{ asset('storage/assets/phone.png') }}" alt="Telepon" class="w-5 h-5"> 
+                    <p class="text-gray-300">(031) 8294608</p>
+
+
+
+                    <a href="mailto:kominfo@jatimprov.go.id" class="flex items-center gap-2 col-span-2">
+                        <img src="{{ asset('storage/assets/mail.png') }}" alt="Email" class="w-5 h-5">
+                        <span class="break-words leading-snug">kominfo@jatimprov.go.id</span>
+                    </a>
+
+                </div>
             </div>
-        </div>
 
-
-            <!-- PUBLIKASI -->
             <div class="flex flex-col">
                 <h3 class="text-[18px] font-bold mb-2">Publikasi</h3>
                 <ul class="space-y-2">
@@ -49,7 +59,6 @@
                 </ul>
             </div>
 
-            <!-- KATEGORI -->
             <div class="flex flex-col">
                 <h3 class="text-[18px] font-bold mb-2">Kategori</h3>
                 <ul class="space-y-2">
@@ -58,8 +67,7 @@
                     @endforeach
                 </ul>
             </div>
-
-            <!-- LOGO & TEKS -->
+            
             <div class="flex flex-col items-center justify-center">
                 <img src="{{ asset('storage/assets/gambarfooter.png') }}" alt="Logo Diskominfo Jatim" 
                      class="w-[244px] h-[75px] object-contain mb-2">
