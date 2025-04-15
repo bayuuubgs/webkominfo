@@ -15,7 +15,7 @@
 @endphp
 
 <div class="w-full flex items-center justify-between h-[45px] {{ $class }}">
-    <h2 class="font-jakarta text-h2 font-semibold {{ $titleColor }}">
+    <h2 class="font-jakarta text-h2 {{ $titleColor }}">
         {{ $title }}
         @if ($highlight)
             <span class="{{ $highlightColor }}">{{ $highlight }}</span>

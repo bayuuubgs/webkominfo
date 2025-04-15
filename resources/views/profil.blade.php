@@ -9,32 +9,17 @@
     <title>Profil</title>
 </head>
 
-<body class="bg-white">
+<body class="bg-primary100">
     <x-header />
     <x-breadcrumb />
-    <div class="absolute left-16 z-10 mt-8 w-56 origin-top-right gap-2">
-    <x-dropdown :dropdownItems="[
-        [
-            'link' => '',
-            'desc' => 'Kategori',
-        ],
-        [
-            'link' => '',
-            'desc' => 'Kategori',
-        ],
-        [
-            'link' => '',
-            'desc' => 'Kategori',
-        ],
-        [
-            'link' => '',
-            'desc' => 'Kategori',
-        ],
-        [
-            'link' => '',
-            'desc' => 'Kategori',
-        ],
-    ]" />
-        </div>
+
+    <x-section-header title="Video Seputar" highlight="Jawa Timur" buttonText="Selengkapnya" buttonVariant="blue"
+        type="blue" />
+
+    <x-section-header title="Berita SETDA /" highlight="Pemerintah Daerah" buttonText="Selengkapnya"
+        buttonVariant="white" type="white" buttonHref="{{ route('home.index') }}" />
+
+
+
 
 </body>
