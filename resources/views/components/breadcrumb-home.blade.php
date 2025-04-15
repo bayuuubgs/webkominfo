@@ -5,7 +5,7 @@
 <div class="w-full bg-white flex justify-between items-center px-16 py-4 drop-shadow-lg gap-16">
     <!-- Label Berita Terkini -->
     <div>
-        <span class="label-kategori font-jakarta bg-primary50 text-gray10 shadow-sm px-6 py-[6px] rounded-full text-p">
+        <span class="label-kategori font-jakarta bg-primary50 text-gray10 shadow-sm px-6 py-[6px] rounded-full text-label">
             BERITA TERKINI
         </span>
     </div>
