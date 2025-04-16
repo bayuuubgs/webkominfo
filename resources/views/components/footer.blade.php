@@ -1,6 +1,6 @@
-<div class="w-[1440px] h-[309px] bg-primary100 text-white mx-auto py-6 flex flex-col justify-center"> 
-    <div class="container mx-auto px-10">
-        <div class="grid grid-cols-[1.5fr_1fr_1fr_1fr_1.2fr] gap-x-10 text-[14px] leading-snug">
+<div class="w-full bg-primary100 text-white py-6">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-x-10 gap-y-8 text-[14px] leading-snug">
             
             <div class="flex flex-col">
                 <h3 class="text-[24px] font-bold mb-3">DISKOMINFO JATIM</h3>
@@ -40,8 +40,6 @@
                     <img src="{{ asset('storage/assets/phone.png') }}" alt="Telepon" class="w-5 h-5"> 
                     <p class="text-gray-300">(031) 8294608</p>
 
-
-
                     <a href="mailto:kominfo@jatimprov.go.id" class="flex items-center gap-2 col-span-2">
                         <img src="{{ asset('storage/assets/mail.png') }}" alt="Email" class="w-5 h-5">
                         <span class="break-words leading-snug">kominfo@jatimprov.go.id</span>
@@ -51,13 +49,27 @@
             </div>
 
             <div class="flex flex-col">
-                <h3 class="text-[18px] font-bold mb-2">Publikasi</h3>
-                <ul class="space-y-2">
-                    @foreach(['Berita', 'Galeri Foto', 'Video', 'Download', 'Majalah'] as $item)
-                        <li><a href="#" class="text-gray-300 hover:text-white">{{ $item }}</a></li>
-                    @endforeach
-                </ul>
-            </div>
+    <h3 class="text-[18px] font-bold mb-2">Publikasi</h3>
+    <ul class="space-y-2">
+        @php
+            $publikasiList = [
+                'Berita' => 'berita',
+                'Galeri Foto' => 'galerifoto',
+                'Video' => 'video',
+                'Download' => 'download',
+                'Majalah' => 'majalah'
+            ];
+        @endphp
+        @foreach($publikasiList as $label => $file)
+            <li>
+                <a href="{{ url($file) }}" class="text-gray-300 hover:text-white">
+                    {{ $label }}
+                </a>
+            </li>
+        @endforeach
+    </ul>
+</div>
+
 
             <div class="flex flex-col">
                 <h3 class="text-[18px] font-bold mb-2">Kategori</h3>

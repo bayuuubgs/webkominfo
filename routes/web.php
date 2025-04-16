@@ -61,3 +61,13 @@ Route::prefix('home')->name('home.')->group(function () {
         return view('majalah');
     })->name('majalah');
 });
+
+Route::view('/berita', 'berita');
+Route::view('/galerifoto', 'galerifoto');
+Route::view('/video', 'video');
+Route::view('/download', 'download');
+Route::view('/majalah', 'majalah');
+
+// use App\Http\Controllers\VideoController;
+
+// Route::get('/video', [VideoController::class, 'show']);

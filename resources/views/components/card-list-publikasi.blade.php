@@ -4,16 +4,23 @@
     'category' => '',
     'date' => '',
     'description' => '',
-    'imageWidth' => '',
-    'imageHeight' => '',
+    'ratio' => '16:9'
 ])
 
+@php
+    $aspectClass = match($ratio) {
+        '3:2' => 'aspect-[3/2]',
+        '16:9' => 'aspect-[16/9]',
+        default => 'aspect-[16/9]',
+    };
+@endphp
+
 <div class="relative flex items-center gap-4 p-3 bg-white rounded-2xl shadow-md 
-            w-[620px] h-[178px] mx-auto transition 
+            w-full max-w-[620px] h-auto mx-auto transition 
             border-2 border-transparent hover:shadow-lg 
             hover:border-[#7A74F0] active:ring-2 active:ring-[#7A74F0]">
 
-    <div class="shrink-0 rounded-lg overflow-hidden {{ $imageWidth }} {{ $imageHeight }}">
+    <div class="shrink-0 rounded-lg overflow-hidden {{ $aspectClass }} w-[250px]">
         <img src="{{ $image }}" alt="Thumbnail" class="object-cover w-full h-full">
     </div>
 
