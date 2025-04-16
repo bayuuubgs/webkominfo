@@ -62,8 +62,12 @@ Route::prefix('home')->name('home.')->group(function () {
     })->name('majalah');
 });
 
+Route::view('/berita', 'berita');
+Route::view('/galerifoto', 'galerifoto');
+Route::view('/video', 'video');
+Route::view('/download', 'download');
+Route::view('/majalah', 'majalah');
 
+// use App\Http\Controllers\VideoController;
 
-use App\Http\Controllers\VideoController;
-
-Route::get('/video', [VideoController::class, 'show']);
+// Route::get('/video', [VideoController::class, 'show']);

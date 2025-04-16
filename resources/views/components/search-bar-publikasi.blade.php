@@ -1,21 +1,23 @@
-@props([
+@props([ 
     'kategoriList' => [], 
     'tagList' => [],
     'selectedKategori' => null,
-    'jumlahKonten' => 0
+    'judulHighlight' => 'Berita' 
 ])
+
 
 <div 
     x-data="{
         showResult: false,
         selectedKategori: '{{ $selectedKategori ?? 'Pilih Kategori' }}',
         selectedTagar: 'Pilih Tagar',
-        jumlahKonten: {{ $jumlahKonten }}
     }" 
     class="w-[1320px] bg-primary100 flex flex-col items-center justify-center gap-4 rounded-[12px] py-6"
 >
 
-    <h2 class="text-white font-semibold text-lg">Temukan Berita Seputar Jawa Timur!</h2>
+    <h2 class="text-white font-semibold text-lg">
+        Temukan {{ $judulHighlight }} Seputar Jawa Timur!
+    </h2>
 
     <form class="w-[1200px] h-[77px] bg-white rounded-[12px] shadow-md px-4 py-2 flex items-center gap-4">
 
@@ -104,21 +106,4 @@
 
     </form>
 
-    <div 
-        x-show="showResult" 
-        x-transition 
-        class="w-[1200px] h-[120px] bg-white rounded-[16px] shadow-md px-6 py-6 mt-2 flex items-center justify-center gap-[200px]"
-    >
-        <div class="text-center">
-            <p class="text-sm text-gray-600"><strong>Kategori:</strong></p>
-            <h3 class="text-2xl font-bold text-gray-800" x-text="selectedKategori"></h3>
-        </div>
-
-        <div class="text-center">
-            <p class="text-sm text-gray-600"><strong>Konten ditemukan:</strong></p>
-            <h3 class="text-2xl font-bold text-gray-800" x-text="jumlahKonten"></h3>
-        </div>
-    </div>
-</div>
-
-<script src="//unpkg.com/alpinejs" defer></script>
+  
