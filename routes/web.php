@@ -1,6 +1,6 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -61,9 +61,3 @@ Route::prefix('home')->name('home.')->group(function () {
         return view('majalah');
     })->name('majalah');
 });
-
-
-
-use App\Http\Controllers\VideoController;
-
-Route::get('/video', [VideoController::class, 'show']);

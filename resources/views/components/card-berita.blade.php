@@ -5,12 +5,12 @@
 
         <div class="relative z-10 bg-transparent p-4 rounded-2xl">
             <img src="{{ $image }}" alt="Card Image" class="w-full h-48 object-cover shadow-sm rounded-lg">
-            <h3 class="text-h3 font-bold {{ $textColor }} mt-2 whitespace-normal">{{ $title }}</h3>
+            <h3 class="text-h3 font-bold {{ $textColor }} mt-2 whitespace-normal line-clamp-2">{{ $title }}</h3>
             <div class="flex justify-between items-center mt-2">
                 <p class="text-p {{ $dateColor }} font-light">{{ $date }}</p>
                 <x-label-kategori text="{{ $category }}" />
             </div>
-            <p class="{{ $textColor }} mt-2 text-p text-justify font-light whitespace-normal">
+            <p class="{{ $textColor }} mt-2 text-p text-justify font-light line-clamp-5 whitespace-normal">
                 {{ $description }}
             </p>
             <span class="text-blue-400 font-semibold text-p">
