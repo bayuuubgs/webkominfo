@@ -9,7 +9,7 @@
     <title>Profil</title>
 </head>
 
-<body class="bg-background">
+<body class="bg-primary100">
     <x-header />
     <x-breadcrumb />
 

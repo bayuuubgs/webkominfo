@@ -12,7 +12,7 @@
 <body class="bg-white">
     <x-header />
     <x-breadcrumb-home />
-    <div class="absolute left-12 mt-4 origin-top-right">
+    <div class="absolute left-12 z-10 mt-4 origin-top-right">
         <x-video-container video-id="s18KVkb4rLE" title="INFO JAWA TIMUR MINGGU KE-4 BULAN MARET I 28 MARET 2025"
             description="INFO JATIM edisi Minggu ke-4 bulan Maret 2025 menyajikan beragam kegiatan di lingkungan Pemprov Jatim dalam sepekan, di antaranya :
 
