@@ -8,6 +8,7 @@
     <title>Home</title>
 </head>
 
+
 <body class="bg-background">
 
     <x-header />
@@ -55,8 +56,7 @@
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 -ml-[50px]">
             <div class="lg:col-span-2 flex flex-col pt-[8px]">
-                <x-video-container
-                    video-id="s18KVkb4rLE"
+                <x-video-container video-id="s18KVkb4rLE"
                     title="INFO JAWA TIMUR MINGGU KE-4 BULAN MARET I 28 MARET 2025"
                     description="INFO JATIM edisi Minggu ke-4 bulan Maret 2025 menyajikan beragam kegiatan di lingkungan Pemprov Jatim dalam sepekan, di antaranya :
                     1. Kominfo berbagi.
@@ -65,48 +65,36 @@
                     4. Launching Kalender Event Unggulan 2025 di Gedung Negara Grahadi.
                     5. Lailatul Qiroah di Masjid Nasional Al Al-Akbar Surabaya.
                     Demikian beragam informasi dalam sepekan. Semoga informasi tersebut bermanfaat dan mengedukasi."
-                    published-at="11 Februari 2025 08:38"
-                    category="SETDA / PERANGKAT DAERAH" />
+                    published-at="11 Februari 2025 08:38" category="SETDA / PERANGKAT DAERAH" />
             </div>
             <div class="flex flex-col pt-[23px]">
                 <x-card-lainnya title="Video" highlight="Lainnya">
-                    <x-card-list-lainnya
-                        image="{{ asset('storage/assets/videolainnya.png') }}"
+                    <x-card-list-lainnya image="{{ asset('storage/assets/videolainnya.png') }}"
                         title="INFO JAWA TIMUR MINGGU KE-2 BULAN FEBRUARI | 14 FEBRUARI 2025"
-                        date="14 Februari 2025 18:12"
-                        category="UMUM"
-                    />
-                    <x-card-list-lainnya
-                        image="{{ asset('storage/assets/videolainnya3.png') }}"
+                        date="14 Februari 2025 18:12" category="UMUM" />
+                    <x-card-list-lainnya image="{{ asset('storage/assets/videolainnya3.png') }}"
                         title="INFO JAWA TIMUR MINGGU KE-3 BULAN FEBRUARI | 22 FEBRUARI 2025"
-                        date="22 Februari 2025 09:26"
-                        category="WAKIL GUBERNUR"
-                    />
-                    <x-card-list-lainnya
-                        image="{{ asset('storage/assets/videolainnya2.png') }}"
-                        title="Lapor SPT Tahunan Hari Ini, Lebih Awal Lebih Nyaman"
-                        date="9 Februari 2025 10:49"
-                        category="GUBERNUR"
-                    />
-                    <x-card-list-lainnya
-                        image="{{ asset('storage/assets/videolainnya.png') }}"
-                        title="INFO JAWA TIMUR MINGGU KE-5 BULAN JANUARI 2025 | 31 Januari"
-                        date="1 Februari 2025 15:04"
-                        category="SETDA"
-                    />
+                        date="22 Februari 2025 09:26" category="WAKIL GUBERNUR" />
+                    <x-card-list-lainnya image="{{ asset('storage/assets/videolainnya2.png') }}"
+                        title="Lapor SPT Tahunan Hari Ini, Lebih Awal Lebih Nyaman" date="9 Februari 2025 10:49"
+                        category="GUBERNUR" />
+                    <x-card-list-lainnya image="{{ asset('storage/assets/videolainnya.png') }}"
+                        title="INFO JAWA TIMUR MINGGU KE-5 BULAN JANUARI 2025 | 31 Januari" date="1 Februari 2025 15:04"
+                        category="SETDA" />
                 </x-card-lainnya>
             </div>
         </div>
     </section>
 
-    <section class="bg-primary100 relative">
+    <section class="bg-primary100 relative mt-[15px]">
         <div class="pl-[60px] pr-[32px] pb-[25px] pt-[28px]">
             <x-section-header title="Berita SETDA /" highlight="Pemerintah Daerah" buttonText="Selengkapnya"
                 buttonVariant="white" type="white" buttonHref="{{ route('home.index') }}" />
 
             <x-card-slider :rows="1">
                 <div class="min-w-[404px] h-auto">
-                    <x-card-berita image="storage/assets/card-bg-biru.png"
+                    <x-card-berita
+                        image="storage/assets/card-bg-biru.png"
                         title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
                         date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
                         description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
@@ -172,7 +160,7 @@
         </div>
     </section>
 
-    <section class="bg-gray10 relative">
+    <section class="bg-gray10 relative mt-[15px]">
         <div class="pl-[60px] pr-[32px] pb-[25px] pt-[28px]">
             <x-section-header title="Berita " highlight="Gubernur" buttonText="Selengkapnya" buttonVariant="blue"
                 type="blue" buttonHref="{{ route('home.index') }}" />
@@ -245,7 +233,7 @@
         </div>
     </section>
 
-    <section class="bg-primary100 relative">
+    <section class="bg-primary100 relative mt-[15px]">
         <div class="pl-[60px] pr-[32px] pb-[25px] pt-[28px]">
             <x-section-header title="Berita Wakil " highlight="Gubernur" buttonText="Selengkapnya"
                 buttonVariant="white" type="white" buttonHref="{{ route('home.index') }}" />
@@ -318,7 +306,7 @@
         </div>
     </section>
 
-    <section class="bg-gray10 relative">
+    <section class="bg-gray10 relative mt-[15px]">
         <div class="pl-[60px] pr-[32px] pb-[25px] pt-[28px]">
             <x-section-header title="Berita Forda " highlight="Jatim 2024" buttonText="Selengkapnya"
                 buttonVariant="blue" type="blue" buttonHref="{{ route('home.index') }}" />
@@ -391,5 +379,122 @@
         </div>
     </section>
 
+    <section class="bg-gray10 mt-[15px]">
+        <div class="pl-[60px] pr-[32px] pb-[25px] pt-[28px]">
+            <x-section-header
+                title="Galeri "
+                highlight="Foto"
+                buttonText="Selengkapnya"
+                buttonVariant="blue"
+                type="blue"
+                buttonHref="{{ route('home.index') }}" />
+    </section>
 
+    <section class="bg-primary100 relative font-jakarta mt-[15px]">
+        <div class="pl-[60px] pr-[32px] pb-[25px] pt-[28px]">
+            <x-section-header
+                title="Majalah "
+                highlight=""
+                buttonText="Selengkapnya"
+                buttonVariant="white"
+                type="white"
+                buttonHref="{{ route('home.index') }}" />
+
+            <x-card-slider :row="1">
+                <div class="h-auto">
+                    <x-card-majalah-home
+                        image="{{ asset('storage/assets/majalah.png') }}"
+                        title="Jatim Peringati Hari Lahir Pancasila 2024"
+                        date="11 Februari 2025 08:38" />
+                </div>
+                <div class="h-auto">
+                    <x-card-majalah-home
+                        image="{{ asset('storage/assets/majalah.png') }}"
+                        title="Jatim Peringati Hari Lahir Pancasila 2024"
+                        date="11 Februari 2025 08:38" />
+                </div>
+                <div class="h-auto">
+                    <x-card-majalah-home
+                        image="{{ asset('storage/assets/majalah.png') }}"
+                        title="Jatim Peringati Hari Lahir Pancasila 2024"
+                        date="11 Februari 2025 08:38" />
+                </div>
+                <div class="h-auto">
+                    <x-card-majalah-home
+                        image="{{ asset('storage/assets/majalah.png') }}"
+                        title="Jatim Peringati Hari Lahir Pancasila 2024"
+                        date="11 Februari 2025 08:38" />
+                </div>
+            </x-card-slider>
+        </div>
+    </section>
+
+    <section class="mt-[15px]">
+        <div class="min-h-screen bg-gray10 pt-[45px] px-[66px] font-jakarta">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-7xl mx-auto">
+
+              {{-- KIRI - Artikel --}}
+              <div class="bg-gray10 p-[20px] rounded-xl shadow-md">
+                <div class="text-center text-h2 font-bold mb-[16px]">
+                    <p>Artikel <span class="text-primary50">Lainnya</span></p>
+                </div>
+                <div class="bg-primary100 text-gray10 rounded-lg overflow-y-auto h-[400px]">
+
+                </div>
+              </div>
+
+              {{-- KANAN - Survey Pengunjung --}}
+              <div class="bg-gray10 p-[20px] rounded-xl shadow-md">
+                <div class="text-center text-h2 font-bold mb-[16px]">
+                    <p>Survey <span class="text-primary50">Pengunjung</span></p>
+                </div>
+                <p class="text-p font-medium text-gray70 mb-[16px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <div class="flex justify-center">
+                    <button class="bg-gray10 border border-gray90 px-[16px] py-[8px] rounded-full flex items-center gap-[8px] text-p font-bold hover:bg-gray-100 transition mb-4">
+                      Isi Survey →
+                    </button>
+                  </div>
+
+                <canvas id="surveyChart" height="200"></canvas>
+              </div>
+            </div>
+          </div>
+
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+          <script>
+            const ctx = document.getElementById('surveyChart').getContext('2d');
+            const surveyChart = new Chart(ctx, {
+              type: 'bar',
+              data: {
+                labels: [
+                  'Desain Website', 'Berita Up To Date', 'Foto Up To Date',
+                  'Media Center', 'Kecepatan Upload', 'Isi / Muatan Berita',
+                  'Penggunaan Bahasa', 'Update Ikon Pendukung', 'Update Agenda',
+                  'Update Prakiraan Cuaca'
+                ],
+                datasets: [{
+                  label: 'Skor',
+                  data: [7, 5.2, 5.2, 5.2, 5.2, 5.2, 5.2, 3.5, 5.2, 5.2],
+                  backgroundColor: '#1F1A75'
+                }]
+              },
+              options: {
+                scales: {
+                  x: {
+                    ticks: {
+                      maxRotation: 90,
+                      minRotation: 45,
+                      autoSkip: false,
+                    }
+                  },
+                  y: {
+                    beginAtZero: true
+                  }
+                }
+              }
+            });
+          </script>
+    </section>
+
+    <x-footer />
 </body>

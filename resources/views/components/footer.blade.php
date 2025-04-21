@@ -1,7 +1,7 @@
 <div class="w-full bg-primary100 text-white py-6">
     <div class="container mx-auto px-6">
         <div class="grid grid-cols-1 md:grid-cols-5 gap-x-10 gap-y-8 text-[14px] leading-snug">
-            
+
             <div class="flex flex-col">
                 <h3 class="text-[24px] font-bold mb-3">DISKOMINFO JATIM</h3>
                 <p class="text-gray-300">
@@ -37,7 +37,7 @@
                         @kominfojatim
                     </a>
 
-                    <img src="{{ asset('storage/assets/phone.png') }}" alt="Telepon" class="w-5 h-5"> 
+                    <img src="{{ asset('storage/assets/phone.png') }}" alt="Telepon" class="w-5 h-5">
                     <p class="text-gray-300">(031) 8294608</p>
 
                     <a href="mailto:kominfo@jatimprov.go.id" class="flex items-center gap-2 col-span-2">
@@ -79,9 +79,9 @@
                     @endforeach
                 </ul>
             </div>
-            
+
             <div class="flex flex-col items-center justify-center">
-                <img src="{{ asset('storage/assets/gambarfooter.png') }}" alt="Logo Diskominfo Jatim" 
+                <img src="{{ asset('storage/assets/gambarfooter.png') }}" alt="Logo Diskominfo Jatim"
                      class="w-[244px] h-[75px] object-contain mb-2">
                 <p class="text-gray-300 text-center">
                     Pemerintah Provinsi Jawa Timur

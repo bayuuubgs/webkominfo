@@ -29,7 +29,7 @@ use Illuminate\Http\Request;
 // Route::get('/', [App\Http\Controllers\HomeController::class, 'index']);
 
 Route::get('/', function (){
-    return view('index');
+    return view('detailberita');
 });
 
 Route::prefix('home')->name('home.')->group(function () {
