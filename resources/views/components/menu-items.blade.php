@@ -1,35 +1,146 @@
-@props(['title', 'desc', 'link' => '#', 'icon' => null, 'hasDropdown' => false])
+@props([
+    'title',
+    'desc',
+    'link' => '#',
+    'icon' => null,
+    'hasDropdown' => false,
+    'subItems' => [],
+])
 
-<div class="group relative flex justify-between rounded-lg items-center hover:bg-gray-50">
-    <a href="{{ $link }}"
-        class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50 transition duration-200 ease-out">
-        <div
-            class="mt-1 flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white transition duration-200 ease-out">
-            @if($icon)
-                {!! $icon !!}
-            @else
-                <svg class="size-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24"
-                    stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
-                </svg>
-            @endif
-        </div>
-        <div>
-            <span class="font-jakarta font-bold text-p text-gray70">
-                {{ $title }}
-            </span>
-            <p class="mt-1 font-jakarta text-p text-gray70">{{ $desc }}</p>
-        </div>
-    </a>
-    @if($hasDropdown)
-        <div>
-            <svg class="size-10 text-gray70 group-hover:text-primary30 transition duration-200 ease-out -rotate-90"
-                fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path fill-rule="evenodd"
-                    d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
-                    clip-rule="evenodd" />
-            </svg>
-        </div>
+@php
+    // Pencari Aktif
+    $isActive = request()->is(ltrim($link, '/')) || collect($subItems)->contains(function ($sub) {
+        return request()->is(ltrim($sub['link'] ?? '', '/'));
+    });
+@endphp
+
+<div 
+    @if ($hasDropdown)
+        x-data="{ open: {{ $isActive ? 'true' : 'false' }} }" 
+        @click.away="open = false"
+        class="group/menu-item relative"
+    @else
+        class=""
     @endif
+>
+    <div class="group/menu-trigger flex justify-between items-center rounded-xl font-jakarta text-p transition duration-200 ease-out 
+        {{ $isActive ? 'bg-gray-50' : 'text-gray70 hover:bg-gray-50' }}">
+        
+        @if ($hasDropdown)
+            <button
+                type="button"
+                @click="open = !open"
+                :class="{ 'bg-gray-50 rounded-xl': open }"
+                class="flex items-center gap-x-4 w-full text-left p-4 transition duration-200 ease-out"
+            >
+                {{-- Icon --}}
+                <div 
+                    :class="{ 'bg-white': open }"
+                    class="flex-none flex items-center justify-center size-11 rounded-lg transition 
+                        {{ $isActive ? 'bg-white' : 'bg-gray-50 group-hover/menu-item:bg-white' }}"
+                >
+                    @if ($icon)
+                        <x-dynamic-component 
+                            :component="$icon"
+                            class="size-6 transition 
+                                {{ $isActive ? 'text-primary30' : 'text-gray-600 group-hover/menu-item:text-primary30' }}"
+                        />
+                    @else
+                        <x-heroicon-o-document-text 
+                            class="size-6 transition 
+                                {{ $isActive ? 'text-primary30' : 'text-gray-600 group-hover/menu-item:text-primary30' }}"
+                        />
+                    @endif
+                </div>
+
+                <div class="flex-grow">
+                    <span class="font-bold text-p">{{ $title }}</span>
+                    <p class="mt-1 text-p">{{ $desc }}</p>
+                </div>
+
+                {{-- Arrow --}}
+                <div class="flex items-center">
+                    <svg 
+                        :class="{
+                            'rotate-180 text-primary30': open,
+                            'rotate-0 text-gray70': !open
+                        }"
+                        class="transition-transform duration-300 ease-in-out size-6 group-hover/menu-item:text-primary30"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 24 24"
+                        stroke-width="2" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                    </svg>
+                </div>
+            </button>
+
+            {{-- Dropdown --}}
+            <div 
+                x-show="open" 
+                x-transition
+                class="absolute top-1 left-full z-20 ml-5 -mt-5 min-w-full bg-white rounded-2xl shadow-lg"
+            >
+                <div class="p-4">
+                    @foreach ($subItems as $sub)
+                        @php
+                            $subActive = request()->is(ltrim($sub['link'] ?? '#', '/'));
+                        @endphp
+
+                        <a href="{{ $sub['link'] ?? '#' }}"
+                            class="group/submenu flex gap-x-4 items-center p-4 rounded-lg transition duration-200 ease-out
+                                {{ $subActive ? 'bg-gray-50' : 'hover:bg-gray-50' }}"
+                        >
+                            <div class="flex-none flex items-center justify-center size-11 rounded-lg transition
+                                {{ $subActive ? 'bg-white' : 'bg-gray-50 group-hover/submenu:bg-white' }}">
+                                @if (!empty($sub['icon']))
+                                    <x-dynamic-component 
+                                        :component="$sub['icon']"
+                                        class="size-6 transition
+                                            {{ $subActive ? 'text-primary30' : 'text-gray-600 group-hover/submenu:text-primary30' }}"
+                                    />
+                                @else
+                                    <x-heroicon-o-document-text 
+                                        class="size-6 transition 
+                                            {{ $subActive ? 'text-primary30' : 'text-gray-600 group-hover/submenu:text-primary30' }}"
+                                    />
+                                @endif
+                            </div>
+                            <div>
+                                <span class="font-bold text-p">{{ $sub['title'] }}</span>
+                                <p class="mt-1 text-p">{{ $sub['desc'] }}</p>
+                            </div>
+                        </a>
+                    @endforeach
+                </div>
+            </div>
+
+        @else
+
+            {{-- Tanpa Arrow --}}
+            <a href="{{ $link }}"
+                class="group/menu-item flex gap-x-4 items-center p-4 rounded-lg transition w-full
+                    {{ $isActive ? 'bg-gray-50 text-gray-900' : 'hover:bg-gray-50 text-gray70' }}"
+            >
+                <div class="flex-none flex items-center justify-center size-11 rounded-lg transition 
+                    {{ $isActive ? 'bg-white' : 'bg-gray-50 group-hover/menu-item:bg-white' }}">
+                    @if ($icon)
+                        <x-dynamic-component 
+                            :component="$icon"
+                            class="size-6 transition 
+                                {{ $isActive ? 'text-primary30' : 'text-gray-600 group-hover/menu-item:text-primary30' }}"
+                        />
+                    @else
+                        <x-heroicon-o-document-text 
+                            class="size-6 transition 
+                                {{ $isActive ? 'text-primary30' : 'text-gray-600 group-hover/menu-item:text-primary30' }}"
+                        />
+                    @endif
+                </div>
+                <div>
+                    <span class="font-bold text-p">{{ $title }}</span>
+                    <p class="mt-1 text-p">{{ $desc }}</p>
+                </div>
+            </a>
+        @endif
+    </div>
 </div>
