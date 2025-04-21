@@ -1,6 +1,6 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,7 +29,7 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', [App\Http\Controllers\HomeController::class, 'index']);
 
 Route::get('/', function (){
-    return view('index');
+    return view('detailberita');
 });
 
 Route::prefix('home')->name('home.')->group(function () {

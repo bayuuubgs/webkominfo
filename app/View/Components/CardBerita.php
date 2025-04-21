@@ -29,10 +29,10 @@ class CardBerita extends Component
         $this->link = $link;
         $this->type = $type;
 
-        $isBiru = $type === 'biru';
-        $this->textColor = $isBiru ? 'text-gray10' : 'text-gray70';
-        $this->dateColor = $isBiru ? 'text-gray-300' : 'text-gray70';
-        $this->hoverBorder = $isBiru ? 'group-hover:border-gray-300' : 'group-hover:border-primary30';
+        $isBlue = $type === 'secondary';
+        $this->textColor = $isBlue ? 'text-gray10' : 'text-gray70';
+        $this->dateColor = $isBlue ? 'text-gray-300' : 'text-gray70';
+        $this->hoverBorder = $isBlue ? 'group-hover:border-gray-300' : 'group-hover:border-primary30';
     }
 
     public function render(): View|Closure|string

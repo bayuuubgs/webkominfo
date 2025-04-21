@@ -3,8 +3,8 @@
     'highlight' => null,
     'buttonText' => 'Button',
     'buttonVariant' => 'white',
-    'buttonHref' => null, 
-    'class' => '', 
+    'buttonHref' => null,
+    'class' => '',
     'type' => 'blue', // blue = default (hitam & biru), white = putih semua
 ])
 
@@ -14,11 +14,11 @@
     $highlightColor = $isWhite ? 'text-white' : 'text-primary50';
 @endphp
 
-<div class="w-full flex items-center justify-between h-[45px] {{ $class }}">
-    <h2 class="font-jakarta text-h2 {{ $titleColor }}">
+<div class="w-full flex items-center justify-between h-[45px] font-jakarta {{ $class }}">
+    <h2 class="text-h2 font-bold {{ $titleColor }}">
         {{ $title }}
         @if ($highlight)
-            <span class="{{ $highlightColor }}">{{ $highlight }}</span>
+            <span class="text-h2 font-semibold {{ $highlightColor }}">{{ $highlight }}</span>
         @endif
     </h2>
 
