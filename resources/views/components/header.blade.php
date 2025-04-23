@@ -65,17 +65,17 @@
                                     [
                                         'title' => 'Rencana Strategis',
                                         'desc' => '2014 -2019',
-                                        'link' => '/home/renstra2014',
+                                        'link' => '/home/customPDF',
                                     ],
                                     [
                                         'title' => 'Rencana Strategis',
                                         'desc' => '2019 -2024',
-                                        'link' => '/home/renstra2019',
+                                        'link' => '/home/customPDF',
                                     ],
                                     [
                                         'title' => 'Rencana Strategis',
                                         'desc' => '2024 -2025',
-                                        'link' => '/home/renstra2025',
+                                        'link' => '/home/customPDF',
                                     ],
                                 ],
                             ],
@@ -106,7 +106,7 @@
                                         'link' => '',
                                     ],
                                 ],
-                                
+
                             ],
                             [
                                 'title' => 'Rencana Anggaran',
@@ -120,7 +120,7 @@
                                         'link' => '',
                                     ],
                                 ],
-                                
+
                             ],
                         ]" />
                     </div>
@@ -367,7 +367,7 @@
                             [
                                 'title' => 'Pendaftaran PSE Lingkup Publik',
                                 'desc' => 'Daftar PSE Lingkup Publik di sini',
-                                'link' => '',
+                                'link' => '/home/customteks',
                             ],
                             [
                                 'title' => 'Dasbor BPJS TK',

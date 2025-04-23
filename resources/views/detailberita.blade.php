@@ -12,7 +12,7 @@
     <x-breadcrumb />
 
     <div class="relative font-jakarta bg-cover bg-center h-[670px]"
-        style="background-image: url('storage/assets/detailberita.png');">
+    style="background-image: url('{{ asset('storage/assets/detailberita.png') }}');">
         <div
             class="absolute bottom-0 left-0 right-0 h-[80%] bg-gradient-to-t from-[#050032] via-[#05003290] to-transparent">
             <div class="absolute inset-0 flex items-end px-[57px] ">
@@ -30,7 +30,7 @@
             <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-6">
                 {{-- Konten Utama --}}
                 <div class="w-full max-w-[850px] space-y-4 bg-gray10 p-6 rounded-xl">
-                    <img src="storage/assets/detailberita2.png" alt="Gambar Berita" class="w-full rounded-xl">
+                    <img src="{{ asset ('storage/assets/detailberita2.png')}}" alt="Gambar Berita" class="w-full rounded-xl">
                     <p class="text-xs text-gray-500">Menteri Komunikasi dan Digital (Menkomdigri), Meutya Hafid, bersama jajaran Kemkomdigri RI. Foto: dok. Kemkomdigri</p>
 
                     <div class="space-y-[10px] text-p leading-7 text-gray-800 font-jakarta font-medium">

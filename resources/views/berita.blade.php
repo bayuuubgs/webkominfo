@@ -22,77 +22,77 @@
 
     <div class="flex justify-center py-6">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 w-full max-w-screen-xl">
-            <x-card-list-publikasi 
+            <x-card-list-publikasi
                 image="{{ asset('storage/assets/videolainnya.png') }}"
                 title="Sharing Masalah Kebencanaan, Komisi III DPRD Kabupaten Malang Kunjungi BPD Jatim"
                 category="UMUM"
                 date="11 Februari 2025 08:38"
-                description="Menteri Komunikasi dan Digital (Menkomdig), Meutya Hafid, mewakili Presiden Prabowo Subianto menghadiri Pertemuan Tingkat Tinggi Aksi Kecerdasan Buatan atau Artificial Intelligence..."       
-                ratio="3:2"     
-                link="{{ route('home.galerifoto') }}" 
+                description="Menteri Komunikasi dan Digital (Menkomdig), Meutya Hafid, mewakili Presiden Prabowo Subianto menghadiri Pertemuan Tingkat Tinggi Aksi Kecerdasan Buatan atau Artificial Intelligence..."
+                ratio="3:2"
+                link="{{ route('home.berita.detail') }}"
             />
-            <x-card-list-publikasi 
+            <x-card-list-publikasi
                 image="{{ asset('storage/assets/videolainnya.png') }}"
                 title="Sharing Masalah Kebencanaan, Komisi III DPRD Kabupaten Malang Kunjungi BPD Jatim"
                 category="UMUM"
                 date="11 Februari 2025 08:38"
                 description="Menteri Komunikasi dan Digital (Menkomdig), Meutya Hafid, mewakili Presiden Prabowo Subianto menghadiri Pertemuan Tingkat Tinggi Aksi Kecerdasan Buatan atau Artificial Intelligence..."
-                ratio="3:2" 
-                link="{{ route('home.galerifoto') }}" 
+                ratio="3:2"
+                link="{{ route('home.berita.detail') }}"
              />
-            <x-card-list-publikasi 
+            <x-card-list-publikasi
                 image="{{ asset('storage/assets/videolainnya.png') }}"
                 title="Sharing Masalah Kebencanaan, Komisi III DPRD Kabupaten Malang Kunjungi BPD Jatim"
                 category="UMUM"
                 date="11 Februari 2025 08:38"
                 description="Menteri Komunikasi dan Digital (Menkomdig), Meutya Hafid, mewakili Presiden Prabowo Subianto menghadiri Pertemuan Tingkat Tinggi Aksi Kecerdasan Buatan atau Artificial Intelligence..."
-                ratio="3:2" 
-                link="{{ route('home.galerifoto') }}" 
+                ratio="3:2"
+                link="{{ route('home.galerifoto') }}"
              />
-            <x-card-list-publikasi 
+            <x-card-list-publikasi
                 image="{{ asset('storage/assets/videolainnya.png') }}"
                 title="Sharing Masalah Kebencanaan, Komisi III DPRD Kabupaten Malang Kunjungi BPD Jatim"
                 category="UMUM"
                 date="11 Februari 2025 08:38"
                 description="Menteri Komunikasi dan Digital (Menkomdig), Meutya Hafid, mewakili Presiden Prabowo Subianto menghadiri Pertemuan Tingkat Tinggi Aksi Kecerdasan Buatan atau Artificial Intelligence..."
-                ratio="3:2"     
-                link="{{ route('home.galerifoto') }}" 
+                ratio="3:2"
+                link="{{ route('home.galerifoto') }}"
             />
-            <x-card-list-publikasi 
+            <x-card-list-publikasi
                 image="{{ asset('storage/assets/videolainnya.png') }}"
                 title="Sharing Masalah Kebencanaan, Komisi III DPRD Kabupaten Malang Kunjungi BPD Jatim"
                 category="UMUM"
                 date="11 Februari 2025 08:38"
                 description="Menteri Komunikasi dan Digital (Menkomdig), Meutya Hafid, mewakili Presiden Prabowo Subianto menghadiri Pertemuan Tingkat Tinggi Aksi Kecerdasan Buatan atau Artificial Intelligence..."
-                ratio="3:2" 
-                link="{{ route('home.galerifoto') }}" 
+                ratio="3:2"
+                link="{{ route('home.galerifoto') }}"
                 />
-            <x-card-list-publikasi 
+            <x-card-list-publikasi
                 image="{{ asset('storage/assets/videolainnya.png') }}"
                 title="Sharing Masalah Kebencanaan, Komisi III DPRD Kabupaten Malang Kunjungi BPD Jatim"
                 category="UMUM"
                 date="11 Februari 2025 08:38"
                 description="Menteri Komunikasi dan Digital (Menkomdig), Meutya Hafid, mewakili Presiden Prabowo Subianto menghadiri Pertemuan Tingkat Tinggi Aksi Kecerdasan Buatan atau Artificial Intelligence..."
-                ratio="3:2" 
-                link="{{ route('home.galerifoto') }}" 
+                ratio="3:2"
+                link="{{ route('home.galerifoto') }}"
             />
-            <x-card-list-publikasi 
+            <x-card-list-publikasi
                 image="{{ asset('storage/assets/videolainnya.png') }}"
                 title="Sharing Masalah Kebencanaan, Komisi III DPRD Kabupaten Malang Kunjungi BPD Jatim"
                 category="UMUM"
                 date="11 Februari 2025 08:38"
                 description="Menteri Komunikasi dan Digital (Menkomdig), Meutya Hafid, mewakili Presiden Prabowo Subianto menghadiri Pertemuan Tingkat Tinggi Aksi Kecerdasan Buatan atau Artificial Intelligence..."
-                ratio="3:2" 
-                link="{{ route('home.galerifoto') }}" 
+                ratio="3:2"
+                link="{{ route('home.galerifoto') }}"
             />
-            <x-card-list-publikasi 
+            <x-card-list-publikasi
                 image="{{ asset('storage/assets/videolainnya.png') }}"
                 title="Sharing Masalah Kebencanaan, Komisi III DPRD Kabupaten Malang Kunjungi BPD Jatim"
                 category="UMUM"
                 date="11 Februari 2025 08:38"
                 description="Menteri Komunikasi dan Digital (Menkomdig), Meutya Hafid, mewakili Presiden Prabowo Subianto menghadiri Pertemuan Tingkat Tinggi Aksi Kecerdasan Buatan atau Artificial Intelligence..."
-                ratio="3:2" 
-                link="{{ route('home.galerifoto') }}" 
+                ratio="3:2"
+                link="{{ route('home.galerifoto') }}"
             />
             </div>
         </div>
@@ -121,7 +121,7 @@
             ]"
         />
 
-        
+
         <div class="flex justify-center">
             <x-tagarpopuler :tags="[
                     ['label' => 'PemkotSurabaya', 'url' => ''],
@@ -132,7 +132,7 @@
                     ['label' => 'Mojokerto', 'url' => ''],
                     ['label' => 'KabLamongan', 'url' => ''],
                     ['label' => 'Bojonegoro', 'url' => ''],
-                ]" 
+                ]"
             />
         </div>
         

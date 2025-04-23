@@ -13,7 +13,7 @@
     <x-breadcrumb />
 
     <div class="pt-6 flex justify-center">
-            <x-search-bar-publikasi 
+            <x-search-bar-publikasi
                 judulHighlight="Majalah"
                 :kategoriList="['Agenda Liputan', 'Pendidikan', 'Kesehatan']"
                 :tagList="['#Kegiatan', '#Anggaran', '#Pemerintahan']"
@@ -28,76 +28,76 @@
                 title="Jatim Peringati Hari Lahir Pancasila 2024"
                 date="11 Februari 2025 08:38"
                 fontColor="text-gray70"
-                link="{{ route('home.berita') }}"
+                link="{{ route('home.majalah.detail') }}"
         />
         <x-card-majalah-home
                 image="{{ asset('storage/assets/majalah.png') }}"
                 title="Jatim Peringati Hari Lahir Pancasila 2024"
                 date="11 Februari 2025 08:38"
                 fontColor="text-gray70"
-                link="{{ route('home.berita') }}"
+                link="{{ route('home.majalah.detail') }}"
         />
         <x-card-majalah-home
                 image="{{ asset('storage/assets/majalah.png') }}"
                 title="Jatim Peringati Hari Lahir Pancasila 2024"
                 date="11 Februari 2025 08:38"
                 fontColor="text-gray70"
-                link="{{ route('home.berita') }}"
+                link="{{ route('home.majalah.detail') }}"
         />
         <x-card-majalah-home
                 image="{{ asset('storage/assets/majalah.png') }}"
                 title="Jatim Peringati Hari Lahir Pancasila 2024"
                 date="11 Februari 2025 08:38"
                 fontColor="text-gray70"
-                link="{{ route('home.berita') }}"
+                link="{{ route('home.majalah.detail') }}"
         />
         <x-card-majalah-home
                 image="{{ asset('storage/assets/majalah.png') }}"
                 title="Jatim Peringati Hari Lahir Pancasila 2024"
                 date="11 Februari 2025 08:38"
                 fontColor="text-gray70"
-                link="{{ route('home.berita') }}"
+                link="{{ route('home.majalah.detail') }}"
         />
         <x-card-majalah-home
                 image="{{ asset('storage/assets/majalah.png') }}"
                 title="Jatim Peringati Hari Lahir Pancasila 2024"
                 date="11 Februari 2025 08:38"
                 fontColor="text-gray70"
-                link="{{ route('home.berita') }}"
+                link="{{ route('home.majalah.detail') }}"
         />
         <x-card-majalah-home
                 image="{{ asset('storage/assets/majalah.png') }}"
                 title="Jatim Peringati Hari Lahir Pancasila 2024"
                 date="11 Februari 2025 08:38"
                 fontColor="text-gray70"
-                link="{{ route('home.berita') }}"
+                link="{{ route('home.majalah.detail') }}"
         />
         <x-card-majalah-home
                 image="{{ asset('storage/assets/majalah.png') }}"
                 title="Jatim Peringati Hari Lahir Pancasila 2024"
                 date="11 Februari 2025 08:38"
                 fontColor="text-gray70"
-                link="{{ route('home.berita') }}"
+                link="{{ route('home.majalah.detail') }}"
         />
     </div>
 </div>
 
 <div class="flex justify-center gap-4 pt-6 pb-6">
-        <x-button 
-            text="Sebelumnya" 
-            variant="blue" 
+        <x-button
+            text="Sebelumnya"
+            variant="blue"
             type="button"
         />
-        <x-button 
-            text="Selanjutnya" 
-            variant="blue" 
+        <x-button
+            text="Selanjutnya"
+            variant="blue"
             type="button"
         />
     </div>
 
 
     <x-card-kategori-unitkerja
-            titleFirst="Rekomendasi" 
+            titleFirst="Rekomendasi"
             titleSecond="Kategori"
             :items="[
                 ['image' => asset('storage/assets/unitkerja.jpg'), 'link' => route('home.berita')],
@@ -117,7 +117,7 @@
                     ['label' => 'Mojokerto', 'url' => ''],
                     ['label' => 'KabLamongan', 'url' => ''],
                     ['label' => 'Bojonegoro', 'url' => ''],
-                ]" 
+                ]"
             />
         </div>
 
