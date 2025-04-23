@@ -20,91 +20,8 @@
         </div>
     </div>
 
-    <section class="bg-primary100 relative mt-[15px]">
-        <div class="pl-[60px] pr-[32px] pb-[25px] pt-[28px]">
-            <x-section-header title="Berita SETDA /" highlight="Pemerintah Daerah" buttonText="Selengkapnya"
-                buttonVariant="white" type="white" buttonHref="{{ route('home.index') }}" />
-
-            <x-card-slider :rows="1">
-                <div class="min-w-[404px] h-auto">
-                    <x-card-berita
-                        image="{{ asset('storage/assets/card-bg-biru.png') }}"
-                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
-                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
-                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
-                        link="{{ route('home.berita.detail') }}" type="secondary" />
-                </div>
-                <div class="min-w-[404px] h-auto">
-                    <x-card-berita
-                        image="{{ asset('storage/assets/card-bg-biru.png') }}"
-                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
-                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
-                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
-                        link="https://www.instagram.com/__bayubgs/" type="secondary" />
-                </div>
-                <div class="min-w-[404px] h-auto">
-                    <x-card-berita
-                        image="{{ asset('storage/assets/card-bg-biru.png') }}"
-                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
-                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
-                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
-                        link="https://www.instagram.com/__bayubgs/" type="secondary" />
-                </div>
-                <div class="min-w-[404px] h-auto">
-                    <x-card-berita
-                        image="{{ asset('storage/assets/card-bg-biru.png') }}"
-                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
-                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
-                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
-                        link="https://www.instagram.com/__bayubgs/" type="secondary" />
-                </div>
-                <div class="min-w-[404px] h-auto">
-                    <x-card-berita
-                        image="{{ asset('storage/assets/card-bg-biru.png') }}"
-                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
-                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
-                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
-                        link="https://www.instagram.com/__bayubgs/" type="secondary" />
-                </div>
-                <div class="min-w-[404px] h-auto">
-                    <x-card-berita
-                        image="{{ asset('storage/assets/card-bg-biru.png') }}"
-                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
-                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
-                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
-                        link="https://www.instagram.com/__bayubgs/" type="secondary" />
-                </div>
-                <div class="min-w-[404px] h-auto">
-                    <x-card-berita
-                        image="{{ asset('storage/assets/card-bg-biru.png') }}"
-                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
-                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
-                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
-                        link="https://www.instagram.com/__bayubgs/" type="secondary" />
-                </div>
-                <div class="min-w-[404px] h-auto">
-                    <x-card-berita
-                        image="{{ asset('storage/assets/card-bg-biru.png') }}"
-                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
-                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
-                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
-                        link="https://www.instagram.com/__bayubgs/" type="secondary" />
-                </div>
-                <div class="min-w-[404px] h-auto">
-                    <x-card-berita
-                        image="{{ asset('storage/assets/card-bg-biru.png') }}"
-                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
-                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
-                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
-                        link="https://www.instagram.com/__bayubgs/" type="secondary" />
-                </div>
-            </x-card-slider>
-        </div>
-    </section>
-
     <div class="flex justify-center py-6">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 w-full max-w-screen-xl">
-            <!-- Card 1 -->
             <x-card-list-publikasi
                 image="{{ asset('storage/assets/videolainnya.png') }}"
                 title="Sharing Masalah Kebencanaan, Komisi III DPRD Kabupaten Malang Kunjungi BPD Jatim"
@@ -112,9 +29,8 @@
                 date="11 Februari 2025 08:38"
                 description="Menteri Komunikasi dan Digital (Menkomdig), Meutya Hafid, mewakili Presiden Prabowo Subianto menghadiri Pertemuan Tingkat Tinggi Aksi Kecerdasan Buatan atau Artificial Intelligence..."
                 ratio="3:2"
+                link="{{ route('home.berita.detail') }}"
             />
-
-            <!-- Card 2 -->
             <x-card-list-publikasi
                 image="{{ asset('storage/assets/videolainnya.png') }}"
                 title="Sharing Masalah Kebencanaan, Komisi III DPRD Kabupaten Malang Kunjungi BPD Jatim"
@@ -122,9 +38,8 @@
                 date="11 Februari 2025 08:38"
                 description="Menteri Komunikasi dan Digital (Menkomdig), Meutya Hafid, mewakili Presiden Prabowo Subianto menghadiri Pertemuan Tingkat Tinggi Aksi Kecerdasan Buatan atau Artificial Intelligence..."
                 ratio="3:2"
+                link="{{ route('home.berita.detail') }}"
              />
-
-            <!-- Card 3 -->
             <x-card-list-publikasi
                 image="{{ asset('storage/assets/videolainnya.png') }}"
                 title="Sharing Masalah Kebencanaan, Komisi III DPRD Kabupaten Malang Kunjungi BPD Jatim"
@@ -132,9 +47,8 @@
                 date="11 Februari 2025 08:38"
                 description="Menteri Komunikasi dan Digital (Menkomdig), Meutya Hafid, mewakili Presiden Prabowo Subianto menghadiri Pertemuan Tingkat Tinggi Aksi Kecerdasan Buatan atau Artificial Intelligence..."
                 ratio="3:2"
+                link="{{ route('home.galerifoto') }}"
              />
-
-            <!-- Card 4 -->
             <x-card-list-publikasi
                 image="{{ asset('storage/assets/videolainnya.png') }}"
                 title="Sharing Masalah Kebencanaan, Komisi III DPRD Kabupaten Malang Kunjungi BPD Jatim"
@@ -142,9 +56,8 @@
                 date="11 Februari 2025 08:38"
                 description="Menteri Komunikasi dan Digital (Menkomdig), Meutya Hafid, mewakili Presiden Prabowo Subianto menghadiri Pertemuan Tingkat Tinggi Aksi Kecerdasan Buatan atau Artificial Intelligence..."
                 ratio="3:2"
+                link="{{ route('home.galerifoto') }}"
             />
-
-            <!-- Card 5 -->
             <x-card-list-publikasi
                 image="{{ asset('storage/assets/videolainnya.png') }}"
                 title="Sharing Masalah Kebencanaan, Komisi III DPRD Kabupaten Malang Kunjungi BPD Jatim"
@@ -152,9 +65,8 @@
                 date="11 Februari 2025 08:38"
                 description="Menteri Komunikasi dan Digital (Menkomdig), Meutya Hafid, mewakili Presiden Prabowo Subianto menghadiri Pertemuan Tingkat Tinggi Aksi Kecerdasan Buatan atau Artificial Intelligence..."
                 ratio="3:2"
+                link="{{ route('home.galerifoto') }}"
                 />
-
-            <!-- Card 6 -->
             <x-card-list-publikasi
                 image="{{ asset('storage/assets/videolainnya.png') }}"
                 title="Sharing Masalah Kebencanaan, Komisi III DPRD Kabupaten Malang Kunjungi BPD Jatim"
@@ -162,9 +74,8 @@
                 date="11 Februari 2025 08:38"
                 description="Menteri Komunikasi dan Digital (Menkomdig), Meutya Hafid, mewakili Presiden Prabowo Subianto menghadiri Pertemuan Tingkat Tinggi Aksi Kecerdasan Buatan atau Artificial Intelligence..."
                 ratio="3:2"
+                link="{{ route('home.galerifoto') }}"
             />
-
-            <!-- Card 7 -->
             <x-card-list-publikasi
                 image="{{ asset('storage/assets/videolainnya.png') }}"
                 title="Sharing Masalah Kebencanaan, Komisi III DPRD Kabupaten Malang Kunjungi BPD Jatim"
@@ -172,9 +83,8 @@
                 date="11 Februari 2025 08:38"
                 description="Menteri Komunikasi dan Digital (Menkomdig), Meutya Hafid, mewakili Presiden Prabowo Subianto menghadiri Pertemuan Tingkat Tinggi Aksi Kecerdasan Buatan atau Artificial Intelligence..."
                 ratio="3:2"
+                link="{{ route('home.galerifoto') }}"
             />
-
-            <!-- Card 8 -->
             <x-card-list-publikasi
                 image="{{ asset('storage/assets/videolainnya.png') }}"
                 title="Sharing Masalah Kebencanaan, Komisi III DPRD Kabupaten Malang Kunjungi BPD Jatim"
@@ -182,6 +92,7 @@
                 date="11 Februari 2025 08:38"
                 description="Menteri Komunikasi dan Digital (Menkomdig), Meutya Hafid, mewakili Presiden Prabowo Subianto menghadiri Pertemuan Tingkat Tinggi Aksi Kecerdasan Buatan atau Artificial Intelligence..."
                 ratio="3:2"
+                link="{{ route('home.galerifoto') }}"
             />
             </div>
         </div>
@@ -203,12 +114,28 @@
             titleFirst="Rekomendasi"
             titleSecond="Kategori"
             :items="[
-                ['image' => asset('storage/assets/ahza.jpeg')],
-                ['image' => asset('storage/assets/ahza.jpeg')],
-                ['image' => asset('storage/assets/ahza.jpeg')],
-                ['image' => asset('storage/assets/ahza.jpeg')],
+                ['image' => asset('storage/assets/ahza.jpeg'), 'link' => route('home.galerifoto')],
+                ['image' => asset('storage/assets/ahza.jpeg'), 'link' => route('home.galerifoto')],
+                ['image' => asset('storage/assets/ahza.jpeg'), 'link' => route('home.galerifoto')],
+                ['image' => asset('storage/assets/ahza.jpeg'), 'link' => route('home.galerifoto')]
             ]"
         />
+
+
+        <div class="flex justify-center">
+            <x-tagarpopuler :tags="[
+                    ['label' => 'PemkotSurabaya', 'url' => ''],
+                    ['label' => 'GubernurJatim', 'url' => ''],
+                    ['label' => 'DPRDJatim', 'url' => ''],
+                    ['label' => 'KominfoJatim', 'url' => ''],
+                    ['label' => 'UPNVJT', 'url' => ''],
+                    ['label' => 'Mojokerto', 'url' => ''],
+                    ['label' => 'KabLamongan', 'url' => ''],
+                    ['label' => 'Bojonegoro', 'url' => ''],
+                ]"
+            />
+        </div>
+
             <div class="flex justify-center pt-6">
                 <x-footer/>
             </div>

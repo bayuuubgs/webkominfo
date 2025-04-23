@@ -6,8 +6,7 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class CardListPublikasi extends Component
-
+class tagarpopuler extends Component
 {
     /**
      * Create a new component instance.
@@ -22,6 +21,6 @@ class CardListPublikasi extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.card-list-publikasi');
+        return view('components.tagarpopuler');
     }
 }

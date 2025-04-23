@@ -52,7 +52,7 @@
                         title="Jatim Peringati Hari Lahir Pancasila 2024"
                         date="11 Februari 2025 08:38"
                         fontColor="text-gray70"
-                        link="{{ route('home.berita') }}"
+                        link="{{ route('home.majalah.detail') }}"
                     />
                 </div>
                 <div class="min-w-[300px] h-auto">
@@ -61,7 +61,7 @@
                         title="Jatim Peringati Hari Lahir Pancasila 2024"
                         date="11 Februari 2025 08:38"
                         fontColor="text-gray70"
-                        link="{{ route('home.berita') }}"
+                        link="{{ route('home.majalah.detail') }}"
                     />
                 </div>
                 <div class="min-w-[300px] h-auto">
@@ -70,7 +70,7 @@
                         title="Jatim Peringati Hari Lahir Pancasila 2024"
                         date="11 Februari 2025 08:38"
                         fontColor="text-gray70"
-                        link="{{ route('home.berita') }}"
+                        link="{{ route('home.majalah.detail') }}"
                     />
                 </div>
                 <div class="min-w-[300px] h-auto">
@@ -79,7 +79,7 @@
                         title="Jatim Peringati Hari Lahir Pancasila 2024"
                         date="11 Februari 2025 08:38"
                         fontColor="text-gray70"
-                        link="{{ route('home.berita') }}"
+                        link="{{ route('home.majalah.detail') }}"
                     />
                 </div>
                 <div class="min-w-[300px] h-auto">
@@ -88,7 +88,7 @@
                         title="Jatim Peringati Hari Lahir Pancasila 2024"
                         date="11 Februari 2025 08:38"
                         fontColor="text-gray70"
-                        link="{{ route('home.berita') }}"
+                        link="{{ route('home.majalah.detail') }}"
                     />
                 </div>
                 <div class="min-w-[300px] h-auto">
@@ -97,7 +97,7 @@
                         title="Jatim Peringati Hari Lahir Pancasila 2024"
                         date="11 Februari 2025 08:38"
                         fontColor="text-gray70"
-                        link="{{ route('home.berita') }}"
+                        link="{{ route('home.majalah.detail') }}"
                     />
                 </div>
                 <div class="min-w-[300px] h-auto">
@@ -106,7 +106,7 @@
                         title="Jatim Peringati Hari Lahir Pancasila 2024"
                         date="11 Februari 2025 08:38"
                         fontColor="text-gray70"
-                        link="{{ route('home.berita') }}"
+                        link="{{ route('home.majalah.detail') }}"
                     />
                 </div>
             </x-card-slider>

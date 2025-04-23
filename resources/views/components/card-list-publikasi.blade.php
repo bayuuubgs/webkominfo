@@ -4,7 +4,8 @@
     'category' => '',
     'date' => '',
     'description' => '',
-    'ratio' => '16:9'
+    'ratio' => '16:9',
+    'link' => '' 
 ])
 
 @php
@@ -15,11 +16,11 @@
     };
 @endphp
 
-<div class="relative flex items-center gap-4 p-3 bg-white rounded-2xl shadow-md 
-            w-full max-w-[620px] h-auto mx-auto transition 
-            border-2 border-transparent hover:shadow-lg 
+<a href="{{ $link }}" class="relative flex items-center gap-4 p-3 bg-white rounded-2xl shadow-md
+            w-full max-w-[620px] h-auto mx-auto transition
+            border-2 border-transparent hover:shadow-lg
             hover:border-[#7A74F0] active:ring-2 active:ring-[#7A74F0]">
-
+    
     <div class="shrink-0 rounded-lg overflow-hidden {{ $aspectClass }} w-[250px]">
         <img src="{{ $image }}" alt="Thumbnail" class="object-cover w-full h-full">
     </div>
@@ -38,4 +39,4 @@
             {{ $description }}
         </p>
     </div>
-</div>
+</a>

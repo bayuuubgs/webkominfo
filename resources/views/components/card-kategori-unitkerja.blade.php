@@ -16,8 +16,15 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-full max-w-screen-xl">
             @foreach ($items as $item)
                 <div class="relative w-[266px] h-[306px] bg-white rounded-[16px] overflow-hidden shadow-md group hover:ring-2 hover:ring-blue-500 transition-all duration-300">
-                    <img src="{{ $item['image'] }}" alt="Card Image" class="w-full h-full object-cover">
                     
+                    @if(isset($item['link']))
+                        <a href="{{ $item['link'] }}">
+                            <img src="{{ $item['image'] }}" alt="Card Image" class="w-full h-full object-cover">
+                        </a>
+                    @else
+                        <img src="{{ $item['image'] }}" alt="Card Image" class="w-full h-full object-cover">
+                    @endif
+
                     @if(isset($item['text']))
                         <div class="absolute bottom-0 left-0 right-0 text-white text-center py-6">
                             <h3 class="font-jakarta font-bold text-lg">{{ $item['text'] }}</h3> 
