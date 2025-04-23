@@ -2,11 +2,11 @@
     'tags' => [], 
 ])
 
-<div class="bg-gray10 py-10">
+<div class="bg-gray10 py-10 font-jakarta">
     <div class="flex justify-center mb-10">
         <div class="flex gap-2 items-center text-center">
-            <h2 class="text-gray90 font-bold text-[24px]">Tagar</h2>
-            <h2 class="text-primary50 font-bold text-[24px]">Populer</h2>
+            <h2 class="text-h2 font-bold text-gray90">Tagar</h2>
+            <h2 class="text-h2 font-bold text-primary50">Populer</h2>
         </div>
     </div>
 
@@ -14,7 +14,7 @@
         @foreach ($tags as $tag)
             <a 
                 href="{{ $tag['url'] }}" 
-                class="text-gray70 hover:text-primary50 transition-colors duration-200"
+                class="text-p text-gray70 hover:text-primary50 transition-colors duration-200"
             >
                 #{{ $tag['label'] }}
             </a>

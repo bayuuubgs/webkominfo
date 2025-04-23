@@ -107,10 +107,10 @@
             titleFirst="Rekomendasi" 
             titleSecond="Kategori"
             :items="[
-                ['image' => asset('storage/assets/ahza.jpeg'), 'link' => route('home.download')],
-                ['image' => asset('storage/assets/ahza.jpeg'), 'link' => route('home.download')],
-                ['image' => asset('storage/assets/ahza.jpeg'), 'link' => route('home.download')],
-                ['image' => asset('storage/assets/ahza.jpeg'), 'link' => route('home.download')]
+                ['image' => asset('storage/assets/unitkerja.jpg'), 'link' => route('home.download')],
+                ['image' => asset('storage/assets/unitkerja.jpg'), 'link' => route('home.download')],
+                ['image' => asset('storage/assets/unitkerja.jpg'), 'link' => route('home.download')],
+                ['image' => asset('storage/assets/unitkerja.jpg'), 'link' => route('home.download')]
             ]"
         />
 

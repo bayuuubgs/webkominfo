@@ -71,16 +71,24 @@
                 <x-card-lainnya title="Video" highlight="Lainnya">
                     <x-card-list-lainnya image="{{ asset('storage/assets/videolainnya.png') }}"
                         title="INFO JAWA TIMUR MINGGU KE-2 BULAN FEBRUARI | 14 FEBRUARI 2025"
-                        date="14 Februari 2025 18:12" category="UMUM" />
+                        date="14 Februari 2025 18:12" category="UMUM" 
+                        link="{{ route('home.video.detail') }}" />
                     <x-card-list-lainnya image="{{ asset('storage/assets/videolainnya3.png') }}"
                         title="INFO JAWA TIMUR MINGGU KE-3 BULAN FEBRUARI | 22 FEBRUARI 2025"
-                        date="22 Februari 2025 09:26" category="WAKIL GUBERNUR" />
+                        date="22 Februari 2025 09:26" category="WAKIL GUBERNUR" 
+                        link="{{ route('home.galerifoto') }}" />
                     <x-card-list-lainnya image="{{ asset('storage/assets/videolainnya2.png') }}"
                         title="Lapor SPT Tahunan Hari Ini, Lebih Awal Lebih Nyaman" date="9 Februari 2025 10:49"
-                        category="GUBERNUR" />
+                        category="GUBERNUR" 
+                        link="{{ route('home.galerifoto') }}" />
                     <x-card-list-lainnya image="{{ asset('storage/assets/videolainnya.png') }}"
                         title="INFO JAWA TIMUR MINGGU KE-5 BULAN JANUARI 2025 | 31 Januari" date="1 Februari 2025 15:04"
-                        category="SETDA" />
+                        category="SETDA" 
+                        link="{{ route('home.galerifoto') }}" />
+                    <x-card-list-lainnya image="{{ asset('storage/assets/videolainnya.png') }}"
+                        title="INFO JAWA TIMUR MINGGU KE-5 BULAN JANUARI 2025 | 31 Januari" date="1 Februari 2025 15:04"
+                        category="SETDA" 
+                        link="{{ route('home.galerifoto') }}" />
                 </x-card-lainnya>
             </div>
         </div>
@@ -411,7 +419,9 @@
                     <x-card-majalah-home
                         image="{{ asset('storage/assets/majalah.png') }}"
                         title="Jatim Peringati Hari Lahir Pancasila 2024"
-                        date="11 Februari 2025 08:38" />
+                        date="11 Februari 2025 08:38" 
+                        link="{{ route('home.download') }}"
+                        />
                 </div>
                 <div class="h-auto">
                     <x-card-majalah-home

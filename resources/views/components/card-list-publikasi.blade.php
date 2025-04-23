@@ -1,4 +1,4 @@
-@props([ 
+@props([  
     'image' => '',
     'title' => '',
     'category' => '',
@@ -19,18 +19,18 @@
 <a href="{{ $link }}" class="relative flex items-center gap-4 p-3 bg-white rounded-2xl shadow-md
             w-full max-w-[620px] h-auto mx-auto transition
             border-2 border-transparent hover:shadow-lg
-            hover:border-[#7A74F0] active:ring-2 active:ring-[#7A74F0]">
+            hover:border-primary30 active:ring-2 active:ring-primary30 font-jakarta">
     
     <div class="shrink-0 rounded-lg overflow-hidden {{ $aspectClass }} w-[250px]">
         <img src="{{ $image }}" alt="Thumbnail" class="object-cover w-full h-full">
     </div>
 
     <div class="flex flex-col justify-between space-y-2 pr-2 w-full h-full py-1">
-        <h3 class="text-p font-bold text-gray-900 leading-snug line-clamp-3">
+        <h3 class="text-h3 font-bold text-gray90 leading-snug line-clamp-3">
             {{ $title }}
         </h3>
 
-        <div class="flex items-center gap-2 text-label text-gray-500">
+        <div class="flex items-center gap-2 text-label font-bold text-gray70">
             <x-label-kategori :text="$category" />
             <span>{{ $date }}</span>
         </div>

@@ -29,7 +29,7 @@ use Illuminate\Http\Request;
 // Route::get('/', [App\Http\Controllers\HomeController::class, 'index']);
 
 Route::get('/', function (){
-    return view('detailberita');
+    return view('detailvideo');
 });
 
 Route::prefix('home')->name('home.')->group(function () {
@@ -52,6 +52,10 @@ Route::prefix('home')->name('home.')->group(function () {
     Route::get('/video', function () {
         return view('video');
     })->name('video');
+
+    Route::get('/video/detailvideo', function () {
+        return view('detailvideo');
+    })->name('video.detail');
 
     Route::get('/download', function () {
         return view('download');

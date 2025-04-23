@@ -114,10 +114,10 @@
             titleFirst="Rekomendasi"
             titleSecond="Kategori"
             :items="[
-                ['image' => asset('storage/assets/ahza.jpeg'), 'link' => route('home.galerifoto')],
-                ['image' => asset('storage/assets/ahza.jpeg'), 'link' => route('home.galerifoto')],
-                ['image' => asset('storage/assets/ahza.jpeg'), 'link' => route('home.galerifoto')],
-                ['image' => asset('storage/assets/ahza.jpeg'), 'link' => route('home.galerifoto')]
+                ['image' => asset('storage/assets/unitkerja.jpg'), 'link' => route('home.galerifoto')],
+                ['image' => asset('storage/assets/unitkerja.jpg'), 'link' => route('home.galerifoto')],
+                ['image' => asset('storage/assets/unitkerja.jpg'), 'link' => route('home.galerifoto')],
+                ['image' => asset('storage/assets/unitkerja.jpg'), 'link' => route('home.galerifoto')]
             ]"
         />
 
@@ -135,6 +135,13 @@
                 ]" 
             />
         </div>
+        
+        <div class="flex justify-center pt-6">
+        <x-card-list-regulasi 
+    title="PERATURAN PEMERINTAH REPUBLIK INDONESIA NOMOR 61 TAHUN 2010 TENTANG PELAKSANAAN UNDANG-UNDANG NOMOR 14 TAHUN 2008 TENTANG KETERBUKAAN INFORMASI PUBLIK" 
+    url="https://example.com/regulasi"
+/>
+</div>
 
             <div class="flex justify-center pt-6">
                 <x-footer/>

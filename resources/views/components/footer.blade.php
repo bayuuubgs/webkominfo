@@ -1,15 +1,15 @@
-<div class="w-full bg-primary100 text-white py-6">
+<div class="w-full bg-primary100 text-white font-jakarta py-6">
     <div class="container mx-auto px-6">
         <div class="grid grid-cols-1 md:grid-cols-5 gap-x-10 gap-y-8 text-[14px] leading-snug">
 
             <div class="flex flex-col">
-                <h3 class="text-[24px] font-bold mb-3">DISKOMINFO JATIM</h3>
-                <p class="text-gray-300">
+                <h2 class="text-h2 font-bold mb-3">DISKOMINFO JATIM</h2>
+                <p class="text-gray-300 text-p">
                     Jl. A. Yani 242 - 244, Gayungan, Surabaya<br>
                     Telp: (031) 8294608<br>
                     Fax: (031) 8294517
                 </p>
-                <p class="text-gray-300 mt-1 break-words">
+                <p class="text-gray-300 mt-1 break-words text-p">
                     Email: kominfo@jatimprov.go.id
                 </p>
                 <div class="flex gap-3 mt-3">
@@ -23,13 +23,13 @@
                         <img src="{{ asset('storage/assets/youtube.png') }}" alt="YouTube" class="w-6 h-6">
                     </a>
                 </div>
-                <p class="text-gray-400 mt-3">
+                <p class="text-gray-400 mt-3 text-p font-bold">
                     © {{ date('Y') }} Dinas Komunikasi dan Informatika
                 </p>
             </div>
 
             <div class="flex flex-col">
-                <h3 class="text-[18px] font-bold mb-2">Hubungi Kami</h3>
+                <h3 class="text-h3 font-bold mb-2">Hubungi Kami</h3>
                 <div class="grid grid-cols-[20px_auto] gap-x-2 gap-y-2 text-gray-300">
 
                     <a href="https://www.instagram.com/kominfojatim" target="_blank" class="flex items-center gap-2 col-span-2">
@@ -49,7 +49,7 @@
             </div>
 
             <div class="flex flex-col">
-    <h3 class="text-[18px] font-bold mb-2">Publikasi</h3>
+    <h3 class="text-h3 font-bold mb-2">Publikasi</h3>
     <ul class="space-y-2">
         @php
             $publikasiList = [
@@ -72,7 +72,7 @@
 
 
             <div class="flex flex-col">
-                <h3 class="text-[18px] font-bold mb-2">Kategori</h3>
+                <h3 class="text-h3 font-bold mb-2">Kategori</h3>
                 <ul class="space-y-2">
                     @foreach(['Setda / Perangkat Daerah', 'Gubernur', 'Wakil Gubernur', 'Forda Jatim II 2024'] as $category)
                         <li><a href="#" class="text-gray-300 hover:text-white">{{ $category }}</a></li>
@@ -83,7 +83,7 @@
             <div class="flex flex-col items-center justify-center">
                 <img src="{{ asset('storage/assets/gambarfooter.png') }}" alt="Logo Diskominfo Jatim"
                      class="w-[244px] h-[75px] object-contain mb-2">
-                <p class="text-gray-300 text-center">
+                <p class="text-gray-300 text-center text-p font-bold">
                     Pemerintah Provinsi Jawa Timur
                 </p>
             </div>

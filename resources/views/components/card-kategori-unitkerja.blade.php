@@ -4,11 +4,11 @@
     'items' => [],
 ])
 
-<div class="bg-background py-10">
+<div class="bg-background py-10 font-jakarta">
     <div class="flex justify-center mb-8">
         <div class="flex gap-2 items-center text-center">
-            <h2 class="text-gray90 font-bold text-[24px]">{{ $titleFirst }}</h2>
-            <h2 class="text-primary50 font-bold text-[24px]">{{ $titleSecond }}</h2>
+            <h2 class="text-h2 font-bold text-gray90">{{ $titleFirst }}</h2>
+            <h2 class="text-h2 font-bold text-primary50">{{ $titleSecond }}</h2>
         </div>
     </div>
 
@@ -27,7 +27,7 @@
 
                     @if(isset($item['text']))
                         <div class="absolute bottom-0 left-0 right-0 text-white text-center py-6">
-                            <h3 class="font-jakarta font-bold text-lg">{{ $item['text'] }}</h3> 
+                            <h3 class="text-h3 font-bold">{{ $item['text'] }}</h3> 
                         </div>
                     @endif
                 </div>
