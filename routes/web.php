@@ -29,7 +29,7 @@ use Illuminate\Http\Request;
 // Route::get('/', [App\Http\Controllers\HomeController::class, 'index']);
 
 Route::get('/', function (){
-    return view('detailberita');
+    return view('home');
 });
 
 Route::prefix('home')->name('home.')->group(function () {
@@ -41,9 +41,21 @@ Route::prefix('home')->name('home.')->group(function () {
         return view('profil');
     })->name('profil');
 
+    Route::get('/customteks', function () {
+        return view('customteks');
+    })->name('customteks');
+
+    Route::get('/customPDF', function () {
+        return view('customPDF');
+    })->name('customPDF');
+
     Route::get('/berita', function () {
         return view('berita');
     })->name('berita');
+
+    Route::get('/berita/detailberita', function () {
+        return view('detailberita');
+    })->name('berita.detail');
 
     Route::get('/galerifoto', function () {
         return view('galerifoto');
@@ -60,13 +72,16 @@ Route::prefix('home')->name('home.')->group(function () {
     Route::get('/majalah', function () {
         return view('majalah');
     })->name('majalah');
+
+    Route::get('/majalah/detailmajalah', function () {
+        return view('detailmajalah');
+    })->name('majalah.detail');
+
+    Route::get('/bidangsekretariat', function () {
+        return view('bidangsekretariat');
+    })->name('bidangsekretariat');
 });
 
-Route::view('/berita', 'berita');
-Route::view('/galerifoto', 'galerifoto');
-Route::view('/video', 'video');
-Route::view('/download', 'download');
-Route::view('/majalah', 'majalah');
 
 // use App\Http\Controllers\VideoController;
 

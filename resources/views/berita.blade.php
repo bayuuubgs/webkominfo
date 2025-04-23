@@ -20,6 +20,88 @@
         </div>
     </div>
 
+    <section class="bg-primary100 relative mt-[15px]">
+        <div class="pl-[60px] pr-[32px] pb-[25px] pt-[28px]">
+            <x-section-header title="Berita SETDA /" highlight="Pemerintah Daerah" buttonText="Selengkapnya"
+                buttonVariant="white" type="white" buttonHref="{{ route('home.index') }}" />
+
+            <x-card-slider :rows="1">
+                <div class="min-w-[404px] h-auto">
+                    <x-card-berita
+                        image="{{ asset('storage/assets/card-bg-biru.png') }}"
+                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
+                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
+                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
+                        link="{{ route('home.berita.detail') }}" type="secondary" />
+                </div>
+                <div class="min-w-[404px] h-auto">
+                    <x-card-berita
+                        image="{{ asset('storage/assets/card-bg-biru.png') }}"
+                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
+                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
+                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
+                        link="https://www.instagram.com/__bayubgs/" type="secondary" />
+                </div>
+                <div class="min-w-[404px] h-auto">
+                    <x-card-berita
+                        image="{{ asset('storage/assets/card-bg-biru.png') }}"
+                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
+                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
+                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
+                        link="https://www.instagram.com/__bayubgs/" type="secondary" />
+                </div>
+                <div class="min-w-[404px] h-auto">
+                    <x-card-berita
+                        image="{{ asset('storage/assets/card-bg-biru.png') }}"
+                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
+                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
+                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
+                        link="https://www.instagram.com/__bayubgs/" type="secondary" />
+                </div>
+                <div class="min-w-[404px] h-auto">
+                    <x-card-berita
+                        image="{{ asset('storage/assets/card-bg-biru.png') }}"
+                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
+                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
+                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
+                        link="https://www.instagram.com/__bayubgs/" type="secondary" />
+                </div>
+                <div class="min-w-[404px] h-auto">
+                    <x-card-berita
+                        image="{{ asset('storage/assets/card-bg-biru.png') }}"
+                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
+                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
+                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
+                        link="https://www.instagram.com/__bayubgs/" type="secondary" />
+                </div>
+                <div class="min-w-[404px] h-auto">
+                    <x-card-berita
+                        image="{{ asset('storage/assets/card-bg-biru.png') }}"
+                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
+                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
+                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
+                        link="https://www.instagram.com/__bayubgs/" type="secondary" />
+                </div>
+                <div class="min-w-[404px] h-auto">
+                    <x-card-berita
+                        image="{{ asset('storage/assets/card-bg-biru.png') }}"
+                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
+                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
+                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
+                        link="https://www.instagram.com/__bayubgs/" type="secondary" />
+                </div>
+                <div class="min-w-[404px] h-auto">
+                    <x-card-berita
+                        image="{{ asset('storage/assets/card-bg-biru.png') }}"
+                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
+                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
+                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
+                        link="https://www.instagram.com/__bayubgs/" type="secondary" />
+                </div>
+            </x-card-slider>
+        </div>
+    </section>
+
     <div class="flex justify-center py-6">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 w-full max-w-screen-xl">
             <!-- Card 1 -->
