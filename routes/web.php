@@ -28,12 +28,8 @@ use Illuminate\Http\Request;
 
 // Route::get('/', [App\Http\Controllers\HomeController::class, 'index']);
 
-Route::get('/', function (){
-<<<<<<< HEAD
-    return view('detailvideo');
-=======
+Route::get('/', function () {
     return view('home');
->>>>>>> 1dfe3c3cd3ff0d41fb724cb5f8db391e1ba8d316
 });
 
 Route::prefix('home')->name('home.')->group(function () {
@@ -64,6 +60,10 @@ Route::prefix('home')->name('home.')->group(function () {
     Route::get('/galerifoto', function () {
         return view('galerifoto');
     })->name('galerifoto');
+
+    Route::get('/galerifoto/detailgaleri', function () {
+        return view('detailgaleri');
+    })->name('galerifoto.detail');
 
     Route::get('/video', function () {
         return view('video');

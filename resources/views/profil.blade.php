@@ -17,7 +17,7 @@
     <div class="relative w-full h-auto md:h-dvh overflow-hidden">
 
         <img src="/storage/assets/gedungkominfo2.jpg" alt="Background Watermark"
-            class="absolute inset-0 w-full h-full object-cover opacity-10 -z-10" />
+            class="absolute inset-0 w-full h-full object-cover opacity-10 -z-20" />
 
         <div
             class="absolute inset-0 bg-gradient-to-b from-primary100/15 via-white/100 to-gray30/50 pointer-events-none -z-10">
