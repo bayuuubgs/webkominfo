@@ -18,8 +18,9 @@ class CardBerita extends Component
     public $textColor;
     public $dateColor;
     public $hoverBorder;
+    public $readMoreText;
 
-    public function __construct($image, $title, $date, $category, $description, $link, $type)
+    public function __construct($image, $title, $date, $category, $description, $link, $type, $readMoreText = 'Baca Selengkapnya')
     {
         $this->image = $image;
         $this->title = $title;
@@ -28,6 +29,7 @@ class CardBerita extends Component
         $this->description = $description;
         $this->link = $link;
         $this->type = $type;
+        $this->readMoreText = $readMoreText;
 
         $isBlue = $type === 'secondary';
         $this->textColor = $isBlue ? 'text-gray10' : 'text-gray70';
@@ -40,3 +42,4 @@ class CardBerita extends Component
         return view('components.card-berita');
     }
 }
+
