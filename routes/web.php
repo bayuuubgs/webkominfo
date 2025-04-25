@@ -28,7 +28,7 @@ use Illuminate\Http\Request;
 
 // Route::get('/', [App\Http\Controllers\HomeController::class, 'index']);
 
-Route::get('/', function (){
+Route::get('/', function () {
     return view('home');
 });
 
@@ -64,6 +64,10 @@ Route::prefix('home')->name('home.')->group(function () {
     Route::get('/galerifoto', function () {
         return view('galerifoto');
     })->name('galerifoto');
+
+    Route::get('/galerifoto/detailgaleri', function () {
+        return view('detailgaleri');
+    })->name('galerifoto.detail');
 
     Route::get('/video', function () {
         return view('video');
