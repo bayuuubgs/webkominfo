@@ -29,11 +29,7 @@ use Illuminate\Http\Request;
 // Route::get('/', [App\Http\Controllers\HomeController::class, 'index']);
 
 Route::get('/', function (){
-<<<<<<< HEAD
-    return view('detailvideo');
-=======
     return view('home');
->>>>>>> 1dfe3c3cd3ff0d41fb724cb5f8db391e1ba8d316
 });
 
 Route::prefix('home')->name('home.')->group(function () {
