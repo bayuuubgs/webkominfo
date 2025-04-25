@@ -17,6 +17,7 @@
 
 <body class="bg-white">
     <nav class="bg-primary100">
+
         <div class="relative flex h-16 mx-auto px-16 py-9 space-x-5 items-center justify-between w-full">
 
             <!-- Logo Kominfo -->
@@ -56,73 +57,73 @@
                     <div x-show="open" @click.away="open = false" x-transition
                         class="absolute left-1/2 z-10 flex w-screen max-w-max  px-4 transition duration-200 ease-out">
                         <x-flyoutmenu :menuItems="[
-                            [
-                                'title' => 'Rencana Strategis',
-                                'desc' => 'Renstra DISKOMINFO Jatim per-periode',
-                                'icon' => '',
-                                'hasDropdown' => true,
-                                'subItems' => [
-                                    [
-                                        'title' => 'Rencana Strategis',
-                                        'desc' => '2014 -2019',
-                                        'link' => '/home/customPDF',
-                                    ],
-                                    [
-                                        'title' => 'Rencana Strategis',
-                                        'desc' => '2019 -2024',
-                                        'link' => '/home/customPDF',
-                                    ],
-                                    [
-                                        'title' => 'Rencana Strategis',
-                                        'desc' => '2024 -2025',
-                                        'link' => '/home/customPDF',
-                                    ],
-                                ],
-                            ],
-                            [
-                                'title' => 'Indikator Kerja Utama',
-                                'desc' => 'IKU DISKOMINFO Jatim tahun ini',
-                                'link' => '',
-                            ],
-                            [
-                                'title' => 'Perjanjian Kinerja',
-                                'desc' => 'Perkin Kepala DISKOMINFO Jatim per-tahun',
-                                'icon' => '',
-                                'hasDropdown' => true,
-                                'subItems' => [
-                                    [
-                                        'title' => 'Perjanjian Kinerja',
-                                        'desc' => 'Tahun 2022',
-                                        'link' => 'home/profil',
-                                    ],
-                                    [
-                                        'title' => 'Perjanjian Kinerja Perubahan',
-                                        'desc' => 'Tahun 2023',
-                                        'link' => '',
-                                    ],
-                                    [
-                                        'title' => 'Perjanjian Kinerja',
-                                        'desc' => 'Tahun 2024',
-                                        'link' => '',
-                                    ],
-                                ],
+        [
+            'title' => 'Rencana Strategis',
+            'desc' => 'Renstra DISKOMINFO Jatim per-periode',
+            'icon' => '',
+            'hasDropdown' => true,
+            'subItems' => [
+                [
+                    'title' => 'Rencana Strategis',
+                    'desc' => '2014 -2019',
+                    'link' => '/home/customPDF',
+                ],
+                [
+                    'title' => 'Rencana Strategis',
+                    'desc' => '2019 -2024',
+                    'link' => '/home/customPDF',
+                ],
+                [
+                    'title' => 'Rencana Strategis',
+                    'desc' => '2024 -2025',
+                    'link' => '/home/customPDF',
+                ],
+            ],
+        ],
+        [
+            'title' => 'Indikator Kerja Utama',
+            'desc' => 'IKU DISKOMINFO Jatim tahun ini',
+            'link' => '',
+        ],
+        [
+            'title' => 'Perjanjian Kinerja',
+            'desc' => 'Perkin Kepala DISKOMINFO Jatim per-tahun',
+            'icon' => '',
+            'hasDropdown' => true,
+            'subItems' => [
+                [
+                    'title' => 'Perjanjian Kinerja',
+                    'desc' => 'Tahun 2022',
+                    'link' => 'home/profil',
+                ],
+                [
+                    'title' => 'Perjanjian Kinerja Perubahan',
+                    'desc' => 'Tahun 2023',
+                    'link' => '',
+                ],
+                [
+                    'title' => 'Perjanjian Kinerja',
+                    'desc' => 'Tahun 2024',
+                    'link' => '',
+                ],
+            ],
 
-                            ],
-                            [
-                                'title' => 'Rencana Anggaran',
-                                'desc' => 'Rincian APBD DISKOMINFO Jatim per-tahun',
-                                'icon' => '',
-                                'hasDropdown' => true,
-                                'subItems' => [
-                                    [
-                                        'title' => 'Rencana APBD',
-                                        'desc' => 'Tahun 2021',
-                                        'link' => '',
-                                    ],
-                                ],
+        ],
+        [
+            'title' => 'Rencana Anggaran',
+            'desc' => 'Rincian APBD DISKOMINFO Jatim per-tahun',
+            'icon' => '',
+            'hasDropdown' => true,
+            'subItems' => [
+                [
+                    'title' => 'Rencana APBD',
+                    'desc' => 'Tahun 2021',
+                    'link' => '',
+                ],
+            ],
 
-                            ],
-                        ]" />
+        ],
+    ]" />
                     </div>
                 </div>
 
@@ -137,206 +138,206 @@
                     <div x-show="open" @click.away="open = false" x-transition
                         class="absolute left-1/2 z-10 flex w-screen max-w-max  px-4 transition duration-200 ease-out">
                         <x-flyoutmenu :menuItems="[
-                            [
-                                'title' => 'LAKIP',
-                                'desc' => 'Laporan Kinerja Instansi Pemerintah',
-                                'icon' => '',
-                                'hasDropdown' => true,
-                                'subItems' => [
-                                    [
-                                        'title' => 'LAKIP',
-                                        'desc' => 'Tahun 2020',
-                                        'link' => '',
-                                    ],
-                                    [
-                                        'title' => 'LAKIP',
-                                        'desc' => 'Tahun 2021',
-                                        'link' => '',
-                                    ],
-                                    [
-                                        'title' => 'LAKIP',
-                                        'desc' => 'Tahun 2022',
-                                        'link' => '',
-                                    ],
-                                    [
-                                        'title' => 'LAKIP',
-                                        'desc' => 'Tahun 2023',
-                                        'link' => '',
-                                    ],
-                                    [
-                                        'title' => 'LAKIP',
-                                        'desc' => 'Tahun 2024',
-                                        'link' => '',
-                                    ],
-                                ],
-                            ],
-                            [
-                                'title' => 'NERACA',
-                                'desc' => 'Neraca DISKOMINFO Jatim per-tahun',
-                                'icon' => '',
-                                'hasDropdown' => true,
-                                'subItems' => [
-                                    [
-                                        'title' => 'NERACA',
-                                        'desc' => 'Tahun 2020',
-                                        'link' => '',
-                                    ],
-                                    [
-                                        'title' => 'NERACA',
-                                        'desc' => 'Tahun 2021',
-                                        'link' => '',
-                                    ],
-                                ],
-                            ],
-                            [
-                                'title' => 'LRA',
-                                'desc' => 'Laporan Realisasi Anggaran per-tahun',
-                                'icon' => '',
-                                'hasDropdown' => true,
-                                'subItems' => [
-                                    [
-                                        'title' => 'LRA',
-                                        'desc' => 'Tahun 2020',
-                                        'link' => '',
-                                    ],
-                                    [
-                                        'title' => 'LRA',
-                                        'desc' => 'Tahun 2021',
-                                        'link' => '',
-                                    ],
-                                    [
-                                        'title' => 'Ringkasan LRA',
-                                        'desc' => 'Tahun 2022',
-                                        'link' => '',
-                                    ],
-                                    [
-                                        'title' => 'RLPPD 2024',
-                                        'desc' => 'Ringkasan Laporan Penyelenggaraan Pemda Jatim Tahun 2024',
-                                        'link' => '',
-                                    ],
-                                ],
-                            ],
-                            [
-                                'title' => 'ASET',
-                                'desc' => 'Rekapitulasi Aset DISKOMINFO Jatim',
-                                'icon' => '',
-                                'hasDropdown' => true,
-                                'subItems' => [
-                                    [
-                                        'title' => 'Rekapitulasi Aset',
-                                        'desc' => 'Tahun 2020',
-                                        'link' => '',
-                                    ],
-                                ],
-                            ],
-                            [
-                                'title' => 'Laporan Arus Kas',
-                                'desc' => 'Rekapitulasi Aset DISKOMINFO Jatim',
-                                'icon' => '',
-                                'hasDropdown' => true,
-                                'subItems' => [
-                                    [
-                                        'title' => 'Laporan Arus Kas',
-                                        'desc' => 'Tahun 2020',
-                                        'link' => '',
-                                    ],
-                                ],
-                            ],
-                            [
-                                'title' => 'Ringkasan DPA',
-                                'desc' => 'Dokumen Pelaksanaan Anggrana per-tahun',
-                                'icon' => '',
-                                'hasDropdown' => true,
-                                'subItems' => [
-                                    [
-                                        'title' => 'Ringkasan DPA',
-                                        'desc' => 'Tahun 2020',
-                                        'link' => '',
-                                    ],
-                                    [
-                                        'title' => 'Ringkasan DPPA',
-                                        'desc' => 'Tahun 2020',
-                                        'link' => '',
-                                    ],
-                                    [
-                                        'title' => 'Ringkasan DPA',
-                                        'desc' => 'Tahun 2021',
-                                        'link' => '',
-                                    ],
-                                    [
-                                        'title' => 'Ringkasan DPA',
-                                        'desc' => 'Tahun 2023',
-                                        'link' => '',
-                                    ],
-                                ],
-                            ],
-                            [
-                                'title' => 'Ringkasan RKA',
-                                'desc' => 'Dokumen Rencana Kerja dan Anggaran',
-                                'icon' => '',
-                                'hasDropdown' => true,
-                                'subItems' => [
-                                    [
-                                        'title' => 'Ringkasan RKA',
-                                        'desc' => 'Tahun 2020',
-                                        'link' => '',
-                                    ],
-                                    [
-                                        'title' => 'Ringkasan RKPA',
-                                        'desc' => 'Tahun 2020',
-                                        'link' => '',
-                                    ],
-                                    [
-                                        'title' => 'Ringkasan RKA',
-                                        'desc' => 'Tahun 2021',
-                                        'link' => '',
-                                    ],
-                                    [
-                                        'title' => 'Ringkasan RKA',
-                                        'desc' => 'Tahun 2023',
-                                        'link' => '',
-                                    ],
-                                    [
-                                        'title' => 'Ringkasan RKPA',
-                                        'desc' => 'Tahun 2023',
-                                        'link' => '',
-                                    ],
-                                    [
-                                        'title' => 'Ringkasan RKA',
-                                        'desc' => 'Tahun 2024',
-                                        'link' => '',
-                                    ],
-                                ],
-                            ],
-                            [
-                                'title' => 'Ringkasan LRA',
-                                'desc' => 'Ringkasan Laporan Realisasi Anggaran',
-                                'icon' => '',
-                                'hasDropdown' => true,
-                                'subItems' => [
-                                    [
-                                        'title' => 'Ringkasan LRA',
-                                        'desc' => 'Tahun 2020',
-                                        'link' => '',
-                                    ],
-                                    [
-                                        'title' => 'Ringkasan LRA',
-                                        'desc' => 'Tahun 2021',
-                                        'link' => '',
-                                    ],
-                                    [
-                                        'title' => 'LRA',
-                                        'desc' => 'Tahun 2022',
-                                        'link' => '',
-                                    ],
-                                ],
-                            ],
-                            [
-                                'title' => 'Laporan Keuangan Terbaru',
-                                'desc' => 'Laporan Keuangan DISKOMINFO JATIM terbaru',
-                                'link' => '',
-                            ],
-                        ]" />
+        [
+            'title' => 'LAKIP',
+            'desc' => 'Laporan Kinerja Instansi Pemerintah',
+            'icon' => '',
+            'hasDropdown' => true,
+            'subItems' => [
+                [
+                    'title' => 'LAKIP',
+                    'desc' => 'Tahun 2020',
+                    'link' => '',
+                ],
+                [
+                    'title' => 'LAKIP',
+                    'desc' => 'Tahun 2021',
+                    'link' => '',
+                ],
+                [
+                    'title' => 'LAKIP',
+                    'desc' => 'Tahun 2022',
+                    'link' => '',
+                ],
+                [
+                    'title' => 'LAKIP',
+                    'desc' => 'Tahun 2023',
+                    'link' => '',
+                ],
+                [
+                    'title' => 'LAKIP',
+                    'desc' => 'Tahun 2024',
+                    'link' => '',
+                ],
+            ],
+        ],
+        [
+            'title' => 'NERACA',
+            'desc' => 'Neraca DISKOMINFO Jatim per-tahun',
+            'icon' => '',
+            'hasDropdown' => true,
+            'subItems' => [
+                [
+                    'title' => 'NERACA',
+                    'desc' => 'Tahun 2020',
+                    'link' => '',
+                ],
+                [
+                    'title' => 'NERACA',
+                    'desc' => 'Tahun 2021',
+                    'link' => '',
+                ],
+            ],
+        ],
+        [
+            'title' => 'LRA',
+            'desc' => 'Laporan Realisasi Anggaran per-tahun',
+            'icon' => '',
+            'hasDropdown' => true,
+            'subItems' => [
+                [
+                    'title' => 'LRA',
+                    'desc' => 'Tahun 2020',
+                    'link' => '',
+                ],
+                [
+                    'title' => 'LRA',
+                    'desc' => 'Tahun 2021',
+                    'link' => '',
+                ],
+                [
+                    'title' => 'Ringkasan LRA',
+                    'desc' => 'Tahun 2022',
+                    'link' => '',
+                ],
+                [
+                    'title' => 'RLPPD 2024',
+                    'desc' => 'Ringkasan Laporan Penyelenggaraan Pemda Jatim Tahun 2024',
+                    'link' => '',
+                ],
+            ],
+        ],
+        [
+            'title' => 'ASET',
+            'desc' => 'Rekapitulasi Aset DISKOMINFO Jatim',
+            'icon' => '',
+            'hasDropdown' => true,
+            'subItems' => [
+                [
+                    'title' => 'Rekapitulasi Aset',
+                    'desc' => 'Tahun 2020',
+                    'link' => '',
+                ],
+            ],
+        ],
+        [
+            'title' => 'Laporan Arus Kas',
+            'desc' => 'Rekapitulasi Aset DISKOMINFO Jatim',
+            'icon' => '',
+            'hasDropdown' => true,
+            'subItems' => [
+                [
+                    'title' => 'Laporan Arus Kas',
+                    'desc' => 'Tahun 2020',
+                    'link' => '',
+                ],
+            ],
+        ],
+        [
+            'title' => 'Ringkasan DPA',
+            'desc' => 'Dokumen Pelaksanaan Anggrana per-tahun',
+            'icon' => '',
+            'hasDropdown' => true,
+            'subItems' => [
+                [
+                    'title' => 'Ringkasan DPA',
+                    'desc' => 'Tahun 2020',
+                    'link' => '',
+                ],
+                [
+                    'title' => 'Ringkasan DPPA',
+                    'desc' => 'Tahun 2020',
+                    'link' => '',
+                ],
+                [
+                    'title' => 'Ringkasan DPA',
+                    'desc' => 'Tahun 2021',
+                    'link' => '',
+                ],
+                [
+                    'title' => 'Ringkasan DPA',
+                    'desc' => 'Tahun 2023',
+                    'link' => '',
+                ],
+            ],
+        ],
+        [
+            'title' => 'Ringkasan RKA',
+            'desc' => 'Dokumen Rencana Kerja dan Anggaran',
+            'icon' => '',
+            'hasDropdown' => true,
+            'subItems' => [
+                [
+                    'title' => 'Ringkasan RKA',
+                    'desc' => 'Tahun 2020',
+                    'link' => '',
+                ],
+                [
+                    'title' => 'Ringkasan RKPA',
+                    'desc' => 'Tahun 2020',
+                    'link' => '',
+                ],
+                [
+                    'title' => 'Ringkasan RKA',
+                    'desc' => 'Tahun 2021',
+                    'link' => '',
+                ],
+                [
+                    'title' => 'Ringkasan RKA',
+                    'desc' => 'Tahun 2023',
+                    'link' => '',
+                ],
+                [
+                    'title' => 'Ringkasan RKPA',
+                    'desc' => 'Tahun 2023',
+                    'link' => '',
+                ],
+                [
+                    'title' => 'Ringkasan RKA',
+                    'desc' => 'Tahun 2024',
+                    'link' => '',
+                ],
+            ],
+        ],
+        [
+            'title' => 'Ringkasan LRA',
+            'desc' => 'Ringkasan Laporan Realisasi Anggaran',
+            'icon' => '',
+            'hasDropdown' => true,
+            'subItems' => [
+                [
+                    'title' => 'Ringkasan LRA',
+                    'desc' => 'Tahun 2020',
+                    'link' => '',
+                ],
+                [
+                    'title' => 'Ringkasan LRA',
+                    'desc' => 'Tahun 2021',
+                    'link' => '',
+                ],
+                [
+                    'title' => 'LRA',
+                    'desc' => 'Tahun 2022',
+                    'link' => '',
+                ],
+            ],
+        ],
+        [
+            'title' => 'Laporan Keuangan Terbaru',
+            'desc' => 'Laporan Keuangan DISKOMINFO JATIM terbaru',
+            'link' => '',
+        ],
+    ]" />
                     </div>
                 </div>
 
@@ -351,91 +352,91 @@
                     <div x-show="open" @click.away="open = false" x-transition
                         class="absolute left-1/2 z-10 flex w-screen max-w-max  px-4 transition duration-200 ease-out">
                         <x-flyoutmenu :menuItems="[
-                            [
-                                'title' => 'Layanan Informasi',
-                                'desc' => 'Layanan Informasi Seputar DISKOMINFO JATIM',
-                                'icon' => '',
-                                'hasDropdown' => true,
-                                'subItems' => [
-                                    [
-                                        'title' => 'Prosedur Permohonan Informasi',
-                                        'desc' => 'Prosedur Permohonan Informasi',
-                                        'link' => '',
-                                    ],
-                                ],
-                            ],
-                            [
-                                'title' => 'Pendaftaran PSE Lingkup Publik',
-                                'desc' => 'Daftar PSE Lingkup Publik di sini',
-                                'link' => '/home/customteks',
-                            ],
-                            [
-                                'title' => 'Dasbor BPJS TK',
-                                'desc' => 'Dasbor BPJS Tenaga Kerja',
-                                'link' => 'https://lookerstudio.google.com/reporting/9a445f15-09cf-42bb-8792-61b1bdd85ccb/page/p_k42d72ajnd',
-                            ],
-                            [
-                                'title' => 'SATA',
-                                'desc' => 'Menu Satu Data',
-                                'icon' => '',
-                                'hasDropdown' => true,
-                                'subItems' => [
-                                    [
-                                        'title' => 'SATA JATIM',
-                                        'desc' => 'Satuan Data Jawa Timur',
-                                        'link' => 'https://sata.jatimprov.go.id/login',
-                                    ],
-                                    [
-                                        'title' => 'SATA AWARD',
-                                        'desc' => 'Satuan Data Penghargaan',
-                                        'link' => 'https://sata.jatimprov.go.id/award',
-                                    ],
-                                    [
-                                        'title' => 'OPEN DATA',
-                                        'desc' => 'Open Data',
-                                        'link' => 'https://opendata.jatimprov.go.id/',
-                                    ],
-                                    [
-                                        'title' => 'Panduan SATA',
-                                        'desc' => 'Panduan Satuan Data',
-                                        'link' => 'https://drive.jatimprov.go.id/index.php/s/n94wwixcHXLNyyW',
-                                    ],
-                                ],
-                            ],
-                            [
-                                'title' => 'Klinik HOAKS',
-                                'desc' => 'Cek Hoaks di Sekitarmu',
-                                'link' => 'https://klinikhoaks.jatimprov.go.id/',
-                            ],
-                            [
-                                'title' => 'Pendaftaran Aplikasi',
-                                'desc' => 'Pelajari mengenai APPS',
-                                'icon' => '',
-                                'hasDropdown' => true,
-                                'subItems' => [
-                                    [
-                                        'title' => 'Akses APPS',
-                                        'desc' => 'Akses APPS DISKOMINFO Jatim',
-                                        'link' => 'https://apps.jatimprov.go.id/login',
-                                    ],
-                                    [
-                                        'title' => 'Pedoman Pengisian APPS',
-                                        'desc' => 'Akses APPS DISKOMINFO Jatim',
-                                        'link' => '',
-                                    ],
-                                ],
-                            ],
-                            [
-                                'title' => 'Penetapan Standar Pelayanan',
-                                'desc' => 'Penetapan Standar Pelayanan DISKOMINFO Jatim',
-                                'link' => '',
-                            ],
-                            [
-                                'title' => 'Maklumat Pelayanan',
-                                'desc' => 'Maklumat Pelayanan DISKOMINFO Jatim',
-                                'link' => '',
-                            ],
-                        ]" />
+        [
+            'title' => 'Layanan Informasi',
+            'desc' => 'Layanan Informasi Seputar DISKOMINFO JATIM',
+            'icon' => '',
+            'hasDropdown' => true,
+            'subItems' => [
+                [
+                    'title' => 'Prosedur Permohonan Informasi',
+                    'desc' => 'Prosedur Permohonan Informasi',
+                    'link' => '',
+                ],
+            ],
+        ],
+        [
+            'title' => 'Pendaftaran PSE Lingkup Publik',
+            'desc' => 'Daftar PSE Lingkup Publik di sini',
+            'link' => '/home/customteks',
+        ],
+        [
+            'title' => 'Dasbor BPJS TK',
+            'desc' => 'Dasbor BPJS Tenaga Kerja',
+            'link' => 'https://lookerstudio.google.com/reporting/9a445f15-09cf-42bb-8792-61b1bdd85ccb/page/p_k42d72ajnd',
+        ],
+        [
+            'title' => 'SATA',
+            'desc' => 'Menu Satu Data',
+            'icon' => '',
+            'hasDropdown' => true,
+            'subItems' => [
+                [
+                    'title' => 'SATA JATIM',
+                    'desc' => 'Satuan Data Jawa Timur',
+                    'link' => 'https://sata.jatimprov.go.id/login',
+                ],
+                [
+                    'title' => 'SATA AWARD',
+                    'desc' => 'Satuan Data Penghargaan',
+                    'link' => 'https://sata.jatimprov.go.id/award',
+                ],
+                [
+                    'title' => 'OPEN DATA',
+                    'desc' => 'Open Data',
+                    'link' => 'https://opendata.jatimprov.go.id/',
+                ],
+                [
+                    'title' => 'Panduan SATA',
+                    'desc' => 'Panduan Satuan Data',
+                    'link' => 'https://drive.jatimprov.go.id/index.php/s/n94wwixcHXLNyyW',
+                ],
+            ],
+        ],
+        [
+            'title' => 'Klinik HOAKS',
+            'desc' => 'Cek Hoaks di Sekitarmu',
+            'link' => 'https://klinikhoaks.jatimprov.go.id/',
+        ],
+        [
+            'title' => 'Pendaftaran Aplikasi',
+            'desc' => 'Pelajari mengenai APPS',
+            'icon' => '',
+            'hasDropdown' => true,
+            'subItems' => [
+                [
+                    'title' => 'Akses APPS',
+                    'desc' => 'Akses APPS DISKOMINFO Jatim',
+                    'link' => 'https://apps.jatimprov.go.id/login',
+                ],
+                [
+                    'title' => 'Pedoman Pengisian APPS',
+                    'desc' => 'Akses APPS DISKOMINFO Jatim',
+                    'link' => '',
+                ],
+            ],
+        ],
+        [
+            'title' => 'Penetapan Standar Pelayanan',
+            'desc' => 'Penetapan Standar Pelayanan DISKOMINFO Jatim',
+            'link' => '',
+        ],
+        [
+            'title' => 'Maklumat Pelayanan',
+            'desc' => 'Maklumat Pelayanan DISKOMINFO Jatim',
+            'link' => '',
+        ],
+    ]" />
                     </div>
                 </div>
 
@@ -453,7 +454,7 @@
                             [
                                 'title' => 'Undang-Undang',
                                 'desc' => 'Undang-Undang Replublik Indonesia',
-                                'link' => '',
+                                'link' => '/home/regulasi',
                             ],
                             [
                                 'title' => 'Peraturan Pemerintah',
@@ -489,46 +490,45 @@
                     <button @click="open = !open"
                         class="{{ request()->is('home/berita') || request()->is('home/galerifoto') || request()->is('home/video') || request()->is('home/download') || request()->is('home/majalah') ? $active : $inactive }} flex items-center space-x-1 rounded-md px-3 py-2 font-jakarta text-p font-medium group">
                         <span>PUBLIKASI</span>
-                        <img src="/storage/assets/dropdown.png" alt="Dropdown"
-                        class="w-4 h-4 transition duration-200 ease-out
+                        <img src="/storage/assets/dropdown.png" alt="Dropdown" class="w-4 h-4 transition duration-200 ease-out
                         {{ request()->is('home/berita') || request()->is('home/galerifoto') || request()->is('home/video') || request()->is('home/download') || request()->is('home/majalah')
-                            ? 'brightness-100'
-                            : 'brightness-50 group-hover:brightness-100' }}">
+    ? 'brightness-100'
+    : 'brightness-50 group-hover:brightness-100' }}">
                     </button>
                     <div x-show="open" @click.away="open = false" x-transition
                         class="absolute left-1/2 z-10 flex w-screen max-w-max  px-4 transition duration-200 ease-out">
                         <x-flyoutmenu :menuItems="[
-                            [
-                                'title' => 'Berita',
-                                'link' => '/home/berita',
-                                'desc' => 'Jelajahi berita seputar Jawa Timur',
-                                'icon' => 'heroicon-o-newspaper',
-                            ],
-                            [
-                                'title' => 'Galeri Foto',
-                                'link' => '/home/galerifoto',
-                                'desc' => 'Jelajahi galeri foto agenda seputar Jawa Timur',
-                                'icon' => 'heroicon-o-photo',
-                            ],
-                            [
-                                'title' => 'Video',
-                                'link' => '/home/video',
-                                'desc' => 'Jelajahi video terkait Jawa Timur',
-                                'icon' => 'heroicon-o-play',
-                            ],
-                            [
-                                'title' => 'Download',
-                                'link' => '/home/download',
-                                'desc' => 'Cari e-document seputar Jawa Timur',
-                                'icon' => 'heroicon-o-arrow-down-tray',
-                            ],
-                            [
-                                'title' => 'Majalah',
-                                'link' => '/home/majalah',
-                                'desc' => 'Jelajahi majalah-majalah seputar Jawa Timur',
-                                'icon' => 'heroicon-o-book-open',
-                            ],
-                        ]" />
+        [
+            'title' => 'Berita',
+            'link' => '/home/berita',
+            'desc' => 'Jelajahi berita seputar Jawa Timur',
+            'icon' => 'heroicon-o-newspaper',
+        ],
+        [
+            'title' => 'Galeri Foto',
+            'link' => '/home/galerifoto',
+            'desc' => 'Jelajahi galeri foto agenda seputar Jawa Timur',
+            'icon' => 'heroicon-o-photo',
+        ],
+        [
+            'title' => 'Video',
+            'link' => '/home/video',
+            'desc' => 'Jelajahi video terkait Jawa Timur',
+            'icon' => 'heroicon-o-play',
+        ],
+        [
+            'title' => 'Download',
+            'link' => '/home/download',
+            'desc' => 'Cari e-document seputar Jawa Timur',
+            'icon' => 'heroicon-o-arrow-down-tray',
+        ],
+        [
+            'title' => 'Majalah',
+            'link' => '/home/majalah',
+            'desc' => 'Jelajahi majalah-majalah seputar Jawa Timur',
+            'icon' => 'heroicon-o-book-open',
+        ],
+    ]" />
                     </div>
                 </div>
 

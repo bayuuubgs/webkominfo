@@ -110,19 +110,19 @@
                     <x-card-list-lainnya image="{{ asset('storage/assets/videolainnya3.png') }}"
                         title="INFO JAWA TIMUR MINGGU KE-3 BULAN FEBRUARI | 22 FEBRUARI 2025"
                         date="22 Februari 2025 09:26" category="WAKIL GUBERNUR"
-                        link="{{ route('home.galerifoto') }}" />
+                        link="{{ route('home.video.detail') }}" />
                     <x-card-list-lainnya image="{{ asset('storage/assets/videolainnya2.png') }}"
                         title="Lapor SPT Tahunan Hari Ini, Lebih Awal Lebih Nyaman" date="9 Februari 2025 10:49"
                         category="GUBERNUR"
-                        link="{{ route('home.galerifoto') }}" />
+                        link="{{ route('home.video.detail') }}" />
                     <x-card-list-lainnya image="{{ asset('storage/assets/videolainnya.png') }}"
                         title="INFO JAWA TIMUR MINGGU KE-5 BULAN JANUARI 2025 | 31 Januari" date="1 Februari 2025 15:04"
                         category="SETDA"
-                        link="{{ route('home.galerifoto') }}" />
+                        link="{{ route('home.video.detail') }}" />
                     <x-card-list-lainnya image="{{ asset('storage/assets/videolainnya.png') }}"
                         title="INFO JAWA TIMUR MINGGU KE-5 BULAN JANUARI 2025 | 31 Januari" date="1 Februari 2025 15:04"
                         category="SETDA"
-                        link="{{ route('home.galerifoto') }}" />
+                        link="{{ route('home.video.detail') }}" />
                 </x-card-lainnya>
             </div>
         </div>
