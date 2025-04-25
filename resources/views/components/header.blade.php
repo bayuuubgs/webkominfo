@@ -453,7 +453,7 @@
                             [
                                 'title' => 'Undang-Undang',
                                 'desc' => 'Undang-Undang Replublik Indonesia',
-                                'link' => '',
+                                'link' => '/home/regulasi',
                             ],
                             [
                                 'title' => 'Peraturan Pemerintah',

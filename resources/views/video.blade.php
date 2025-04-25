@@ -29,7 +29,7 @@
                 category="UMUM"
                 date="11 Februari 2025 08:38"
                 description="Menteri Komunikasi dan Digital (Menkomdig), Meutya Hafid, mewakili Presiden Prabowo Subianto menghadiri Pertemuan Tingkat Tinggi Aksi Kecerdasan Buatan atau Artificial Intelligence..."           
-                link="{{ route('home.download') }}" 
+                link="{{ route('home.video.detail') }}" 
             />
             <x-card-list-publikasi 
                 image="{{ asset('storage/assets/videolainnya.png') }}"
@@ -37,7 +37,7 @@
                 category="UMUM"
                 date="11 Februari 2025 08:38"
                 description="Menteri Komunikasi dan Digital (Menkomdig), Meutya Hafid, mewakili Presiden Prabowo Subianto menghadiri Pertemuan Tingkat Tinggi Aksi Kecerdasan Buatan atau Artificial Intelligence..."
-                link="{{ route('home.download') }}" 
+                link="{{ route('home.video.detail') }}" 
              />
             <x-card-list-publikasi 
                 image="{{ asset('storage/assets/videolainnya.png') }}"
@@ -45,7 +45,7 @@
                 category="UMUM"
                 date="11 Februari 2025 08:38"
                 description="Menteri Komunikasi dan Digital (Menkomdig), Meutya Hafid, mewakili Presiden Prabowo Subianto menghadiri Pertemuan Tingkat Tinggi Aksi Kecerdasan Buatan atau Artificial Intelligence..."
-                link="{{ route('home.download') }}" 
+                link="{{ route('home.video.detail') }}" 
              />
             <x-card-list-publikasi 
                 image="{{ asset('storage/assets/videolainnya.png') }}"
@@ -53,7 +53,7 @@
                 category="UMUM"
                 date="11 Februari 2025 08:38"
                 description="Menteri Komunikasi dan Digital (Menkomdig), Meutya Hafid, mewakili Presiden Prabowo Subianto menghadiri Pertemuan Tingkat Tinggi Aksi Kecerdasan Buatan atau Artificial Intelligence..." 
-                link="{{ route('home.download') }}" 
+                link="{{ route('home.video.detail') }}" 
             />
             <x-card-list-publikasi 
                 image="{{ asset('storage/assets/videolainnya.png') }}"
@@ -61,7 +61,7 @@
                 category="UMUM"
                 date="11 Februari 2025 08:38"
                 description="Menteri Komunikasi dan Digital (Menkomdig), Meutya Hafid, mewakili Presiden Prabowo Subianto menghadiri Pertemuan Tingkat Tinggi Aksi Kecerdasan Buatan atau Artificial Intelligence..."
-                link="{{ route('home.download') }}" 
+                link="{{ route('home.video.detail') }}" 
                 />
             <x-card-list-publikasi 
                 image="{{ asset('storage/assets/videolainnya.png') }}"
@@ -69,7 +69,7 @@
                 category="UMUM"
                 date="11 Februari 2025 08:38"
                 description="Menteri Komunikasi dan Digital (Menkomdig), Meutya Hafid, mewakili Presiden Prabowo Subianto menghadiri Pertemuan Tingkat Tinggi Aksi Kecerdasan Buatan atau Artificial Intelligence..."
-                link="{{ route('home.download') }}" 
+                link="{{ route('home.video.detail') }}" 
             />
             <x-card-list-publikasi 
                 image="{{ asset('storage/assets/videolainnya.png') }}"
@@ -77,7 +77,7 @@
                 category="UMUM"
                 date="11 Februari 2025 08:38"
                 description="Menteri Komunikasi dan Digital (Menkomdig), Meutya Hafid, mewakili Presiden Prabowo Subianto menghadiri Pertemuan Tingkat Tinggi Aksi Kecerdasan Buatan atau Artificial Intelligence..."
-                link="{{ route('home.download') }}" 
+                link="{{ route('home.video.detail') }}" 
             />
             <x-card-list-publikasi 
                 image="{{ asset('storage/assets/videolainnya.png') }}"
@@ -85,20 +85,20 @@
                 category="UMUM"
                 date="11 Februari 2025 08:38"
                 description="Menteri Komunikasi dan Digital (Menkomdig), Meutya Hafid, mewakili Presiden Prabowo Subianto menghadiri Pertemuan Tingkat Tinggi Aksi Kecerdasan Buatan atau Artificial Intelligence..."
-                link="{{ route('home.download') }}" 
+                link="{{ route('home.video.detail') }}" 
             />
             </div>
         </div>
         
         <div class="flex justify-center gap-4 pt-6 pb-6">
-        <x-button 
-            text="Sebelumnya" 
-            variant="blue" 
+        <x-button
+            text="Sebelumnya"
+            variant="blue"
             type="button"
         />
-        <x-button 
-            text="Selanjutnya" 
-            variant="blue" 
+        <x-button
+            text="Selanjutnya"
+            variant="blue"
             type="button"
         />
     </div>
