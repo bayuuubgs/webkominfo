@@ -24,57 +24,57 @@
     <div class="flex justify-center py-6">
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full max-w-screen-xl">
         <x-card-majalah-home
-                image="{{ asset('storage/assets/majalah.png') }}"
-                title="Jatim Peringati Hari Lahir Pancasila 2024"
+                image="{{ asset('storage/assets/majalah1.jpg') }}"
+                title="MAJALAH POTENSI JAWA TIMUR EDISI 156 JANUARI - FEBRUARI 2025"
                 date="11 Februari 2025 08:38"
                 fontColor="text-gray70"
                 link="{{ route('home.majalah.detail') }}"
         />
         <x-card-majalah-home
-                image="{{ asset('storage/assets/majalah.png') }}"
-                title="Jatim Peringati Hari Lahir Pancasila 2024"
+                image="{{ asset('storage/assets/majalah2.jpeg') }}"
+                title="MAJALAH POTENSI EDISI 155 AGUSTUS 2024"
                 date="11 Februari 2025 08:38"
                 fontColor="text-gray70"
                 link="{{ route('home.majalah.detail') }}"
         />
         <x-card-majalah-home
-                image="{{ asset('storage/assets/majalah.png') }}"
-                title="Jatim Peringati Hari Lahir Pancasila 2024"
+                image="{{ asset('storage/assets/majalah3.jpg') }}"
+                title="MAJALAH POTENSI EDISI 153 JUNI 2024"
                 date="11 Februari 2025 08:38"
                 fontColor="text-gray70"
                 link="{{ route('home.majalah.detail') }}"
         />
         <x-card-majalah-home
-                image="{{ asset('storage/assets/majalah.png') }}"
-                title="Jatim Peringati Hari Lahir Pancasila 2024"
+                image="{{ asset('storage/assets/majalah4.jpg') }}"
+                title="MAJALAH POTENSI EDISI 152 MEI 2024"
                 date="11 Februari 2025 08:38"
                 fontColor="text-gray70"
                 link="{{ route('home.majalah.detail') }}"
         />
         <x-card-majalah-home
-                image="{{ asset('storage/assets/majalah.png') }}"
-                title="Jatim Peringati Hari Lahir Pancasila 2024"
+                image="{{ asset('storage/assets/majalah5.jpg') }}"
+                title="MAJALAH POTENSI EDISI 155 APRIL 2024"
                 date="11 Februari 2025 08:38"
                 fontColor="text-gray70"
                 link="{{ route('home.majalah.detail') }}"
         />
         <x-card-majalah-home
-                image="{{ asset('storage/assets/majalah.png') }}"
-                title="Jatim Peringati Hari Lahir Pancasila 2024"
+                image="{{ asset('storage/assets/majalah6.jpg') }}"
+                title="MAJALAH POTENSI JAWA TIMUR EDISI 149 SEPTEMBER 2022"
                 date="11 Februari 2025 08:38"
                 fontColor="text-gray70"
                 link="{{ route('home.majalah.detail') }}"
         />
         <x-card-majalah-home
-                image="{{ asset('storage/assets/majalah.png') }}"
-                title="Jatim Peringati Hari Lahir Pancasila 2024"
+                image="{{ asset('storage/assets/majalah7.jpg') }}"
+                title="MAJALAH POTENSI EDISI 148 APRIL 2023"
                 date="11 Februari 2025 08:38"
                 fontColor="text-gray70"
                 link="{{ route('home.majalah.detail') }}"
         />
         <x-card-majalah-home
-                image="{{ asset('storage/assets/majalah.png') }}"
-                title="Jatim Peringati Hari Lahir Pancasila 2024"
+                image="{{ asset('storage/assets/majalah8.jpeg') }}"
+                title="MAJALAH POTENSI JAWA TIMUR EDISI 147 MARET 2023"
                 date="11 Februari 2025 08:38"
                 fontColor="text-gray70"
                 link="{{ route('home.majalah.detail') }}"
