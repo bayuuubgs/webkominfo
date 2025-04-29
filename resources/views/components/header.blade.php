@@ -4,8 +4,8 @@
 <html lang="id">
 
 @php
-    $active = 'rounded-lg px-3 py-2 text-sm font-jakarta font-medium text-white drop-shadow-2xl';
-    $inactive = 'rounded-md px-3 py-2 font-jakarta text-p font-medium text-gray50 hover:text-white hover:drop-shadow-2lx transition duration-200 ease-out';
+    $active = 'rounded-lg px-3 py-2 text-p font-jakarta text-white drop-shadow-2xl transition duration-200 ease-out';
+    $inactive = 'rounded-lg px-3 py-2 font-jakarta text-p text-gray50 hover:text-white hover:drop-shadow-2xl transition duration-200 ease-out';
     $programRoutes = ['program-a', 'program-b'];
 @endphp
 
@@ -19,6 +19,9 @@
     <nav class="bg-primary100">
 
         <div class="relative flex h-16 mx-auto px-16 py-9 space-x-5 items-center justify-between w-full">
+
+        <div class="absolute top-0 left-0 w-full bg-gradient-to-b from-gray90/10 to-transparent pointer-events-none z-10"></div>
+        <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-gray90/10 to-transparent pointer-events-none z-10"></div>
 
             <!-- Logo Kominfo -->
             <div class="flex items-center">
@@ -49,11 +52,19 @@
                 <!-- PROGRAM -->
                 <div x-data="{ open: false }" class="relative">
                     <button @click="open = !open"
-                        class="{{ request()->is('program-a') || request()->is('program-b') ? $active : $inactive }} flex items-center space-x-1 rounded-md px-3 py-2 font-jakarta text-p font-medium group">
-                        <span>PROGRAM</span>
+                        :class="open ? '{{ request()->is("home/customPDF") ? $active : $inactive }}' : '{{ request()->is("home/customPDF") ? $active : $inactive }}'"
+                        class="flex items-center space-x-2 rounded-md px-3 py-2 font-jakarta text-p group">
+
+                        <span class="text-current">PROGRAM</span>
+
                         <img src="/storage/assets/dropdown.png" alt="Dropdown"
-                            class="w-4 h-4 brightness-50 transition duration-200 ease-out group-hover:brightness-100">
+                            class="w-[12px] transition-all duration-300"
+                            :class="{
+                                'rotate-180 brightness-100': open || '',
+                                'rotate-0 brightness-50 group-hover:brightness-100': !(open || '')
+                            }">
                     </button>
+
                     <div x-show="open" @click.away="open = false" x-transition
                         class="absolute left-1/2 z-10 flex w-screen max-w-max  px-4 transition duration-200 ease-out">
                         <x-flyoutmenu :menuItems="[
@@ -71,12 +82,12 @@
                 [
                     'title' => 'Rencana Strategis',
                     'desc' => '2019 -2024',
-                    'link' => '/home/customPDF',
+                    'link' => '',
                 ],
                 [
                     'title' => 'Rencana Strategis',
                     'desc' => '2024 -2025',
-                    'link' => '/home/customPDF',
+                    'link' => '',
                 ],
             ],
         ],
@@ -94,7 +105,7 @@
                 [
                     'title' => 'Perjanjian Kinerja',
                     'desc' => 'Tahun 2022',
-                    'link' => 'home/profil',
+                    'link' => '',
                 ],
                 [
                     'title' => 'Perjanjian Kinerja Perubahan',
@@ -129,12 +140,21 @@
 
                 <!-- LAPORAN -->
                 <div x-data="{ open: false }" class="relative">
+
                     <button @click="open = !open"
-                        class="flex items-center space-x-1 rounded-md px-3 py-2 font-jakarta text-p font-medium text-gray50 hover:text-white hover:drop-shadow-2lx transition duration-200 ease-out group">
-                        <span>LAPORAN</span>
+                        :class="open ? '{{ request()->is('') ? $active : $inactive }}' : '{{ request()->is('') ? $active : $inactive }}'"
+                        class="flex items-center space-x-2 rounded-md px-3 py-2 font-jakarta text-p group">
+
+                        <span class="text-current">LAPORAN</span>
+
                         <img src="/storage/assets/dropdown.png" alt="Dropdown"
-                            class="w-4 h-4 brightness-50 transition duration-200 ease-out group-hover:brightness-100">
+                            class="w-[12px] transition-all duration-300"
+                            :class="{
+                                'rotate-180 brightness-100': open || '',
+                                'rotate-0 brightness-50 group-hover:brightness-100': !(open || '')
+                            }">
                     </button>
+
                     <div x-show="open" @click.away="open = false" x-transition
                         class="absolute left-1/2 z-10 flex w-screen max-w-max  px-4 transition duration-200 ease-out">
                         <x-flyoutmenu :menuItems="[
@@ -343,12 +363,21 @@
 
                 <!-- LAYANAN -->
                 <div x-data="{ open: false }" class="relative">
+
                     <button @click="open = !open"
-                        class="flex items-center space-x-1 rounded-md px-3 py-2 font-jakarta text-p font-medium text-gray50 hover:text-white hover:drop-shadow-2lx transition duration-200 ease-out group">
-                        <span>LAYANAN</span>
+                        :class="open ? '{{ request()->is('') ? $active : $inactive }}' : '{{ request()->is('') ? $active : $inactive }}'"
+                        class="flex items-center space-x-2 rounded-md px-3 py-2 font-jakarta text-p group">
+
+                        <span class="text-current">LAYANAN</span>
+
                         <img src="/storage/assets/dropdown.png" alt="Dropdown"
-                            class="w-4 h-4 brightness-50 transition duration-200 ease-out group-hover:brightness-100">
+                            class="w-[12px] transition-all duration-300"
+                            :class="{
+                                'rotate-180 brightness-100': open || '',
+                                'rotate-0 brightness-50 group-hover:brightness-100': !(open || '')
+                            }">
                     </button>
+
                     <div x-show="open" @click.away="open = false" x-transition
                         class="absolute left-1/2 z-10 flex w-screen max-w-max  px-4 transition duration-200 ease-out">
                         <x-flyoutmenu :menuItems="[
@@ -442,12 +471,21 @@
 
                 <!-- REGULASI -->
                 <div x-data="{ open: false }" class="relative">
+
                     <button @click="open = !open"
-                        class="flex items-center space-x-1 rounded-md px-3 py-2 font-jakarta text-p font-medium text-gray50 hover:text-white hover:drop-shadow-2lx transition duration-200 ease-out group">
-                        <span>REGULASI</span>
+                        :class="open ? '{{ request()->is('') ? $active : $inactive }}' : '{{ request()->is('') ? $active : $inactive }}'"
+                        class="flex items-center space-x-2 rounded-md px-3 py-2 font-jakarta text-p group">
+
+                        <span class="text-current">REGULASI</span>
+
                         <img src="/storage/assets/dropdown.png" alt="Dropdown"
-                            class="w-4 h-4 brightness-50 transition duration-200 ease-out group-hover:brightness-100">
+                            class="w-[12px] transition-all duration-300"
+                            :class="{
+                                'rotate-180 brightness-100': open || '',
+                                'rotate-0 brightness-50 group-hover:brightness-100': !(open || '')
+                            }">
                     </button>
+
                     <div x-show="open" @click.away="open = false" x-transition
                         class="absolute left-1/2 z-10 flex w-screen max-w-max  px-4 transition duration-200 ease-out">
                         <x-flyoutmenu :menuItems="[
@@ -487,14 +525,18 @@
 
                 <!-- PUBLIKASI -->
                 <div x-data="{ open: false }" class="relative">
+
                     <button @click="open = !open"
-                        class="{{ request()->is('home/berita') || request()->is('home/galerifoto') || request()->is('home/video') || request()->is('home/download') || request()->is('home/majalah') ? $active : $inactive }} flex items-center space-x-1 rounded-md px-3 py-2 font-jakarta text-p font-medium group">
+                        class="{{ request()->is('home/berita') || request()->is('home/galerifoto') || request()->is('home/video') || request()->is('home/download') || request()->is('home/majalah') ? $active : $inactive }} flex items-center space-x-2 rounded-md px-3 py-2 font-jakarta text-p font-medium group">
                         <span>PUBLIKASI</span>
-                        <img src="/storage/assets/dropdown.png" alt="Dropdown" class="w-4 h-4 transition duration-200 ease-out
-                        {{ request()->is('home/berita') || request()->is('home/galerifoto') || request()->is('home/video') || request()->is('home/download') || request()->is('home/majalah')
-    ? 'brightness-100'
-    : 'brightness-50 group-hover:brightness-100' }}">
+                        <img src="/storage/assets/dropdown.png" alt="Dropdown"
+                            class="w-[12px] transition-all duration-300"
+                            :class="{
+                                'rotate-180 brightness-100': open || '',
+                                'rotate-0 brightness-50 group-hover:brightness-100': !(open || '')
+                            }">
                     </button>
+
                     <div x-show="open" @click.away="open = false" x-transition
                         class="absolute left-1/2 z-10 flex w-screen max-w-max  px-4 transition duration-200 ease-out">
                         <x-flyoutmenu :menuItems="[

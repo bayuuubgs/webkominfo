@@ -13,21 +13,6 @@ use Illuminate\Http\Request;
 |
 */
 
-
-// Route::get('/berita/{category}', function ($category) {
-//     return view('berita.category', ['category' => $category]);
-// });
-
-// Route::get('/galeri', function () {
-//     return view('galeri.index');
-// });
-
-// Route::get('/majalah', function () {
-//     return view('publikasi.majalah');
-// });
-
-// Route::get('/', [App\Http\Controllers\HomeController::class, 'index']);
-
 Route::get('/', function () {
     return view('home');
 });

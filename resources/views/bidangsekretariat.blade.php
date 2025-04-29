@@ -8,21 +8,21 @@
 </head>
 <body class="bg-background">
     <x-header/>
-    {{-- <x-breadcumb/> --}}
+    <x-breadcrumb/>
 
     <section>
-        <div class="py-[83px] px-[128px] font-jakarta">
-            <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-md p-8">
+        <div class="py-[60px] px-[180px] font-jakarta text-p">
+            <div class="max-w-8xl mx-auto bg-white rounded-xl shadow-sm p-[60px]">
                 <p class="text-h1 font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#4F9CF9] to-[#3B2CB5] text-center">
                     Sekretariat
                 </p>
 
                 <div class="space-y-[24px] text-gray70 text-justify pt-[25px]">
                     <div>
-                        <p class="mt-[4px]">Sekretaris mempunyai tugas merencanakan, melaksanakan, mengkoordinasikan dan mengendalikan kegiatan administrasi umum, kepegawaian, perlengkapan, penyusunan program, keuangan, humas dan protokol.</p>
-                        <h2 class="text-blue-700 font-semibold">Susunan Organisasi Sekretariat, terdiri atas :</h2>
-                        <h2 class="text-blue-700 font-semibold">a. Sub Bagian Tata Usaha ; mempunyai tugas :</h2>
-                        <p class="mt-[4px]">Tugas:<br>
+                        <p class="mb-4">Sekretaris mempunyai tugas merencanakan, melaksanakan, mengkoordinasikan dan mengendalikan kegiatan administrasi umum, kepegawaian, perlengkapan, penyusunan program, keuangan, humas dan protokol.</p>
+                        <p class="text-blue-700 font-semibold mb-4">Susunan Organisasi Sekretariat, terdiri atas :</p>
+                        <p class="text-blue-700 font-semibold mb-4">a. Sub Bagian Tata Usaha ; mempunyai tugas :</p>
+                        <p class="">Tugas:<br>
                             Merencanakan, menyiapkan bahan pelaksanaan dan mengkoordinasikan Pengelolaan Data, Statistik, Evaluasi dan Informasi.
                         </p>
                         <p class="mt-[8px]">Fungsi:</p>
