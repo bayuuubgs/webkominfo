@@ -176,7 +176,13 @@
             </h2>
         </div>
         <div class="px-14">
-            <x-card-slider :row="2">
+            <x-card-slider rows="2">
+                <div class="h-auto">
+                    <x-card-pejabat :image="'storage/assets/rakha.jpg'" :name="'Nama Pejabat'" :position="'Jabatan Pejabat'" />
+                </div>
+                <div class="h-auto">
+                    <x-card-pejabat :image="'storage/assets/rakha.jpg'" :name="'Nama Pejabat'" :position="'Jabatan Pejabat'" />
+                </div>
                 <div class="h-auto">
                     <x-card-pejabat :image="'storage/assets/rakha.jpg'" :name="'Nama Pejabat'" :position="'Jabatan Pejabat'" />
                 </div>

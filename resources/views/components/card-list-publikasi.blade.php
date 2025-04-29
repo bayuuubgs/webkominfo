@@ -1,11 +1,11 @@
-@props([  
+@props([
     'image' => '',
     'title' => '',
     'category' => '',
     'date' => '',
     'description' => '',
     'ratio' => '16:9',
-    'link' => '' 
+    'link' => ''
 ])
 
 @php
@@ -16,11 +16,11 @@
     };
 @endphp
 
-<a href="{{ $link }}" class="relative flex items-center gap-4 p-3 bg-white rounded-2xl shadow-md
+<a href="{{ $link }}" class="relative flex items-center gap-4 p-3 bg-white rounded-2xl
             w-full max-w-[620px] h-auto mx-auto transition
             border-2 border-transparent hover:shadow-lg
             hover:border-primary30 active:ring-2 active:ring-primary30 font-jakarta">
-    
+
     <div class="shrink-0 rounded-lg overflow-hidden {{ $aspectClass }} w-[250px]">
         <img src="{{ $image }}" alt="Thumbnail" class="object-cover w-full h-full">
     </div>

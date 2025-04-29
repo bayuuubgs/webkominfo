@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/js/swiper.js'])
     <title>Home</title>
 </head>
 
@@ -37,8 +37,6 @@
     }
 </style>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-
 <body class="bg-background">
     <x-header />
     <x-breadcrumb-home />
@@ -64,8 +62,9 @@
     </div>
 
     <div class="bg-primary100 py-8 shadow-lg font-jakarta">
-        <div class="bg-white rounded-xl max-w-5xl mx-auto px-[36px] py-[26px]">
-            <form action="" method="GET" class="flex items-center gap-2">
+        <div class="relative w-full px-[60px]">
+        <div class="bg-gray10 rounded-xl mx-auto px-[36px] py-[26px]">
+            <form action="" method="GET" class="flex items-center gap-4">
                 <label for="keyword" class="font-semibold text-h2">Eksplorasi <span
                         class="text-primary50 text-h2">Menu</span></label>
                 <input type="text" id="keyword" name="keyword" placeholder="Cari Kata Kunci"
@@ -74,6 +73,7 @@
                     class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md">Telusuri</button>
                 <a href="" class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-md">Atur Ulang</a>
             </form>
+            </div>
         </div>
     </div>
 
@@ -128,8 +128,8 @@
         </div>
     </section>
 
-    <section class="bg-primary100 relative mt-[15px]">
-        <div class="pl-[60px] pr-[32px] pb-[25px] pt-[28px]">
+    <section class="bg-primary100 relative">
+        <div class="px-[60px] pb-[8px] pt-[28px]">
             <x-section-header
                 title="Berita SETDA /"
                 highlight="Pemerintah Daerah"
@@ -137,77 +137,47 @@
                 buttonVariant="white"
                 type="white"
                 buttonHref="{{ route('home.berita') }}" />
+        </div>
 
+        <div class="pl-[60px] pb-[14px]">
             <x-card-slider :rows="1">
                 <div class="min-w-[404px] h-auto">
-                    <x-card-berita image="{{ asset('storage/assets/card-bg-biru.png') }}"
-                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
-                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
-                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
+                    <x-card-berita image="{{ asset('storage/assets/beritasetda1.jpg') }}"
+                        title="Gratis Naik Trans Jatim di Hari Angkutan Nasional 2025, Penumpang Membludak"
+                        date="24 April 2025 16:32:12" category="SETDA / PERANGKAT DAERAH"
+                        description="Jatim Newsroom - Suasana di dalam armada Trans Jatim Koridor 1 yang melayani rute Surabaya–Gresik pada siang hari ini tampak berbeda dari biasanya. Jika di luar jam sibuk umumnya bus terlihat lengang, hari ini justru sebaliknya, padat, bahkan dipenuhi penumpang berdiri."
                         link="{{ route('home.berita.detail') }}"
                         type="secondary" />
                 </div>
                 <div class="min-w-[404px] h-auto">
-                    <x-card-berita image="{{ asset('storage/assets/card-bg-biru.png') }}"
-                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
-                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
-                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
+                    <x-card-berita image="{{ asset('storage/assets/beritasetda2.jpeg') }}"
+                        title="Diskominfo Jatim Gelar Rapat Persiapan Resertifikasi ISO 27001:2022"
+                        date="22 April 2025 20:44:54" category="SETDA / PERANGKAT DAERAH"
+                        description="Jatim Newsroom - Dinas Komunikasi dan Informatika (Diskominfo) Provinsi Jawa Timur melalui Bidang Persandian dan Keamanan Informasi mengadakan rapat persiapan resertifikasi ISO 27001:2022 pada Selasa (22/4/2025)."
                         link="{{ route('home.berita.detail') }}"
                         type="secondary" />
                 </div>
                 <div class="min-w-[404px] h-auto">
-                    <x-card-berita image="{{ asset('storage/assets/card-bg-biru.png') }}"
-                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
-                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
-                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
+                    <x-card-berita image="{{ asset('storage/assets/beritasetda3.jpeg') }}"
+                        title="Apresiasi Karya Anak Bangsa, Diskominfo Jatim Gelar Nobar Film Jumbo"
+                        date="17 April 2025 21:28:29" category="SETDA / PERANGKAT DAERAH"
+                        description="Jatim Newsroom - Sebagai bentuk apresiasi karya anak bangsa khususnya para animator Jawa Timur, Dinas Kominfo Jatim menggelar Nonton Bareng (nobar) Film Animasi JUMBO. Nobar diikuti oleh pengelola dan admin media sosial perangkat daerah di lingkungan Pemprov "
                         link="{{ route('home.berita.detail') }}"
                         type="secondary" />
                 </div>
                 <div class="min-w-[404px] h-auto">
-                    <x-card-berita image="{{ asset('storage/assets/card-bg-biru.png') }}"
-                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
-                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
-                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
+                    <x-card-berita image="{{ asset('storage/assets/beritasetda4.jpeg') }}"
+                        title="Perkuat Manajemen Isu Publik, Diskominfo Jatim Gandeng Influencer Plat Merah dan Praktisi Media Digital"
+                        date="17 April 2025 12:39:20" category="SETDA / PERANGKAT DAERAH"
+                        description="Jatim Newsroom - Sebagai upaya memperkuat diseminasi informasi kebijakan Pemerintah Provinsi Jawa Timur, Dinas Komunikasi dan Informatika Provinsi Jawa Timur menggelar Rapat Koordinasi Manajemen Isu Publik Terkait Konten Kebijakan Pemprov Jatim. Kegiatan ini berlangsung di Kantor Diskominfo Jatim"
                         link="{{ route('home.berita.detail') }}"
                         type="secondary" />
                 </div>
                 <div class="min-w-[404px] h-auto">
-                    <x-card-berita image="{{ asset('storage/assets/card-bg-biru.png') }}"
-                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
-                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
-                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
-                        link="{{ route('home.berita.detail') }}"
-                        type="secondary" />
-                </div>
-                <div class="min-w-[404px] h-auto">
-                    <x-card-berita image="{{ asset('storage/assets/card-bg-biru.png') }}"
-                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
-                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
-                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
-                        link="{{ route('home.berita.detail') }}"
-                        type="secondary" />
-                </div>
-                <div class="min-w-[404px] h-auto">
-                    <x-card-berita image="{{ asset('storage/assets/card-bg-biru.png') }}"
-                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
-                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
-                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
-                        link="{{ route('home.berita.detail') }}"
-                        type="secondary" />
-                </div>
-                <div class="min-w-[404px] h-auto">
-                    <x-card-berita image="{{ asset('storage/assets/card-bg-biru.png') }}"
-                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
-                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
-                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
-                        link="{{ route('home.berita.detail') }}"
-                        type="secondary" />
-                </div>
-                <div class="min-w-[404px] h-auto">
-                    <x-card-berita image="{{ asset('storage/assets/card-bg-biru.png') }}"
-                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
-                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
-                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
+                    <x-card-berita image="{{ asset('storage/assets/beritasetda5.jpg') }}"
+                        title="KOMNAS HAM Belajar Pengelolaan PPID dan Komunikasi Publik ke Jatim"
+                        date="16 April 2025 10:18:48" category="SETDA / PERANGKAT DAERAH"
+                        description="Jatim Newsroom - Komisi Nasional Hak Asasi Manusia atau KOMNAS HAM melakukan kunjungan di Dinas Kominfo Provinsi Jawa Timur, Selasa (15/4/2025). Kunjungan dikhususkan untuk forum sharing session layanan PPID dan penyampaian komunikasi publik melalui media sosial."
                         link="{{ route('home.berita.detail') }}"
                         type="secondary" />
                 </div>
@@ -215,8 +185,8 @@
         </div>
     </section>
 
-    <section class="bg-gray10 relative mt-[15px]">
-        <div class="pl-[60px] pr-[32px] pb-[25px] pt-[28px]">
+    <section class="bg-gray10 relative">
+        <div class="px-[60px] pb-[8px] pt-[28px]">
             <x-section-header
                 title="Berita "
                 highlight="Gubernur"
@@ -225,77 +195,47 @@
                 type="blue"
                 buttonHref="{{ route('home.berita') }}"
             />
+        </div>
 
+        <div class="pl-[60px] pb-[14px]">
             <x-card-slider :rows="1">
                 <div class="min-w-[404px] h-auto">
-                    <x-card-berita image="{{ asset('storage/assets/card-bg-biru.png') }}"
-                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
-                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
-                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
+                    <x-card-berita image="{{ asset('storage/assets/gubernur1.jpg') }}"
+                        title="Jatim Retreat 2025, Sinergi Kepemimpinan Menuju Gerbang Baru Nusantara"
+                        date="26 April 2025 18:29:50" category="Gubernur"
+                        description="atim Newsroom – Gubernur Jawa Timur, Khofifah Indar Parawansa, membuka secara resmi kegiatan Jatim Retreat 2025 yang digelar di Pusat Pendidikan (Pusdik) Arhanud TNI AD Kota Batu pada 26–27 April 2025."
                         link="{{ route('home.berita.detail') }}"
                         type="" />
                 </div>
                 <div class="min-w-[404px] h-auto">
-                    <x-card-berita image="{{ asset('storage/assets/card-bg-biru.png') }}"
-                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
-                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
-                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
+                    <x-card-berita image="{{ asset('storage/assets/gubernur2.jpg') }}"
+                        title="Gubernur Jatim Dukung Pembentukan BUMD Pangan"
+                        date="24 April 2025 20:51:33" category="Gubernur"
+                        description="Jatim Newsroom - Gubernur Jawa Timur, Khofifah Indar Parawansa, menyambut baik dan mendukung rencana atau wacana komisi C DPRD Jatim mendorong Badan Usaha Milik Daerah (BUMD) pangan di Jatim. Hal ini disampaikan Gubernur Khofifah usai paripurna di DPRD Jatim, Kamis (24/4/2025)."
                         link="{{ route('home.berita.detail') }}"
                         type="" />
                 </div>
                 <div class="min-w-[404px] h-auto">
-                    <x-card-berita image="{{ asset('storage/assets/card-bg-biru.png') }}"
-                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
-                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
-                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
+                    <x-card-berita image="{{ asset('storage/assets/gubernur3.jpg') }}"
+                        title="BPK Serahkan LHP atas LKPD Jawa Timur 2024, Pemprov Jatim Kembali Raih WTP"
+                        date="24 April 2025 18:34:36" category="Gubernur"
+                        description="Jatim Newsroom — Badan Pemeriksa Keuangan (BPK) menyerahkan Laporan Hasil Pemeriksaan (LHP) atas Laporan Keuangan Pemerintah Daerah (LKPD) Provinsi Jawa Timur Tahun Anggaran 2024 dalam rapat paripurna yang digelar di Gedung DPRD Jawa Timur, Kamis (24/4/2025)."
                         link="{{ route('home.berita.detail') }}"
                         type="" />
                 </div>
                 <div class="min-w-[404px] h-auto">
-                    <x-card-berita image="{{ asset('storage/assets/card-bg-biru.png') }}"
-                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
-                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
-                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
+                    <x-card-berita image="{{ asset('storage/assets/gubernur4.jpg') }}"
+                        title="Gubernur Jatim Pimpin Apel Kesiapsiagaan Nasional Damkar, Satpol PP dan Satlinmas 2025 di Sidoarjo"
+                        date="17 April 2025 15:55:24" category="Gubernur"
+                        description="Jatim Newsroom - Gubernur Jawa Timur, Khofifah Indar Parawansa, memimpin Apel Kesiapsiagaan Nasional Pemadam Kebakaran (Damkar), Satuan Polisi Pamong Praja (Satpol PP), Satuan Perlindungan Masyarakat (Satlinmas) tingkat provinsi Jawa Timur tahun 2025."
                         link="{{ route('home.berita.detail') }}"
                         type="" />
                 </div>
                 <div class="min-w-[404px] h-auto">
-                    <x-card-berita image="{{ asset('storage/assets/card-bg-biru.png') }}"
-                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
-                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
-                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
-                        link="{{ route('home.berita.detail') }}"
-                        type="" />
-                </div>
-                <div class="min-w-[404px] h-auto">
-                    <x-card-berita image="{{ asset('storage/assets/card-bg-biru.png') }}"
-                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
-                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
-                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
-                        link="{{ route('home.berita.detail') }}"
-                        type="" />
-                </div>
-                <div class="min-w-[404px] h-auto">
-                    <x-card-berita image="{{ asset('storage/assets/card-bg-biru.png') }}"
-                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
-                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
-                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
-                        link="{{ route('home.berita.detail') }}"
-                        type="" />
-                </div>
-                <div class="min-w-[404px] h-auto">
-                    <x-card-berita image="{{ asset('storage/assets/card-bg-biru.png') }}"
-                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
-                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
-                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
-                        link="{{ route('home.berita.detail') }}"
-                        type="" />
-                </div>
-                <div class="min-w-[404px] h-auto">
-                    <x-card-berita image="{{ asset('storage/assets/card-bg-biru.png') }}"
-                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
-                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
-                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
+                    <x-card-berita image="{{ asset('storage/assets/gubernur5.jpg') }}"
+                        title="Gubernur Jatim Minta Bupati-Walikota Proaktif Komunikasi ke Perusahaan Agar Tidak Terjadi PHK"
+                        date="10 April 2025 21:10:45" category="Gubernur"
+                        description="Jatim Newsroom - Gubernur Jawa Timur, Khofifah Indar Parawansa, meminta kepada Bupati Walikota, yang wilayahnya memiliki industri atau perusahaan, dan jumlah pekerja yang cukup besar, untuk intens melakukan koordinasi."
                         link="{{ route('home.berita.detail') }}"
                         type="" />
                 </div>
@@ -303,8 +243,8 @@
         </div>
     </section>
 
-    <section class="bg-primary100 relative mt-[15px]">
-        <div class="pl-[60px] pr-[32px] pb-[25px] pt-[28px]">
+    <section class="bg-primary100 relative">
+        <div class="px-[60px] pb-[8px] pt-[28px]">
             <x-section-header
                 title="Berita Wakil "
                 highlight="Gubernur"
@@ -313,77 +253,47 @@
                 type="white"
                 buttonHref="{{ route('home.berita') }}"
             />
+        </div>
 
+        <div class="pl-[60px] pb-[14px]">
             <x-card-slider :rows="1">
                 <div class="min-w-[404px] h-auto">
-                    <x-card-berita image="{{ asset('storage/assets/card-bg-biru.png') }}"
-                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
-                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
-                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
+                    <x-card-berita image="{{ asset('storage/assets/wagub1.jpg') }}"
+                        title="Wagub Emil Dardak Paparkan Konsep Jatim Gerbang Baru Nusantara di Halal Bihalal ASN Pemprov"
+                        date="8 April 2025 15:34:15" category="Wakil Gubernur"
+                        description="Jatim Newsroom - Saat momentum halalbihalal bersama 10.000 Aparatur Sipil Negara (ASN) di lingkungan Pemprov Jatim di Jatim Expo Surabaya, Wakil Gubernur Jawa Timur"
                         link="{{ route('home.berita.detail') }}"
                         type="secondary" />
                 </div>
                 <div class="min-w-[404px] h-auto">
-                    <x-card-berita image="{{ asset('storage/assets/card-bg-biru.png') }}"
-                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
-                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
-                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
+                    <x-card-berita image="{{ asset('storage/assets/wagub2.jpeg') }}"
+                        title="Wagub Emil Ajak DPD REI Jatim Dorong Pertumbuhan Ekonomi Lewat Multiplier Effect Sektor Properti"
+                        date="13 Maret 2025 23:25:09" category="Wakil Gubernur"
+                        description="Jatim Newsroom - Wakil Gubernur Jawa Timur, Emil Elestianto Dardak, mengajak jajaran Dewan Pengurus Daerah (DPD) Real Estate Indonesia (REI) Jawa Timur untuk turut andil sebagai pengungkit perekonomian Jatim melalui Multiplier Effect dari pengembangan sektor properti. "
                         link="{{ route('home.berita.detail') }}"
                         type="secondary" />
                 </div>
                 <div class="min-w-[404px] h-auto">
-                    <x-card-berita image="{{ asset('storage/assets/card-bg-biru.png') }}"
-                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
-                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
-                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
+                    <x-card-berita image="{{ asset('storage/assets/wagub3.jpeg') }}"
+                        title="Wagub Emil Komitmen Dorong Pelaku Usaha Menengah Lebih Maju"
+                        date="12 Maret 2025 21:32:21" category="Wakil Gubernur"
+                        description="Jatim Newsroom - Wakil Gubernur Jawa Timur, Emil Elestianto Dardak, menyampaikan komitmennya untuk mendorong para pelaku usaha menengah menjadi lebih maju. Menurutnya, hal ini menunjukkan bahwa pemerintah hadir untuk mendukung para pengusaha yang termasuk dalam kategori menengah."
                         link="{{ route('home.berita.detail') }}"
                         type="secondary" />
                 </div>
                 <div class="min-w-[404px] h-auto">
-                    <x-card-berita image="{{ asset('storage/assets/card-bg-biru.png') }}"
-                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
-                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
-                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
+                    <x-card-berita image="{{ asset('storage/assets/wagub4.jpg') }}"
+                        title="Wagub Emil : Perguruan Tinggi Jadi Pendorong Kemajuan Ekonomi Syariah di Jatim"
+                        date="25 Januari 2024 10:47:34" category="Wakil Gubernur"
+                        description="Wakil Gubernur Jawa Timur, Emil Elestianto Dardak, saat menjadi pembicara Stadium Generale di Institut Agama Islam Nahdlatul Ulama (IAINU) Kab. Tuban, Rabu (24/1/2024)"
                         link="{{ route('home.berita.detail') }}"
                         type="secondary" />
                 </div>
                 <div class="min-w-[404px] h-auto">
-                    <x-card-berita image="{{ asset('storage/assets/card-bg-biru.png') }}"
-                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
-                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
-                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
-                        link="{{ route('home.berita.detail') }}"
-                        type="secondary" />
-                </div>
-                <div class="min-w-[404px] h-auto">
-                    <x-card-berita image="{{ asset('storage/assets/card-bg-biru.png') }}"
-                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
-                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
-                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
-                        link="{{ route('home.berita.detail') }}"
-                        type="secondary" />
-                </div>
-                <div class="min-w-[404px] h-auto">
-                    <x-card-berita image="{{ asset('storage/assets/card-bg-biru.png') }}"
-                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
-                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
-                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
-                        link="{{ route('home.berita.detail') }}"
-                        type="secondary" />
-                </div>
-                <div class="min-w-[404px] h-auto">
-                    <x-card-berita image="{{ asset('storage/assets/card-bg-biru.png') }}"
-                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
-                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
-                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
-                        link="{{ route('home.berita.detail') }}"
-                        type="secondary" />
-                </div>
-                <div class="min-w-[404px] h-auto">
-                    <x-card-berita image="{{ asset('storage/assets/card-bg-biru.png') }}"
-                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
-                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
-                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
+                    <x-card-berita image="{{ asset('storage/assets/wagub5.jpg') }}"
+                        title="Keluhkan Listrik Dipadamkan. Warga Rusunawa Gunungsari Diterima Wagub Emil"
+                        date="12 Januari 2024 13:06:17" category="Wakil Gubernur"
+                        description="Wakil Gubernur Jawa Timur, Emil Elestianto Dardak saat menerima perwakilan warga rusunawa Gunungsari di lobby DPRD Jatim. (Pca)"
                         link="{{ route('home.berita.detail') }}"
                         type="secondary" />
                 </div>
@@ -391,8 +301,8 @@
         </div>
     </section>
 
-    <section class="bg-gray10 relative mt-[15px]">
-        <div class="pl-[60px] pr-[32px] pb-[25px] pt-[28px]">
+    <section class="bg-gray10 relative">
+        <div class="px-[60px] pb-[8px] pt-[28px]">
             <x-section-header
                 title="Berita Forda "
                 highlight="Jatim 2024"
@@ -401,77 +311,47 @@
                 type="blue"
                 buttonHref="{{ route('home.berita') }}"
             />
+        </div>
 
+        <div class="pl-[60px] pb-[14px]">
             <x-card-slider :rows="1">
                 <div class="min-w-[404px] h-auto">
-                    <x-card-berita image="{{ asset('storage/assets/card-bg-biru.png') }}"
-                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
-                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
-                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
+                    <x-card-berita image="{{ asset('storage/assets/forda1.jpg') }}"
+                        title="FORDA II Jatim 2024 Resmi Ditutup, Kota Surabaya Juara Umum"
+                        date="4 Desember 2024 23:57:22" category="Forda Jatim 2024"
+                        description="KORMI Kota Surabaya sebagai Juara Umum pada Festival Olahraga Masyarakat Daerah (FORDA) II Jawa Timur tahun 2024. Foto: Ryan JNR"
                         link="{{ route('home.berita.detail') }}"
                         type="" />
                 </div>
                 <div class="min-w-[404px] h-auto">
-                    <x-card-berita image="{{ asset('storage/assets/card-bg-biru.png') }}"
-                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
-                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
-                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
+                    <x-card-berita image="{{ asset('storage/assets/forda2.jpg') }}"
+                        title="FORDA Jatim II/2024 - Pertandingan Dai Kyokushin Karate Indonesia (DKKI) Sukses Digelar"
+                        date="4 Desember 2024 21:16:14" category="Forda Jatim 2024"
+                        description="Jatim Newsroom – Pertandingan Dai Kyokushin Karate Indonesia menjadi salah satu ajang dalam Festival Olahraga Masyarakat Daerah Provinsi Jawa Timur II Tahun 2024 (FORDA Jatim II/2024), yang dilaksanakan hari ini, 4 Desember 2024, di Gelanggang Remaja Surabaya."
                         link="{{ route('home.berita.detail') }}"
                         type="" />
                 </div>
                 <div class="min-w-[404px] h-auto">
-                    <x-card-berita image="{{ asset('storage/assets/card-bg-biru.png') }}"
-                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
-                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
-                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
+                    <x-card-berita image="{{ asset('storage/assets/forda3.jpeg') }}"
+                        title="Induk Olahraga Orienteering pada FORDA II Jatim Umumkan Juara"
+                        date="4 Desember 2024 19:37:45" category="Forda Jatim 2024"
+                        description="Jatim Newsroom - Pertandingan Orienteering dalam ajang Festival Olahraga Masyarakat Daerah (FORDA) II Jawa Timur Tahun 2024 Induk Organisasi Olahraga (Inorga) Federasi Orienteering Nasional Indonesia (FONI) telah berlangsung hingga pengumuman juara di Stadion Gelora Bung Tomo (GBT) Rabu,"
                         link="{{ route('home.berita.detail') }}"
                         type="" />
                 </div>
                 <div class="min-w-[404px] h-auto">
-                    <x-card-berita image="{{ asset('storage/assets/card-bg-biru.png') }}"
-                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
-                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
-                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
+                    <x-card-berita image="{{ asset('storage/assets/forda4.jpg') }}"
+                        title="Surabaya Borong Medali INORGA INATKF Forda II Jatim 2024"
+                        date="4 Desember 2024 19:28:18" category="Forda Jatim 2024"
+                        description="Jatim Newsroom - Pertandingan Induk Organisasi Olahraga (INORGA) Indonesia Tradisional Karate Federation (INATKF) dalam ajang Festival Olahraga Masyarakat Daerah (FORDA) II Jawa Timur 2024 yang berlangsung di Gor Indor Gedung Gelora Bung Tomo (GBT) Surabaya, Rabu (4/12/2024)."
                         link="{{ route('home.berita.detail') }}"
                         type="" />
                 </div>
                 <div class="min-w-[404px] h-auto">
-                    <x-card-berita image="{{ asset('storage/assets/card-bg-biru.png') }}"
-                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
-                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
-                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
-                        link="{{ route('home.berita.detail') }}"
-                        type="" />
-                </div>
-                <div class="min-w-[404px] h-auto">
-                    <x-card-berita image="{{ asset('storage/assets/card-bg-biru.png') }}"
-                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
-                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
-                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
-                        link="{{ route('home.berita.detail') }}"
-                        type="" />
-                </div>
-                <div class="min-w-[404px] h-auto">
-                    <x-card-berita image="{{ asset('storage/assets/card-bg-biru.png') }}"
-                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
-                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
-                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
-                        link="{{ route('home.berita.detail') }}"
-                        type="" />
-                </div>
-                <div class="min-w-[404px] h-auto">
-                    <x-card-berita image="{{ asset('storage/assets/card-bg-biru.png') }}"
-                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
-                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
-                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
-                        link="{{ route('home.berita.detail') }}"
-                        type="" />
-                </div>
-                <div class="min-w-[404px] h-auto">
-                    <x-card-berita image="{{ asset('storage/assets/card-bg-biru.png') }}"
-                        title="Kominfo Tulungagung Target Percepat Layanan Informasi dan Pengaduan"
-                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH"
-                        description="Berdasarkan hasil monitoring dan evaluasi (monev) yang disampaikan Dinas Komunikasi dan Informatika (Kominfo) Provinsi Jawa Timur, Pemkab Tulungagung masih perlu memperbaiki layanan informasi publik dan pengaduan masyarakat."
+                    <x-card-berita image="{{ asset('storage/assets/forda5.jpg') }}"
+                        title="Kabupaten Magetan Raih Emas di FORDA II Jawa Timur 2024"
+                        date="3 Desember 2024 17:59:42" category="Forda Jatim 2024"
+                        description="Jatim Newsroom – Di tengah keterbatasan, Kabupaten Magetan berhasil mencuri perhatian di ajang Inorga Tarung Bebas Indonesia (TBI) FORDA II Jawa Timur 2024. Hanya mengirimkan satu atlet, Magetan mampu membawa pulang medali emas lewat penampilan gemilang Qurratu Ain Khairina di kelas kadet putri 51 kilogram."
                         link="{{ route('home.berita.detail') }}"
                         type="" />
                 </div>
@@ -479,7 +359,7 @@
         </div>
     </section>
 
-    <section class="bg-gray10 mt-[15px] font-jakarta">
+    <section class="bg-gray10 font-jakarta">
         <div class="pl-[60px] pr-[32px] pb-[25px] pt-[28px]">
             <x-section-header
                 title="Galeri "
@@ -491,12 +371,12 @@
             />
         </div>
         <swiper-container class="mySwiper" pagination="true" effect="coverflow" grab-cursor="true"
-            centered-slides="true" slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0"
-            coverflow-effect-depth="100" coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
+            centered-slides="true" slides-per-view="auto" initial-slide="1" space-between="20" coverflow-effect-rotate="50" coverflow-effect-stretch="0"
+            coverflow-effect-depth="100" coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true" loop="true">
 
             <swiper-slide class="relative group rounded-xl overflow-hidden transition-all duration-500">
-                <a href="https://kominfo.jatimprov.go.id/">
-                    <img src="{{ asset('storage/assets/card-bg-biru.png') }}" class="w-full h-full object-cover" />
+                <a href="{{ route('home.galerifoto.detail')}}">
+                    <img src="{{ asset('storage/assets/galeri1.jpeg') }}" class="w-full h-full object-cover" />
                     <div
                         class="absolute inset-0 opacity-0 group-hover:opacity-70 transition-opacity duration-500"
                         style="background: linear-gradient(180deg, rgba(30,22,91,0.5) 22%, rgba(45,33,136,0.7) 30%, rgba(0,0,0,1) 78%);">
@@ -504,17 +384,16 @@
                     <div
                         class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-4 flex flex-col justify-end text-white z-10">
                         <div class="flex items-center justify-between mb-2">
-                            <x-label-kategori text="UMUM" />
+                            <x-label-kategori text="Olahraga" />
                             <p class="text-p font-medium">
-                                22 Februari 2025 9:26
+                                1 April 2025 22:16:48
                             </p>
                         </div>
                         <p class="text-h3 font-bold leading-tight mb-[4px]">
-                            PON XXI Aceh–Sumut 2024 Sepatu Roda Beregu Putra
+                            Mandiri U20 Challenge Series 2025
                         </p>
                         <p class="text-p font-medium line-clamp-2">
-                            Kilas Informasi Kegiatan Pj. Gubernur Jawa Timur dan Kegiatan di Lingkungan Pemerintah
-                            Pro Kilas Informasi Kegiatan Pj. Gubernur Jawa Timur dan Kegiatan di Lingkungan Pemerintah
+                            Indonesia U20 vs Suriah U20 pada pertandingan Mandiri U20 Challenge Series 2025, Senin, 27/1/2025. di Stadion Gelora Delta Sidoarjo
                         </p>
                         <span class="mt-[8px] text-gray10 font-bold underline text-p">Selengkapnya</span>
                     </div>
@@ -523,7 +402,7 @@
 
             <swiper-slide class="relative group rounded-xl overflow-hidden transition-all duration-500">
                 <a href="https://kominfo.jatimprov.go.id/">
-                    <img src="{{ asset('storage/assets/card-bg-biru.png') }}" class="w-full h-full object-cover" />
+                    <img src="{{ asset('storage/assets/galeri2.jpg') }}" class="w-full h-full object-cover" />
                     <div
                         class="absolute inset-0 opacity-0 group-hover:opacity-70 transition-opacity duration-500"
                         style="background: linear-gradient(180deg, rgba(30,22,91,0.5) 22%, rgba(45,33,136,0.7) 30%, rgba(0,0,0,1) 78%);">
@@ -531,17 +410,16 @@
                     <div
                         class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-4 flex flex-col justify-end text-white z-10">
                         <div class="flex items-center justify-between mb-2">
-                            <x-label-kategori text="UMUM" />
+                            <x-label-kategori text="PON XXI ACEH-SUMUT 2024" />
                             <p class="text-p font-medium">
-                                22 Februari 2025 9:26
+                                17 Oktober 2024 20:49:12
                             </p>
                         </div>
                         <p class="text-h3 font-bold leading-tight mb-[4px]">
-                            PON XXI Aceh–Sumut 2024 Sepatu Roda Beregu Putra
+                            PON XXI Aceh–Sumut 2024
                         </p>
                         <p class="text-p font-medium line-clamp-2">
-                            Kilas Informasi Kegiatan Pj. Gubernur Jawa Timur dan Kegiatan di Lingkungan Pemerintah
-                            Pro Kilas Informasi Kegiatan Pj. Gubernur Jawa Timur dan Kegiatan di Lingkungan Pemerintah
+                            Cabang Olahraga Sepak Bola Putra Jawa Timur
                         </p>
                         <span class="mt-[8px] text-gray10 font-bold underline text-p">Selengkapnya</span>
                     </div>
@@ -550,7 +428,7 @@
 
             <swiper-slide class="relative group rounded-xl overflow-hidden transition-all duration-500">
                 <a href="https://kominfo.jatimprov.go.id/">
-                    <img src="{{ asset('storage/assets/card-bg-biru.png') }}" class="w-full h-full object-cover" />
+                    <img src="{{ asset('storage/assets/galeri3.jpg') }}" class="w-full h-full object-cover" />
                     <div
                         class="absolute inset-0 opacity-0 group-hover:opacity-70 transition-opacity duration-500"
                         style="background: linear-gradient(180deg, rgba(30,22,91,0.5) 22%, rgba(45,33,136,0.7) 30%, rgba(0,0,0,1) 78%);">
@@ -558,17 +436,16 @@
                     <div
                         class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-4 flex flex-col justify-end text-white z-10">
                         <div class="flex items-center justify-between mb-2">
-                            <x-label-kategori text="UMUM" />
+                            <x-label-kategori text="PON XXI ACEH-SUMUT 2024" />
                             <p class="text-p font-medium">
-                                22 Februari 2025 9:26
+                                17 Oktober 2024 20:48:13
                             </p>
                         </div>
                         <p class="text-h3 font-bold leading-tight mb-[4px]">
-                            PON XXI Aceh–Sumut 2024 Sepatu Roda Beregu Putra
+                            PON XXI Aceh-Sumut 2024
                         </p>
                         <p class="text-p font-medium line-clamp-2">
-                            Kilas Informasi Kegiatan Pj. Gubernur Jawa Timur dan Kegiatan di Lingkungan Pemerintah
-                            Pro Kilas Informasi Kegiatan Pj. Gubernur Jawa Timur dan Kegiatan di Lingkungan Pemerintah
+                            Sepatu Roda Beregu Putra
                         </p>
                         <span class="mt-[8px] text-gray10 font-bold underline text-p">Selengkapnya</span>
                     </div>
@@ -577,7 +454,7 @@
 
             <swiper-slide class="relative group rounded-xl overflow-hidden transition-all duration-500">
                 <a href="https://kominfo.jatimprov.go.id/">
-                    <img src="{{ asset('storage/assets/card-bg-biru.png') }}" class="w-full h-full object-cover" />
+                    <img src="{{ asset('storage/assets/galeri4.jpeg') }}" class="w-full h-full object-cover" />
                     <div
                         class="absolute inset-0 opacity-0 group-hover:opacity-70 transition-opacity duration-500"
                         style="background: linear-gradient(180deg, rgba(30,22,91,0.5) 22%, rgba(45,33,136,0.7) 30%, rgba(0,0,0,1) 78%);">
@@ -585,17 +462,16 @@
                     <div
                         class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-4 flex flex-col justify-end text-white z-10">
                         <div class="flex items-center justify-between mb-2">
-                            <x-label-kategori text="UMUM" />
+                            <x-label-kategori text="PON XXI ACEH-SUMUT 2024" />
                             <p class="text-p font-medium">
-                                22 Februari 2025 9:26
+                                17 Oktober 2024 16:41:58
                             </p>
                         </div>
                         <p class="text-h3 font-bold leading-tight mb-[4px]">
-                            PON XXI Aceh–Sumut 2024 Sepatu Roda Beregu Putra
+                            PON XXI Aceh-Sumut 2024
                         </p>
                         <p class="text-p font-medium line-clamp-2">
-                            Kilas Informasi Kegiatan Pj. Gubernur Jawa Timur dan Kegiatan di Lingkungan Pemerintah
-                            Pro Kilas Informasi Kegiatan Pj. Gubernur Jawa Timur dan Kegiatan di Lingkungan Pemerintah
+                            Cabang Olahraga Tenis Lapangan Beregu Putra Jawa Timur
                         </p>
                         <span class="mt-[8px] text-gray10 font-bold underline text-p">Selengkapnya</span>
                     </div>
@@ -604,7 +480,7 @@
 
             <swiper-slide class="relative group rounded-xl overflow-hidden transition-all duration-500">
                 <a href="https://kominfo.jatimprov.go.id/">
-                    <img src="{{ asset('storage/assets/card-bg-biru.png') }}" class="w-full h-full object-cover" />
+                    <img src="{{ asset('storage/assets/galeri5.jpg') }}" class="w-full h-full object-cover" />
 
                     <div
                         class="absolute inset-0 opacity-0 group-hover:opacity-70 transition-opacity duration-500"
@@ -613,17 +489,16 @@
                     <div
                         class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-4 flex flex-col justify-end text-white z-10">
                         <div class="flex items-center justify-between mb-2">
-                            <x-label-kategori text="UMUM" />
+                            <x-label-kategori text="PON XXI ACEH-SUMUT 2024" />
                             <p class="text-p font-medium">
-                                22 Februari 2025 9:26
+                                3 September 2024 6:23:34
                             </p>
                         </div>
                         <p class="text-h3 font-bold leading-tight mb-[4px]">
-                            PON XXI Aceh–Sumut 2024 Sepatu Roda Beregu Putra
+                            Kadis Kominfo Lepas Kontingen E-Sport Jatim
                         </p>
                         <p class="text-p font-medium line-clamp-2">
-                            Kilas Informasi Kegiatan Pj. Gubernur Jawa Timur dan Kegiatan di Lingkungan Pemerintah
-                            Pro Kilas Informasi Kegiatan Pj. Gubernur Jawa Timur dan Kegiatan di Lingkungan Pemerintah
+                            Kepala Dinas Komunikasi dan Informatika Provinsi Jawa Timur (sedang berdiri) memberikan arahan dan semangat kepada para atlet cabang
                         </p>
                         <span class="mt-[8px] text-gray10 font-bold underline text-p">Selengkapnya</span>
                     </div>
@@ -632,7 +507,7 @@
         </swiper-container>
     </section>
 
-    <section class="bg-primary100 relative font-jakarta mt-[15px]">
+    <section class="bg-primary100 relative font-jakarta">
         <div class="pl-[60px] pr-[32px] pb-[25px] pt-[28px]">
             <x-section-header
                 title="Majalah "
@@ -645,57 +520,41 @@
             <x-card-slider :row="1">
                 <div class="min-w-[300px] h-auto">
                     <x-card-majalah-home
-                        image="{{ asset('storage/assets/majalah.png') }}"
-                        title="Jatim Peringati Hari Lahir Pancasila 2024"
-                        date="11 Februari 2025 08:38"
+                        image="{{ asset('storage/assets/majalah1.jpg') }}"
+                        title="MAJALAH POTENSI JAWA TIMUR EDISI 156 JANUARI - FEBRUARI 2025"
+                        date="19 Februari 2025 0:00:00"
                         link="{{ route('home.majalah.detail') }}"
                     />
                 </div>
                 <div class="min-w-[300px] h-auto">
                     <x-card-majalah-home
-                        image="{{ asset('storage/assets/majalah.png') }}"
-                        title="Jatim Peringati Hari Lahir Pancasila 2024"
-                        date="11 Februari 2025 08:38"
+                        image="{{ asset('storage/assets/majalah2.jpeg') }}"
+                        title="MAJALAH POTENSI EDISI 155 AGUSTUS 2024"
+                        date="1 Agustus 2024 0:00:00"
                         link="{{ route('home.majalah.detail') }}"
                     />
                 </div>
                 <div class="min-w-[300px] h-auto">
                     <x-card-majalah-home
-                        image="{{ asset('storage/assets/majalah.png') }}"
-                        title="Jatim Peringati Hari Lahir Pancasila 2024"
-                        date="11 Februari 2025 08:38"
+                        image="{{ asset('storage/assets/majalah3.jpg') }}"
+                        title="MAJALAH POTENSI EDISI 153 JUNI 2024"
+                        date="1 Juni 2024 0:00:00 "
                         link="{{ route('home.majalah.detail') }}"
                     />
                 </div>
                 <div class="min-w-[300px] h-auto">
                     <x-card-majalah-home
-                        image="{{ asset('storage/assets/majalah.png') }}"
-                        title="Jatim Peringati Hari Lahir Pancasila 2024"
-                        date="11 Februari 2025 08:38"
+                        image="{{ asset('storage/assets/majalah4.jpg') }}"
+                        title="MAJALAH POTENSI EDISI 152 MEI 2024"
+                        date="1 Mei 2024 0:00:00"
                         link="{{ route('home.majalah.detail') }}"
                     />
                 </div>
                 <div class="min-w-[300px] h-auto">
                     <x-card-majalah-home
-                        image="{{ asset('storage/assets/majalah.png') }}"
-                        title="Jatim Peringati Hari Lahir Pancasila 2024"
-                        date="11 Februari 2025 08:38"
-                        link="{{ route('home.majalah.detail') }}"
-                    />
-                </div>
-                <div class="min-w-[300px] h-auto">
-                    <x-card-majalah-home
-                        image="{{ asset('storage/assets/majalah.png') }}"
-                        title="Jatim Peringati Hari Lahir Pancasila 2024"
-                        date="11 Februari 2025 08:38"
-                        link="{{ route('home.majalah.detail') }}"
-                    />
-                </div>
-                <div class="min-w-[300px] h-auto">
-                    <x-card-majalah-home
-                        image="{{ asset('storage/assets/majalah.png') }}"
-                        title="Jatim Peringati Hari Lahir Pancasila 2024"
-                        date="11 Februari 2025 08:38"
+                        image="{{ asset('storage/assets/majalah5.jpg') }}"
+                        title="MAJALAH POTENSI EDISI 155 APRIL 2024"
+                        date="31 Maret 2024 0:00:00"
                         link="{{ route('home.majalah.detail') }}"
                     />
                 </div>
@@ -703,7 +562,7 @@
         </div>
     </section>
 
-    <section class="mt-[15px]">
+    <section>
         <div class="min-h-screen pt-[45px] px-[66px] font-jakarta">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-7xl mx-auto">
 

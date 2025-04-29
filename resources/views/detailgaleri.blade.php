@@ -127,9 +127,9 @@
                 type="blue" buttonHref="{{ route('home.index') }}" />
         </div>
         <div class="">
-            <x-card-slider :row="2">
+            <x-card-slider :rows="1">
                 <div class="min-w-[404px] h-auto">
-                    <x-card-berita image="/storage/assets/galeri.png" title="PON XXI Aceh-Sumut 2024"
+                    <x-card-berita image="/storage/assets/galeri1.jpeg" title="PON XXI Aceh-Sumut 2024"
                         date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH" description="" link=""
                         type="isBlue" read-more-text="" />
                 </div>

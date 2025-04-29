@@ -30,7 +30,6 @@
             <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-6">
                 {{-- Konten Utama --}}
                 <div class="w-full max-w-[850px] space-y-4 bg-gray10 p-6 rounded-xl">
-                    <img src="{{ asset ('storage/assets/detailberita2.png')}}" alt="Gambar Berita" class="w-full rounded-xl">
                     <p class="text-xs text-gray-500">Menteri Komunikasi dan Digital (Menkomdigri), Meutya Hafid, bersama jajaran Kemkomdigri RI. Foto: dok. Kemkomdigri</p>
 
                     <div class="space-y-[10px] text-p leading-7 text-gray-800 font-jakarta font-medium">
@@ -64,7 +63,7 @@
 
                 {{-- Berita Terkait --}}
                     <div class="flex flex-col">
-                        <x-card-lainnya title="Video" highlight="Lainnya">
+                        <x-card-lainnya title="Berita" highlight="Lainnya">
                             <x-card-list-lainnya
                                 image="{{ asset('storage/assets/videolainnya.png') }}"
                                 title="INFO JAWA TIMUR MINGGU KE-2 BULAN FEBRUARI | 14 FEBRUARI 2025"
