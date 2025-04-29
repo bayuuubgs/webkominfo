@@ -21,17 +21,37 @@
     <div class="flex justify-center items-center">
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 {{ $gap }} w-full max-w-screen-xl">
             @foreach ($items as $item)
-                <div class="relative w-[266px] h-[306px] bg-white rounded-xl overflow-hidden shadow-xl group hover:shadow-2xl hover:ring-2 hover:ring-primary30 transition-all duration-300">
-                    <img src="{{ $item['image'] }}" alt="Card Image" class="w-full h-full object-cover">
+                @php
+                    $link = $item['link'] ?? null;
+                @endphp
+                @if ($link)
+                    <a href="{{ $link }}" class="relative z-10 bg-transparent p-4 rounded-2xl overflow-hidden text-white hover:ring-1 hover:ring-inset hover:ring-primary30 hover:shadow-xl transition-all duration-150">
+                @else
+                    <div class="relative z-10 bg-transparent p-4 rounded-2xl overflow-hidden text-white hover:ring-1 hover:ring-inset hover:ring-primary30 hover:shadow-xl transition-all duration-150">
+                @endif
 
-                    <div class="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-gray90 to-transparent"></div>
+                <div class="relative w-full h-[300px] bg-white shadow-md rounded-xl overflow-hidden transition-all duration-200 group-hover:shadow-xl">
+                    <img src="{{ $item['image'] }}" alt="Card Image" class="w-full h-full object-cover pointer-events-none">
                     
+                    <!-- Overlay Gradient -->
+                    <div class="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-gray90 to-transparent"></div>
+
+                    <!-- Overlay Hitam Saat Klik -->
+                    <div class="absolute inset-0 bg-black opacity-0 active:opacity-20 transition-opacity duration-200"></div>
+
                     @if(isset($item['text']))
-                        <div class="absolute bottom-0 left-0 right-0 text-white text-center py-6">
-                            <h3 class="font-jakarta font-bold text-lg">{{ $item['text'] }}</h3> 
+                        <div class="absolute bottom-0 left-0 right-0 text-white text-center p-8">
+                            <h3 class="font-jakarta font-bold text-p">{{ $item['text'] }}</h3> 
                         </div>
                     @endif
                 </div>
+
+
+                @if ($link)
+                    </a>
+                @else
+                    </div>
+                @endif
             @endforeach
         </div>
     </div>

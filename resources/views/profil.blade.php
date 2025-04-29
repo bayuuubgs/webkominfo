@@ -147,10 +147,10 @@
             <x-card-kategori-unitkerja titleFirst="Unit Kerja" titleSecond="Dinas Kominfo" bgColor="bg-primary100"
                 titleFirstColor="text-white" titleSecondColor="text-secondary50" titleSize="text-h1" gap="gap-[36px]"
                 titleMarginBottom="mb-10" :items="[
-        ['image' => asset('storage/assets/rakha.jpg'), 'text' => 'Informasi dan Komunikasi Publik'],
-        ['image' => asset('storage/assets/rakha.jpg'), 'text' => 'Aplikasi dan Informatika'],
-        ['image' => asset('storage/assets/rakha.jpg'), 'text' => 'Data dan Statistik'],
-        ['image' => asset('storage/assets/rakha.jpg'), 'text' => 'Pengaduan dan Keamanan Informasi'],
+        ['image' => asset('storage/assets/unitkerja1.jpg'), 'text' => 'Informasi dan Komunikasi Publik', 'link' => '/home/bidangsekretariat'],
+        ['image' => asset('storage/assets/unitkerja2.jpg'), 'text' => 'Aplikasi dan Informatika', 'link' => '/home/bidangsekretariat'],
+        ['image' => asset('storage/assets/unitkerja3.jpg'), 'text' => 'Data dan Statistik', 'link' => '/home/bidangsekretariat'],
+        ['image' => asset('storage/assets/unitkerja4.jpg'), 'text' => 'Pengaduan dan Keamanan Informasi', 'link' => '/home/bidangsekretariat'],
     ]" />
         </div>
     </section>
@@ -176,33 +176,60 @@
             </h2>
         </div>
         <div class="px-14">
-            <x-card-slider :row="2">
+            <x-card-slider :rows="2">
                 <div class="h-auto">
-                    <x-card-pejabat :image="'storage/assets/rakha.jpg'" :name="'Nama Pejabat'" :position="'Jabatan Pejabat'" />
+                    <x-card-pejabat :image="'storage/assets/pejabat1.jpg'" :name="'Sherlita Ratna Dewi Agustin, S.Si., M.IP'" :position="'Kepala Dinas'" />
                 </div>
                 <div class="h-auto">
-                    <x-card-pejabat :image="'storage/assets/rakha.jpg'" :name="'Nama Pejabat'" :position="'Jabatan Pejabat'" />
+                    <x-card-pejabat :image="'storage/assets/pejabat2.jpg'" :name="'Suharlina Kusumawardani, ST., MT'"
+                        :position="'Sekretaris'" />
                 </div>
                 <div class="h-auto">
-                    <x-card-pejabat :image="'storage/assets/rakha.jpg'" :name="'Nama Pejabat'" :position="'Jabatan Pejabat'" />
+                    <x-card-pejabat :image="'storage/assets/pejabat3.jpg'" :name="'Ratna Diah Ayuningtyas, SE'"
+                        :position="'Ka. Sub. Bagian Umum dan Kepegawaian'" />
                 </div>
                 <div class="h-auto">
-                    <x-card-pejabat :image="'storage/assets/rakha.jpg'" :name="'Nama Pejabat'" :position="'Jabatan Pejabat'" />
+                    <x-card-pejabat :image="'storage/assets/pejabat4.jpg'" :name="'Venus Vebryanan, S.STP'"
+                        :position="'Ketua Tim Kerja Penyusunan Program dan Anggaran'" />
                 </div>
                 <div class="h-auto">
-                    <x-card-pejabat :image="'storage/assets/rakha.jpg'" :name="'Nama Pejabat'" :position="'Jabatan Pejabat'" />
+                    <x-card-pejabat :image="'storage/assets/pejabat5.jpg'" :name="'Tugirin, SE'" :position="'Ketua Tim Kerja Keuangan'" />
                 </div>
                 <div class="h-auto">
-                    <x-card-pejabat :image="'storage/assets/rakha.jpg'" :name="'Nama Pejabat'" :position="'Jabatan Pejabat'" />
+                    <x-card-pejabat :image="'storage/assets/pejabat6.jpg'" :name="'Putut Darmawan, S.E, MM'"
+                        :position="'Kepala Bidang Informasi dan Komunikasi Publik'" />
                 </div>
                 <div class="h-auto">
-                    <x-card-pejabat :image="'storage/assets/rakha.jpg'" :name="'Nama Pejabat'" :position="'Jabatan Pejabat'" />
+                    <x-card-pejabat :image="'storage/assets/pejabat7.jpg'" :name="'Drs. Agung Sriono, SH, MM'"
+                        :position="'Ketua Tim Kerja Layanan Informasi dan Pengaduan Masyarakat'" />
                 </div>
                 <div class="h-auto">
-                    <x-card-pejabat :image="'storage/assets/rakha.jpg'" :name="'Nama Pejabat'" :position="'Jabatan Pejabat'" />
+                    <x-card-pejabat :image="'storage/assets/pejabat8.jpg'" :name="'Dra. Siti Purwatiningsih, M.M'"
+                        :position="'Ketua Tim Kerja Relasi Media dan Media Publik'" />
+                </div>
+                <div class="h-auto">
+                    <x-card-pejabat :image="'storage/assets/pejabat9.jpg'" :name="'Eko Setiawan, S.I.Kom., M.Med.Kom'"
+                        :position="'Ketua Tim Kerja Kemitraan Komunikasi Publik'" />
+                </div>
+                <div class="h-auto">
+                    <x-card-pejabat :image="'storage/assets/pejabat10.jpg'" :name="'Lenny Martarina, S.E, MM, Ak, CA'"
+                        :position="'Ketua Tim Kerja Penyusunan Konten Media'" />
+                </div>
+                <div class="h-auto">
+                    <x-card-pejabat :image="'storage/assets/pejabat11.jpg'" :name="'Sofia Kurniawati, S.E., M.Si'"
+                        :position="'Ketua Tim Kerja Manajemen Isu'" />
+                </div>
+                <div class="h-auto">
+                    <x-card-pejabat :image="'storage/assets/pejabat12.jpg'" :name="'Gugi A Wicaksono, S.T, MM'"
+                        :position="'Kepala Bidang Aplikasi Informatika'" />
+                </div>
+                <div class="h-auto">
+                    <x-card-pejabat :image="'storage/assets/pejabat13.jpg'" :name="'Nofian Adi Prasetiyawan, S.Kom. M.T'" :position="'Ketua Tim Kerja Pusat Data'" />
+                </div>
+                <div class="h-auto">
+                    <x-card-pejabat :image="'storage/assets/pejabat14.jpg'" :name="'Retno Yuni Widayaningsih, S.T., M.Medkom'" :position="'Ketua Tim Kerja Tata Kelola SPBE'" />
                 </div>
             </x-card-slider>
-        </div>
     </section>
 
     <x-footer />
