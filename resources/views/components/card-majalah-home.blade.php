@@ -19,7 +19,7 @@
         >
 
         <div class="w-full flex flex-col items-center justify-center flex-grow text-center font-jakarta text-p text-gray 70 mt-2">
-            <h3 class="{{ $fontColor }} font-semibold text-lg">{{ $title }}</h3>
+            <h3 class="{{ $fontColor }} font-semibold text-lg line-clamp-2">{{ $title }}</h3>
             <p class="{{ $fontColor }} text-sm">{{ $date }}</p>
         </div>
     </div>
