@@ -19,8 +19,10 @@ class CardBerita extends Component
     public $dateColor;
     public $hoverBorder;
     public $readMoreText;
+    public $cardWidth;
+    public $imageHeight;
 
-    public function __construct($image, $title, $date, $category, $description, $link, $type, $readMoreText = 'Baca Selengkapnya')
+    public function __construct($image, $title, $date, $category, $description, $link, $type, $readMoreText = 'Baca Selengkapnya', $cardWidth = 'w-[400px]', $imageHeight = 'h-[260px]')
     {
         $this->image = $image;
         $this->title = $title;
@@ -30,6 +32,8 @@ class CardBerita extends Component
         $this->link = $link;
         $this->type = $type;
         $this->readMoreText = $readMoreText;
+        $this->cardWidth = $cardWidth;
+        $this->imageHeight = $imageHeight;
 
         $isBlue = $type === 'secondary';
         $this->textColor = $isBlue ? 'text-gray10' : 'text-gray70';
