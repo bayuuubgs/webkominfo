@@ -24,68 +24,68 @@
     <div class="flex justify-center py-6">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 w-full max-w-screen-xl">
             <x-card-list-publikasi 
-                image="{{ asset('storage/assets/videolainnya.png') }}"
-                title="Sharing Masalah Kebencanaan, Komisi III DPRD Kabupaten Malang Kunjungi BPD Jatim"
+                image="{{ asset('storage/assets/download1.png') }}"
+                title="MEDIA PUBLIKASI LUAR RUANG HARI JADI KE-79 PROVINSI JAWA TIMUR"
                 category="UMUM"
                 date="11 Februari 2025 08:38"
-                description="Menteri Komunikasi dan Digital (Menkomdig), Meutya Hafid, mewakili Presiden Prabowo Subianto menghadiri Pertemuan Tingkat Tinggi Aksi Kecerdasan Buatan atau Artificial Intelligence..."           
-                link="{{ route('home.majalah') }}" 
+                description="MEDIA PUBLIKASI LUAR RUANG HARI JADI KE-79 PROVINSI JAWA TIMUR"           
+                link="https://drive.google.com/drive/folders/1Wbw7imivQclHOopIizMSLwE-QMbyFmXj" 
             />
             <x-card-list-publikasi 
-                image="{{ asset('storage/assets/videolainnya.png') }}"
-                title="Sharing Masalah Kebencanaan, Komisi III DPRD Kabupaten Malang Kunjungi BPD Jatim"
+                image="{{ asset('storage/assets/download2.jpg') }}"
+                title="PEDOMAN IDENTITAS VISUAL HARI JADI KE-79 PROVINSI JAWA TIMUR"
                 category="UMUM"
                 date="11 Februari 2025 08:38"
-                description="Menteri Komunikasi dan Digital (Menkomdig), Meutya Hafid, mewakili Presiden Prabowo Subianto menghadiri Pertemuan Tingkat Tinggi Aksi Kecerdasan Buatan atau Artificial Intelligence..."
-                link="{{ route('home.majalah') }}" 
+                description="PEDOMAN IDENTITAS VISUAL HARI JADI KE-79 PROVINSI JAWA TIMUR"
+                link="https://drive.google.com/drive/folders/15vcaD9LXo0-cyiLKVdHzaFKkNdxqDES4" 
              />
             <x-card-list-publikasi 
-                image="{{ asset('storage/assets/videolainnya.png') }}"
-                title="Sharing Masalah Kebencanaan, Komisi III DPRD Kabupaten Malang Kunjungi BPD Jatim"
+                image="{{ asset('storage/assets/download3.jpeg') }}"
+                title="BALIHO HARLAH PANCASILA 1 JUNI 2024"
                 category="UMUM"
                 date="11 Februari 2025 08:38"
-                description="Menteri Komunikasi dan Digital (Menkomdig), Meutya Hafid, mewakili Presiden Prabowo Subianto menghadiri Pertemuan Tingkat Tinggi Aksi Kecerdasan Buatan atau Artificial Intelligence..."
-                link="{{ route('home.majalah') }}" 
+                description="BALIHO HARLAH PANCASILA 1 JUNI 2024"
+                link="https://drive.google.com/drive/folders/1CfQW7Z7MNmwLveJrFbVsMtzoY8CG4wSq" 
              />
             <x-card-list-publikasi 
-                image="{{ asset('storage/assets/videolainnya.png') }}"
-                title="Sharing Masalah Kebencanaan, Komisi III DPRD Kabupaten Malang Kunjungi BPD Jatim"
+                image="{{ asset('storage/assets/download4.jpeg') }}"
+                title="BALIHO HARI OTODA TAHUN 2024"
                 category="UMUM"
                 date="11 Februari 2025 08:38"
-                description="Menteri Komunikasi dan Digital (Menkomdig), Meutya Hafid, mewakili Presiden Prabowo Subianto menghadiri Pertemuan Tingkat Tinggi Aksi Kecerdasan Buatan atau Artificial Intelligence..." 
-                link="{{ route('home.majalah') }}" 
+                description="BALIHO HARI OTODA JAWA TIMUR TAHUN 2024" 
+                link="https://drive.google.com/drive/folders/1GMHbBmnA2ljRmR96XaN6NfYymkVxsHLm" 
             />
             <x-card-list-publikasi 
-                image="{{ asset('storage/assets/videolainnya.png') }}"
-                title="Sharing Masalah Kebencanaan, Komisi III DPRD Kabupaten Malang Kunjungi BPD Jatim"
+                image="{{ asset('storage/assets/download5.png') }}"
+                title="BALIHO HARI SUMPAH PEMUDA 2022"
                 category="UMUM"
                 date="11 Februari 2025 08:38"
-                description="Menteri Komunikasi dan Digital (Menkomdig), Meutya Hafid, mewakili Presiden Prabowo Subianto menghadiri Pertemuan Tingkat Tinggi Aksi Kecerdasan Buatan atau Artificial Intelligence..."
-                link="{{ route('home.majalah') }}" 
+                description="Berikut adalah baliho Hari Sumpah Pemuda Tahun 2022 tingkat Provinsi Jawa Timur :"
+                link="https://drive.google.com/drive/folders/12d0wOBwJuK8YPL1sj8a67dHlj03Bn_yF" 
                 />
             <x-card-list-publikasi 
-                image="{{ asset('storage/assets/videolainnya.png') }}"
-                title="Sharing Masalah Kebencanaan, Komisi III DPRD Kabupaten Malang Kunjungi BPD Jatim"
+                image="{{ asset('storage/assets/download6.jpg') }}"
+                title="BALIHO HARI SANTRI 2022"
                 category="UMUM"
                 date="11 Februari 2025 08:38"
-                description="Menteri Komunikasi dan Digital (Menkomdig), Meutya Hafid, mewakili Presiden Prabowo Subianto menghadiri Pertemuan Tingkat Tinggi Aksi Kecerdasan Buatan atau Artificial Intelligence..."
-                link="{{ route('home.majalah') }}" 
+                description="Berikut Baliho Hari Santri 2022 Tingkat Provinsi Jawa Timur"
+                link="https://drive.google.com/drive/folders/1GVCEg0iZIE-di9uMzC__IBQrzooRv6Kn" 
             />
             <x-card-list-publikasi 
-                image="{{ asset('storage/assets/videolainnya.png') }}"
-                title="Sharing Masalah Kebencanaan, Komisi III DPRD Kabupaten Malang Kunjungi BPD Jatim"
+                image="{{ asset('storage/assets/download7.jpg') }}"
+                title="Baliho Hari Jadi ke-77 Jatim"
                 category="UMUM"
                 date="11 Februari 2025 08:38"
-                description="Menteri Komunikasi dan Digital (Menkomdig), Meutya Hafid, mewakili Presiden Prabowo Subianto menghadiri Pertemuan Tingkat Tinggi Aksi Kecerdasan Buatan atau Artificial Intelligence..."
-                link="{{ route('home.majalah') }}" 
+                description="Bahan publikasi Hari Jadi ke-77 Provinsi Jawa Timur"
+                link="https://drive.google.com/drive/folders/1XV2kKylFsoySmGrg1l40rud6mdSG0glK" 
             />
             <x-card-list-publikasi 
-                image="{{ asset('storage/assets/videolainnya.png') }}"
-                title="Sharing Masalah Kebencanaan, Komisi III DPRD Kabupaten Malang Kunjungi BPD Jatim"
+                image="{{ asset('storage/assets/download1.png') }}"
+                title="MEDIA PUBLIKASI LUAR RUANG HARI JADI KE-79 PROVINSI JAWA TIMUR"
                 category="UMUM"
                 date="11 Februari 2025 08:38"
-                description="Menteri Komunikasi dan Digital (Menkomdig), Meutya Hafid, mewakili Presiden Prabowo Subianto menghadiri Pertemuan Tingkat Tinggi Aksi Kecerdasan Buatan atau Artificial Intelligence..."
-                link="{{ route('home.majalah') }}" 
+                description="MEDIA PUBLIKASI LUAR RUANG HARI JADI KE-79 PROVINSI JAWA TIMUR"
+                link="https://drive.google.com/drive/folders/1Wbw7imivQclHOopIizMSLwE-QMbyFmXj" 
             />
             </div>
         </div>

@@ -25,15 +25,15 @@
         <img src="{{ $image }}" alt="Thumbnail" class="object-cover w-full h-full">
     </div>
 
-    <div class="flex flex-col justify-between space-y-2 pr-2 w-full h-full py-1">
-        <h3 class="text-h3 font-bold text-gray90 leading-snug line-clamp-3">
-            {{ $title }}
-        </h3>
+    <div class="flex flex-col justify-center space-y-2 pr-2 w-full h-full py-1">
+    <h3 class="text-h3 font-bold text-gray90 leading-snug line-clamp-3">
+        {{ $title }}
+    </h3>
 
-        <div class="flex items-center gap-2 text-label font-bold text-gray70">
-            <x-label-kategori :text="$category" />
-            <span>{{ $date }}</span>
-        </div>
+    <div class="flex items-center gap-2 text-label font-bold text-gray70">
+        <x-label-kategori :text="$category" />
+        <span>{{ $date }}</span>
+    </div>
 
         <p class="text-p text-gray70 font-normal leading-snug line-clamp-3">
             {{ $description }}
