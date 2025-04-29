@@ -13,7 +13,7 @@
     <x-breadcrumb />
 
     <div class="pt-6 flex justify-center">
-            <x-search-bar-publikasi 
+            <x-search-bar-publikasi
                 judulHighlight="Galeri Foto"
                 :kategoriList="['Agenda Liputan', 'Pendidikan', 'Kesehatan']"
                 :tagList="['#Kegiatan', '#Anggaran', '#Pemerintahan']"
@@ -23,98 +23,99 @@
 
     <div class="flex justify-center py-6">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 w-full max-w-screen-xl">
-            <x-card-list-publikasi 
+            <x-card-list-publikasi
                 image="{{ asset('storage/assets/galeri1.jpeg') }}"
                 title="Mandiri U20 Challenge Series 2025"
                 category="UMUM"
                 date="11 Februari 2025 08:38"
-                description="Indonesia U20 vs Suriah U20 pada pertandingan Mandiri U20 Challenge Series 2025, Senin, 27/1/2025. di Stadion Gelora..."       
-                ratio="3:2"     
-                link="{{ route('home.galerifoto.detail') }}" 
+                description="Indonesia U20 vs Suriah U20 pada pertandingan Mandiri U20 Challenge Series 2025, Senin, 27/1/2025. di Stadion Gelora..."
+                ratio="3:2"
+                link="{{ route('home.galerifoto.detail') }}"
             />
-            <x-card-list-publikasi 
+            <x-card-list-publikasi
                 image="{{ asset('storage/assets/galeri2.jpg') }}"
                 title="PON XXI Aceh-Sumut 2024"
                 category="UMUM"
                 date="11 Februari 2025 08:38"
                 description="Cabang Olahraga Sepak Bola Putra Jawa Timur"
-                ratio="3:2" 
-                link="{{ route('home.galerifoto.detail') }}" 
+                ratio="3:2"
+                link="{{ route('home.galerifoto.detail') }}"
              />
-            <x-card-list-publikasi 
+            <x-card-list-publikasi
                 image="{{ asset('storage/assets/galeri3.jpg') }}"
                 title="PON XXI Aceh-Sumut 2024"
                 category="UMUM"
                 date="11 Februari 2025 08:38"
                 description="Cabang Olahraga Tenis Lapangan Beregu Putra Jawa Timur"
-                ratio="3:2" 
-                link="{{ route('home.galerifoto.detail') }}" 
+                ratio="3:2"
+                link="{{ route('home.galerifoto.detail') }}"
              />
-            <x-card-list-publikasi 
+            <x-card-list-publikasi
                 image="{{ asset('storage/assets/galeri4.jpeg') }}"
                 title="Kadis Kominfo Lepas Kontingen E-Sport Jatim"
                 category="UMUM"
                 date="11 Februari 2025 08:38"
                 description="Kepala Dinas Komunikasi dan Informatika Provinsi Jawa Timur (sedang berdiri) memberikan arahan dan semangat kepada..."
-                ratio="3:2"     
-                link="{{ route('home.galerifoto.detail') }}" 
+                ratio="3:2"
+                link="{{ route('home.galerifoto.detail') }}"
             />
-            <x-card-list-publikasi 
+            <x-card-list-publikasi
                 image="{{ asset('storage/assets/galeri5.jpg') }}"
                 title="Grand Final Kerapan Sapi Piala Presiden Tahun 2024"
                 category="UMUM"
                 date="11 Februari 2025 08:38"
                 description="Grand Final Kerapan Sapi Piala Presiden Tahun 2024 di Stadion Kerapan Sapi R.M Noer Bangkalan, Minggu 1 September 2024..."
-                ratio="3:2" 
-                link="{{ route('home.galerifoto.detail') }}" 
+                ratio="3:2"
+                link="{{ route('home.galerifoto.detail') }}"
                 />
-            <x-card-list-publikasi 
+            <x-card-list-publikasi
                 image="{{ asset('storage/assets/galeri6.jpg') }}"
                 title="Pj Gubernur Jawa Timur Lakukan Penandatangan Berita Acara Pelantikan Penjabat Kepala Daerah"
                 category="UMUM"
                 date="11 Februari 2025 08:38"
                 description="Seorang rohaniawan (kiri) mengambil sumpah jabatan pada acara pelantikan dua penjabat (Pj) kepala daerah di Gedung..."
-                ratio="3:2" 
-                link="{{ route('home.galerifoto.detail') }}" 
+                ratio="3:2"
+                link="{{ route('home.galerifoto.detail') }}"
             />
-            <x-card-list-publikasi 
+            <x-card-list-publikasi
                 image="{{ asset('storage/assets/galeri7.jpg') }}"
                 title="Peresmian Bus Trans Jatim Koridor IV"
                 category="UMUM"
                 date="11 Februari 2025 08:38"
                 description="Pejabat (Pj) Gubernur Jawa Timur, Adhy Karyono (kanan) memecahkan kendi pada acara peresmian operasional Bus..."
-                ratio="3:2" 
-                link="{{ route('home.galerifoto.detail') }}" 
+                ratio="3:2"
+                link="{{ route('home.galerifoto.detail') }}"
             />
-            <x-card-list-publikasi 
+            <x-card-list-publikasi
                 image="{{ asset('storage/assets/galeri8.jpg') }}"
                 title="Peresmian Bus Trans Jatim"
                 category="UMUM"
                 date="11 Februari 2025 08:38"
                 description="Penjabat (Pj) Gubernur Jawa Timur, Adhy Karyono memberikan sambutan pada peresmian operasional Bus Trans Jatim"
-                ratio="3:2" 
-                link="{{ route('home.galerifoto.detail') }}" 
+                ratio="3:2"
+                link="{{ route('home.galerifoto.detail') }}"
             />
             </div>
         </div>
-        
+
         <div class="flex justify-center gap-4 pt-6 pb-6">
-        <x-button 
-            text="Sebelumnya" 
-            variant="blue" 
+        <x-button
+            text="Sebelumnya"
+            variant="blue"
             type="button"
         />
-        <x-button 
-            text="Selanjutnya" 
-            variant="blue" 
+        <x-button
+            text="Selanjutnya"
+            variant="blue"
             type="button"
         />
     </div>
 
     <x-card-kategori-unitkerja
-            titleFirst="Rekomendasi" 
+            titleFirst="Rekomendasi"
             titleSecond="Kategori"
             :items="[
+                ['image' => asset('storage/assets/unitkerja.jpg'), 'link' => route('home.video')],
                 ['image' => asset('storage/assets/unitkerja.jpg'), 'link' => route('home.video')],
                 ['image' => asset('storage/assets/unitkerja.jpg'), 'link' => route('home.video')],
                 ['image' => asset('storage/assets/unitkerja.jpg'), 'link' => route('home.video')],
@@ -132,7 +133,7 @@
                     ['label' => 'Mojokerto', 'url' => ''],
                     ['label' => 'KabLamongan', 'url' => ''],
                     ['label' => 'Bojonegoro', 'url' => ''],
-                ]" 
+                ]"
             />
         </div>
 

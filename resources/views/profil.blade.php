@@ -147,6 +147,7 @@
             <x-card-kategori-unitkerja titleFirst="Unit Kerja" titleSecond="Dinas Kominfo" bgColor="bg-primary100"
                 titleFirstColor="text-white" titleSecondColor="text-secondary50" titleSize="text-h1" gap="gap-[36px]"
                 titleMarginBottom="mb-10" :items="[
+        ['image' => asset('storage/assets/unitkerja1.jpg'), 'text' => 'Sekretariat', 'link' => '/home/bidangsekretariat'],
         ['image' => asset('storage/assets/unitkerja1.jpg'), 'text' => 'Informasi dan Komunikasi Publik', 'link' => '/home/bidangsekretariat'],
         ['image' => asset('storage/assets/unitkerja2.jpg'), 'text' => 'Aplikasi dan Informatika', 'link' => '/home/bidangsekretariat'],
         ['image' => asset('storage/assets/unitkerja3.jpg'), 'text' => 'Data dan Statistik', 'link' => '/home/bidangsekretariat'],

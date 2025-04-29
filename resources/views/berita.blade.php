@@ -117,6 +117,7 @@
                 ['image' => asset('storage/assets/unitkerja.jpg'), 'link' => route('home.galerifoto')],
                 ['image' => asset('storage/assets/unitkerja.jpg'), 'link' => route('home.galerifoto')],
                 ['image' => asset('storage/assets/unitkerja.jpg'), 'link' => route('home.galerifoto')],
+                ['image' => asset('storage/assets/unitkerja.jpg'), 'link' => route('home.galerifoto')],
                 ['image' => asset('storage/assets/unitkerja.jpg'), 'link' => route('home.galerifoto')]
             ]"
         />

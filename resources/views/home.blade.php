@@ -401,7 +401,7 @@
             </swiper-slide>
 
             <swiper-slide class="relative group rounded-xl overflow-hidden transition-all duration-500">
-                <a href="https://kominfo.jatimprov.go.id/">
+                <a href="home.galerifoto.detail">
                     <img src="{{ asset('storage/assets/galeri2.jpg') }}" class="w-full h-full object-cover" />
                     <div
                         class="absolute inset-0 opacity-0 group-hover:opacity-70 transition-opacity duration-500"
@@ -427,7 +427,7 @@
             </swiper-slide>
 
             <swiper-slide class="relative group rounded-xl overflow-hidden transition-all duration-500">
-                <a href="https://kominfo.jatimprov.go.id/">
+                <a href="home.galerifoto.detail">
                     <img src="{{ asset('storage/assets/galeri3.jpg') }}" class="w-full h-full object-cover" />
                     <div
                         class="absolute inset-0 opacity-0 group-hover:opacity-70 transition-opacity duration-500"
@@ -453,7 +453,7 @@
             </swiper-slide>
 
             <swiper-slide class="relative group rounded-xl overflow-hidden transition-all duration-500">
-                <a href="https://kominfo.jatimprov.go.id/">
+                <a href="home.galerifoto.detail">
                     <img src="{{ asset('storage/assets/galeri4.jpeg') }}" class="w-full h-full object-cover" />
                     <div
                         class="absolute inset-0 opacity-0 group-hover:opacity-70 transition-opacity duration-500"
@@ -479,7 +479,7 @@
             </swiper-slide>
 
             <swiper-slide class="relative group rounded-xl overflow-hidden transition-all duration-500">
-                <a href="https://kominfo.jatimprov.go.id/">
+                <a href="home.galerifoto.detail">
                     <img src="{{ asset('storage/assets/galeri5.jpg') }}" class="w-full h-full object-cover" />
 
                     <div

@@ -19,7 +19,7 @@
     </div>
 
     <div class="flex justify-center items-center">
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 {{ $gap }} w-full max-w-screen-xl">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 {{ $gap }} w-full max-w-screen-xl">
             @foreach ($items as $item)
                 @php
                     $link = $item['link'] ?? null;
@@ -32,7 +32,7 @@
 
                 <div class="relative w-full h-[300px] bg-white shadow-md rounded-xl overflow-hidden transition-all duration-200 group-hover:shadow-xl">
                     <img src="{{ $item['image'] }}" alt="Card Image" class="w-full h-full object-cover pointer-events-none">
-                    
+
                     <!-- Overlay Gradient -->
                     <div class="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-gray90 to-transparent"></div>
 
@@ -41,11 +41,10 @@
 
                     @if(isset($item['text']))
                         <div class="absolute bottom-0 left-0 right-0 text-white text-center p-8">
-                            <h3 class="font-jakarta font-bold text-p">{{ $item['text'] }}</h3> 
+                            <h3 class="font-jakarta font-bold text-p">{{ $item['text'] }}</h3>
                         </div>
                     @endif
                 </div>
-
 
                 @if ($link)
                     </a>

@@ -1,3 +1,4 @@
+<?php
 namespace App\View\Components;
 
 use Closure;
@@ -18,3 +19,4 @@ class CardGaleri extends Component
         return view('components.card-galeri');
     }
 }
+

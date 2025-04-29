@@ -103,6 +103,7 @@
                 ['image' => asset('storage/assets/unitkerja.jpg'), 'link' => route('home.berita')],
                 ['image' => asset('storage/assets/unitkerja.jpg'), 'link' => route('home.berita')],
                 ['image' => asset('storage/assets/unitkerja.jpg'), 'link' => route('home.berita')],
+                ['image' => asset('storage/assets/unitkerja.jpg'), 'link' => route('home.berita')],
                 ['image' => asset('storage/assets/unitkerja.jpg'), 'link' => route('home.berita')]
             ]"
         />
