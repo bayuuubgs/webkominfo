@@ -9,8 +9,8 @@
     $baseClass = 'font-jakarta text-p font-bold px-6 py-2.5 rounded-lg shadow-md transition duration-150 ease-in-out';
 
     $variants = [
-        'white' => 'bg-gray10 text-primary100 hover:bg-gray30 active:text-gray10 active:bg-primary30',
-        'blue' => 'bg-primary50 text-gray10 hover:bg-primary30 active:text-gray90 active:bg-gray30',
+        'white' => 'bg-gray10 text-primary100 hover:bg-background active:text-gray10 active:bg-primary30',
+        'blue' => 'bg-primary50 text-gray10 hover:bg-primary30 active:text-gray90 active:bg-white',
     ];
 
     $variantClass = $variants[$variant] ?? $variants['white'];

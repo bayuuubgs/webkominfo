@@ -5,7 +5,7 @@
         </div>
 
         <div class="relative z-10 bg-transparent p-4 rounded-2xl">
-            <img src="{{ $image }}" alt="Card Image" class="w-full aspect-[1.5] object-cover shadow-sm rounded-lg">
+            <img src="{{ $image }}" alt="Card Image" class="w-full aspect-[1.5] object-cover shadow-lg rounded-lg">
 
             <h3 class="text-h3 font-bold {{ $textColor }} mt-2 whitespace-normal line-clamp-2">
                 {{ $title }}

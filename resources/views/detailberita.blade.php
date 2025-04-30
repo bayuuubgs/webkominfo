@@ -11,25 +11,14 @@
 
     <x-breadcrumb />
 
-    <div class="relative font-jakarta bg-cover bg-center h-[670px]"
-    style="background-image: url('{{ asset('storage/assets/detailberita.png') }}');">
-        <div
-            class="absolute bottom-0 left-0 right-0 h-[80%] bg-gradient-to-t from-[#050032] via-[#05003290] to-transparent">
-            <div class="absolute inset-0 flex items-end px-[57px] ">
-                <div class="text-white max-w-[1326px] pb-[35px] flex flex-col gap-[8px]">
-                    <span class="label-kategori w-[170px] font-jakarta bg-backgroundred text-secondary70 shadow-sm px-[16px] py-[6px] rounded-full text-p text-center">UMUM</span>
-                    <h1 class="text-3xl md:text-5xl font-bold leading-tight mb-4 ">Menkomdigi Wakili Presiden RI di AI Action Summit Paris</h1>
-                    <p class="text-h3 mb-6">Menteri Komunikasi dan Digital (Menkomdigi), Meutya Hafid, mewakili Presiden Prabowo Subianto menghadiri Pertemuan Tingkat Tinggi Aksi Kecerdasan Buatan atau Artificial Intelligence Action Summit (AIAS) yang berlangsung di Paris, Prancis pada 10-11 Februari 2025.</p>
-                </div>
-            </div>
-        </div>
-    </div>
+    
 
     <section>
         <div class="min-h-screen p-6">
             <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-6">
                 {{-- Konten Utama --}}
                 <div class="w-full max-w-[850px] space-y-4 bg-gray10 p-6 rounded-xl">
+                    <img class="rounded-xl" src="{{ asset('storage/assets/detailberita2.png') }}" alt="">
                     <p class="text-xs text-gray-500">Menteri Komunikasi dan Digital (Menkomdigri), Meutya Hafid, bersama jajaran Kemkomdigri RI. Foto: dok. Kemkomdigri</p>
 
                     <div class="space-y-[10px] text-p leading-7 text-gray-800 font-jakarta font-medium">

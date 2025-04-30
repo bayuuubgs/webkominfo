@@ -11,7 +11,7 @@
 @php
     $isWhite = $type === 'white';
     $titleColor = $isWhite ? 'text-white' : 'text-gray90';
-    $highlightColor = $isWhite ? 'text-white' : 'text-primary50';
+    $highlightColor = $isWhite ? 'text-secondary50' : 'text-primary50';
 @endphp
 
 <div class="w-full flex items-center justify-between h-[45px] font-jakarta {{ $class }}">
