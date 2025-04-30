@@ -2,3 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+    .font-mobile {
+      font-family: 'Heebo', sans-serif;
+    }
+
+    .font-desktop {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    @media (min-width: 768px) {
+      .font-responsive {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .font-responsive {
+        font-family: 'Heebo', sans-serif;
+      }
+    }
+  }
+

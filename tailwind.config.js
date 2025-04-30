@@ -16,6 +16,7 @@ export default {
         extend: {
             fontFamily: {
                 jakarta: ["Plus Jakarta Sans", "sans-serif"],
+                Heebo: ['Heebo', 'sans-serif'],
             },
             fontSize: {
                 display: ["64px", { lineHeight: "64px" }],
@@ -24,6 +25,13 @@ export default {
                 h3: ["18px", { lineHeight: "27px" }],
                 p: ["14px", { lineHeight: "21px" }],
                 label: ["10px", { lineHeight: "10px" }],
+
+                displayM: ["32px", { lineHeight: "32px" }],
+                h1M: ["16px", { lineHeight: "20px" }],
+                h2M: ["14px", { lineHeight: "20px" }],
+                h3M: ["12px", { lineHeight: "15px" }],
+                pM: ["10px", { lineHeight: "15px" }],
+                labelM: ["8px", { lineHeight: "10px" }],
             },
             colors: {
                 gray90: "#181818",
