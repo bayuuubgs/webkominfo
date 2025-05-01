@@ -48,7 +48,8 @@
                     </p>
                 </div>
                 <div class="flex justify-center">
-                    <img src="/storage/assets/logo-diskominfo2.png" alt="Kominfo Logo" class="w-[70%] h-auto hidden md:block">
+                    <img src="/storage/assets/logo-diskominfo2.png" alt="Kominfo Logo"
+                        class="w-[70%] h-auto hidden md:block">
                 </div>
             </div>
         </section>
@@ -152,8 +153,8 @@
 
         <div>
             <x-card-kategori-unitkerja titleFirst="Unit Kerja" titleSecond="Dinas Kominfo" bgColor="bg-primary100"
-                titleFirstColor="text-white" titleSecondColor="text-secondary50" titleSize="text-h1M lg:text-h1" gap="lg:gap-4"
-                titleMarginBottom="mb-10" :items="[
+                titleFirstColor="text-white" titleSecondColor="text-secondary50" titleSize="text-h1M lg:text-h1"
+                gap="lg:gap-4" titleMarginBottom="mb-10" :items="[
         ['image' => asset('storage/assets/unitkerja1.jpg'), 'text' => 'Sekretariat', 'link' => '/home/bidangsekretariat'],
         ['image' => asset('storage/assets/unitkerja1.jpg'), 'text' => 'Informasi dan Komunikasi Publik', 'link' => '/home/bidangsekretariat'],
         ['image' => asset('storage/assets/unitkerja2.jpg'), 'text' => 'Aplikasi dan Informatika', 'link' => '/home/bidangsekretariat'],
@@ -164,15 +165,17 @@
     </section>
 
     <!-- Struktur Organisasi -->
-    <section class="bg-white relative px-[60px] py-16">
-        <div class="w-full">
-            <h2 class="px-14 text-h1M lg:text-h1 font-bold mb-4 text-right">
+    <section class="bg-white relative py-16">
+        <div class="w-full md:w-[90%] lg:w-[75%] mx-auto flex flex-col items-center">
+            <h2 class="px-14 py-10 text-h1M lg:text-h1 font-bold mb-4 text-right self-end w-full">
                 Struktur <span class="text-primary50">Organisasi</span>
             </h2>
             <img src="/storage/assets/struktur-organisasi.png" alt="Struktur Organisasi"
-                class="items-start object-scale-down w-full h-dvh">
+                class="object-contain max-w-full h-auto">
         </div>
     </section>
+
+
 
     <!-- Pejabat Struktural -->
     <section class="bg-background relative py-10">
