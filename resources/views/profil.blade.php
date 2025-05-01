@@ -9,7 +9,8 @@
     <title>Profil</title>
 </head>
 
-<body class="bg-white text-gray-800 font-jakarta text-p">
+<body class="bg-white text-gray-800 font-Heebo md:font-jakarta text-pM lg:text-p">
+
     <x-header />
     <x-breadcrumb />
 
@@ -23,15 +24,21 @@
             class="absolute inset-0 bg-gradient-to-b from-primary100/15 via-white/100 to-gray30/50 pointer-events-none -z-10">
         </div>
 
-        <section class="flex items-center justify-center px-[60px] py-12 w-full h-full">
+        <section class="flex items-center justify-center px-10 md:pl-14 md:pr-8 py-12 w-full h-full">
             <div class="max-w-screen-xl mx-auto w-full grid md:grid-cols-2 gap-10 items-center">
                 <div>
-                    <h1 class="text-display font-bold">
-                        Dinas Komunikasi <br>
-                        dan Informatika <br>
-                        Provinsi <span class="text-primary50">Jawa Timur</span>
+                    <h1 class="text-displayM lg:text-display font-bold text-center md:text-left md:mt-5">
+                        <span>Dinas Komunikasi</span>
+                        <span>dan Informatika</span>
+                        <div><span class="text-primary50">Jawa Timur</span></div>
                     </h1>
-                    <p class="mt-5 leading-relaxed text-justify">
+
+                    <div class="flex justify-center">
+                        <img src="/storage/assets/logo-diskominfo2.png" alt="Kominfo Logo"
+                            class="w-[50%] h-auto pt-8 md:hidden">
+                    </div>
+
+                    <p class="mt-5 text-justify">
                         Dinas Komunikasi dan Informatika (Diskominfo) Provinsi Jawa Timur adalah perangkat daerah yang
                         bertugas menyiapkan bahan pelaksanaan urusan pemerintahan di bidang komunikasi, informatika,
                         statistik, dan persandian. Dipimpin oleh Kepala Dinas yang bertanggung jawab kepada Gubernur
@@ -41,7 +48,7 @@
                     </p>
                 </div>
                 <div class="flex justify-center">
-                    <img src="/storage/assets/logo-diskominfo2.png" alt="Kominfo Logo" class="w-[70%] h-auto">
+                    <img src="/storage/assets/logo-diskominfo2.png" alt="Kominfo Logo" class="w-[70%] h-auto hidden md:block">
                 </div>
             </div>
         </section>
@@ -68,11 +75,11 @@
             </div>
 
             <!-- Teks -->
-            <div class="px-[60px] py-12 text-white">
-                <h2 class="text-h1 font-bold mb-4">
+            <div class="px-10 md:px-16 py-12 text-white">
+                <h2 class="text-h1M lg:text-h1 font-bold mb-4">
                     Kedudukan dan <span class="text-secondary50">Alamat</span>
                 </h2>
-                <p class="leading-relaxed">
+                <p class="lg:text-p text-justify">
                     Dinas Komunikasi dan Informatika merupakan unsur pelaksana otonomi daerah, dipimpin oleh seorang
                     kepala dinas, yang berada di bawah dan bertanggung jawab kepada Gubernur melalui Sekretaris Daerah.
                 </p>
@@ -87,8 +94,8 @@
     </section>
 
     <!-- Visi Misi -->
-    <section class="py-32 px-[60px] max-w-screen-xl mx-auto text-center">
-        <h2 class="text-h1 font-bold mb-4">
+    <section class="pt-14 pb-10 md:pb-36 md:pt-28 px-10 md:px-16 max-w-screen-xl mx-auto text-center">
+        <h2 class="text-h1M lg:text-h1 font-bold mb-4">
             Visi dan <span class="text-primary50">Misi</span> Kami
         </h2>
         <p class="max-w-3xl mx-auto">
@@ -98,10 +105,10 @@
     </section>
 
     <!-- Tugas & Fungsi -->
-    <section class="py-32 px-[60px] sm:px-[60px] md:px-32 -mt-32">
-        <div class="grid md:grid-cols-2 gap-10 sm:gap-10 md:gap-32 items-start">
+    <section class="py-10 md:py-16 px-10 md:px-16 -mt-10 md:-mt-32">
+        <div class="grid md:grid-cols-2 gap-10 sm:gap-10 md:gap-16 lg:gap-32 items-start">
             <div>
-                <h2 class="text-h1 font-bold mb-4 text-center">Tugas</h2>
+                <h2 class="text-h1M lg:text-h1 font-bold mb-4 text-center">Tugas</h2>
                 <p class="leading-relaxed text-justify">
                     Sesuai dengan Peraturan Gubernur Provinsi Jawa Timur Nomor : 80 Tahun 2016 bahwa Dinas Komunikasi
                     dan Informatika Provinsi Jawa Timur berkedudukan sebagai unsur pelaksana urusan pemerintahan di
@@ -115,8 +122,8 @@
                     Komunikasi dan informatika serta tugas pembantuan.
                 </p>
             </div>
-            <div>
-                <h2 class="text-h1 font-bold mb-4 text-center">Fungsi</h2>
+            <div class="mb-4 md:mb-14">
+                <h2 class="text-h1M lg:text-h1 font-bold mb-4 text-center">Fungsi</h2>
                 <p class="leading-relaxed text-justify mb-2">
                     Dalam melaksanakan tugas pokok tersebut Dinas Komunikasi dan Informatika mempunyai fungsi sebagai
                     berikut :
@@ -134,7 +141,7 @@
     </section>
 
     <!-- Unit Kerja -->
-    <section class="bg-primary100 relative px-[60px] py-6 pb-[36px]">
+    <section class="bg-primary100 relative px-5 md:px-12 py-6 pb-[36px]">
 
         <div
             class="absolute top-0 left-0 w-full h-10 bg-gradient-to-b from-gray90/10 to-transparent pointer-events-none z-10">
@@ -145,7 +152,7 @@
 
         <div>
             <x-card-kategori-unitkerja titleFirst="Unit Kerja" titleSecond="Dinas Kominfo" bgColor="bg-primary100"
-                titleFirstColor="text-white" titleSecondColor="text-secondary50" titleSize="text-h1" gap="gap-[36px]"
+                titleFirstColor="text-white" titleSecondColor="text-secondary50" titleSize="text-h1M lg:text-h1" gap="lg:gap-4"
                 titleMarginBottom="mb-10" :items="[
         ['image' => asset('storage/assets/unitkerja1.jpg'), 'text' => 'Sekretariat', 'link' => '/home/bidangsekretariat'],
         ['image' => asset('storage/assets/unitkerja1.jpg'), 'text' => 'Informasi dan Komunikasi Publik', 'link' => '/home/bidangsekretariat'],
@@ -159,7 +166,7 @@
     <!-- Struktur Organisasi -->
     <section class="bg-white relative px-[60px] py-16">
         <div class="w-full">
-            <h2 class="px-14 text-h1 font-bold mb-4 text-right">
+            <h2 class="px-14 text-h1M lg:text-h1 font-bold mb-4 text-right">
                 Struktur <span class="text-primary50">Organisasi</span>
             </h2>
             <img src="/storage/assets/struktur-organisasi.png" alt="Struktur Organisasi"
@@ -171,7 +178,7 @@
     <section class="bg-background relative py-10">
 
         <div>
-            <h2 class="px-14 text-h1 font-bold mb-4 text-left">
+            <h2 class="px-14 text-h1M lg:text-h1 font-bold text-left">
                 <span class="text-black">Pejabat</span>
                 <span class="text-primary50">Struktural</span>
             </h2>
