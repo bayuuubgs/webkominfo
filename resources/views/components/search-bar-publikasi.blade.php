@@ -1,7 +1,7 @@
-@props([  
+@props([   
     'kategoriList' => [], 
-    'tagList' => [],
-    'selectedKategori' => null,
+    'tagList' => [], 
+    'selectedKategori' => null, 
     'judulHighlight' => 'Berita' 
 ])
 
@@ -10,30 +10,37 @@
         showResult: false,
         selectedKategori: '{{ $selectedKategori ?? 'Pilih Kategori' }}',
         selectedTagar: 'Pilih Tagar',
+        sortBy: 'desc',
+        showCalendar: false,
+        selectedDate: ''
     }" 
-    class="w-[1320px] bg-primary100 flex flex-col items-center justify-center gap-4 rounded-[12px] py-6 font-jakarta"
+    class="w-full max-w-screen-xl mx-auto bg-primary100 flex flex-col items-center justify-center gap-6 rounded-[12px] py-6 px-4 md:px-6 font-responsive"
 >
-    <h2 class="text-h2 font-bold text-gray30">
+    <h2 class="text-h2 md:text-h1 text-center font-bold text-gray30">
         Temukan {{ $judulHighlight }} Seputar Jawa Timur!
     </h2>
 
-    <form class="w-[1200px] h-[77px] bg-white rounded-[12px] shadow-md px-4 py-2 flex items-center gap-4">
+    <form 
+        class="w-full bg-white rounded-[12px] shadow-md px-4 sm:px-6 py-4 flex flex-wrap justify-center items-center text-center sm:justify-between sm:items-stretch sm:text-left gap-y-4 gap-x-6"
+    >
 
-        <div class="w-[350px] h-[45px]">
+        <!-- Input Kata Kunci -->
+        <div class="flex-grow min-w-[200px] max-w-[250px]">
             <input 
                 type="text" 
                 name="keyword"
                 placeholder="Cari Kata Kunci"
-                class="w-full h-full px-4 rounded-lg border border-gray-300 text-p font-normal text-gray50 placeholder-gray50 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                class="w-full h-[45px] px-4 rounded-lg border border-gray-300 text-p font-normal text-gray50 placeholder-gray50 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
         </div>
 
-        <div x-data="{ open: false }" class="relative w-[261px] h-[45px]">
+        <!-- Dropdown Kategori -->
+        <div x-data="{ open: false }" class="relative flex-grow min-w-[200px] max-w-[220px]">
             <input type="hidden" name="kategori" :value="selectedKategori">
             <button 
                 type="button"
                 @click="open = !open"
-                class="w-full h-full px-4 bg-white border border-gray-300 rounded-lg text-p font-normal text-gray50 flex items-center justify-between"
+                class="w-full h-[45px] px-4 bg-white border border-gray-300 rounded-lg text-p font-normal text-gray50 flex items-center justify-between"
             >
                 <span x-text="selectedKategori"></span>
                 <svg class="w-4 h-4 text-gray-400 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -57,12 +64,13 @@
             </div>
         </div>
 
-        <div x-data="{ open: false }" class="relative w-[261px] h-[45px]">
+        <!-- Dropdown Tagar -->
+        <div x-data="{ open: false }" class="relative flex-grow min-w-[200px] max-w-[220px]">
             <input type="hidden" name="tagar" :value="selectedTagar">
             <button 
                 type="button"
                 @click="open = !open"
-                class="w-full h-full px-4 bg-white border border-gray-300 rounded-lg text-p font-normal text-gray50 flex items-center justify-between"
+                class="w-full h-[45px] px-4 bg-white border border-gray-300 rounded-lg text-p font-normal text-gray50 flex items-center justify-between"
             >
                 <span x-text="selectedTagar"></span>
                 <svg class="w-4 h-4 text-gray-400 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -86,20 +94,70 @@
             </div>
         </div>
 
-        <button 
-            type="button"
-            @click="showResult = true"
-            class="bg-primary30 text-gray30 text-p font-bold px-5 h-[45px] rounded-lg hover:bg-primary50"
-        >
-            Telusuri
-        </button>
+        <!-- Rentang Waktu + Sort Dropdown -->
+        <div x-data="{ openFilter: false }" class="relative flex-grow min-w-[200px] max-w-[220px]">
+            <input type="hidden" name="sort" :value="sortBy">
+            <input type="hidden" name="rentang_waktu" :value="selectedDate">
 
-        <button 
-            type="reset"
-            @click="showResult = false; selectedKategori = 'Pilih Kategori'; selectedTagar = 'Pilih Tagar'"
-            class="bg-secondary70 text-gray30 text-p font-bold px-5 h-[45px] rounded-lg hover:bg-secondary50"
-        >
-            Atur Ulang
-        </button>
+            <button 
+                type="button"
+                @click="openFilter = !openFilter"
+                class="w-full h-[45px] px-4 bg-white border border-gray-300 rounded-lg text-p font-normal text-gray50 flex items-center justify-between"
+            >
+                <span>Pilih Rentang Waktu</span>
+                <svg class="w-4 h-4 text-gray-400 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+
+            <div 
+                x-show="openFilter"
+                x-transition
+                class="absolute z-10 mt-2 w-full bg-white border border-gray-300 rounded-lg shadow-lg"
+                @click.away="openFilter = false"
+            >
+                <div 
+                    @click="sortBy = 'desc'; selectedDate = ''; openFilter = false"
+                    class="px-4 py-2 text-p font-normal text-gray70 hover:bg-gray-100 cursor-pointer"
+                >
+                    Terbaru
+                </div>
+                <div 
+                    @click="sortBy = 'asc'; selectedDate = ''; openFilter = false"
+                    class="px-4 py-2 text-p font-normal text-gray70 hover:bg-gray-100 cursor-pointer"
+                >
+                    Terlama
+                </div>
+                <div 
+                    class="px-4 py-2 text-p font-normal text-gray70 hover:bg-gray-100 cursor-pointer"
+                    @click.stop
+                >
+                    <input 
+                        type="month" 
+                        x-model="selectedDate"
+                        @change="openFilter = false"
+                        class="w-full p-2 border border-gray-300 rounded-lg"
+                    />
+                </div>
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="flex gap-2 min-w-[200px]">
+            <button 
+                type="submit"
+                class="bg-primary30 text-gray30 text-p font-bold px-5 h-[45px] rounded-lg hover:bg-primary50"
+            >
+                Telusuri
+            </button>
+
+            <button 
+                type="reset"
+                @click="showResult = false; selectedKategori = 'Pilih Kategori'; selectedTagar = 'Pilih Tagar'; sortBy = 'desc'"
+                class="bg-secondary70 text-gray30 text-p font-bold px-5 h-[45px] rounded-lg hover:bg-secondary50"
+            >
+                Reset
+            </button>
+        </div>
     </form>
 </div>

@@ -4,10 +4,10 @@
 ])
 
 <div class="relative flex items-center justify-between p-4 bg-[#F1F8FE] rounded-2xl shadow-md
-            w-full max-w-4xl h-[100px] mx-auto transition-all border-2 border-transparent 
-            hover:shadow-lg hover:border-[#7A74F0] active:ring-2 active:ring-[#7A74F0]">
+            w-full max-w-4xl mx-auto transition-all border-2 border-transparent 
+            hover:shadow-lg hover:border-[#7A74F0] active:ring-2 active:ring-[#7A74F0] font-responsive">
 
-    <p class="text-p font-bold font-jakarta text-gray-900 line-clamp-2 pr-4 flex-1">
+    <p class="text-p font-bold font-jakarta text-gray-900 line-clamp-4 md:line-clamp-2 pr-4 flex-1">
         {{ $title }}
     </p>
 
