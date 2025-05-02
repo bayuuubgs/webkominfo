@@ -16,14 +16,22 @@ export default {
         extend: {
             fontFamily: {
                 jakarta: ["Plus Jakarta Sans", "sans-serif"],
+                Heebo: ['Heebo', 'sans-serif'],
             },
             fontSize: {
-                display: ["64px", { lineHeight: "64px" }],
-                h1: ["40px", { lineHeight: "55px" }],
-                h2: ["24px", { lineHeight: "31px" }],
-                h3: ["18px", { lineHeight: "27px" }],
-                p: ["14px", { lineHeight: "21px" }],
-                label: ["10px", { lineHeight: "10px" }],
+                display: ["60px", { lineHeight: "125%" }],
+                h1: ["40px", { lineHeight: "137.5%" }],
+                h2: ["24px", { lineHeight: "137.5%" }],
+                h3: ["18px", { lineHeight: "150%" }],
+                p: ["14px", { lineHeight: "165%" }],
+                label: ["10px", { lineHeight: "150%" }],
+
+                displayM: ["32px", { lineHeight: "125%" }],
+                h1M: ["24px", { lineHeight: "137.5%" }],
+                h2M: ["16px", { lineHeight: "137.5%" }],
+                h3M: ["14px", { lineHeight: "150%" }],
+                pM: ["12px", { lineHeight: "165%" }],
+                labelM: ["10px", { lineHeight: "150%" }],
             },
             colors: {
                 gray90: "#181818",

@@ -1,7 +1,7 @@
 <div x-data="{ scrolling: false }" @mouseenter="scrolling = true" @mouseleave="scrolling = false"
     class="w-full overflow-x-auto py-6 relative transition-all duration-300">
 
-    <div class="grid grid-flow-col gap-x-4 gap-y-8 {{ $rowclass }}">
+    <div class="grid grid-flow-col gap-4 {{ $rowclass }}">
         {{ $slot }}
     </div>
 

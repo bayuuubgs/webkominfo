@@ -2,7 +2,7 @@
     'tags' => [], 
 ])
 
-<div class="bg-gray10 py-10 font-jakarta">
+<div class="bg-gray10 py-10 font-responsive">
     <div class="flex justify-center mb-10 px-4">
         <div class="flex gap-2 items-center text-center flex-wrap justify-center">
             <h2 class="text-h2 font-bold text-gray90">Tagar</h2>

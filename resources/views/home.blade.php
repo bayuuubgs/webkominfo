@@ -37,11 +37,11 @@
     }
 </style>
 
-<body class="bg-background">
+<body class="w-full bg-background font-responsive">
     <x-header />
     <x-breadcrumb-home />
 
-    <div class="relative font-jakarta bg-cover bg-center h-dvh"
+    <div class="relative font-responsive bg-cover bg-center h-[100dvh] md:h-dvh"
         style="background-image: url({{ asset('storage/assets/card-bg-biru.png') }});">
         <div
             class="absolute bottom-0 left-0 right-0 h-[80%] bg-gradient-to-t from-primary100 via-[#05003290] to-transparent">
@@ -66,84 +66,99 @@
     </div>
 
 
-    <div class="bg-primary100 py-8 shadow-lg font-jakarta">
-        <div class="relative w-full px-[60px]">
-            <div class="bg-gray10 rounded-xl mx-auto px-[36px] py-[26px]">
-                <form action="" method="GET" class="flex items-center gap-4">
-                    <label for="keyword" class="font-semibold text-h2">Eksplorasi <span
-                            class="text-primary50 text-h2">Menu</span></label>
-                    <input type="text" id="keyword" name="keyword" placeholder="Cari Kata Kunci"
-                        class="flex-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" />
-                    <button type="submit"
-                        class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md">Telusuri</button>
-                    <a href="" class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-md">Atur Ulang</a>
-                </form>
-            </div>
-        </div>
-    </div>
-
     <section class="bg-primary100 relative">
-        <div class="px-[60px] pb-[8px] pt-[28px]">
+        <div class="px-[60px]">
             <x-section-header title="Berita " highlight="Terbaru" buttonText="Selengkapnya"
                 buttonVariant="white" type="white" buttonHref="{{ route('home.berita') }}" />
         </div>
 
-        <div class="pl-[60px] pb-[14px]">
+        <div class="pl-[60px]">
             <x-card-slider :rows="1">
-                <div class="min-w-[404px] h-auto">
+                <div class="min-w-[300px] h-auto">
                     <x-card-berita image="{{ asset('storage/assets/beritasetda1.jpg') }}"
                         title="Gratis Naik Trans Jatim di Hari Angkutan Nasional 2025, Penumpang Membludak"
                         date="24 April 2025 16:32:12" category="SETDA / PERANGKAT DAERAH"
                         description="Jatim Newsroom - Suasana di dalam armada Trans Jatim Koridor 1 yang melayani rute Surabaya–Gresik pada siang hari ini tampak berbeda dari biasanya. Jika di luar jam sibuk umumnya bus terlihat lengang, hari ini justru sebaliknya, padat, bahkan dipenuhi penumpang berdiri."
                         link="{{ route('home.berita.detail') }}"
                         type="secondary"
-                        cardWidth="w-[350px]"
-                        imageHeight="h-[200px]"
+                        cardWidth="w-[300px]"
+
                         />
                 </div>
-                <div class="min-w-[404px] h-auto">
+                <div class="min-w-[300px] h-auto">
                     <x-card-berita image="{{ asset('storage/assets/beritasetda2.jpeg') }}"
                         title="Diskominfo Jatim Gelar Rapat Persiapan Resertifikasi ISO 27001:2022"
                         date="22 April 2025 20:44:54" category="SETDA / PERANGKAT DAERAH"
                         description="Jatim Newsroom - Dinas Komunikasi dan Informatika (Diskominfo) Provinsi Jawa Timur melalui Bidang Persandian dan Keamanan Informasi mengadakan rapat persiapan resertifikasi ISO 27001:2022 pada Selasa (22/4/2025)."
                         link="{{ route('home.berita.detail') }}"
                         type="secondary"
-                        cardWidth="w-[350px]"
-                        imageHeight="h-[200px]"/>
+                        cardWidth="w-[300px]"
+                        />
                 </div>
-                <div class="min-w-[404px] h-auto">
+                <div class="min-w-[300px] h-auto">
                     <x-card-berita image="{{ asset('storage/assets/beritasetda3.jpeg') }}"
                         title="Apresiasi Karya Anak Bangsa, Diskominfo Jatim Gelar Nobar Film Jumbo"
                         date="17 April 2025 21:28:29" category="SETDA / PERANGKAT DAERAH"
                         description="Jatim Newsroom - Sebagai bentuk apresiasi karya anak bangsa khususnya para animator Jawa Timur, Dinas Kominfo Jatim menggelar Nonton Bareng (nobar) Film Animasi JUMBO. Nobar diikuti oleh pengelola dan admin media sosial perangkat daerah di lingkungan Pemprov "
                         link="{{ route('home.berita.detail') }}"
                         type="secondary"
-                        cardWidth="w-[350px]"
-                        imageHeight="h-[200px]"/>
+                        cardWidth="w-[300px]"
+                        />
                 </div>
-                <div class="min-w-[404px] h-auto">
+                <div class="min-w-[300px] h-auto">
                     <x-card-berita image="{{ asset('storage/assets/beritasetda4.jpeg') }}"
                         title="Perkuat Manajemen Isu Publik, Diskominfo Jatim Gandeng Influencer Plat Merah dan Praktisi Media Digital"
                         date="17 April 2025 12:39:20" category="SETDA / PERANGKAT DAERAH"
                         description="Jatim Newsroom - Sebagai upaya memperkuat diseminasi informasi kebijakan Pemerintah Provinsi Jawa Timur, Dinas Komunikasi dan Informatika Provinsi Jawa Timur menggelar Rapat Koordinasi Manajemen Isu Publik Terkait Konten Kebijakan Pemprov Jatim. Kegiatan ini berlangsung di Kantor Diskominfo Jatim"
                         link="{{ route('home.berita.detail') }}"
                         type="secondary"
-                        cardWidth="w-[350px]"
-                        imageHeight="h-[200px]"/>
+                        cardWidth="w-[300px]"
+                        />
                 </div>
-                <div class="min-w-[404px] h-auto">
+                <div class="min-w-[300px] h-auto">
                     <x-card-berita image="{{ asset('storage/assets/beritasetda5.jpg') }}"
                         title="KOMNAS HAM Belajar Pengelolaan PPID dan Komunikasi Publik ke Jatim"
                         date="16 April 2025 10:18:48" category="SETDA / PERANGKAT DAERAH"
                         description="Jatim Newsroom - Komisi Nasional Hak Asasi Manusia atau KOMNAS HAM melakukan kunjungan di Dinas Kominfo Provinsi Jawa Timur, Selasa (15/4/2025). Kunjungan dikhususkan untuk forum sharing session layanan PPID dan penyampaian komunikasi publik melalui media sosial."
                         link="{{ route('home.berita.detail') }}"
                         type="secondary"
-                        cardWidth="w-[350px]"
-                        imageHeight="h-[200px]"/>
+                        cardWidth="w-[300px]"
+                        />
                 </div>
             </x-card-slider>
         </div>
     </section>
+
+    <div class="bg-primary100 py-8 shadow-lg font-responsive">
+        <div class="relative w-full px-4 md:px-[60px]">
+            <div class="relative bg-gray10 rounded-xl mx-auto px-4 py-4 md:px-[36px] md:py-[26px]">
+                <form action="" method="GET" class="flex flex-col md:flex-row items-start md:items-center gap-4">
+                    <label for="keyword" class="font-semibold text-h2M md:text-h2">
+                        Eksplorasi <span class="text-primary50 text-h2M md:text-h2">Menu</span>
+                    </label>
+                    <input
+                        type="text"
+                        id="keyword"
+                        name="keyword"
+                        placeholder="Cari Kata Kunci"
+                        class="w-full md:flex-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                    />
+                    <div class="flex flex-col md:flex-row gap-2 w-full md:w-auto">
+                        <button
+                            type="submit"
+                            class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md w-full md:w-auto">
+                            Telusuri
+                        </button>
+                        <a
+                            href=""
+                            class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-md text-center w-full md:w-auto">
+                            Atur Ulang
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <section class="px-[60px] py-[40px] font-jakarta">
         <div class="pb-[24px]">

@@ -1,4 +1,4 @@
-<div class="w-full bg-primary100 text-white font-jakarta py-12 px-4 sm:px-6 lg:px-[60px] relative overflow-hidden">
+<div class="w-full bg-primary100 text-white font-responsive py-12 px-4 sm:px-6 lg:px-[60px] relative overflow-hidden">
 
     <!-- Top & Bottom Gradient -->
     <div class="absolute top-0 left-0 w-full h-10 bg-gradient-to-b from-gray90/10 to-transparent pointer-events-none z-10"></div>
@@ -79,8 +79,8 @@
                 </ul>
             </div>
 
-             <!-- Kategori -->
-             <div class="flex flex-col items-center md:items-start">
+            <!-- Kategori -->
+            <div class="flex flex-col items-center md:items-start">
                 <h3 class="text-h3 font-bold mb-2">Kategori</h3>
                 <ul class="space-y-2">
                     @php
