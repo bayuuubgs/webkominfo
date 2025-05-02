@@ -10,7 +10,7 @@
     'titleMarginBottom' => 'mb-6 md:mb-8',
 ])
 
-<div class="{{ $bgColor }} py-6 md:py-10 font-responsive px-4 md:px-16">
+<div class="{{ $bgColor }} py-5 md:py-10 font-responsive">
     <div class="flex justify-center {{ $titleMarginBottom }}">
         <div class="flex gap-1 md:gap-2 items-center text-center">
             <h2 class="{{ $titleFirstColor }} font-bold {{ $titleSize }}">{{ $titleFirst }}</h2>
@@ -18,17 +18,18 @@
         </div>
     </div>
 
-    <div class="flex justify-center items-center">
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 {{ $gap }} w-full max-w-screen-xl">
+    <div class="w-full">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 {{ $gap }} w-full">
+
             @foreach ($items as $item)
                 @php
                     $link = $item['link'] ?? null;
                 @endphp
 
                 @if ($link)
-                    <a href="{{ $link }}" class="relative z-10 bg-transparent p-2 md:p-4 rounded-2xl overflow-hidden text-white hover:ring-1 hover:ring-inset hover:ring-primary30 hover:shadow-xl transition-all duration-150">
+                    <a href="{{ $link }}" class="relative z-10 bg-transparent p-2 md:p-4 rounded-2xl overflow-hidden text-white hover:ring-1 hover:ring-inset hover:ring-primary30 hover:shadow-xl transition-all duration-200">
                 @else
-                    <div class="relative z-10 bg-transparent p-2 md:p-4 rounded-2xl overflow-hidden text-white hover:ring-1 hover:ring-inset hover:ring-primary30 hover:shadow-xl transition-all duration-150">
+                    <div class="relative z-10 bg-transparent p-2 md:p-4 rounded-2xl overflow-hidden text-white hover:ring-1 hover:ring-inset hover:ring-primary30 hover:shadow-xl transition-all duration-200">
                 @endif
 
                 <div class="relative w-full h-[200px] md:h-[300px] bg-white shadow-md rounded-xl overflow-hidden transition-all duration-200 group-hover:shadow-xl">
@@ -40,7 +41,7 @@
 
                     @if(isset($item['text']))
                         <div class="absolute bottom-0 left-0 right-0 text-white text-center px-4 py-6">
-                            <h3 class="font-responsive font-bold text-pM md:text-p">{{ $item['text'] }}</h3>
+                            <h3 class="font-bold text-pM md:text-p">{{ $item['text'] }}</h3>
                         </div>
                     @endif
                 </div>

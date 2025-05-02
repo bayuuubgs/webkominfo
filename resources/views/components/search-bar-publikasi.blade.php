@@ -16,7 +16,7 @@
     }" 
     class="w-full max-w-screen-xl mx-auto bg-primary100 flex flex-col items-center justify-center gap-6 rounded-[12px] py-6 px-4 md:px-6 font-responsive"
 >
-    <h2 class="text-h2 md:text-h1 text-center font-bold text-gray30">
+    <h2 class="text-h2 lg:text-h1 text-center font-bold text-gray30">
         Temukan {{ $judulHighlight }} Seputar Jawa Timur!
     </h2>
 

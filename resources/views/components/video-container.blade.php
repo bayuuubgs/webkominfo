@@ -22,15 +22,15 @@
             @endif
 
             @if ($publishedAt)
-                <div class="text-pM md:text-p text-gray-500">{{ $publishedAt }}</div>
+                <div class="text-pM lg:text-p text-gray-500">{{ $publishedAt }}</div>
             @endif
         </div>
 
-        <h3 class="text-h3M md:text-h3 font-bold text-gray-900 mb-2">
+        <h3 class="text-h3M lg:text-h3 font-bold text-gray-900 mb-2">
             {{ $title }}
         </h3>
 
-        <p class="text-pM md:text-p text-gray-700 leading-relaxed text-justify line-clamp-5">
+        <p class="text-pM lg:text-p text-gray-700 leading-relaxed text-justify line-clamp-5">
             {{ $description }}
         </p>
     </div>

@@ -145,7 +145,7 @@
     </section>
 
     <!-- Unit Kerja -->
-    <section class="bg-primary100 relative px-5 md:px-12 py-6 pb-[36px]">
+    <section class="bg-primary100 relative px-10 md:px-16 py-5">
 
         <div
             class="absolute top-0 left-0 w-full h-10 bg-gradient-to-b from-gray90/10 to-transparent pointer-events-none z-10">
@@ -157,7 +157,7 @@
         <div>
             <x-card-kategori-unitkerja titleFirst="Unit Kerja" titleSecond="Dinas Kominfo" bgColor="bg-primary100"
                 titleFirstColor="text-white" titleSecondColor="text-secondary50" titleSize="text-h1M lg:text-h1"
-                gap="lg:gap-4" titleMarginBottom="mb-10" :items="[
+                gap="lg:gap-4" titleMarginBottom="mb-5 md:mb-10" :items="[
         ['image' => asset('storage/assets/unitkerja1.jpg'), 'text' => 'Sekretariat', 'link' => '/home/bidangsekretariat'],
         ['image' => asset('storage/assets/unitkerja1.jpg'), 'text' => 'Informasi dan Komunikasi Publik', 'link' => '/home/bidangsekretariat'],
         ['image' => asset('storage/assets/unitkerja2.jpg'), 'text' => 'Aplikasi dan Informatika', 'link' => '/home/bidangsekretariat'],
@@ -189,7 +189,7 @@
                 <span class="text-primary50">Struktural</span>
             </h2>
         </div>
-        <div class="px-14">
+        <div class="pl-10 md:pl-14">
             <x-card-slider :rows="2">
                 <div class="h-auto">
                     <x-card-pejabat :image="'storage/assets/pejabat1.jpg'" :name="'Sherlita Ratna Dewi Agustin, S.Si., M.IP'" :position="'Kepala Dinas'" />
