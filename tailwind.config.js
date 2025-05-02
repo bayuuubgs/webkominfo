@@ -31,7 +31,7 @@ export default {
                 h2M: ["16px", { lineHeight: "137.5%" }],
                 h3M: ["14px", { lineHeight: "150%" }],
                 pM: ["12px", { lineHeight: "165%" }],
-                labelM: ["10px", { lineHeight: "150%" }],
+                labelM: ["10px", { lineHeight: "125%" }],
             },
             colors: {
                 gray90: "#181818",

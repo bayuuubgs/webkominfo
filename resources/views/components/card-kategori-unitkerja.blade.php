@@ -39,13 +39,8 @@
                     <div class="absolute inset-0 bg-black opacity-0 active:opacity-20 transition-opacity duration-200"></div>
 
                     @if(isset($item['text']))
-<<<<<<< HEAD
                         <div class="absolute bottom-0 left-0 right-0 text-white text-center px-4 py-6">
                             <h3 class="font-responsive font-bold text-pM md:text-p">{{ $item['text'] }}</h3>
-=======
-                        <div class="absolute bottom-0 left-0 right-0 text-white text-center p-4 md:p-8">
-                            <h3 class="font-jakarta font-bold text-p">{{ $item['text'] }}</h3>
->>>>>>> fe547fb4000c5db207d657537689345a009ec39a
                         </div>
                     @endif
                 </div>

@@ -60,7 +60,7 @@
         <div
             class="absolute bottom-0 left-0 right-0 h-[80%] bg-gradient-to-t from-primary100 via-[#05003290] to-transparent">
             <div class="absolute inset-0 flex items-end">
-                <div class="text-white pb-[35px] flex flex-col gap-[8px] px-[60px] w-full">
+                <div class="text-white pb-[35px] flex flex-col gap-[8px] px-5 md:px-16 w-full">
                     <span
                         class="label-kategori w-[170px] font-jakarta bg-backgroundred text-secondary70 shadow-sm px-[16px] py-[6px] rounded-full text-p text-center mb-2">
                         BERITA TERKINI
@@ -69,7 +69,7 @@
                         Resmi Dilantik, Gubernur Khofifah dan Wagub Emil Siap Sinergikan Nawa Bhakti Satya dengan Asta
                         Cita
                     </h1>
-                    <p class="text-h3">
+                    <p class="text-h3 hidden md:block">
                         Menteri Komunikasi dan Digital (Menkomdigi), Meutya Hafid, mewakili Presiden
                         Prabowo Subianto menghadiri Pertemuan Tingkat Tinggi Aksi Kecerdasan Buatan atau Artificial
                         Intelligence Action Summit (AIAS) yang berlangsung di Paris, Prancis pada 10–11 Februari 2025.
@@ -88,35 +88,35 @@
 
         <div class="pl-5 md:pl-16">
             <x-card-slider :rows="1">
-                <div class="min-w-[150px] md:min-w-[300px] h-auto">
+                <div class="min-w-[254px] md:min-w-[300px] h-auto">
                     <x-card-berita image="{{ asset('storage/assets/beritasetda1.jpg') }}"
                         title="Gratis Naik Trans Jatim di Hari Angkutan Nasional 2025, Penumpang Membludak"
                         date="24 April 2025 16:32:12" category="SETDA / PERANGKAT DAERAH"
                         description="Jatim Newsroom - Suasana di dalam armada Trans Jatim Koridor 1 yang melayani rute Surabaya–Gresik pada siang hari ini tampak berbeda dari biasanya. Jika di luar jam sibuk umumnya bus terlihat lengang, hari ini justru sebaliknya, padat, bahkan dipenuhi penumpang berdiri."
                         link="{{ route('home.berita.detail') }}" type="secondary" />
                 </div>
-                <div class="min-w-[150px] md:min-w-[300px] h-auto">
+                <div class="min-w-[254px] md:min-w-[300px] h-auto">
                     <x-card-berita image="{{ asset('storage/assets/beritasetda2.jpeg') }}"
                         title="Diskominfo Jatim Gelar Rapat Persiapan Resertifikasi ISO 27001:2022"
                         date="22 April 2025 20:44:54" category="SETDA / PERANGKAT DAERAH"
                         description="Jatim Newsroom - Dinas Komunikasi dan Informatika (Diskominfo) Provinsi Jawa Timur melalui Bidang Persandian dan Keamanan Informasi mengadakan rapat persiapan resertifikasi ISO 27001:2022 pada Selasa (22/4/2025)."
                         link="{{ route('home.berita.detail') }}" type="secondary" />
                 </div>
-                <div class="min-w-[150px] md:min-w-[300px] h-auto">
+                <div class="min-w-[254px] md:min-w-[300px] h-auto">
                     <x-card-berita image="{{ asset('storage/assets/beritasetda3.jpeg') }}"
                         title="Apresiasi Karya Anak Bangsa, Diskominfo Jatim Gelar Nobar Film Jumbo"
                         date="17 April 2025 21:28:29" category="SETDA / PERANGKAT DAERAH"
                         description="Jatim Newsroom - Sebagai bentuk apresiasi karya anak bangsa khususnya para animator Jawa Timur, Dinas Kominfo Jatim menggelar Nonton Bareng (nobar) Film Animasi JUMBO. Nobar diikuti oleh pengelola dan admin media sosial perangkat daerah di lingkungan Pemprov "
                         link="{{ route('home.berita.detail') }}" type="secondary" />
                 </div>
-                <div class="min-w-[150px] md:min-w-[300px] h-auto">
+                <div class="min-w-[254px] md:min-w-[300px] h-auto">
                     <x-card-berita image="{{ asset('storage/assets/beritasetda4.jpeg') }}"
                         title="Perkuat Manajemen Isu Publik, Diskominfo Jatim Gandeng Influencer Plat Merah dan Praktisi Media Digital"
                         date="17 April 2025 12:39:20" category="SETDA / PERANGKAT DAERAH"
                         description="Jatim Newsroom - Sebagai upaya memperkuat diseminasi informasi kebijakan Pemerintah Provinsi Jawa Timur, Dinas Komunikasi dan Informatika Provinsi Jawa Timur menggelar Rapat Koordinasi Manajemen Isu Publik Terkait Konten Kebijakan Pemprov Jatim. Kegiatan ini berlangsung di Kantor Diskominfo Jatim"
                         link="{{ route('home.berita.detail') }}" type="secondary" />
                 </div>
-                <div class="min-w-[150px] md:min-w-[300px] h-auto">
+                <div class="min-w-[254px] md:min-w-[300px] h-auto">
                     <x-card-berita image="{{ asset('storage/assets/beritasetda5.jpg') }}"
                         title="KOMNAS HAM Belajar Pengelolaan PPID dan Komunikasi Publik ke Jatim"
                         date="16 April 2025 10:18:48" category="SETDA / PERANGKAT DAERAH"
