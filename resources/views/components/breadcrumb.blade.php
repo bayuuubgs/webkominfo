@@ -14,7 +14,7 @@
 @endphp
 
 <div
-    class="w-full bg-white flex justify-between items-center px-5 md:px-16 py-4 drop-shadow-lg font-heebo md:font-jakarta text-pM lg:text-p text-gray90 capitalize">
+    class="w-full bg-white flex justify-between items-center px-5 md:px-16 py-4 drop-shadow-lg font-responsive text-pM lg:text-p text-gray90 capitalize">
     @foreach ($segments as $index => $segment)
         @if ($index > 0)
             &nbsp;>&nbsp;
