@@ -34,15 +34,18 @@
                 <div class="relative w-full h-[200px] md:h-[300px] bg-white shadow-md rounded-xl overflow-hidden transition-all duration-200 group-hover:shadow-xl">
                     <img src="{{ $item['image'] }}" alt="Card Image" class="w-full h-full object-cover pointer-events-none">
 
-                    <!-- Overlay Gradient -->
                     <div class="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-gray90 to-transparent"></div>
 
-                    <!-- Overlay Hitam Saat Klik -->
                     <div class="absolute inset-0 bg-black opacity-0 active:opacity-20 transition-opacity duration-200"></div>
 
                     @if(isset($item['text']))
+<<<<<<< HEAD
                         <div class="absolute bottom-0 left-0 right-0 text-white text-center px-4 py-6">
                             <h3 class="font-responsive font-bold text-pM md:text-p">{{ $item['text'] }}</h3>
+=======
+                        <div class="absolute bottom-0 left-0 right-0 text-white text-center p-4 md:p-8">
+                            <h3 class="font-jakarta font-bold text-p">{{ $item['text'] }}</h3>
+>>>>>>> fe547fb4000c5db207d657537689345a009ec39a
                         </div>
                     @endif
                 </div>

@@ -2,7 +2,7 @@
     use Carbon\Carbon;
 @endphp
 
-<div class="w-full bg-white flex justify-between items-center px-16 py-4 drop-shadow-lg gap-16">
+<div class="w-full bg-white flex justify-between items-center px-5 md:px-16 py-2 shadow-lg font-heebo md:font-jakarta text-pM lg:text-p text-gray90 capitalize gap-5 md:gap-16 z-10">
     <!-- Label Berita Terkini -->
     <div>
         <span class="label-kategori font-jakarta bg-primary50 text-gray10 shadow-sm px-6 py-[6px] rounded-full text-label">
@@ -11,7 +11,7 @@
     </div>
 
     <!-- Marquee untuk judul berita -->
-    <div class="flex-1 overflow-hidden">
+    <div class="flex-1 overflow-hidden mt-2">
         <marquee behavior="scroll" direction="left" scrollamount="5
         " class="text-gray90 font-jakarta text-p">
             Pemprov Jatim luncurkan aplikasi layanan publik terbaru |
