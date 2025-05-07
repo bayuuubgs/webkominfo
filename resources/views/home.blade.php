@@ -51,7 +51,7 @@
     }
 </style>
 
-<body class="w-full bg-background font-responsive">
+<body class="w-full bg-background font-responsive text-pM lg:text-p">
     <x-header />
     <x-breadcrumb-home />
 
@@ -60,16 +60,16 @@
         <div
             class="absolute bottom-0 left-0 right-0 h-[80%] bg-gradient-to-t from-primary100 via-[#05003290] to-transparent">
             <div class="absolute inset-0 flex items-end">
-                <div class="text-white pb-[35px] flex flex-col gap-[8px] px-5 md:px-16 w-full">
+                <div class="text-white pb-[35px] flex flex-col md:gap-2 px-5 md:px-16 w-full">
                     <span
-                        class="label-kategori w-[170px] font-jakarta bg-backgroundred text-secondary70 shadow-sm px-[16px] py-[6px] rounded-full text-p text-center mb-2">
+                        class="label-kategori w-[160px] font-jakarta bg-backgroundred text-secondary70 shadow-sm px-4 py-1.5 rounded-full text-pM lg:text-p text-center mb-2">
                         BERITA TERKINI
                     </span>
-                    <h1 class="text-displayM md:text-display font-bold mb-4">
+                    <h1 class="text-displayM lg:text-display font-bold mb-4 line-clamp-4 md:line-clamp-3">
                         Resmi Dilantik, Gubernur Khofifah dan Wagub Emil Siap Sinergikan Nawa Bhakti Satya dengan Asta
                         Cita
                     </h1>
-                    <p class="text-h3 hidden md:block">
+                    <p class="text-h3M lg:text-h3 line-clamp-3 lg:line-clamp-2">
                         Menteri Komunikasi dan Digital (Menkomdigi), Meutya Hafid, mewakili Presiden
                         Prabowo Subianto menghadiri Pertemuan Tingkat Tinggi Aksi Kecerdasan Buatan atau Artificial
                         Intelligence Action Summit (AIAS) yang berlangsung di Paris, Prancis pada 10–11 Februari 2025.

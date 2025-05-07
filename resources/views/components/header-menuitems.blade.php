@@ -23,7 +23,7 @@
         class=""
     @endif
 >
-    <div class="group/menu-trigger flex justify-between items-center rounded-xl font-jakarta text-p transition duration-200 ease-out 
+    <div class="group/menu-trigger flex justify-between items-center rounded-xl font-responsive text-pM lg:text-p transition duration-200 ease-out 
         {{ $isActive ? 'bg-gray-50' : 'text-gray70 hover:bg-gray-50' }}">
         
         @if ($hasDropdown)
@@ -36,7 +36,7 @@
                 {{-- Icon --}}
                 <div 
                     :class="{ 'bg-white': open }"
-                    class="flex-none flex items-center justify-center size-11 rounded-lg transition 
+                    class="flex-none flex items-center justify-center size-10 rounded-lg transition 
                         {{ $isActive ? 'bg-white' : 'bg-gray-50 group-hover/menu-item:bg-white' }}"
                 >
                     @if ($icon)
@@ -55,7 +55,7 @@
 
                 <div class="flex-grow">
                     <span class="font-bold text-p">{{ $title }}</span>
-                    <p class="mt-1 text-p">{{ $desc }}</p>
+                    <p class="mt-0.5 text-pM">{{ $desc }}</p>
                 </div>
 
                 {{-- Arrow --}}
@@ -90,7 +90,7 @@
                             class="group/submenu flex gap-x-4 items-center p-4 rounded-lg transition duration-200 ease-out
                                 {{ $subActive ? 'bg-gray-50' : 'hover:bg-gray-50' }}"
                         >
-                            <div class="flex-none flex items-center justify-center size-11 rounded-lg transition
+                            <div class="flex-none flex items-center justify-center size-10 rounded-lg transition
                                 {{ $subActive ? 'bg-white' : 'bg-gray-50 group-hover/submenu:bg-white' }}">
                                 @if (!empty($sub['icon']))
                                     <x-dynamic-component 
@@ -107,7 +107,7 @@
                             </div>
                             <div>
                                 <span class="font-bold text-p">{{ $sub['title'] }}</span>
-                                <p class="mt-1 text-p">{{ $sub['desc'] }}</p>
+                                <p class="mt-0.5 text-pM">{{ $sub['desc'] }}</p>
                             </div>
                         </a>
                     @endforeach
@@ -121,7 +121,7 @@
                 class="group/menu-item flex gap-x-4 items-center p-4 rounded-lg transition w-full
                     {{ $isActive ? 'bg-gray-50 text-gray-900' : 'hover:bg-gray-50 text-gray70' }}"
             >
-                <div class="flex-none flex items-center justify-center size-11 rounded-lg transition 
+                <div class="flex-none flex items-center justify-center size-10 rounded-lg transition 
                     {{ $isActive ? 'bg-white' : 'bg-gray-50 group-hover/menu-item:bg-white' }}">
                     @if ($icon)
                         <x-dynamic-component 
@@ -138,7 +138,7 @@
                 </div>
                 <div>
                     <span class="font-bold text-p">{{ $title }}</span>
-                    <p class="mt-1 text-p">{{ $desc }}</p>
+                    <p class="mt-0.5 text-pM">{{ $desc }}</p>
                 </div>
             </a>
         @endif
