@@ -189,7 +189,7 @@
                 <span class="text-primary50">Struktural</span>
             </h2>
         </div>
-        <div class="pl-10 md:pl-14">
+        <div class="pl-5 md:pl-14">
             <x-card-slider :rows="2">
                 <div class="h-auto">
                     <x-card-pejabat :image="'storage/assets/pejabat1.jpg'" :name="'Sherlita Ratna Dewi Agustin, S.Si., M.IP'" :position="'Kepala Dinas'" />
