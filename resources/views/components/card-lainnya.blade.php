@@ -6,7 +6,8 @@
         <span class="text-primary50">{{ $highlight }}</span>
     </h2>
 
-    <div class="space-y-2.5">
-        {{ $slot }}
+        <div class="space-y-2.5">
+            {{ $slot }}
+        </div>
     </div>
 </div>

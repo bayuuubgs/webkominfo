@@ -19,14 +19,14 @@
                     Email: kominfo@jatimprov.go.id
                 </p>
                 <div class="flex gap-3 mt-3 justify-center md:justify-start">
-                    <a href="#" class="text-gray-300 hover:text-white">
-                        <img src="{{ asset('storage/assets/Path.png') }}" alt="Path" class="w-6 h-6">
+                    <a href="https://x.com/kominfojatim" class="text-gray-300 hover:text-white">
+                        <img src="{{ asset('storage/assets/icon-x.png') }}" alt="X" class="w-6 h-6">
                     </a>
-                    <a href="#" class="text-gray-300 hover:text-white">
-                        <img src="{{ asset('storage/assets/x.png') }}" alt="X" class="w-6 h-6">
+                    <a href="http://www.youtube.com/@KOMINFOMMC" class="text-gray-300 hover:text-white">
+                        <img src="{{ asset('storage/assets/icon-youtube.png') }}" alt="YouTube" class="w-6 h-6">
                     </a>
-                    <a href="#" class="text-gray-300 hover:text-white">
-                        <img src="{{ asset('storage/assets/youtube.png') }}" alt="YouTube" class="w-6 h-6">
+                    <a href="https://www.instagram.com/kominfojatim/" class="text-gray-300 hover:text-white">
+                        <img src="{{ asset('storage/assets/icon-instagram.png') }}" alt="Instagram" class="w-6 h-6">
                     </a>
                 </div>
                 <p class="text-gray-400 mt-3 text-p font-bold">
