@@ -4,7 +4,7 @@
 <html lang="id">
 
 @php
-    $active = 'rounded-lg px-3 py-2 text-p  text-white drop-shadow-2xl transition duration-200 ease-out';
+    $active = 'rounded-lg px-3 py-2 text-p text-white drop-shadow-2xl transition duration-200 ease-out';
     $inactive = 'rounded-lg px-3 py-2  text-p text-gray50 hover:text-white hover:drop-shadow-2xl transition duration-200 ease-out';
     $programRoutes = ['program-a', 'program-b'];
 @endphp
@@ -15,7 +15,7 @@
     <title>Navbar Responsif</title>
 </head>
 
-<body class="bg-white font-heebo md:font-jakarta text-p md:text-pM">
+<body class="bg-white font-responsive text-p md:text-pM">
 
     <nav class="bg-primary100">
 

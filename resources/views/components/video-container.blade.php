@@ -1,6 +1,6 @@
 @props(['videoId', 'title', 'description', 'publishedAt' => null, 'category' => null])
 
-<div x-data="{ play: false }" class="max-w-4xl mx-auto p-4">
+<div x-data="{ play: false }" class="max-w-4xl mx-auto p-4 font-responsive">
     <!-- Thumbnail / Iframe -->
     <div class="relative aspect-video rounded-t-xl overflow-hidden shadow-lg">
         <template x-if="!play">
@@ -22,15 +22,15 @@
             @endif
 
             @if ($publishedAt)
-                <div class="font-jakarta text-p text-gray-500">{{ $publishedAt }}</div>
+                <div class="text-pM lg:text-p text-gray-500">{{ $publishedAt }}</div>
             @endif
         </div>
 
-        <h2 class="font-jakarta text-h3 font-bold text-gray-900 mb-2">
+        <h3 class="text-h3M lg:text-h3 font-bold text-gray-900 mb-2">
             {{ $title }}
-        </h2>
+        </h3>
 
-        <p class="font-jakarta text-p text-gray-700 leading-relaxed text-justify line-clamp-5">
+        <p class="text-pM lg:text-p text-gray-700 leading-relaxed text-justify line-clamp-5">
             {{ $description }}
         </p>
     </div>

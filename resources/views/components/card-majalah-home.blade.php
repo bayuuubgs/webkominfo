@@ -6,21 +6,21 @@
     'link' => ''
 ])
 
-<a href="{{ $link ?: '#' }}" class="block w-full max-w-xs mx-auto sm:max-w-sm md:max-w-md lg:max-w-full">
+<a href="{{ $link ?: '#' }}" class="block w-[200px] md:w-[250px] lg:w-[300px] lg:w-[350px] h-auto font-responsive text-pM lg:text-p">
     <div
-        class="aspect-[3/4] bg-transparent rounded-2xl p-4 border-2 border-transparent
-               transition-all duration-300 cursor-pointer hover:border-primary30 flex flex-col items-center font-responsive"
-        :class="{ 'border-priamry30': active }"
-    >
+        class="aspect-[3/4] bg-transparent rounded-xl md:rounded-2xl p-3 md:p-4
+               transition-all duration-300 cursor-pointer hover:ring-[0.5px] md:hover:ring-1 hover:ring-inset hover:ring-white flex flex-col items-center"
+        :class="{ 'border-primary30': active }"
+        >
         <img
             src="{{ $image }}"
             alt="Majalah Cover"
-            class="w-full h-auto rounded-t-xl shadow-md object-cover"
+            class="w-full h-full rounded-t-lg md:rounded-t-xl shadow-md object-cover"
         >
 
-        <div class="w-full flex flex-col items-center justify-center text-center font-jakarta text-p mt-2">
-            <h3 class="font-heebo {{ $fontColor }} font-semibold text-base sm:text-lg md:text-xl lg:text-2xl line-clamp-2 mb-2 sm:mb-3">{{ $title }}</h3>
-            <p class="font-jakarta {{ $fontColor }} text-sm sm:text-base md:text-lg">{{ $date }}</p>
+        <div class="w-full flex flex-col items-center justify-center text-center pt-4">
+            <h3 class="{{ $fontColor }} font-bold line-clamp-2 mb-2">{{ $title }}</h3>
+            <p class="{{ $fontColor }}">{{ $date }}</p>
         </div>
     </div>
 </a>

@@ -9,7 +9,7 @@
     <title>Profil</title>
 </head>
 
-<body class="bg-white text-gray-800 font-Heebo md:font-jakarta text-pM lg:text-p">
+<body class="bg-white text-gray-800 font-responsive text-pM lg:text-p">
 
     <x-header />
     <x-breadcrumb />
@@ -25,8 +25,8 @@
         </div>
 
         <section class="flex items-center justify-center px-10 md:pl-14 md:pr-8 py-12 w-full h-full">
-            <div class="max-w-screen-xl mx-auto w-full grid md:grid-cols-2 gap-10 items-center">
-                <div>
+            <div class="max-w-screen-xl mx-auto w-full grid md:grid-cols-2 md:gap-10 items-center">
+                <div class="">
                     <h1 class="text-displayM lg:text-display font-bold text-center md:text-left md:mt-5">
                         <span>Dinas Komunikasi</span>
                         <span>dan Informatika</span>
@@ -67,7 +67,7 @@
             </div>
 
             <!-- Gambar -->
-            <div class="relative h-full w-full">
+            <div class="relative h-full w-full hidden md:block">
                 <img src="/storage/assets/gedungkominfo.png" alt="Kantor Kominfo"
                     class="object-cover w-full h-full max-h-[500px]">
                 <div
@@ -76,7 +76,7 @@
             </div>
 
             <!-- Teks -->
-            <div class="px-10 md:px-16 py-12 text-white">
+            <div class="px-10 md:pl-10 md:pr-16 lg:px-16 py-12 text-white text-center md:text-left">
                 <h2 class="text-h1M lg:text-h1 font-bold mb-4">
                     Kedudukan dan <span class="text-secondary50">Alamat</span>
                 </h2>
@@ -95,7 +95,7 @@
     </section>
 
     <!-- Visi Misi -->
-    <section class="pt-14 pb-10 md:pb-36 md:pt-28 px-10 md:px-16 max-w-screen-xl mx-auto text-center">
+    <section class="py-10 md:pb-none md:pt-28 px-10 md:px-16 max-w-screen-xl mx-auto text-center">
         <h2 class="text-h1M lg:text-h1 font-bold mb-4">
             Visi dan <span class="text-primary50">Misi</span> Kami
         </h2>
@@ -106,9 +106,10 @@
     </section>
 
     <!-- Tugas & Fungsi -->
-    <section class="py-10 md:py-16 px-10 md:px-16 -mt-10 md:-mt-32">
-        <div class="grid md:grid-cols-2 gap-10 sm:gap-10 md:gap-16 lg:gap-32 items-start">
-            <div>
+    <section class="">
+        <div class="grid md:grid-cols-2 items-start">
+
+            <div class="bg-background md:bg-white py-10 md:py-16 px-10 md:pl-16 md:pr-10">
                 <h2 class="text-h1M lg:text-h1 font-bold mb-4 text-center">Tugas</h2>
                 <p class="leading-relaxed text-justify">
                     Sesuai dengan Peraturan Gubernur Provinsi Jawa Timur Nomor : 80 Tahun 2016 bahwa Dinas Komunikasi
@@ -117,13 +118,14 @@
                     Dinas yang berkedudukan di bawah dan bertanggung jawab kepada Gubernur melalui Sekretaris Daerah
                     Provinsi.
                 </p>
-                <p class="leading-relaxed mt-2 text-justify">
+                <p class="leading-relaxed text-justify">
                     Dinas Komunikasi dan Informatika Provinsi Jawa Timur mempunyai tugas membantu Gubernur menyiapkan
                     bahan pelaksanaan urusan pemerintahan yang menjadi kewenangan Pemerintah Provinsi di Bidang
                     Komunikasi dan informatika serta tugas pembantuan.
                 </p>
             </div>
-            <div class="mb-4 md:mb-14">
+
+            <div class="md:mb-14 py-10 md:py-16 px-10 md:pl-10 md:pr-16">
                 <h2 class="text-h1M lg:text-h1 font-bold mb-4 text-center">Fungsi</h2>
                 <p class="leading-relaxed text-justify mb-2">
                     Dalam melaksanakan tugas pokok tersebut Dinas Komunikasi dan Informatika mempunyai fungsi sebagai
@@ -138,11 +140,12 @@
                         persandian;</li>
                 </ol>
             </div>
+
         </div>
     </section>
 
     <!-- Unit Kerja -->
-    <section class="bg-primary100 relative px-5 md:px-12 py-6 pb-[36px]">
+    <section class="bg-primary100 relative px-10 md:px-16 py-5">
 
         <div
             class="absolute top-0 left-0 w-full h-10 bg-gradient-to-b from-gray90/10 to-transparent pointer-events-none z-10">
@@ -154,7 +157,7 @@
         <div>
             <x-card-kategori-unitkerja titleFirst="Unit Kerja" titleSecond="Dinas Kominfo" bgColor="bg-primary100"
                 titleFirstColor="text-white" titleSecondColor="text-secondary50" titleSize="text-h1M lg:text-h1"
-                gap="lg:gap-4" titleMarginBottom="mb-10" :items="[
+                gap="lg:gap-4" titleMarginBottom="mb-5 md:mb-10" :items="[
         ['image' => asset('storage/assets/unitkerja1.jpg'), 'text' => 'Sekretariat', 'link' => '/home/bidangsekretariat'],
         ['image' => asset('storage/assets/unitkerja1.jpg'), 'text' => 'Informasi dan Komunikasi Publik', 'link' => '/home/bidangsekretariat'],
         ['image' => asset('storage/assets/unitkerja2.jpg'), 'text' => 'Aplikasi dan Informatika', 'link' => '/home/bidangsekretariat'],
@@ -165,9 +168,9 @@
     </section>
 
     <!-- Struktur Organisasi -->
-    <section class="bg-white relative py-16">
+    <section class="bg-white relative py-10 md:py-16">
         <div class="w-full md:w-[90%] lg:w-[75%] mx-auto flex flex-col items-center">
-            <h2 class="px-14 py-10 text-h1M lg:text-h1 font-bold mb-4 text-right self-end w-full">
+            <h2 class="px-14 text-h1M lg:text-h1 font-bold text-center md:text-right self-end w-full pb-5 md:pb-10">
                 Struktur <span class="text-primary50">Organisasi</span>
             </h2>
             <img src="/storage/assets/struktur-organisasi.png" alt="Struktur Organisasi"
@@ -181,12 +184,12 @@
     <section class="bg-background relative py-10">
 
         <div>
-            <h2 class="px-14 text-h1M lg:text-h1 font-bold text-left">
+            <h2 class="px-14 text-h1M lg:text-h1 font-bold text-center md:text-left">
                 <span class="text-black">Pejabat</span>
                 <span class="text-primary50">Struktural</span>
             </h2>
         </div>
-        <div class="px-14">
+        <div class="pl-10 md:pl-14">
             <x-card-slider :rows="2">
                 <div class="h-auto">
                     <x-card-pejabat :image="'storage/assets/pejabat1.jpg'" :name="'Sherlita Ratna Dewi Agustin, S.Si., M.IP'" :position="'Kepala Dinas'" />

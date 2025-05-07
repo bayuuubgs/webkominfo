@@ -19,19 +19,19 @@ export default {
                 Heebo: ['Heebo', 'sans-serif'],
             },
             fontSize: {
-                display: ["60px", { lineHeight: "125%" }],
+                display: ["60px", { lineHeight: "100%" }],
                 h1: ["40px", { lineHeight: "137.5%" }],
                 h2: ["24px", { lineHeight: "137.5%" }],
                 h3: ["18px", { lineHeight: "150%" }],
                 p: ["14px", { lineHeight: "165%" }],
-                label: ["10px", { lineHeight: "150%" }],
+                label: ["10px", { lineHeight: "125%" }],
 
                 displayM: ["32px", { lineHeight: "125%" }],
                 h1M: ["24px", { lineHeight: "137.5%" }],
                 h2M: ["16px", { lineHeight: "137.5%" }],
                 h3M: ["14px", { lineHeight: "150%" }],
                 pM: ["12px", { lineHeight: "165%" }],
-                labelM: ["10px", { lineHeight: "150%" }],
+                labelM: ["8px", { lineHeight: "125%" }],
             },
             colors: {
                 gray90: "#181818",
