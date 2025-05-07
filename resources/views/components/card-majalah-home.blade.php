@@ -10,7 +10,7 @@
     <div
         class="aspect-[3/4] bg-transparent rounded-2xl p-4 border-2 border-transparent
                transition-all duration-300 cursor-pointer hover:border-primary30 flex flex-col items-center font-responsive"
-        :class="{ 'border-priamry30': active }"
+        :class="{ 'border-primary30': active }"
     >
         <img
             src="{{ $image }}"

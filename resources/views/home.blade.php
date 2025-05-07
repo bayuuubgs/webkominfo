@@ -62,7 +62,7 @@
             <div class="absolute inset-0 flex items-end">
                 <div class="text-white pb-[35px] flex flex-col gap-[8px] px-5 md:px-16 w-full">
                     <span
-                        class="label-kategori w-[170px] font-jakarta bg-backgroundred text-secondary70 shadow-sm px-[16px] py-[6px] rounded-full text-p text-center mb-2">
+                        class="label-kategori w-[170px] bg-backgroundred text-secondary70 shadow-sm px-[16px] py-[6px] rounded-full text-pM md:text-p text-center mb-2">
                         BERITA TERKINI
                     </span>
                     <h1 class="text-3xl md:text-5xl font-bold leading-relax mb-4">
@@ -91,35 +91,35 @@
                 <div class="min-w-[254px] md:min-w-[300px] h-auto">
                     <x-card-berita image="{{ asset('storage/assets/beritasetda1.jpg') }}"
                         title="Gratis Naik Trans Jatim di Hari Angkutan Nasional 2025, Penumpang Membludak"
-                        date="24 April 2025 16:32:12" category="SETDA / PERANGKAT DAERAH"
+                        date="24 April 2025 16:32" category="Berita Terbaru"
                         description="Jatim Newsroom - Suasana di dalam armada Trans Jatim Koridor 1 yang melayani rute Surabaya–Gresik pada siang hari ini tampak berbeda dari biasanya. Jika di luar jam sibuk umumnya bus terlihat lengang, hari ini justru sebaliknya, padat, bahkan dipenuhi penumpang berdiri."
                         link="{{ route('home.berita.detail') }}" type="secondary" />
                 </div>
                 <div class="min-w-[254px] md:min-w-[300px] h-auto">
                     <x-card-berita image="{{ asset('storage/assets/beritasetda2.jpeg') }}"
                         title="Diskominfo Jatim Gelar Rapat Persiapan Resertifikasi ISO 27001:2022"
-                        date="22 April 2025 20:44:54" category="SETDA / PERANGKAT DAERAH"
+                        date="22 April 2025 20:44" category="Berita Terbaru"
                         description="Jatim Newsroom - Dinas Komunikasi dan Informatika (Diskominfo) Provinsi Jawa Timur melalui Bidang Persandian dan Keamanan Informasi mengadakan rapat persiapan resertifikasi ISO 27001:2022 pada Selasa (22/4/2025)."
                         link="{{ route('home.berita.detail') }}" type="secondary" />
                 </div>
                 <div class="min-w-[254px] md:min-w-[300px] h-auto">
                     <x-card-berita image="{{ asset('storage/assets/beritasetda3.jpeg') }}"
                         title="Apresiasi Karya Anak Bangsa, Diskominfo Jatim Gelar Nobar Film Jumbo"
-                        date="17 April 2025 21:28:29" category="SETDA / PERANGKAT DAERAH"
+                        date="17 April 2025 21:28" category="Berita Terbaru"
                         description="Jatim Newsroom - Sebagai bentuk apresiasi karya anak bangsa khususnya para animator Jawa Timur, Dinas Kominfo Jatim menggelar Nonton Bareng (nobar) Film Animasi JUMBO. Nobar diikuti oleh pengelola dan admin media sosial perangkat daerah di lingkungan Pemprov "
                         link="{{ route('home.berita.detail') }}" type="secondary" />
                 </div>
                 <div class="min-w-[254px] md:min-w-[300px] h-auto">
                     <x-card-berita image="{{ asset('storage/assets/beritasetda4.jpeg') }}"
                         title="Perkuat Manajemen Isu Publik, Diskominfo Jatim Gandeng Influencer Plat Merah dan Praktisi Media Digital"
-                        date="17 April 2025 12:39:20" category="SETDA / PERANGKAT DAERAH"
+                        date="17 April 2025 12:39" category="Berita Terbaru"
                         description="Jatim Newsroom - Sebagai upaya memperkuat diseminasi informasi kebijakan Pemerintah Provinsi Jawa Timur, Dinas Komunikasi dan Informatika Provinsi Jawa Timur menggelar Rapat Koordinasi Manajemen Isu Publik Terkait Konten Kebijakan Pemprov Jatim. Kegiatan ini berlangsung di Kantor Diskominfo Jatim"
                         link="{{ route('home.berita.detail') }}" type="secondary" />
                 </div>
                 <div class="min-w-[254px] md:min-w-[300px] h-auto">
                     <x-card-berita image="{{ asset('storage/assets/beritasetda5.jpg') }}"
                         title="KOMNAS HAM Belajar Pengelolaan PPID dan Komunikasi Publik ke Jatim"
-                        date="16 April 2025 10:18:48" category="SETDA / PERANGKAT DAERAH"
+                        date="16 April 2025 10:18" category="Berita Terbaru"
                         description="Jatim Newsroom - Komisi Nasional Hak Asasi Manusia atau KOMNAS HAM melakukan kunjungan di Dinas Kominfo Provinsi Jawa Timur, Selasa (15/4/2025). Kunjungan dikhususkan untuk forum sharing session layanan PPID dan penyampaian komunikasi publik melalui media sosial."
                         link="{{ route('home.berita.detail') }}" type="secondary" />
                 </div>
@@ -151,22 +151,22 @@
         </div>
     </div>
 
-    <section class="px-[60px] py-[40px] font-jakarta">
-        <div class="pb-[24px]">
+    <section class="py-[40px] font-responsive">
+        <div class="px-5 md:px-16 pb-[24px]">
             <x-section-header title="Video Seputar " highlight="Jawa Timur" buttonText="Selengkapnya"
                 buttonVariant="blue" type="blue" buttonHref="{{ route('home.video') }}" />
         </div>
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 -ml-[50px]">
+        <div class="px-5 md:px-16 grid grid-cols-1 lg:grid-cols-3 gap-4 lg:ml-0">
             <div class="lg:col-span-2 flex flex-col pt-[8px]">
                 <x-video-container video-id="s18KVkb4rLE"
                     title="INFO JAWA TIMUR MINGGU KE-4 BULAN MARET I 28 MARET 2025"
                     description="INFO JATIM edisi Minggu ke-4 bulan Maret 2025 menyajikan beragam kegiatan di lingkungan Pemprov Jatim dalam sepekan, di antaranya :
-                    1. Kominfo berbagi.
-                    2. Laporan Pansus pertanggungjawaban Gubernur Jatim tentang anggaran 2024.
-                    3. Seminar Pelatihan Kepemimpinan Administrator (PKA) jatim angkatan I 2025.
-                    4. Launching Kalender Event Unggulan 2025 di Gedung Negara Grahadi.
-                    5. Lailatul Qiroah di Masjid Nasional Al Al-Akbar Surabaya.
-                    Demikian beragam informasi dalam sepekan. Semoga informasi tersebut bermanfaat dan mengedukasi."
+                            1. Kominfo berbagi.
+                            2. Laporan Pansus pertanggungjawaban Gubernur Jatim tentang anggaran 2024.
+                            3. Seminar Pelatihan Kepemimpinan Administrator (PKA) jatim angkatan I 2025.
+                            4. Launching Kalender Event Unggulan 2025 di Gedung Negara Grahadi.
+                            5. Lailatul Qiroah di Masjid Nasional Al Al-Akbar Surabaya.
+                            Demikian beragam informasi dalam sepekan. Semoga informasi tersebut bermanfaat dan mengedukasi."
                     published-at="11 Februari 2025 08:38" category="SETDA / PERANGKAT DAERAH" />
             </div>
             <div class="flex flex-col pt-[23px]">
@@ -203,35 +203,35 @@
                 <div class="min-w-[254px] md:min-w-[404px] h-auto">
                     <x-card-berita image="{{ asset('storage/assets/gubernur1.jpg') }}"
                         title="Jatim Retreat 2025, Sinergi Kepemimpinan Menuju Gerbang Baru Nusantara"
-                        date="26 April 2025 18:29:50" category="Gubernur"
+                        date="26 April 2025 18:29:50" category="Setda / Perangkat daerah"
                         description="atim Newsroom – Gubernur Jawa Timur, Khofifah Indar Parawansa, membuka secara resmi kegiatan Jatim Retreat 2025 yang digelar di Pusat Pendidikan (Pusdik) Arhanud TNI AD Kota Batu pada 26–27 April 2025."
                         link="{{ route('home.berita.detail') }}" type="secondary" />
                 </div>
                 <div class="min-w-[254px] md:min-w-[404px] h-auto">
                     <x-card-berita image="{{ asset('storage/assets/gubernur2.jpg') }}"
                         title="Gubernur Jatim Dukung Pembentukan BUMD Pangan" date="24 April 2025 20:51:33"
-                        category="Gubernur"
+                        category="Setda / Perangkat daerah"
                         description="Jatim Newsroom - Gubernur Jawa Timur, Khofifah Indar Parawansa, menyambut baik dan mendukung rencana atau wacana komisi C DPRD Jatim mendorong Badan Usaha Milik Daerah (BUMD) pangan di Jatim. Hal ini disampaikan Gubernur Khofifah usai paripurna di DPRD Jatim, Kamis (24/4/2025)."
                         link="{{ route('home.berita.detail') }}" type="secondary" />
                 </div>
                 <div class="min-w-[254px] md:min-w-[404px] h-auto">
                     <x-card-berita image="{{ asset('storage/assets/gubernur3.jpg') }}"
                         title="BPK Serahkan LHP atas LKPD Jawa Timur 2024, Pemprov Jatim Kembali Raih WTP"
-                        date="24 April 2025 18:34:36" category="Gubernur"
+                        date="24 April 2025 18:34:36" category="Setda / Perangkat daerah"
                         description="Jatim Newsroom — Badan Pemeriksa Keuangan (BPK) menyerahkan Laporan Hasil Pemeriksaan (LHP) atas Laporan Keuangan Pemerintah Daerah (LKPD) Provinsi Jawa Timur Tahun Anggaran 2024 dalam rapat paripurna yang digelar di Gedung DPRD Jawa Timur, Kamis (24/4/2025)."
                         link="{{ route('home.berita.detail') }}" type="secondary" />
                 </div>
                 <div class="min-w-[254px] md:min-w-[404px] h-auto">
                     <x-card-berita image="{{ asset('storage/assets/gubernur4.jpg') }}"
                         title="Gubernur Jatim Pimpin Apel Kesiapsiagaan Nasional Damkar, Satpol PP dan Satlinmas 2025 di Sidoarjo"
-                        date="17 April 2025 15:55:24" category="Gubernur"
+                        date="17 April 2025 15:55:24" category="Setda / Perangkat daerah"
                         description="Jatim Newsroom - Gubernur Jawa Timur, Khofifah Indar Parawansa, memimpin Apel Kesiapsiagaan Nasional Pemadam Kebakaran (Damkar), Satuan Polisi Pamong Praja (Satpol PP), Satuan Perlindungan Masyarakat (Satlinmas) tingkat provinsi Jawa Timur tahun 2025."
                         link="{{ route('home.berita.detail') }}" type="secondary" />
                 </div>
                 <div class="min-w-[254px] md:min-w-[404px] h-auto">
                     <x-card-berita image="{{ asset('storage/assets/gubernur5.jpg') }}"
                         title="Gubernur Jatim Minta Bupati-Walikota Proaktif Komunikasi ke Perusahaan Agar Tidak Terjadi PHK"
-                        date="10 April 2025 21:10:45" category="Gubernur"
+                        date="10 April 2025 21:10:45" category="Setda / Perangkat daerah"
                         description="Jatim Newsroom - Gubernur Jawa Timur, Khofifah Indar Parawansa, meminta kepada Bupati Walikota, yang wilayahnya memiliki industri atau perusahaan, dan jumlah pekerja yang cukup besar, untuk intens melakukan koordinasi."
                         link="{{ route('home.berita.detail') }}" type="secondary" />
                 </div>
@@ -250,35 +250,35 @@
                 <div class="min-w-[254px] md:min-w-[404px] h-auto">
                     <x-card-berita image="{{ asset('storage/assets/wagub1.jpg') }}"
                         title="Wagub Emil Dardak Paparkan Konsep Jatim Gerbang Baru Nusantara di Halal Bihalal ASN Pemprov"
-                        date="8 April 2025 15:34:15" category="Wakil Gubernur"
+                        date="8 April 2025 15:34:15" category="Gubernur"
                         description="Jatim Newsroom - Saat momentum halalbihalal bersama 10.000 Aparatur Sipil Negara (ASN) di lingkungan Pemprov Jatim di Jatim Expo Surabaya, Wakil Gubernur Jawa Timur"
                         link="{{ route('home.berita.detail') }}" type="" />
                 </div>
                 <div class="min-w-[254px] md:min-w-[404px] h-auto">
                     <x-card-berita image="{{ asset('storage/assets/wagub2.jpeg') }}"
                         title="Wagub Emil Ajak DPD REI Jatim Dorong Pertumbuhan Ekonomi Lewat Multiplier Effect Sektor Properti"
-                        date="13 Maret 2025 23:25:09" category="Wakil Gubernur"
+                        date="13 Maret 2025 23:25:09" category="Gubernur"
                         description="Jatim Newsroom - Wakil Gubernur Jawa Timur, Emil Elestianto Dardak, mengajak jajaran Dewan Pengurus Daerah (DPD) Real Estate Indonesia (REI) Jawa Timur untuk turut andil sebagai pengungkit perekonomian Jatim melalui Multiplier Effect dari pengembangan sektor properti. "
                         link="{{ route('home.berita.detail') }}" type="" />
                 </div>
                 <div class="min-w-[254px] md:min-w-[404px] h-auto">
                     <x-card-berita image="{{ asset('storage/assets/wagub3.jpeg') }}"
                         title="Wagub Emil Komitmen Dorong Pelaku Usaha Menengah Lebih Maju"
-                        date="12 Maret 2025 21:32:21" category="Wakil Gubernur"
+                        date="12 Maret 2025 21:32:21" category="Gubernur"
                         description="Jatim Newsroom - Wakil Gubernur Jawa Timur, Emil Elestianto Dardak, menyampaikan komitmennya untuk mendorong para pelaku usaha menengah menjadi lebih maju. Menurutnya, hal ini menunjukkan bahwa pemerintah hadir untuk mendukung para pengusaha yang termasuk dalam kategori menengah."
                         link="{{ route('home.berita.detail') }}" type="" />
                 </div>
                 <div class="min-w-[254px] md:min-w-[404px] h-auto">
                     <x-card-berita image="{{ asset('storage/assets/wagub4.jpg') }}"
                         title="Wagub Emil : Perguruan Tinggi Jadi Pendorong Kemajuan Ekonomi Syariah di Jatim"
-                        date="25 Januari 2024 10:47:34" category="Wakil Gubernur"
+                        date="25 Januari 2024 10:47:34" category="Gubernur"
                         description="Wakil Gubernur Jawa Timur, Emil Elestianto Dardak, saat menjadi pembicara Stadium Generale di Institut Agama Islam Nahdlatul Ulama (IAINU) Kab. Tuban, Rabu (24/1/2024)"
                         link="{{ route('home.berita.detail') }}" type="" />
                 </div>
                 <div class="min-w-[254px] md:min-w-[404px] h-auto">
                     <x-card-berita image="{{ asset('storage/assets/wagub5.jpg') }}"
                         title="Keluhkan Listrik Dipadamkan. Warga Rusunawa Gunungsari Diterima Wagub Emil"
-                        date="12 Januari 2024 13:06:17" category="Wakil Gubernur"
+                        date="12 Januari 2024 13:06:17" category="Gubernur"
                         description="Wakil Gubernur Jawa Timur, Emil Elestianto Dardak saat menerima perwakilan warga rusunawa Gunungsari di lobby DPRD Jatim. (Pca)"
                         link="{{ route('home.berita.detail') }}" type="" />
                 </div>
@@ -297,35 +297,35 @@
                 <div class="min-w-[254px] md:min-w-[404px] h-auto">
                     <x-card-berita image="{{ asset('storage/assets/forda1.jpg') }}"
                         title="FORDA II Jatim 2024 Resmi Ditutup, Kota Surabaya Juara Umum"
-                        date="4 Desember 2024 23:57:22" category="Forda Jatim 2024"
+                        date="4 Desember 2024 23:57:22" category="Wakil Gubernur"
                         description="KORMI Kota Surabaya sebagai Juara Umum pada Festival Olahraga Masyarakat Daerah (FORDA) II Jawa Timur tahun 2024. Foto: Ryan JNR"
                         link="{{ route('home.berita.detail') }}" type="secondary" />
                 </div>
                 <div class="min-w-[254px] md:min-w-[404px] h-auto">
                     <x-card-berita image="{{ asset('storage/assets/forda2.jpg') }}"
                         title="FORDA Jatim II/2024 - Pertandingan Dai Kyokushin Karate Indonesia (DKKI) Sukses Digelar"
-                        date="4 Desember 2024 21:16:14" category="Forda Jatim 2024"
+                        date="4 Desember 2024 21:16:14" category="Wakil Gubernur"
                         description="Jatim Newsroom – Pertandingan Dai Kyokushin Karate Indonesia menjadi salah satu ajang dalam Festival Olahraga Masyarakat Daerah Provinsi Jawa Timur II Tahun 2024 (FORDA Jatim II/2024), yang dilaksanakan hari ini, 4 Desember 2024, di Gelanggang Remaja Surabaya."
                         link="{{ route('home.berita.detail') }}" type="secondary" />
                 </div>
                 <div class="min-w-[254px] md:min-w-[404px] h-auto">
                     <x-card-berita image="{{ asset('storage/assets/forda3.jpeg') }}"
                         title="Induk Olahraga Orienteering pada FORDA II Jatim Umumkan Juara"
-                        date="4 Desember 2024 19:37:45" category="Forda Jatim 2024"
+                        date="4 Desember 2024 19:37:45" category="Wakil Gubernur"
                         description="Jatim Newsroom - Pertandingan Orienteering dalam ajang Festival Olahraga Masyarakat Daerah (FORDA) II Jawa Timur Tahun 2024 Induk Organisasi Olahraga (Inorga) Federasi Orienteering Nasional Indonesia (FONI) telah berlangsung hingga pengumuman juara di Stadion Gelora Bung Tomo (GBT) Rabu,"
                         link="{{ route('home.berita.detail') }}" type="secondary" />
                 </div>
                 <div class="min-w-[254px] md:min-w-[404px] h-auto">
                     <x-card-berita image="{{ asset('storage/assets/forda4.jpg') }}"
                         title="Surabaya Borong Medali INORGA INATKF Forda II Jatim 2024"
-                        date="4 Desember 2024 19:28:18" category="Forda Jatim 2024"
+                        date="4 Desember 2024 19:28:18" category="Wakil Gubernur"
                         description="Jatim Newsroom - Pertandingan Induk Organisasi Olahraga (INORGA) Indonesia Tradisional Karate Federation (INATKF) dalam ajang Festival Olahraga Masyarakat Daerah (FORDA) II Jawa Timur 2024 yang berlangsung di Gor Indor Gedung Gelora Bung Tomo (GBT) Surabaya, Rabu (4/12/2024)."
                         link="{{ route('home.berita.detail') }}" type="secondary" />
                 </div>
                 <div class="min-w-[254px] md:min-w-[404px] h-auto">
                     <x-card-berita image="{{ asset('storage/assets/forda5.jpg') }}"
                         title="Kabupaten Magetan Raih Emas di FORDA II Jawa Timur 2024"
-                        date="3 Desember 2024 17:59:42" category="Forda Jatim 2024"
+                        date="3 Desember 2024 17:59:42" category="Wakil Gubernur"
                         description="Jatim Newsroom – Di tengah keterbatasan, Kabupaten Magetan berhasil mencuri perhatian di ajang Inorga Tarung Bebas Indonesia (TBI) FORDA II Jawa Timur 2024. Hanya mengirimkan satu atlet, Magetan mampu membawa pulang medali emas lewat penampilan gemilang Qurratu Ain Khairina di kelas kadet putri 51 kilogram."
                         link="{{ route('home.berita.detail') }}" type="secondary" />
                 </div>
@@ -344,35 +344,35 @@
                 <div class="min-w-[254px] md:min-w-[404px] h-auto">
                     <x-card-berita image="{{ asset('storage/assets/wagub1.jpg') }}"
                         title="Wagub Emil Dardak Paparkan Konsep Jatim Gerbang Baru Nusantara di Halal Bihalal ASN Pemprov"
-                        date="8 April 2025 15:34:15" category="Wakil Gubernur"
+                        date="8 April 2025 15:34:15" category="Forda Jatim 2024"
                         description="Jatim Newsroom - Saat momentum halalbihalal bersama 10.000 Aparatur Sipil Negara (ASN) di lingkungan Pemprov Jatim di Jatim Expo Surabaya, Wakil Gubernur Jawa Timur"
                         link="{{ route('home.berita.detail') }}" type="" />
                 </div>
                 <div class="min-w-[254px] md:min-w-[404px] h-auto">
                     <x-card-berita image="{{ asset('storage/assets/wagub2.jpeg') }}"
                         title="Wagub Emil Ajak DPD REI Jatim Dorong Pertumbuhan Ekonomi Lewat Multiplier Effect Sektor Properti"
-                        date="13 Maret 2025 23:25:09" category="Wakil Gubernur"
+                        date="13 Maret 2025 23:25:09" category="Forda Jatim 2024"
                         description="Jatim Newsroom - Wakil Gubernur Jawa Timur, Emil Elestianto Dardak, mengajak jajaran Dewan Pengurus Daerah (DPD) Real Estate Indonesia (REI) Jawa Timur untuk turut andil sebagai pengungkit perekonomian Jatim melalui Multiplier Effect dari pengembangan sektor properti. "
                         link="{{ route('home.berita.detail') }}" type="" />
                 </div>
                 <div class="min-w-[254px] md:min-w-[404px] h-auto">
                     <x-card-berita image="{{ asset('storage/assets/wagub3.jpeg') }}"
                         title="Wagub Emil Komitmen Dorong Pelaku Usaha Menengah Lebih Maju"
-                        date="12 Maret 2025 21:32:21" category="Wakil Gubernur"
+                        date="12 Maret 2025 21:32:21" category="Forda Jatim 2024"
                         description="Jatim Newsroom - Wakil Gubernur Jawa Timur, Emil Elestianto Dardak, menyampaikan komitmennya untuk mendorong para pelaku usaha menengah menjadi lebih maju. Menurutnya, hal ini menunjukkan bahwa pemerintah hadir untuk mendukung para pengusaha yang termasuk dalam kategori menengah."
                         link="{{ route('home.berita.detail') }}" type="" />
                 </div>
                 <div class="min-w-[254px] md:min-w-[404px] h-auto">
                     <x-card-berita image="{{ asset('storage/assets/wagub4.jpg') }}"
                         title="Wagub Emil : Perguruan Tinggi Jadi Pendorong Kemajuan Ekonomi Syariah di Jatim"
-                        date="25 Januari 2024 10:47:34" category="Wakil Gubernur"
+                        date="25 Januari 2024 10:47:34" category="Forda Jatim 2024"
                         description="Wakil Gubernur Jawa Timur, Emil Elestianto Dardak, saat menjadi pembicara Stadium Generale di Institut Agama Islam Nahdlatul Ulama (IAINU) Kab. Tuban, Rabu (24/1/2024)"
                         link="{{ route('home.berita.detail') }}" type="" />
                 </div>
                 <div class="min-w-[254px] md:min-w-[404px] h-auto">
                     <x-card-berita image="{{ asset('storage/assets/wagub5.jpg') }}"
                         title="Keluhkan Listrik Dipadamkan. Warga Rusunawa Gunungsari Diterima Wagub Emil"
-                        date="12 Januari 2024 13:06:17" category="Wakil Gubernur"
+                        date="12 Januari 2024 13:06:17" category="Forda Jatim 2024"
                         description="Wakil Gubernur Jawa Timur, Emil Elestianto Dardak saat menerima perwakilan warga rusunawa Gunungsari di lobby DPRD Jatim. (Pca)"
                         link="{{ route('home.berita.detail') }}" type="" />
                 </div>
@@ -397,21 +397,26 @@
                         style="background: linear-gradient(180deg, rgba(30,22,91,0.5) 22%, rgba(45,33,136,0.7) 30%, rgba(0,0,0,1) 78%);">
                     </div>
                     <div
-                        class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-4 flex flex-col justify-end text-white z-10">
-                        <div class="flex items-center justify-between mb-2">
+                        class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-2 md:p-4 flex flex-col justify-end text-white z-10">
+                        <div class="flex items-center justify-between mb-1 md:mb-2 gap-2 flex-wrap">
                             <x-label-kategori text="Olahraga" />
-                            <p class="text-p font-medium">
+                            <p class="text-[10px] md:text-p font-medium whitespace-nowrap">
                                 1 April 2025 22:16:48
                             </p>
                         </div>
-                        <h3 class="text-h3 font-bold leading-tight mb-[4px]">
+
+                        <h3 class="text-[13px] md:text-h3 font-bold leading-tight mb-1 md:mb-2 line-clamp-2">
                             Mandiri U20 Challenge Series 2025
                         </h3>
-                        <p class="text-p font-medium line-clamp-2">
+
+                        <p class="text-[11px] md:text-p hidden md:block font-medium line-clamp-2">
                             Indonesia U20 vs Suriah U20 pada pertandingan Mandiri U20 Challenge Series 2025, Senin,
                             27/1/2025. di Stadion Gelora Delta Sidoarjo
                         </p>
-                        <span class="mt-[8px] text-gray10 font-bold underline text-p">Selengkapnya</span>
+
+                        <span class="mt-1 text-[11px] md:text-p text-gray10 font-bold underline">
+                            Selengkapnya
+                        </span>
                     </div>
                 </a>
             </swiper-slide>
@@ -423,20 +428,20 @@
                         style="background: linear-gradient(180deg, rgba(30,22,91,0.5) 22%, rgba(45,33,136,0.7) 30%, rgba(0,0,0,1) 78%);">
                     </div>
                     <div
-                        class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-4 flex flex-col justify-end text-white z-10">
-                        <div class="flex items-center justify-between mb-2">
+                        class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-2 md:p-4 flex flex-col justify-end text-white z-10">
+                        <div class="flex items-center justify-between mb-1 md:mb-2 gap-2 flex-wrap">
                             <x-label-kategori text="PON XXI ACEH-SUMUT 2024" />
-                            <p class="text-p font-medium">
+                            <p class="text-[10px] md:text-p font-medium whitespace-nowrap">
                                 17 Oktober 2024 20:49:12
                             </p>
                         </div>
-                        <p class="text-h3 font-bold leading-tight mb-[4px]">
+                        <p class="text-[13px] md:text-h3 font-bold leading-tight mb-1 md:mb-2 line-clamp-2">
                             PON XXI Aceh–Sumut 2024
                         </p>
-                        <p class="text-p font-medium line-clamp-2">
+                        <p class="text-[11px] md:text-p hidden md:block font-medium line-clamp-2">
                             Cabang Olahraga Sepak Bola Putra Jawa Timur
                         </p>
-                        <span class="mt-[8px] text-gray10 font-bold underline text-p">Selengkapnya</span>
+                        <span class="mt-1 text-[11px] md:text-p text-gray10 font-bold underline">Selengkapnya</span>
                     </div>
                 </a>
             </swiper-slide>
@@ -448,20 +453,20 @@
                         style="background: linear-gradient(180deg, rgba(30,22,91,0.5) 22%, rgba(45,33,136,0.7) 30%, rgba(0,0,0,1) 78%);">
                     </div>
                     <div
-                        class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-4 flex flex-col justify-end text-white z-10">
-                        <div class="flex items-center justify-between mb-2">
+                        class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-2 md:p-4 flex flex-col justify-end text-white z-10">
+                        <div class="flex items-center justify-between mb-1 md:mb-2 gap-2 flex-wrap">
                             <x-label-kategori text="PON XXI ACEH-SUMUT 2024" />
-                            <p class="text-p font-medium">
+                            <p class="text-[10px] md:text-p font-medium whitespace-nowrap">
                                 17 Oktober 2024 20:48:13
                             </p>
                         </div>
-                        <p class="text-h3 font-bold leading-tight mb-[4px]">
+                        <p class="text-[13px] md:text-h3 font-bold leading-tight mb-1 md:mb-2 line-clamp-2">
                             PON XXI Aceh-Sumut 2024
                         </p>
-                        <p class="text-p font-medium line-clamp-2">
+                        <p class="text-[11px] md:text-p hidden md:block font-medium line-clamp-2">
                             Sepatu Roda Beregu Putra
                         </p>
-                        <span class="mt-[8px] text-gray10 font-bold underline text-p">Selengkapnya</span>
+                        <span class="mt-1 text-[11px] md:text-p text-gray10 font-bold underline">Selengkapnya</span>
                     </div>
                 </a>
             </swiper-slide>
@@ -473,20 +478,20 @@
                         style="background: linear-gradient(180deg, rgba(30,22,91,0.5) 22%, rgba(45,33,136,0.7) 30%, rgba(0,0,0,1) 78%);">
                     </div>
                     <div
-                        class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-4 flex flex-col justify-end text-white z-10">
-                        <div class="flex items-center justify-between mb-2">
+                        class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-2 md:p-4 flex flex-col justify-end text-white z-10">
+                        <div class="flex items-center justify-between mb-1 md:mb-2 gap-2 flex-wrap">
                             <x-label-kategori text="PON XXI ACEH-SUMUT 2024" />
-                            <p class="text-p font-medium">
+                            <p class="text-[10px] md:text-p font-medium whitespace-nowrap">
                                 17 Oktober 2024 16:41:58
                             </p>
                         </div>
-                        <p class="text-h3 font-bold leading-tight mb-[4px]">
+                        <p class="text-[13px] md:text-h3 font-bold leading-tight mb-1 md:mb-2 line-clamp-2">
                             PON XXI Aceh-Sumut 2024
                         </p>
-                        <p class="text-p font-medium line-clamp-2">
+                        <p class="text-[11px] md:text-p hidden md:block font-medium line-clamp-2">
                             Cabang Olahraga Tenis Lapangan Beregu Putra Jawa Timur
                         </p>
-                        <span class="mt-[8px] text-gray10 font-bold underline text-p">Selengkapnya</span>
+                        <span class="mt-1 text-[11px] md:text-p text-gray10 font-bold underline">Selengkapnya</span>
                     </div>
                 </a>
             </swiper-slide>
@@ -499,21 +504,21 @@
                         style="background: linear-gradient(180deg, rgba(30,22,91,0.5) 22%, rgba(45,33,136,0.7) 30%, rgba(0,0,0,1) 78%);">
                     </div>
                     <div
-                        class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-4 flex flex-col justify-end text-white z-10">
-                        <div class="flex items-center justify-between mb-2">
+                        class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-2 md:p-4  justify-end text-white z-10">
+                        <div class="flex items-center justify-between mb-1 md:mb-2 gap-2 flex-wrap">
                             <x-label-kategori text="PON XXI ACEH-SUMUT 2024" />
-                            <p class="text-p font-medium">
+                            <p class="text-[10px] md:text-p font-medium whitespace-nowrap">
                                 3 September 2024 6:23:34
                             </p>
                         </div>
-                        <p class="text-h3 font-bold leading-tight mb-[4px]">
+                        <p class="text-[13px] md:text-h3 font-bold leading-tight mb-1 md:mb-2 line-clamp-2">
                             Kadis Kominfo Lepas Kontingen E-Sport Jatim
                         </p>
-                        <p class="text-p font-medium line-clamp-2">
+                        <p class="text-[11px] md:text-p hidden md:block font-medium line-clamp-2">
                             Kepala Dinas Komunikasi dan Informatika Provinsi Jawa Timur (sedang berdiri) memberikan
                             arahan dan semangat kepada para atlet cabang
                         </p>
-                        <span class="mt-[8px] text-gray10 font-bold underline text-p">Selengkapnya</span>
+                        <span class="mt-1 text-[11px] md:text-p text-gray10 font-bold underline">Selengkapnya</span>
                     </div>
                 </a>
             </swiper-slide>
@@ -565,13 +570,13 @@
         </div>
     </section>
 
-    <section>
-        <div class="min-h-screen pt-[45px] px-[66px] font-jakarta">
+    <section class="mb-4">
+        <div class="min-h-screen pt-[45px] px-[66px] font-responsive">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-7xl mx-auto">
 
                 {{-- KIRI - Artikel --}}
                 <div class="bg-gray10 p-[20px] rounded-xl shadow-md">
-                    <div class="text-center text-h2 font-bold mb-[16px]">
+                    <div class="text-center text-h2M md:text-h2 font-bold mb-[16px]">
                         <p>Artikel <span class="text-primary50">Lainnya</span></p>
                     </div>
                     <div class="bg-primary100 text-gray10 rounded-lg overflow-y-auto h-[400px]">
@@ -581,17 +586,17 @@
 
                 {{-- KANAN - Survey Pengunjung --}}
                 <div class="bg-gray10 p-[20px] rounded-xl shadow-md">
-                    <div class="text-center text-h2 font-bold mb-[16px]">
+                    <div class="text-center text-h2M md:text-h2 font-bold mb-[16px]">
                         <p>Survey <span class="text-primary50">Pengunjung</span></p>
                     </div>
-                    <p class="text-p font-medium text-gray70 mb-[16px]">Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                    <p class="text-pM md:text-p font-medium text-gray70 mb-[16px] text-justify">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
                         minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                         pariatur.</p>
                     <div class="flex justify-center">
                         <button
-                            class="bg-gray10 border border-gray90 px-[16px] py-[8px] rounded-full flex items-center gap-[8px] text-p font-bold hover:bg-gray-100 transition mb-4">
+                            class="bg-gray10 border border-gray90 px-[16px] py-[8px] rounded-full flex items-center gap-[8px] text-pM md:text-p font-bold hover:bg-gray-100 transition mb-4">
                             Isi Survey →
                         </button>
                     </div>

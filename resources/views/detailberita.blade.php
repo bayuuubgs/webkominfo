@@ -11,7 +11,7 @@
 
     <x-breadcrumb />
 
-    
+
 
     <section>
         <div class="min-h-screen p-6">
@@ -98,6 +98,6 @@
             </div>
         </div>
     </section>
-
+    <x-footer/>
 </body>
 </html>
