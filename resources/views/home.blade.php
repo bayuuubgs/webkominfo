@@ -65,7 +65,7 @@
                         class="label-kategori w-[170px] bg-backgroundred text-secondary70 shadow-sm px-[16px] py-[6px] rounded-full text-pM md:text-p text-center mb-2">
                         BERITA TERKINI
                     </span>
-                    <h1 class="text-3xl md:text-5xl font-bold leading-relax mb-4">
+                    <h1 class="text-displayM md:text-display font-bold mb-4">
                         Resmi Dilantik, Gubernur Khofifah dan Wagub Emil Siap Sinergikan Nawa Bhakti Satya dengan Asta
                         Cita
                     </h1>
@@ -531,37 +531,37 @@
                 type="white" buttonHref="{{ route('home.majalah') }}" />
 
             <x-card-slider :row="1">
-                <div class="min-w-[300px] h-auto">
+                <div>
                     <x-card-majalah-home image="{{ asset('storage/assets/majalah1.jpg') }}"
                         title="MAJALAH POTENSI JAWA TIMUR EDISI 156 JANUARI - FEBRUARI 2025"
                         date="19 Februari 2025 0:00:00" link="{{ route('home.majalah.detail') }}" />
                 </div>
-                <div class="min-w-[300px] h-auto">
+                <div>
                     <x-card-majalah-home image="{{ asset('storage/assets/majalah2.jpeg') }}"
                         title="MAJALAH POTENSI EDISI 155 AGUSTUS 2024" date="1 Agustus 2024 0:00:00"
                         link="{{ route('home.majalah.detail') }}" />
                 </div>
-                <div class="min-w-[300px] h-auto">
+                <div>
                     <x-card-majalah-home image="{{ asset('storage/assets/majalah3.jpg') }}"
                         title="MAJALAH POTENSI EDISI 153 JUNI 2024" date="1 Juni 2024 0:00:00 "
                         link="{{ route('home.majalah.detail') }}" />
                 </div>
-                <div class="min-w-[300px] h-auto">
+                <div>
                     <x-card-majalah-home image="{{ asset('storage/assets/majalah4.jpg') }}"
                         title="MAJALAH POTENSI EDISI 152 MEI 2024" date="1 Mei 2024 0:00:00"
                         link="{{ route('home.majalah.detail') }}" />
                 </div>
-                <div class="min-w-[300px] h-auto">
+                <div>
                     <x-card-majalah-home image="{{ asset('storage/assets/majalah5.jpg') }}"
                         title="MAJALAH POTENSI EDISI 155 APRIL 2024" date="31 Maret 2024 0:00:00"
                         link="{{ route('home.majalah.detail') }}" />
                 </div>
-                <div class="min-w-[300px] h-auto">
+                <div>
                     <x-card-majalah-home image="{{ asset('storage/assets/majalah1.jpg') }}"
                         title="MAJALAH POTENSI JAWA TIMUR EDISI 156 JANUARI - FEBRUARI 2025"
                         date="19 Februari 2025 0:00:00" link="{{ route('home.majalah.detail') }}" />
                 </div>
-                <div class="min-w-[300px] h-auto">
+                <div>
                     <x-card-majalah-home image="{{ asset('storage/assets/majalah2.jpeg') }}"
                         title="MAJALAH POTENSI EDISI 155 AGUSTUS 2024" date="1 Agustus 2024 0:00:00"
                         link="{{ route('home.majalah.detail') }}" />
