@@ -25,7 +25,7 @@
                             Demikian beragam informasi dalam sepekan. Semoga informasi tersebut bermanfaat dan mengedukasi."
                     published-at="11 Februari 2025 08:38" category="SETDA / PERANGKAT DAERAH" />
             </div>
-            <div class="flex flex-col pt-[23px]">
+            <div class="flex flex-col">
                 <x-card-lainnya title="Video" highlight="Lainnya">
                     <x-card-list-lainnya image="{{ asset('storage/assets/videolainnya.png') }}"
                         title="INFO JAWA TIMUR MINGGU KE-2 BULAN FEBRUARI | 14 FEBRUARI 2025"

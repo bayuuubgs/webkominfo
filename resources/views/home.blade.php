@@ -187,21 +187,29 @@
             <x-section-header title="Video Seputar " highlight="Jawa Timur" buttonText="Selengkapnya"
                 buttonVariant="blue" type="blue" buttonHref="{{ route('home.video') }}" />
         </div>
-        <div class="px-5 md:px-16 grid grid-cols-1 lg:grid-cols-3 gap-4 lg:ml-0">
-            <div class="lg:col-span-2 flex flex-col pt-[8px]">
-                <x-video-container video-id="s18KVkb4rLE"
+
+        <!-- Wrapper pakai flex agar tinggi kolom seragam -->
+        <div class="px-5 md:px-16 flex flex-col xl:flex-row gap-5 items-stretch">
+            <!-- Kolom kiri: Video utama -->
+            <div class="w-full xl:w-3/5 flex flex-col h-full">
+                <x-video-container
+                    video-id="s18KVkb4rLE"
                     title="INFO JAWA TIMUR MINGGU KE-4 BULAN MARET I 28 MARET 2025"
                     description="INFO JATIM edisi Minggu ke-4 bulan Maret 2025 menyajikan beragam kegiatan di lingkungan Pemprov Jatim dalam sepekan, di antaranya :
-                            1. Kominfo berbagi.
-                            2. Laporan Pansus pertanggungjawaban Gubernur Jatim tentang anggaran 2024.
-                            3. Seminar Pelatihan Kepemimpinan Administrator (PKA) jatim angkatan I 2025.
-                            4. Launching Kalender Event Unggulan 2025 di Gedung Negara Grahadi.
-                            5. Lailatul Qiroah di Masjid Nasional Al Al-Akbar Surabaya.
-                            Demikian beragam informasi dalam sepekan. Semoga informasi tersebut bermanfaat dan mengedukasi." published-at="11 Februari 2025 08:38"
-                    category="SETDA / PERANGKAT DAERAH" />
+                        1. Kominfo berbagi.
+                        2. Laporan Pansus pertanggungjawaban Gubernur Jatim tentang anggaran 2024.
+                        3. Seminar Pelatihan Kepemimpinan Administrator (PKA) jatim angkatan I 2025.
+                        4. Launching Kalender Event Unggulan 2025 di Gedung Negara Grahadi.
+                        5. Lailatul Qiroah di Masjid Nasional Al Al-Akbar Surabaya.
+                        Demikian beragam informasi dalam sepekan. Semoga informasi tersebut bermanfaat dan mengedukasi."
+                    published-at="11 Februari 2025 08:38"
+                    category="SETDA / PERANGKAT DAERAH"
+                />
             </div>
-            <div class="flex flex-col pt-[23px]">
-                <x-card-lainnya title="Video" highlight="Lainnya">
+
+            <!-- Kolom kanan: Daftar video lainnya -->
+            <div class="w-full xl:w-2/5 flex flex-col h-full">
+                <x-card-lainnya title="Video" highlight="Lainnya" class="h-full flex flex-col">
                     <x-card-list-lainnya image="{{ asset('storage/assets/videolainnya.png') }}"
                         title="INFO JAWA TIMUR MINGGU KE-2 BULAN FEBRUARI | 14 FEBRUARI 2025"
                         date="14 Februari 2025 18:12" category="UMUM" link="{{ route('home.video.detail') }}" 

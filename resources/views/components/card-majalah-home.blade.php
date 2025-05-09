@@ -12,7 +12,7 @@
     $isActive = $active ? 'brightness-110 shadow-lg' : '';
 @endphp
 
-<a href="{{ $link ?: '#' }}" class="block w-[200px] md:w-[250px] lg:w-[300px] lg:w-[350px] h-auto font-responsive text-pM lg:text-p">
+<a href="{{ $link ?: '#' }}" class="block w-[200px] md:w-[250px] lg:w-[300px] xl:w-[350px] h-auto font-responsive text-pM lg:text-p">
     <div
         class="aspect-[3/4] bg-transparent rounded-2xl p-4 border border-transparent
                transition-all duration-300 cursor-pointer hover:border-primary30 flex flex-col items-center font-responsive"
