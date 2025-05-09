@@ -131,12 +131,14 @@
         <div class="relative w-full px-4 md:px-[60px]">
             <div class="relative bg-gray10 rounded-xl mx-auto px-4 py-4 md:px-[36px] md:py-[26px]">
                 <form action="" method="GET" class="flex flex-col md:flex-row items-start md:items-center gap-4">
-                    <label for="keyword" class="font-semibold text-h2M md:text-h2">
-                        Eksplorasi <span class="text-primary50 text-h2M md:text-h2">Menu</span>
-                    </label>
+                    <div class="justify-center md:justify-start">
+                        <label for="keyword" class="font-semibold text-h2M md:text-h2">
+                            Eksplorasi <span class="text-primary50">Menu</span>
+                        </label>
+                    </div>
                     <input type="text" id="keyword" name="keyword" placeholder="Cari Kata Kunci"
                         class="w-full md:flex-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" />
-                    <div class="flex flex-col md:flex-row gap-2 w-full md:w-auto">
+                    <div class="flex flex-row gap-2 w-full md:w-auto">
                         <button type="submit"
                             class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md w-full md:w-auto">
                             Telusuri
