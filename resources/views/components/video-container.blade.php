@@ -1,8 +1,8 @@
 @props(['videoId', 'title', 'description', 'publishedAt' => null, 'category' => null])
 
-<div x-data="{ play: false }" class="max-w-4xl mx-auto p-4 font-responsive">
+<div x-data="{ play: false }" class="w-full font-responsive">
     <!-- Thumbnail / Iframe -->
-    <div class="relative aspect-video rounded-t-xl overflow-hidden shadow-lg">
+    <div class="relative aspect-video rounded-t-xl overflow-hidden shadow-md">
         <template x-if="!play">
             <img src="https://img.youtube.com/vi/{{ $videoId }}/maxresdefault.jpg" alt="Video Thumbnail"
                 class="w-full h-full object-cover cursor-pointer" @click="play = true">

@@ -19,7 +19,7 @@
     </div>
 
     <div class="flex px-5 md:px-16">
-        <div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 w-full">
+        <div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 w-full items-start">
             <div class="flex items-center justify-center">
                 <x-card-majalah-home 
                     image="{{ asset('storage/assets/majalah1.jpg') }}"
