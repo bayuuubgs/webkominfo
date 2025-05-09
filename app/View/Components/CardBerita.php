@@ -21,8 +21,9 @@ class CardBerita extends Component
     public $readMoreText;
     public $cardWidth;
     public $imageHeight;
+    public $alt;
 
-    public function __construct($image, $title, $date, $category, $description, $link, $type, $readMoreText = 'Baca Selengkapnya', $cardWidth = 'w-[400px]', $imageHeight = 'h-[260px]')
+    public function __construct($image, $title, $date, $category, $description, $link, $type, $readMoreText = 'Baca Selengkapnya', $cardWidth = 'w-[400px]', $imageHeight = 'h-[260px]', $alt = 'berita terkini')
     {
         $this->image = $image;
         $this->title = $title;
@@ -34,6 +35,7 @@ class CardBerita extends Component
         $this->readMoreText = $readMoreText;
         $this->cardWidth = $cardWidth;
         $this->imageHeight = $imageHeight;
+        $this->alt = $alt;
 
         $isBlue = $type === 'secondary';
         $this->textColor = $isBlue ? 'text-gray10' : 'text-gray70';

@@ -8,10 +8,12 @@ use Illuminate\View\Component;
 class CardGaleri extends Component
 {
     public $image;
+    public $alt;
 
-    public function __construct($image = '/storage/assets/galeri.png')
+    public function __construct($image = '/storage/assets/galeri.png', $alt ='berita galeri')
     {
         $this->image = $image;
+        $this->alt = $alt;
     }
 
     public function render(): View|Closure|string

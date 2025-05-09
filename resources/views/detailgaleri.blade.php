@@ -87,25 +87,25 @@
             <!-- Galeri Foto -->
             @php
                 $galeri = [
-                    '/storage/assets/galeri.png',
-                    '/storage/assets/card-bg-biru.png',
-                    '/storage/assets/card-bg-biru.png',
-                    '/storage/assets/galeri.png',
-                    '/storage/assets/card-bg-biru.png',
-                    '/storage/assets/galeri.png',
-                    '/storage/assets/galeri.png',
-                    '/storage/assets/card-bg-biru.png',
-                    '/storage/assets/galeri.png',
-                    '/storage/assets/card-bg-biru.png',
-                    '/storage/assets/card-bg-biru.png',
-                    '/storage/assets/galeri.png',
+                    ['image' => '/storage/assets/galeri.png', 'alt' => 'Galeri satu'],
+                    ['image' => '/storage/assets/galeri.png', 'alt' => 'Galeri satu'],
+                    ['image' => '/storage/assets/galeri.png', 'alt' => 'Galeri satu'],
+                    ['image' => '/storage/assets/galeri.png', 'alt' => 'Galeri satu'],
+                    ['image' => '/storage/assets/galeri.png', 'alt' => 'Galeri satu'],
+                    ['image' => '/storage/assets/galeri.png', 'alt' => 'Galeri satu'],
+                    ['image' => '/storage/assets/galeri.png', 'alt' => 'Galeri satu'],
+                    ['image' => '/storage/assets/galeri.png', 'alt' => 'Galeri satu'],
+                    ['image' => '/storage/assets/galeri.png', 'alt' => 'Galeri satu'],
+                    ['image' => '/storage/assets/galeri.png', 'alt' => 'Galeri satu'],
+                    ['image' => '/storage/assets/galeri.png', 'alt' => 'Galeri satu'],
+                    ['image' => '/storage/assets/galeri.png', 'alt' => 'Galeri satu']
                 ];
             @endphp
 
             <div class="mt-6 flex justify-center">
                 <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-[1px]">
                     @foreach ($galeri as $image)
-                        <x-card-galeri :image="$image" />
+                        <x-card-galeri :image="$image['image']" :alt="$image['alt']"/>
                     @endforeach
                 </div>
             </div>
@@ -132,7 +132,7 @@
                 <div class="min-w-[300px] md:min-w-[400px] h-auto">
                     <x-card-berita image="/storage/assets/galeri1.jpeg" title="PON XXI Aceh-Sumut 2024"
                         date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH" description="" link=""
-                        type="isBlue" read-more-text="" />
+                        type="isBlue" read-more-text=""/>
                 </div>
                 <div class="min-w-[300px] md:min-w-[400px] h-auto">
                     <x-card-berita image="/storage/assets/galeri2.jpg" title="PON XXI Aceh-Sumut 2024"
