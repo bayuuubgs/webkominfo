@@ -15,7 +15,7 @@
     <x-breadcrumb />
 
     <!-- Landing Page (DISKOMINFO JATIM) -->
-    <div class="relative w-full h-auto md:h-dvh overflow-hidden">
+    <div class="relative w-full h-auto h-[calc(100dvh-126px)] overflow-hidden">
 
         <img src="/storage/assets/gedungkominfo2.jpg" alt="Background Watermark"
             class="absolute inset-0 w-full h-full object-cover opacity-10 -z-20" />
