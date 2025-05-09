@@ -5,7 +5,11 @@
         </div>
 
         <div class="relative z-10 bg-transparent p-3 md:p-4 rounded-2xl">
-            <img src="{{ $image }}" alt="Card Image" class="w-full aspect-[1.5] object-cover shadow-lg rounded-lg">
+            <img src="{{ $image }}" alt="Card Image"
+                 class="w-full aspect-[1.5] object-cover shadow-lg rounded-lg 
+                        transition duration-300 ease-in-out
+                        group-hover:brightness-110 group-active:brightness-110
+                        group-hover:shadow-xl group-active:shadow-xl">
 
             <h3 class="text-h3M lg:text-h3 font-bold {{ $textColor }} mt-2 whitespace-normal line-clamp-2">
                 {{ $title }}

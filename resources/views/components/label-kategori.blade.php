@@ -1,3 +1,3 @@
-<span class="label-kategori font-responsive bg-backgroundred text-secondary70 shadow-sm font-bold px-1 md:px-5 py-1 rounded-full text-labelM md:text-label text-center uppercase">
+<span class="font-responsive bg-backgroundred text-secondary70 shadow-sm font-bold px-5 py-1 rounded-full text-labelM lg:text-label text-center uppercase">
     {{ $text }}
 </span>

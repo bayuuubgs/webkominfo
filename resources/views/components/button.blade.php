@@ -11,6 +11,7 @@
     $variants = [
         'white' => 'bg-gray10 text-primary100 hover:bg-background active:text-gray10 active:bg-primary30',
         'blue' => 'bg-primary50 text-gray10 hover:bg-primary30 active:text-gray90 active:bg-white',
+        'red' => 'bg-secondary70 text-gray10 hover:bg-secondary50 active:text-gray90 active:bg-white',
     ];
 
     $variantClass = $variants[$variant] ?? $variants['white'];

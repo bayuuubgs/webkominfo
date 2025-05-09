@@ -10,20 +10,21 @@
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 </head>
 
-<body class="bg-background font-jakarta text-p">
+<body class="bg-background font-responsive text-pM lg:text-p">
     <x-header />
     <x-breadcrumb />
 
     <!-- Gambar Utama -->
-    <section class="bg-white relative">
-        <img src="/storage/assets/galeri.png" alt="Foto Utama" class="w-full -z-40">
-        <div
-            class="absolute w-full inset-0 bg-gradient-to-b from-primary100/25 via-transparent to-primary100/100 pointer-events-none">
-        </div>
+    <section class="bg-white relative max-h-dvh overflow-hidden">
+        <img x-ref="heroImg" src="/storage/assets/galeri.png" alt="Foto Utama"
+            class="w-full h-auto max-h-dvh object-cover mx-auto block -z-40"
+            @load="updateOffset()">
+        <div class="absolute w-full inset-0 bg-gradient-to-b from-primary100/25 via-transparent to-primary100/100 pointer-events-none"></div>
     </section>
 
     <!-- Section Melayang -->
-    <section x-data="{ expanded: false }" class="relative z-20 -mt-[15%] px-4 md:px-20">
+    <section x-data="{ expanded: false }" class="relative z-20 -mt-[15%] md:-mt-[122px] px-5 md:px-20">
+
         <div class="bg-white rounded-xl shadow-md pt-4">
 
             <!-- Kategori & Tanggal -->
@@ -36,8 +37,8 @@
             <p class="text-h3 px-[20px] font-bold mb-[8px] -mt-4">PON XXI Aceh–Sumut 2024</p>
 
             <!-- Deskripsi -->
-            <div :class="expanded ? 'max-h-full px-[20px]' : 'max-h-[96px] overflow-hidden px-[20px]'"
-                class="relative text-p text-gray-700 leading-relaxed text-justify transition-all duration-300 ease-in-out">
+            <div :class="expanded ? 'max-h-full px-5' : 'max-h-[96px] overflow-hidden px-5'"
+                class="relative px-5 text-gray-700 leading-relaxed text-justify transition-all duration-300 ease-in-out">
                 <span>
                     Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
                     totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
@@ -102,7 +103,7 @@
             @endphp
 
             <div class="mt-6 flex justify-center">
-                <div class="grid grid-cols-4 gap-[1px]">
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-[1px]">
                     @foreach ($galeri as $image)
                         <x-card-galeri :image="$image" />
                     @endforeach
@@ -119,8 +120,8 @@
         <x-button text="Selanjutnya" variant="blue" type="button" />
     </div>
 
-    <!-- Pejabat Struktural -->
-    <section class="bg-white relative px-4 md:px-20 py-10">
+    <!-- Galeri Lainnya -->
+    <section class="bg-white relative px-5 md:px-20 py-10">
 
         <div>
             <x-section-header title="Galeri " highlight="Terkait" buttonText="Selengkapnya" buttonVariant="blue"
@@ -128,33 +129,33 @@
         </div>
         <div class="">
             <x-card-slider :rows="1">
-                <div class="min-w-[404px] h-auto">
+                <div class="min-w-[300px] md:min-w-[400px] h-auto">
                     <x-card-berita image="/storage/assets/galeri1.jpeg" title="PON XXI Aceh-Sumut 2024"
                         date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH" description="" link=""
                         type="isBlue" read-more-text="" />
                 </div>
-                <div class="min-w-[404px] h-auto">
-                    <x-card-berita image="/storage/assets/galeri.png" title="PON XXI Aceh-Sumut 2024"
-                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH" description="" link=""
-                        type="isBlue" read-more-text="" />
-                </div>
-                <div class="min-w-[404px] h-auto">
-                    <x-card-berita image="/storage/assets/galeri1.jpeg" title="PON XXI Aceh-Sumut 2024"
-                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH" description="" link=""
-                        type="isBlue" read-more-text="" />
-                </div>
-                <div class="min-w-[404px] h-auto">
+                <div class="min-w-[300px] md:min-w-[400px] h-auto">
                     <x-card-berita image="/storage/assets/galeri2.jpg" title="PON XXI Aceh-Sumut 2024"
                         date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH" description="" link=""
                         type="isBlue" read-more-text="" />
                 </div>
-                <div class="min-w-[404px] h-auto">
+                <div class="min-w-[300px] md:min-w-[400px] h-auto">
+                    <x-card-berita image="/storage/assets/galeri1.jpeg" title="PON XXI Aceh-Sumut 2024"
+                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH" description="" link=""
+                        type="isBlue" read-more-text="" />
+                </div>
+                <div class="min-w-[300px] md:min-w-[400px] h-auto">
+                    <x-card-berita image="/storage/assets/galeri2.jpg" title="PON XXI Aceh-Sumut 2024"
+                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH" description="" link=""
+                        type="isBlue" read-more-text="" />
+                </div>
+                <div class="min-w-[300px] md:min-w-[400px] h-auto">
                     <x-card-berita image="/storage/assets/galeri3.jpg" title="PON XXI Aceh-Sumut 2024"
                         date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH" description="" link=""
                         type="isBlue" read-more-text="" />
                 </div>
-                <div class="min-w-[404px] h-auto">
-                    <x-card-berita image="/storage/assets/galeri4.jpg" title="PON XXI Aceh-Sumut 2024"
+                <div class="min-w-[300px] md:min-w-[400px] h-auto">
+                    <x-card-berita image="/storage/assets/galeri.png" title="PON XXI Aceh-Sumut 2024"
                         date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH" description="" link=""
                         type="isBlue" read-more-text="" />
                 </div>

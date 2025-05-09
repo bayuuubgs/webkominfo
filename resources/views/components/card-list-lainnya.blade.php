@@ -8,8 +8,8 @@
 
 <a href="{{ $link }}" class="group w-full max-w-[428px] mx-auto mb-[1px] block">
     <div class="relative flex flex-col sm:flex-row sm:items-center gap-2 px-[7px] py-[7px] 
-                bg-gray10 rounded-2xl w-full border-2 border-transparent transition duration-200
-                hover:shadow-lg hover:border-blue-500 active:ring-2 active:ring-blue-400 font-responsive">
+                bg-gray10 rounded-2xl w-full border border-transparent transition duration-200
+                hover:shadow-lg hover:border-primary30 active:ring-1 active:ring-primary30 font-responsive">
 
         <img src="{{ $image }}" alt="Video Thumbnail" 
              class="w-full sm:w-[192px] h-auto sm:h-[104px] rounded-lg object-cover">

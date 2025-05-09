@@ -30,7 +30,7 @@
             {{ $title }}
         </h3>
 
-        <p class="text-pM lg:text-p text-gray-700 leading-relaxed text-justify line-clamp-5">
+        <p class="text-pM lg:text-p text-gray-700 text-justify line-clamp-5">
             {{ $description }}
         </p>
     </div>
