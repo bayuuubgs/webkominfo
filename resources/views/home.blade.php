@@ -188,20 +188,25 @@
                 <x-card-lainnya title="Video" highlight="Lainnya">
                     <x-card-list-lainnya image="{{ asset('storage/assets/videolainnya.png') }}"
                         title="INFO JAWA TIMUR MINGGU KE-2 BULAN FEBRUARI | 14 FEBRUARI 2025"
-                        date="14 Februari 2025 18:12" category="UMUM" link="{{ route('home.video.detail') }}" />
+                        date="14 Februari 2025 18:12" category="UMUM" link="{{ route('home.video.detail') }}" 
+                        alt="Thumbnail Gambar Terkait"/>
                     <x-card-list-lainnya image="{{ asset('storage/assets/videolainnya3.png') }}"
                         title="INFO JAWA TIMUR MINGGU KE-3 BULAN FEBRUARI | 22 FEBRUARI 2025"
                         date="22 Februari 2025 09:26" category="WAKIL GUBERNUR"
-                        link="{{ route('home.video.detail') }}" />
+                        link="{{ route('home.video.detail') }}" 
+                        alt="Thumbnail Gambar Terkait"/>
                     <x-card-list-lainnya image="{{ asset('storage/assets/videolainnya2.png') }}"
                         title="Lapor SPT Tahunan Hari Ini, Lebih Awal Lebih Nyaman" date="9 Februari 2025 10:49"
-                        category="GUBERNUR" link="{{ route('home.video.detail') }}" />
+                        category="GUBERNUR" link="{{ route('home.video.detail') }}" 
+                        alt="Thumbnail Gambar Terkait"/>
                     <x-card-list-lainnya image="{{ asset('storage/assets/videolainnya.png') }}"
                         title="INFO JAWA TIMUR MINGGU KE-5 BULAN JANUARI 2025 | 31 Januari" date="1 Februari 2025 15:04"
-                        category="SETDA" link="{{ route('home.video.detail') }}" />
+                        category="SETDA" link="{{ route('home.video.detail') }}" 
+                        alt="Thumbnail Gambar Terkait"/>
                     <x-card-list-lainnya image="{{ asset('storage/assets/videolainnya.png') }}"
                         title="INFO JAWA TIMUR MINGGU KE-5 BULAN JANUARI 2025 | 31 Januari" date="1 Februari 2025 15:04"
-                        category="SETDA" link="{{ route('home.video.detail') }}" />
+                        category="SETDA" link="{{ route('home.video.detail') }}" 
+                        alt="Thumbnail Gambar Terkait"/>
                 </x-card-lainnya>
             </div>
         </div>
@@ -553,37 +558,44 @@
                     <div>
                         <x-card-majalah-home image="{{ asset('storage/assets/majalah1.jpg') }}"
                             title="MAJALAH POTENSI JAWA TIMUR EDISI 156 JANUARI - FEBRUARI 2025"
-                            date="19 Februari 2025 0:00:00" link="{{ route('home.majalah.detail') }}" />
+                            date="19 Februari 2025 0:00:00" link="{{ route('home.majalah.detail') }}" 
+                            alt="Thumbnail Gambar Terkait"/>
                     </div>
                     <div>
                         <x-card-majalah-home image="{{ asset('storage/assets/majalah2.jpeg') }}"
                             title="MAJALAH POTENSI EDISI 155 AGUSTUS 2024" date="1 Agustus 2024 0:00:00"
-                            link="{{ route('home.majalah.detail') }}" />
+                            link="{{ route('home.majalah.detail') }}" 
+                            alt="Thumbnail Gambar Terkait"/>
                     </div>
                     <div>
                         <x-card-majalah-home image="{{ asset('storage/assets/majalah3.jpg') }}"
                             title="MAJALAH POTENSI EDISI 153 JUNI 2024" date="1 Juni 2024 0:00:00 "
-                            link="{{ route('home.majalah.detail') }}" />
+                            link="{{ route('home.majalah.detail') }}" 
+                            alt="Thumbnail Gambar Terkait"/>
                     </div>
                     <div>
                         <x-card-majalah-home image="{{ asset('storage/assets/majalah4.jpg') }}"
                             title="MAJALAH POTENSI EDISI 152 MEI 2024" date="1 Mei 2024 0:00:00"
-                            link="{{ route('home.majalah.detail') }}" />
+                            link="{{ route('home.majalah.detail') }}" 
+                            alt="Thumbnail Gambar Terkait"/>
                     </div>
                     <div>
                         <x-card-majalah-home image="{{ asset('storage/assets/majalah5.jpg') }}"
                             title="MAJALAH POTENSI EDISI 155 APRIL 2024" date="31 Maret 2024 0:00:00"
-                            link="{{ route('home.majalah.detail') }}" />
+                            link="{{ route('home.majalah.detail') }}" 
+                            alt="Thumbnail Gambar Terkait"/>
                     </div>
                     <div>
                         <x-card-majalah-home image="{{ asset('storage/assets/majalah1.jpg') }}"
                             title="MAJALAH POTENSI JAWA TIMUR EDISI 156 JANUARI - FEBRUARI 2025"
-                            date="19 Februari 2025 0:00:00" link="{{ route('home.majalah.detail') }}" />
+                            date="19 Februari 2025 0:00:00" link="{{ route('home.majalah.detail') }}" 
+                            alt="Thumbnail Gambar Terkait"/>
                     </div>
                     <div>
                         <x-card-majalah-home image="{{ asset('storage/assets/majalah2.jpeg') }}"
                             title="MAJALAH POTENSI EDISI 155 AGUSTUS 2024" date="1 Agustus 2024 0:00:00"
-                            link="{{ route('home.majalah.detail') }}" />
+                            link="{{ route('home.majalah.detail') }}" 
+                            alt="Thumbnail Gambar Terkait"/>
                     </div>
                 </x-card-slider>
             </div>

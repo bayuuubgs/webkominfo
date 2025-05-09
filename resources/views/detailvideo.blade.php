@@ -29,20 +29,25 @@
                 <x-card-lainnya title="Video" highlight="Lainnya">
                     <x-card-list-lainnya image="{{ asset('storage/assets/videolainnya.png') }}"
                         title="INFO JAWA TIMUR MINGGU KE-2 BULAN FEBRUARI | 14 FEBRUARI 2025"
-                        date="14 Februari 2025 18:12" category="UMUM" link="{{ route('home.video.detail') }}" />
+                        date="14 Februari 2025 18:12" category="UMUM" link="{{ route('home.video.detail') }}" 
+                        alt="Thumbnail Gambar Terkait"/>
                     <x-card-list-lainnya image="{{ asset('storage/assets/videolainnya3.png') }}"
                         title="INFO JAWA TIMUR MINGGU KE-3 BULAN FEBRUARI | 22 FEBRUARI 2025"
                         date="22 Februari 2025 09:26" category="WAKIL GUBERNUR"
-                        link="{{ route('home.video.detail') }}" />
+                        link="{{ route('home.video.detail') }}" 
+                        alt="Thumbnail Gambar Terkait"/>
                     <x-card-list-lainnya image="{{ asset('storage/assets/videolainnya2.png') }}"
                         title="Lapor SPT Tahunan Hari Ini, Lebih Awal Lebih Nyaman" date="9 Februari 2025 10:49"
-                        category="GUBERNUR" link="{{ route('home.video.detail') }}" />
+                        category="GUBERNUR" link="{{ route('home.video.detail') }}" 
+                        alt="Thumbnail Gambar Terkait"/>
                     <x-card-list-lainnya image="{{ asset('storage/assets/videolainnya.png') }}"
                         title="INFO JAWA TIMUR MINGGU KE-5 BULAN JANUARI 2025 | 31 Januari"
-                        date="1 Februari 2025 15:04" category="SETDA" link="{{ route('home.video.detail') }}" />
+                        date="1 Februari 2025 15:04" category="SETDA" link="{{ route('home.video.detail') }}" 
+                        alt="Thumbnail Gambar Terkait"/>
                     <x-card-list-lainnya image="{{ asset('storage/assets/videolainnya.png') }}"
                         title="INFO JAWA TIMUR MINGGU KE-5 BULAN JANUARI 2025 | 31 Januari"
-                        date="1 Februari 2025 15:04" category="SETDA" link="{{ route('home.video.detail') }}" />
+                        date="1 Februari 2025 15:04" category="SETDA" link="{{ route('home.video.detail') }}" 
+                        alt="Thumbnail Gambar Terkait"/>
                 </x-card-lainnya>
             </div>
         </div>

@@ -27,6 +27,7 @@
                     date="11 Februari 2025 08:38"
                     fontColor="text-gray70" 
                     link="{{ route('home.majalah.detail') }}" 
+                    alt="Thumbnail Gambar Terkait"
                 />
             </div>
             <div class="flex items-center justify-center">
@@ -36,6 +37,7 @@
                     date="11 Februari 2025 08:38" 
                     fontColor="text-gray70"
                     link="{{ route('home.majalah.detail') }}" 
+                    alt="Thumbnail Gambar Terkait"
                 />
             </div>
             <div class="flex items-center justify-center">
@@ -45,6 +47,7 @@
                     date="11 Februari 2025 08:38" 
                     fontColor="text-gray70"
                     link="{{ route('home.majalah.detail') }}" 
+                    alt="Thumbnail Gambar Terkait"
                 />
             </div>
             <div class="flex items-center justify-center">
@@ -54,6 +57,7 @@
                     date="11 Februari 2025 08:38" 
                     fontColor="text-gray70"
                     link="{{ route('home.majalah.detail') }}" 
+                    alt="Thumbnail Gambar Terkait"
                 />
             </div>
             <div class="flex items-center justify-center">
@@ -63,6 +67,7 @@
                     date="11 Februari 2025 08:38" 
                     fontColor="text-gray70"
                     link="{{ route('home.majalah.detail') }}" 
+                    alt="Thumbnail Gambar Terkait"
                 />
             </div>
             <div class="flex items-center justify-center">
@@ -72,6 +77,7 @@
                     date="11 Februari 2025 08:38"
                     fontColor="text-gray70" 
                     link="{{ route('home.majalah.detail') }}" 
+                    alt="Thumbnail Gambar Terkait"
                 />
             </div>
             <div class="flex items-center justify-center">
@@ -81,6 +87,7 @@
                     date="11 Februari 2025 08:38" 
                     fontColor="text-gray70"
                     link="{{ route('home.majalah.detail') }}" 
+                    alt="Thumbnail Gambar Terkait"
                 />
             </div>
             <div class="flex items-center justify-center">
@@ -90,6 +97,7 @@
                     date="11 Februari 2025 08:38"
                     fontColor="text-gray70" 
                     link="{{ route('home.majalah.detail') }}" 
+                    alt="Thumbnail Gambar Terkait"
                 />
             </div>
         </div>
@@ -102,11 +110,11 @@
 
     <div class="bg-background px-5 md:px-16">
         <x-card-kategori-unitkerja titleFirst="Rekomendasi" titleSecond="Kategori" :items="[
-        ['image' => asset('storage/assets/unitkerja.jpg'), 'link' => route('home.galerifoto')],
-        ['image' => asset('storage/assets/unitkerja.jpg'), 'link' => route('home.galerifoto')],
-        ['image' => asset('storage/assets/unitkerja.jpg'), 'link' => route('home.galerifoto')],
-        ['image' => asset('storage/assets/unitkerja.jpg'), 'link' => route('home.galerifoto')],
-        ['image' => asset('storage/assets/unitkerja.jpg'), 'link' => route('home.galerifoto')]
+        ['image' => asset('storage/assets/unitkerja.jpg'), 'link' => route('home.galerifoto'), 'alt' => 'Thumbnail Gambar Terkait'],
+        ['image' => asset('storage/assets/unitkerja.jpg'), 'link' => route('home.galerifoto'), 'alt' => 'Thumbnail Gambar Terkait'],
+        ['image' => asset('storage/assets/unitkerja.jpg'), 'link' => route('home.galerifoto'), 'alt' => 'Thumbnail Gambar Terkait'],
+        ['image' => asset('storage/assets/unitkerja.jpg'), 'link' => route('home.galerifoto'), 'alt' => 'Thumbnail Gambar Terkait'],
+        ['image' => asset('storage/assets/unitkerja.jpg'), 'link' => route('home.galerifoto'), 'alt' => 'Thumbnail Gambar Terkait'],
     ]" />
     </div>
 
