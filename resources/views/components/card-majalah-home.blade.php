@@ -4,7 +4,8 @@
     'date',
     'fontColor' => 'text-gray10',
     'link' => '',
-    'active' => false, // default false
+    'active' => false,
+    'alt' => '', 
 ])
 
 @php
@@ -19,7 +20,7 @@
     >
         <img
             src="{{ $image }}"
-            alt="Majalah Cover"
+            alt="{{ $alt ?? 'Cover ' . $title }}"
             class="w-full h-full rounded-t-lg md:rounded-t-xl object-cover shadow-md transition-all duration-300 
                    hover:brightness-110 hover:shadow-lg {{ $isActive }}"
         >

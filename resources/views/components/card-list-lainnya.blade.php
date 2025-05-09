@@ -4,6 +4,7 @@
     'date',
     'category',
     'link' => '',
+    'alt' => '',
 ])
 
 <a href="{{ $link }}" class="group w-full max-w-[428px] mx-auto mb-[1px] block">
@@ -11,8 +12,10 @@
                 bg-gray10 rounded-2xl w-full border border-transparent transition duration-200
                 hover:shadow-lg hover:border-primary30 active:ring-1 active:ring-primary30 font-responsive">
 
-        <img src="{{ $image }}" alt="Video Thumbnail"
-             class="w-full sm:w-[192px] h-auto sm:h-[104px] rounded-lg object-cover">
+        <img
+            src="{{ $image }}"
+            alt="{{ $alt ?? 'Thumbnail ' . $title }}"
+            class="w-full sm:w-[192px] h-auto sm:h-[104px] rounded-lg object-cover">
 
         <div class="flex flex-col justify-start space-y-[4px] w-full sm:w-[200px]">
             <div class="flex justify-center sm:justify-start">

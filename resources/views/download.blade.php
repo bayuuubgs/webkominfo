@@ -23,36 +23,44 @@
                 title="MEDIA PUBLIKASI LUAR RUANG HARI JADI KE-79 PROVINSI JAWA TIMUR" category="UMUM"
                 date="11 Februari 2025 08:38"
                 description="MEDIA PUBLIKASI LUAR RUANG HARI JADI KE-79 PROVINSI JAWA TIMUR"
-                link="https://drive.google.com/drive/folders/1Wbw7imivQclHOopIizMSLwE-QMbyFmXj" />
+                link="https://drive.google.com/drive/folders/1Wbw7imivQclHOopIizMSLwE-QMbyFmXj" 
+                alt="Thumbnail Gambar Terkait"/>
             <x-card-list-publikasi image="{{ asset('storage/assets/download2.jpg') }}"
                 title="PEDOMAN IDENTITAS VISUAL HARI JADI KE-79 PROVINSI JAWA TIMUR" category="UMUM"
                 date="11 Februari 2025 08:38" description="PEDOMAN IDENTITAS VISUAL HARI JADI KE-79 PROVINSI JAWA TIMUR"
-                link="https://drive.google.com/drive/folders/15vcaD9LXo0-cyiLKVdHzaFKkNdxqDES4" />
+                link="https://drive.google.com/drive/folders/15vcaD9LXo0-cyiLKVdHzaFKkNdxqDES4" 
+                alt="Thumbnail Gambar Terkait"/>
             <x-card-list-publikasi image="{{ asset('storage/assets/download3.jpeg') }}"
                 title="BALIHO HARLAH PANCASILA 1 JUNI 2024" category="UMUM" date="11 Februari 2025 08:38"
                 description="BALIHO HARLAH PANCASILA 1 JUNI 2024"
-                link="https://drive.google.com/drive/folders/1CfQW7Z7MNmwLveJrFbVsMtzoY8CG4wSq" />
+                link="https://drive.google.com/drive/folders/1CfQW7Z7MNmwLveJrFbVsMtzoY8CG4wSq" 
+                alt="Thumbnail Gambar Terkait"/>
             <x-card-list-publikasi image="{{ asset('storage/assets/download4.jpeg') }}"
                 title="BALIHO HARI OTODA TAHUN 2024" category="UMUM" date="11 Februari 2025 08:38"
                 description="BALIHO HARI OTODA JAWA TIMUR TAHUN 2024"
-                link="https://drive.google.com/drive/folders/1GMHbBmnA2ljRmR96XaN6NfYymkVxsHLm" />
+                link="https://drive.google.com/drive/folders/1GMHbBmnA2ljRmR96XaN6NfYymkVxsHLm" 
+                alt="Thumbnail Gambar Terkait"/>
             <x-card-list-publikasi image="{{ asset('storage/assets/download5.png') }}"
                 title="BALIHO HARI SUMPAH PEMUDA 2022" category="UMUM" date="11 Februari 2025 08:38"
                 description="Berikut adalah baliho Hari Sumpah Pemuda Tahun 2022 tingkat Provinsi Jawa Timur :"
-                link="https://drive.google.com/drive/folders/12d0wOBwJuK8YPL1sj8a67dHlj03Bn_yF" />
+                link="https://drive.google.com/drive/folders/12d0wOBwJuK8YPL1sj8a67dHlj03Bn_yF" 
+                alt="Thumbnail Gambar Terkait"/>
             <x-card-list-publikasi image="{{ asset('storage/assets/download6.jpg') }}" 
                 title="BALIHO HARI SANTRI 2022" category="UMUM" date="11 Februari 2025 08:38"
                 description="Berikut Baliho Hari Santri 2022 Tingkat Provinsi Jawa Timur"
-                link="https://drive.google.com/drive/folders/1GVCEg0iZIE-di9uMzC__IBQrzooRv6Kn" />
+                link="https://drive.google.com/drive/folders/1GVCEg0iZIE-di9uMzC__IBQrzooRv6Kn" 
+                alt="Thumbnail Gambar Terkait"/>
             <x-card-list-publikasi image="{{ asset('storage/assets/download7.jpg') }}"
                 title="Baliho Hari Jadi ke-77 Jatim" category="UMUM" date="11 Februari 2025 08:38"
                 description="Bahan publikasi Hari Jadi ke-77 Provinsi Jawa Timur"
-                link="https://drive.google.com/drive/folders/1XV2kKylFsoySmGrg1l40rud6mdSG0glK" />
+                link="https://drive.google.com/drive/folders/1XV2kKylFsoySmGrg1l40rud6mdSG0glK" 
+                alt="Thumbnail Gambar Terkait"/>
             <x-card-list-publikasi image="{{ asset('storage/assets/download1.png') }}"
                 title="MEDIA PUBLIKASI LUAR RUANG HARI JADI KE-79 PROVINSI JAWA TIMUR" category="UMUM"
                 date="11 Februari 2025 08:38"
                 description="MEDIA PUBLIKASI LUAR RUANG HARI JADI KE-79 PROVINSI JAWA TIMUR"
-                link="https://drive.google.com/drive/folders/1Wbw7imivQclHOopIizMSLwE-QMbyFmXj" />
+                link="https://drive.google.com/drive/folders/1Wbw7imivQclHOopIizMSLwE-QMbyFmXj" 
+                alt="Thumbnail Gambar Terkait"/>
         </div>
     </div>
 
@@ -63,11 +71,11 @@
 
     <div class="bg-background px-5 md:px-16">
         <x-card-kategori-unitkerja titleFirst="Rekomendasi" titleSecond="Kategori" :items="[
-        ['image' => asset('storage/assets/unitkerja.jpg'), 'link' => route('home.galerifoto')],
-        ['image' => asset('storage/assets/unitkerja.jpg'), 'link' => route('home.galerifoto')],
-        ['image' => asset('storage/assets/unitkerja.jpg'), 'link' => route('home.galerifoto')],
-        ['image' => asset('storage/assets/unitkerja.jpg'), 'link' => route('home.galerifoto')],
-        ['image' => asset('storage/assets/unitkerja.jpg'), 'link' => route('home.galerifoto')]
+        ['image' => asset('storage/assets/unitkerja.jpg'), 'link' => route('home.galerifoto'), 'alt' => 'Thumbnail Gambar Terkait'],
+        ['image' => asset('storage/assets/unitkerja.jpg'), 'link' => route('home.galerifoto'), 'alt' => 'Thumbnail Gambar Terkait'],
+        ['image' => asset('storage/assets/unitkerja.jpg'), 'link' => route('home.galerifoto'), 'alt' => 'Thumbnail Gambar Terkait'],
+        ['image' => asset('storage/assets/unitkerja.jpg'), 'link' => route('home.galerifoto'), 'alt' => 'Thumbnail Gambar Terkait'],
+        ['image' => asset('storage/assets/unitkerja.jpg'), 'link' => route('home.galerifoto'), 'alt' => 'Thumbnail Gambar Terkait'],
     ]" />
     </div>
 

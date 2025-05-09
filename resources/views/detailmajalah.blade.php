@@ -53,52 +53,62 @@
                 <div class="min-w-[300px] h-auto">
                     <x-card-majalah-home image="{{ asset('storage/assets/majalah1.jpg') }}"
                         title="Jatim Waspadai Potensi Bencana Hidrometeorologi" date="11 Februari 2025 08:38"
-                        fontColor="text-gray70" link="{{ route('home.majalah.detail') }}" />
+                        fontColor="text-gray70" link="{{ route('home.majalah.detail') }}" 
+                        alt="Thumbnail Gambar Terkait"/>
                 </div>
                 <div class="min-w-[300px] h-auto">
                     <x-card-majalah-home image="{{ asset('storage/assets/majalah2.jpeg') }}"
                         title="Jatim Gerbang Nusantara Baru" date="11 Februari 2025 08:38" fontColor="text-gray70"
-                        link="{{ route('home.majalah.detail') }}" />
+                        link="{{ route('home.majalah.detail') }}" 
+                        alt="Thumbnail Gambar Terkait"/>
                 </div>
                 <div class="min-w-[300px] h-auto">
                     <x-card-majalah-home image="{{ asset('storage/assets/majalah3.jpg') }}"
                         title="Jatim Peringati Hari Lahir Pancasila 2024" date="11 Februari 2025 08:38"
-                        fontColor="text-gray70" link="{{ route('home.majalah.detail') }}" />
+                        fontColor="text-gray70" link="{{ route('home.majalah.detail') }}" 
+                        alt="Thumbnail Gambar Terkait"/>
                 </div>
                 <div class="min-w-[300px] h-auto">
                     <x-card-majalah-home image="{{ asset('storage/assets/majalah4.jpg') }}"
                         title="Jatim Genjot Penggunaan Produk Dalam Negeri" date="11 Februari 2025 08:38"
-                        fontColor="text-gray70" link="{{ route('home.majalah.detail') }}" />
+                        fontColor="text-gray70" link="{{ route('home.majalah.detail') }}" 
+                        alt="Thumbnail Gambar Terkait"/>
                 </div>
                 <div class="min-w-[300px] h-auto">
                     <x-card-majalah-home image="{{ asset('storage/assets/majalah5.jpg') }}"
                         title="Gadisku Rumah Berkarya untuk Disabilitas" date="11 Februari 2025 08:38"
-                        fontColor="text-gray70" link="{{ route('home.majalah.detail') }}" />
+                        fontColor="text-gray70" link="{{ route('home.majalah.detail') }}" 
+                        alt="Thumbnail Gambar Terkait"/>
                 </div>
                 <div class="min-w-[300px] h-auto">
                     <x-card-majalah-home image="{{ asset('storage/assets/majalah6.jpg') }}"
                         title="Memadamkan Api di Lereng Gunung Arjuno" date="11 Februari 2025 08:38"
-                        fontColor="text-gray70" link="{{ route('home.majalah.detail') }}" />
+                        fontColor="text-gray70" link="{{ route('home.majalah.detail') }}" 
+                        alt="Thumbnail Gambar Terkait"/>
                 </div>
                 <div class="min-w-[300px] h-auto">
                     <x-card-majalah-home image="{{ asset('storage/assets/majalah7.jpg') }}"
                         title="Puluhan Bus Siap Angkut Pemudik Jatim" date="11 Februari 2025 08:38"
-                        fontColor="text-gray70" link="{{ route('home.majalah.detail') }}" />
+                        fontColor="text-gray70" link="{{ route('home.majalah.detail') }}" 
+                        alt="Thumbnail Gambar Terkait"/>
                 </div>
                 <div class="min-w-[300px] h-auto">
                     <x-card-majalah-home image="{{ asset('storage/assets/majalah8.jpeg') }}"
                         title="Jatim Pangkas Kasus Balita Stunting" date="11 Februari 2025 08:38"
-                        fontColor="text-gray70" link="{{ route('home.majalah.detail') }}" />
+                        fontColor="text-gray70" link="{{ route('home.majalah.detail') }}" 
+                        alt="Thumbnail Gambar Terkait"/>
                 </div>
                 <div class="min-w-[300px] h-auto">
                     <x-card-majalah-home image="{{ asset('storage/assets/majalah9.jpg') }}"
                         title="Luncurkan Dua Inovasi, Jatim Perkuat Ekosistem Investasi" date="11 Februari 2025 08:38"
-                        fontColor="text-gray70" link="{{ route('home.majalah.detail') }}" />
+                        fontColor="text-gray70" link="{{ route('home.majalah.detail') }}" 
+                        alt="Thumbnail Gambar Terkait"/>
                 </div>
                 <div class="min-w-[300px] h-auto">
                     <x-card-majalah-home image="{{ asset('storage/assets/majalah10.jpg') }}"
                         title="Hutan Mangrove Jatim Terluas di Pulau Jawa" date="11 Februari 2025 08:38"
-                        fontColor="text-gray70" link="{{ route('home.majalah.detail') }}" />
+                        fontColor="text-gray70" link="{{ route('home.majalah.detail') }}" 
+                        alt="Thumbnail Gambar Terkait"/>
                 </div>
             </x-card-slider>
         </div>

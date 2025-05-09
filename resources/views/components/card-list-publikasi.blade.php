@@ -5,7 +5,8 @@
     'date' => '',
     'description' => '',
     'ratio' => '16:9',
-    'link' => ''
+    'link' => '',
+    'alt' => '', 
 ])
 
 @php
@@ -30,7 +31,10 @@
                     group-hover:shadow-xl 
                     group-hover:brightness-110 
                     group-active:brightness-110">
-            <img src="{{ $image }}" alt="Thumbnail" class="object-cover w-full h-full">
+            <img 
+                src="{{ $image }}" 
+                alt="{{ $alt ?? 'Thumbnail ' . $title }}" 
+                class="object-cover w-full h-full">
         </div>
     </div>
 
@@ -50,4 +54,3 @@
         </p>
     </div>
 </a>
-

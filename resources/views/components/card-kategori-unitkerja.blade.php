@@ -20,10 +20,10 @@
 
     <div class="w-full">
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 {{ $gap }} w-full">
-
             @foreach ($items as $item)
                 @php
                     $link = $item['link'] ?? null;
+                    $alt = $item['alt'] ?? 'Gambar ' . ($item['text'] ?? 'kategori');
                 @endphp
 
                 @if ($link)
@@ -33,7 +33,10 @@
                 @endif
 
                 <div class="relative w-full h-[200px] md:h-[300px] bg-white shadow-md rounded-xl overflow-hidden transition-all duration-200 group-hover:shadow-xl">
-                    <img src="{{ $item['image'] }}" alt="Card Image" class="w-full h-full object-cover pointer-events-none">
+                    <img 
+                        src="{{ $item['image'] }}" 
+                        alt="{{ $alt }}" 
+                        class="w-full h-full object-cover pointer-events-none">
 
                     <div class="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-gray90 to-transparent"></div>
 
