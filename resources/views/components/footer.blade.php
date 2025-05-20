@@ -1,11 +1,16 @@
 <div class="w-full bg-primary100 text-white font-responsive py-12 px-4 sm:px-6 lg:px-[60px] relative overflow-hidden">
 
     <!-- Top & Bottom Gradient -->
-    <div class="absolute top-0 left-0 w-full h-10 bg-gradient-to-b from-gray90/10 to-transparent pointer-events-none z-10"></div>
-    <div class="absolute bottom-0 left-0 w-full h-10 bg-gradient-to-t from-gray90/10 to-transparent pointer-events-none z-10"></div>
+    <div
+        class="absolute top-0 left-0 w-full h-10 bg-gradient-to-b from-gray90/10 to-transparent pointer-events-none z-10">
+    </div>
+    <div
+        class="absolute bottom-0 left-0 w-full h-10 bg-gradient-to-t from-gray90/10 to-transparent pointer-events-none z-10">
+    </div>
 
     <div class="container mx-auto">
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-x-10 gap-y-8 text-[14px] leading-snug text-center md:text-left">
+        <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-x-10 gap-y-8 text-[14px] leading-snug text-center md:text-left">
 
             <!-- Diskominfo Info -->
             <div class="flex flex-col items-center md:items-start">
@@ -20,13 +25,22 @@
                 </p>
                 <div class="flex gap-3 mt-3 justify-center md:justify-start">
                     <a href="https://x.com/kominfojatim" class="text-gray-300 hover:text-white">
-                        <img src="{{ asset('storage/assets/icon-x.png') }}" alt="X" class="w-6 h-6">
+                        <div class="w-8 h-8 rounded-full bg-black flex items-center justify-center">
+                            <img src="{{ asset('storage/assets/icon-x.png') }}" alt="X"
+                                class="w-7 h-7 object-contain">
+                        </div>
                     </a>
                     <a href="http://www.youtube.com/@KOMINFOMMC" class="text-gray-300 hover:text-white">
-                        <img src="{{ asset('storage/assets/icon-youtube.png') }}" alt="YouTube" class="w-6 h-6">
+                        <div class="w-8 h-8 rounded-full bg-white flex items-center justify-center">
+                            <img src="{{ asset('storage/assets/icon-youtube.png') }}" alt="YouTube"
+                                class="w-7 h-7 object-contain">
+                        </div>
                     </a>
                     <a href="https://www.instagram.com/kominfojatim/" class="text-gray-300 hover:text-white">
-                        <img src="{{ asset('storage/assets/icon-instagram.png') }}" alt="Instagram" class="w-6 h-6">
+                        <div class="w-8 h-8 rounded-full bg-white flex items-center justify-center">
+                            <img src="{{ asset('storage/assets/icon-instagram.png') }}" alt="Instagram"
+                                class="w-6 h-7 object-contain">
+                        </div>
                     </a>
                 </div>
                 <p class="text-gray-400 mt-3 text-p font-bold">
@@ -38,7 +52,8 @@
             <div class="flex flex-col items-center md:items-start">
                 <h3 class="text-h3 font-bold mb-2">Hubungi Kami</h3>
                 <div class="grid grid-cols-[20px_auto] gap-x-2 gap-y-2 text-gray-300 justify-center md:justify-start">
-                    <a href="https://www.instagram.com/kominfojatim" target="_blank" class="flex items-center gap-2 col-span-2 justify-center md:justify-start">
+                    <a href="https://www.instagram.com/kominfojatim" target="_blank"
+                        class="flex items-center gap-2 col-span-2 justify-center md:justify-start">
                         <img src="{{ asset('storage/assets/instagram.png') }}" alt="Instagram" class="w-5 h-5">
                         @kominfojatim
                     </a>
@@ -48,7 +63,8 @@
                         <p>(031) 8294608</p>
                     </div>
 
-                    <a href="mailto:kominfo@jatimprov.go.id" class="flex items-center gap-2 col-span-2 justify-center md:justify-start">
+                    <a href="mailto:kominfo@jatimprov.go.id"
+                        class="flex items-center gap-2 col-span-2 justify-center md:justify-start">
                         <img src="{{ asset('storage/assets/mail.png') }}" alt="Email" class="w-5 h-5">
                         <span class="break-words leading-snug">kominfo@jatimprov.go.id</span>
                     </a>
@@ -69,7 +85,7 @@
                         ];
                     @endphp
 
-                    @foreach($publikasiRoutes as $label => $routeName)
+                    @foreach ($publikasiRoutes as $label => $routeName)
                         <li>
                             <a href="{{ route($routeName) }}" class="text-gray-300 hover:text-white">
                                 {{ $label }}
@@ -92,7 +108,7 @@
                         ];
                     @endphp
 
-                    @foreach($publikasiRoutes as $label => $routeName)
+                    @foreach ($publikasiRoutes as $label => $routeName)
                         <li>
                             <a href="{{ route($routeName) }}" class="text-gray-300 hover:text-white">
                                 {{ $label }}
@@ -104,7 +120,8 @@
 
             <!-- Logo -->
             <div class="flex flex-col items-center justify-center">
-                <img src="{{ asset('storage/assets/gambarfooter.png') }}" alt="Logo Diskominfo Jatim" class="w-full max-w-[244px] h-auto object-contain mb-2">
+                <img src="{{ asset('storage/assets/gambarfooter.png') }}" alt="Logo Diskominfo Jatim"
+                    class="w-full max-w-[244px] h-auto object-contain mb-2">
                 <p class="text-gray-300 text-center text-p font-bold">
                     Pemerintah Provinsi Jawa Timur
                 </p>
