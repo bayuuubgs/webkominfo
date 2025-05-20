@@ -167,30 +167,31 @@
         </div>
     </div>
 
-    <section class="py-[40px] font-responsive">
-        <div class="px-5 md:px-16 pb-[24px]">
+    <section class="py-5 md:py-10 font-responsive">
+
+        <div class="px-5 md:px-16 pb-5">
             <x-section-header title="Video Seputar " highlight="Jawa Timur" buttonText="Selengkapnya"
                 buttonVariant="blue" type="blue" buttonHref="{{ route('home.video') }}" />
         </div>
 
-        <!-- Wrapper pakai flex agar tinggi kolom seragam -->
-        <div class="px-5 md:px-16 flex flex-col xl:flex-row gap-5 items-stretch">
+        <div class="px-5 md:px-16 grid grid-cols-1 xl:grid-cols-3 gap-4 lg:ml-0">
+
             <!-- Kolom kiri: Video utama -->
-            <div class="w-full xl:w-3/5 flex flex-col h-full">
+            <div class="lg:col-span-2 flex flex-col">
                 <x-video-container video-id="s18KVkb4rLE"
                     title="INFO JAWA TIMUR MINGGU KE-4 BULAN MARET I 28 MARET 2025"
                     description="INFO JATIM edisi Minggu ke-4 bulan Maret 2025 menyajikan beragam kegiatan di lingkungan Pemprov Jatim dalam sepekan, di antaranya :
-                        1. Kominfo berbagi.
-                        2. Laporan Pansus pertanggungjawaban Gubernur Jatim tentang anggaran 2024.
-                        3. Seminar Pelatihan Kepemimpinan Administrator (PKA) jatim angkatan I 2025.
-                        4. Launching Kalender Event Unggulan 2025 di Gedung Negara Grahadi.
-                        5. Lailatul Qiroah di Masjid Nasional Al Al-Akbar Surabaya.
-                        Demikian beragam informasi dalam sepekan. Semoga informasi tersebut bermanfaat dan mengedukasi."
-                    published-at="11 Februari 2025 08:38" category="SETDA / PERANGKAT DAERAH" />
+                            1. Kominfo berbagi.
+                            2. Laporan Pansus pertanggungjawaban Gubernur Jatim tentang anggaran 2024.
+                            3. Seminar Pelatihan Kepemimpinan Administrator (PKA) jatim angkatan I 2025.
+                            4. Launching Kalender Event Unggulan 2025 di Gedung Negara Grahadi.
+                            5. Lailatul Qiroah di Masjid Nasional Al Al-Akbar Surabaya.
+                            Demikian beragam informasi dalam sepekan. Semoga informasi tersebut bermanfaat dan mengedukasi." published-at="11 Februari 2025 08:38"
+                    category="SETDA / PERANGKAT DAERAH" />
             </div>
 
             <!-- Kolom kanan: Daftar video lainnya -->
-            <div class="w-full xl:w-2/5 flex flex-col h-full">
+            <div class="flex flex-col">
                 <x-card-lainnya title="Video" highlight="Lainnya" class="h-full flex flex-col">
                     <x-card-list-lainnya image="{{ asset('storage/assets/videolainnya.png') }}"
                         title="INFO JAWA TIMUR MINGGU KE-2 BULAN FEBRUARI | 14 FEBRUARI 2025"
@@ -198,20 +199,17 @@
                         alt="Thumbnail Gambar Terkait" />
                     <x-card-list-lainnya image="{{ asset('storage/assets/videolainnya3.png') }}"
                         title="INFO JAWA TIMUR MINGGU KE-3 BULAN FEBRUARI | 22 FEBRUARI 2025"
-                        date="22 Februari 2025 09:26" category="WAKIL GUBERNUR"
-                        link="{{ route('home.video.detail') }}" alt="Thumbnail Gambar Terkait" />
+                        date="22 Februari 2025 09:26" category="WAKIL GUBERNUR" link="{{ route('home.video.detail') }}"
+                        alt="Thumbnail Gambar Terkait" />
                     <x-card-list-lainnya image="{{ asset('storage/assets/videolainnya2.png') }}"
                         title="Lapor SPT Tahunan Hari Ini, Lebih Awal Lebih Nyaman" date="9 Februari 2025 10:49"
-                        category="GUBERNUR" link="{{ route('home.video.detail') }}"
-                        alt="Thumbnail Gambar Terkait" />
+                        category="GUBERNUR" link="{{ route('home.video.detail') }}" alt="Thumbnail Gambar Terkait" />
                     <x-card-list-lainnya image="{{ asset('storage/assets/videolainnya.png') }}"
-                        title="INFO JAWA TIMUR MINGGU KE-5 BULAN JANUARI 2025 | 31 Januari"
-                        date="1 Februari 2025 15:04" category="SETDA" link="{{ route('home.video.detail') }}"
-                        alt="Thumbnail Gambar Terkait" />
+                        title="INFO JAWA TIMUR MINGGU KE-5 BULAN JANUARI 2025 | 31 Januari" date="1 Februari 2025 15:04"
+                        category="SETDA" link="{{ route('home.video.detail') }}" alt="Thumbnail Gambar Terkait" />
                     <x-card-list-lainnya image="{{ asset('storage/assets/videolainnya.png') }}"
-                        title="INFO JAWA TIMUR MINGGU KE-5 BULAN JANUARI 2025 | 31 Januari"
-                        date="1 Februari 2025 15:04" category="SETDA" link="{{ route('home.video.detail') }}"
-                        alt="Thumbnail Gambar Terkait" />
+                        title="INFO JAWA TIMUR MINGGU KE-5 BULAN JANUARI 2025 | 31 Januari" date="1 Februari 2025 15:04"
+                        category="SETDA" link="{{ route('home.video.detail') }}" alt="Thumbnail Gambar Terkait" />
                 </x-card-lainnya>
             </div>
         </div>
@@ -526,8 +524,14 @@
 
             <swiper-slide class="relative group rounded-lg md:rounded-xl overflow-hidden transition-all duration-500">
                 <a href="home.galerifoto.detail">
+<<<<<<< HEAD
                     <img src="{{ asset('storage/assets/galeri4.jpeg') }}" alt="slider tiga"
                         class="w-full h-full object-cover" />
+=======
+                    <img src="{{ asset('storage/assets/galeri5.jpg') }}" alt="slider empat"
+                        class="w-full h-full object-cover" />
+
+>>>>>>> 4d25d539dce1b6f618d2f78c72705ac6528162d2
                     <div class="absolute inset-0 opacity-0 group-hover:opacity-70 transition-opacity duration-500"
                         style="background: linear-gradient(180deg, rgba(30,22,91,0.5) 22%, rgba(45,33,136,0.7) 30%, rgba(0,0,0,1) 78%);">
                     </div>

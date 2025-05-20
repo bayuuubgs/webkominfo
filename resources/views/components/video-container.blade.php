@@ -14,7 +14,7 @@
     </div>
 
     <!-- Informasi Video -->
-    <div class="bg-white p-5 rounded-b-xl shadow-lg -mt-[2px]">
+    <div class="bg-white p-5 rounded-b-xl shadow-md -mt-[2px]">
         <!-- Kategori & Tanggal -->
         <div class="flex items-center gap-6 mb-2">
             @if ($category)
@@ -30,7 +30,7 @@
             {{ $title }}
         </h3>
 
-        <p class="text-pM lg:text-p text-gray-700 text-justify line-clamp-5">
+        <p class="text-pM lg:text-p text-gray-700 text-justify line-clamp-5 xl:line-clamp-4 2xl:line-clamp-3">
             {{ $description }}
         </p>
     </div>
