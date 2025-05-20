@@ -11,9 +11,9 @@
 
     <x-breadcrumb />
 
-    <section class="py-[40px] font-responsive">
-        <div class="px-5 md:px-16 grid grid-cols-1 lg:grid-cols-3 gap-4 lg:ml-0">
-            <div class="lg:col-span-2 flex flex-col pt-[8px]">
+    <section class="py-5 md:py-10 font-responsive">
+        <div class="px-5 md:px-16 grid grid-cols-1 xl:grid-cols-3 gap-4 lg:ml-0">
+            <div class="lg:col-span-2 flex flex-col">
                 <x-video-container video-id="s18KVkb4rLE"
                     title="INFO JAWA TIMUR MINGGU KE-4 BULAN MARET I 28 MARET 2025"
                     description="INFO JATIM edisi Minggu ke-4 bulan Maret 2025 menyajikan beragam kegiatan di lingkungan Pemprov Jatim dalam sepekan, di antaranya :
@@ -53,7 +53,7 @@
         </div>
     </section>
 
-    <div class="flex justify-center pt-6">
+    <div class="flex justify-center">
         <x-footer/>
     </div>
 
