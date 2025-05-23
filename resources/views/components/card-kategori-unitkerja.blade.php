@@ -19,7 +19,7 @@
     </div>
 
     <div class="w-full">
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 {{ $gap }} w-full">
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 {{ $gap }} w-full">
             @foreach ($items as $item)
                 @php
                     $link = $item['link'] ?? null;
@@ -32,7 +32,7 @@
                     <div class="relative z-10 bg-transparent p-2 md:p-4 rounded-2xl overflow-hidden text-white hover:ring-1 hover:ring-inset hover:ring-primary30 hover:shadow-xl transition-all duration-200">
                 @endif
 
-                <div class="relative w-full h-[200px] md:h-[300px] bg-white shadow-md rounded-xl overflow-hidden transition-all duration-200 group-hover:shadow-xl">
+                <div class="relative aspect-[4/5] bg-white shadow-md rounded-xl overflow-hidden transition-all duration-200 group-hover:shadow-xl">
                     <img 
                         src="{{ $item['image'] }}" 
                         alt="{{ $alt }}" 
