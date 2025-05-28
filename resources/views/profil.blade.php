@@ -162,7 +162,7 @@
         ['image' => asset('storage/assets/unitkerja1.jpg'), 'text' => 'Informasi dan Komunikasi Publik', 'link' => '/home/bidangsekretariat', 'alt' => 'Thumbnail Gambar Terkait'],
         ['image' => asset('storage/assets/unitkerja2.jpg'), 'text' => 'Aplikasi dan Informatika', 'link' => '/home/bidangsekretariat', 'alt' => 'Thumbnail Gambar Terkait'],
         ['image' => asset('storage/assets/unitkerja3.jpg'), 'text' => 'Data dan Statistik', 'link' => '/home/bidangsekretariat', 'alt' => 'Thumbnail Gambar Terkait'],
-        ['image' => asset('storage/assets/unitkerja4.jpg'), 'text' => 'Pengaduan dan Keamanan Informasi', 'link' => '/home/bidangsekretariat', 'alt' => 'Thumbnail Gambar Terkait'],
+        ['image' => asset('storage/assets/unitkerja4.jpg'), 'text' => 'Persandian dan Keamanan Informasi', 'link' => '/home/bidangsekretariat', 'alt' => 'Thumbnail Gambar Terkait'],
     ]" />
         </div>
     </section>
@@ -184,7 +184,7 @@
     <section class="bg-background relative py-10">
 
         <div>
-            <h2 class="px-14 text-h1M lg:text-h1 font-bold text-center md:text-left">
+            <h2 class="px-14 pb-5 text-h1M lg:text-h1 font-bold text-center md:text-left">
                 <span class="text-black">Pejabat</span>
                 <span class="text-primary50">Struktural</span>
             </h2>
