@@ -184,7 +184,7 @@
     <section class="bg-background relative py-10">
 
         <div>
-            <h2 class="px-14 text-h1M lg:text-h1 font-bold text-center md:text-left">
+            <h2 class="px-14 pb-5 text-h1M lg:text-h1 font-bold text-center md:text-left">
                 <span class="text-black">Pejabat</span>
                 <span class="text-primary50">Struktural</span>
             </h2>
