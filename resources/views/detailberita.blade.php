@@ -18,8 +18,8 @@
             <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-6">
                 {{-- Konten Utama --}}
                 <div class="w-full max-w-[850px] space-y-4 bg-gray10 p-6 rounded-xl">
-                    <img class="rounded-xl" src="{{ asset('storage/assets/detailberita2.png') }}" alt="">
-                    <p class="text-xs text-gray-500">Menteri Komunikasi dan Digital (Menkomdigri), Meutya Hafid, bersama jajaran Kemkomdigri RI. Foto: dok. Kemkomdigri</p>
+                    <!-- <img class="rounded-xl" src="{{ asset('storage/assets/detailberita2.png') }}" alt="Foto Berita">
+                    <p class="text-xs text-gray-500">Menteri Komunikasi dan Digital (Menkomdigri), Meutya Hafid, bersama jajaran Kemkomdigri RI. Foto: dok. Kemkomdigri</p> -->
 
                     <div class="space-y-[10px] text-p leading-7 text-gray-800 font-jakarta font-medium">
                         <p><strong>Jatim Newsroom</strong> - Menteri Komunikasi dan Digital (Menkomdigi), Meutya Hafid, mewakili Presiden Prabowo Subianto menghadiri Pertemuan Tingkat Tinggi Aksi Kecerdasan Buatan atau Artificial Intelligence Action Summit (AIAS) yang berlangsung di Paris, Prancis pada 10-11 Februari 2025.</p>
@@ -31,6 +31,9 @@
                         <p>Sebelumnya Presiden Prancis, Emmanuel Macron, telah mengirimkan undangan kepada Presiden Republik Indonesia, Prabowo Subianto untuk hadir secara langsung pada AIAS, yang merupakan pertemuan tingkat tinggi para Kepala Negara.</p>
 
                         <p>Selain menghadiri AIAS, Menkomdigi juga diminta oleh UNESCO untuk mempresentasikan metodologi penilaian kesiapan atau "readiness assessment method" pada acara sampingan (side event) yang akan digelar pada 10 Februari 2025.</p>
+
+                        <img class="rounded-xl" src="{{ asset('storage/assets/detailberita2.png') }}" alt="Foto Berita">
+                        <p class="text-xs text-gray-500">Menteri Komunikasi dan Digital (Menkomdigri), Meutya Hafid, bersama jajaran Kemkomdigri RI. Foto: dok. Kemkomdigri</p>
 
                         <p><strong>Rangkaian Acara AIAS 2025 di Paris</strong><br>
                             Rangkaian acara AIAS dimulai pada 6 Februari 2025, dengan perjamuan peserta di Elysee Palace dan acara High Level Segment di Grand Palais. Selama beberapa hari, berbagai diskusi dan acara akan digelar, termasuk Science Day pada 6-7 Februari, Cultural Weekend pada 8-9 Februari, serta Diskusi Meja Bundar dan Jamuan Kepala Negara pada 10 Februari. Puncak acara akan dilanjutkan dengan Leaders Plenary dan Penutupan pada 11 Februari.</p>
