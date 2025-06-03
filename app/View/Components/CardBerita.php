@@ -16,6 +16,7 @@ class CardBerita extends Component
     public $link;
     public $type;
     public $textColor;
+    public $titleColor;
     public $dateColor;
     public $hoverBorder;
     public $readMoreText;
@@ -38,8 +39,9 @@ class CardBerita extends Component
         $this->alt = $alt;
 
         $isBlue = $type === 'secondary';
-        $this->textColor = $isBlue ? 'text-gray10' : 'text-gray70';
-        $this->dateColor = $isBlue ? 'text-gray-300' : 'text-gray70';
+        $this->titleColor = $isBlue ? 'text-gray10' : 'text-gray90';
+        $this->textColor = $isBlue ? 'text-gray-300' : 'text-gray-600';
+        $this->dateColor = $isBlue ? 'text-gray-400' : 'text-gray-500';
         $this->hoverBorder = $isBlue ? 'group-hover:border-gray-300' : 'group-hover:border-primary30';
     }
 

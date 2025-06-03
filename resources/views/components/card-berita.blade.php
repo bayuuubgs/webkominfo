@@ -11,7 +11,7 @@
                         group-hover:brightness-110 group-active:brightness-110
                         group-hover:shadow-xl group-active:shadow-xl">
 
-            <h3 class="text-h3M lg:text-h3 font-bold {{ $textColor }} mt-2 whitespace-normal line-clamp-2">
+            <h3 class="text-h3M lg:text-h3 font-medium {{ $titleColor }} mt-2 whitespace-normal line-clamp-2">
                 {{ $title }}
             </h3>
 

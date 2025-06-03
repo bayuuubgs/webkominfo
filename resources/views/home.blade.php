@@ -56,7 +56,7 @@
     <x-breadcrumb-home />
 
     <div class="relative font-responsive bg-cover bg-center h-[calc(100dvh-126px)]"
-        style="background-image: url({{ asset('storage/assets/card-bg-biru.png') }});">
+        style="background-image: url({{ asset('storage/assets/beritautama.jpg') }});">
         <div
             class="absolute bottom-0 left-0 right-0 h-[80%] bg-gradient-to-t from-primary100 via-[#05003290] to-transparent">
             <div class="absolute inset-0 flex items-end">
@@ -65,14 +65,16 @@
                         class="label-kategori w-[160px] bg-backgroundred text-secondary70 shadow-sm px-4 py-1.5 rounded-full text-pM lg:text-p text-center mb-2">
                         BERITA TERKINI
                     </span>
-                    <h1 class="text-displayM lg:text-display font-bold mb-4 line-clamp-4 md:line-clamp-3 md:text-justify">
-                        Resmi Dilantik, Gubernur Khofifah dan Wagub Emil Siap Sinergikan Nawa Bhakti Satya dengan Asta
-                        Cita
+                    <h1 class="text-displayM lg:text-display pb-1 line-clamp-4 md:line-clamp-3 md:text-justify">
+                        DPRD Jawa Timur Usulkan Tambahan Alokasi Anggaran untuk Padat Karya dan UMKM
                     </h1>
-                    <p class="text-h3M lg:text-h3 line-clamp-3 lg:line-clamp-2 text-justify">
-                        Menteri Komunikasi dan Digital (Menkomdigi), Meutya Hafid, mewakili Presiden
-                        Prabowo Subianto menghadiri Pertemuan Tingkat Tinggi Aksi Kecerdasan Buatan atau Artificial
-                        Intelligence Action Summit (AIAS) yang berlangsung di Paris, Prancis pada 10–11 Februari 2025.
+                    <p class="text-h3M lg:text-h3 pt-2 line-clamp-5 md:line-clamp-4 lg:line-clamp-3 text-justify">
+                        Dewan Perwakilan Rakyat Daerah (DPRD) Jawa Timur berharap dan mengusulkan tambahan alokasi
+                        anggaran sebesar Rp250 miliar untuk mendukung program padat karya produktif, pelatihan vokasi,
+                        hingga pemberdayaan UMKM. Hal ini disampaikan oleh Anggota DPRD Jatim , Dewanti Rumpoko,
+                        membacakan jawaban akhir Fraksi PDIP Jatim atas Laporan Pertanggungjawaban Pelaksanaan APBD
+                        Provinsi Jawa Timur Tahun Anggaran 2024.
+
                     </p>
                 </div>
             </div>
@@ -272,8 +274,8 @@
             <x-card-slider :rows="1">
                 <div class="min-w-[300px] md:min-w-[400px] h-auto">
                     <x-card-berita image="{{ asset('storage/assets/gubernur_1.jpg') }}"
-                        title="Pemprov Jatim Terus Dekatkan Layanan bagi Warga Kepulauan"
-                        date=" 31 Mei 2025 17:29:32" category="Gubernur"
+                        title="Pemprov Jatim Terus Dekatkan Layanan bagi Warga Kepulauan" date=" 31 Mei 2025 17:29:32"
+                        category="Gubernur"
                         description="Jatim Newsroom - Upaya mendekatkan layanan kesehatan bagi warga kepulauan  di Jawa Timur terus dilakukan. Melalui Pelayanan Kesehatan Bergerak (Yankes Bergerak),"
                         link="{{ route('home.berita.detail') }}" type="" alt="Berita Gubernur" />
                 </div>
@@ -304,11 +306,11 @@
 
     <section class="bg-primary100 relative">
         <div class="px-5 md:px-16 pt-8 pb-4">
-            <x-section-header title="Berita Wakil" highlight="Gubernur" buttonText="Selengkapnya"
-                buttonVariant="white" type="white" buttonHref="{{ route('home.berita') }}" />
+            <x-section-header title="Berita Wakil" highlight="Gubernur" buttonText="Selengkapnya" buttonVariant="white"
+                type="white" buttonHref="{{ route('home.berita') }}" />
         </div>
 
-       <div class="pl-5 md:pl-16 pb-3">
+        <div class="pl-5 md:pl-16 pb-3">
             <x-card-slider :rows="1">
                 <div class="min-w-[300px] md:min-w-[400px] h-auto">
                     <x-card-berita image="{{ asset('storage/assets/wagub1.jpg') }}"
@@ -359,8 +361,8 @@
                 </div>
                 <div class="min-w-[300px] md:min-w-[400px] h-auto">
                     <x-card-berita image="{{ asset('storage/assets/porprov2.jpeg') }}"
-                        title="Pengprov Kodrat Jatim Siap Sukseskan Poprorv IX"
-                        date="28 April 2025 19:18:40" category="Porprov Jatim IX 2025"
+                        title="Pengprov Kodrat Jatim Siap Sukseskan Poprorv IX" date="28 April 2025 19:18:40"
+                        category="Porprov Jatim IX 2025"
                         description="Jatim Newsroom- Pengprov Keluarga Olahraga Tarung Derajat (Kodrat) Jawa Timur bertekad ikut menyukseskan gelaran Pekan Olahraga Provinsi (Porprov) Jatim IX"
                         link="{{ route('home.berita.detail') }}" type="" alt="Berita Porprov" />
                 </div>
@@ -399,8 +401,8 @@
                 </div>
                 <div class="min-w-[300px] md:min-w-[400px] h-auto">
                     <x-card-berita image="{{ asset('storage/assets/haji2.jpg') }}"
-                        title="Jemaah Asal NTT Wafat di RSUD Haji Surabaya"
-                        date=" 27 Mei 2025 19:54:44" category="Kabar Haji 2025"
+                        title="Jemaah Asal NTT Wafat di RSUD Haji Surabaya" date=" 27 Mei 2025 19:54:44"
+                        category="Kabar Haji 2025"
                         description="Jatim Newsroom - Kabar duka datang dari Panitia Penyelanggara Ibadah Haji (PPIH) Embarkasi Surabaya, bahwa terdapat satu jemaah haji asal Provinsi Nusa Tenggara Timur (NTT)"
                         link="{{ route('home.berita.detail') }}" type="secondary" alt="Berita Kabar Haji 2025" />
                 </div>
