@@ -65,11 +65,11 @@
                         class="label-kategori w-[160px] bg-backgroundred text-secondary70 shadow-sm px-4 py-1.5 rounded-full text-pM lg:text-p text-center mb-2">
                         BERITA TERKINI
                     </span>
-                    <h1 class="text-displayM lg:text-display font-bold mb-4 line-clamp-4 md:line-clamp-3">
+                    <h1 class="text-displayM lg:text-display font-bold mb-4 line-clamp-4 md:line-clamp-3 md:text-justify">
                         Resmi Dilantik, Gubernur Khofifah dan Wagub Emil Siap Sinergikan Nawa Bhakti Satya dengan Asta
                         Cita
                     </h1>
-                    <p class="hidden md:block text-h3M lg:text-h3 line-clamp-3 lg:line-clamp-2">
+                    <p class="text-h3M lg:text-h3 line-clamp-3 lg:line-clamp-2 text-justify">
                         Menteri Komunikasi dan Digital (Menkomdigi), Meutya Hafid, mewakili Presiden
                         Prabowo Subianto menghadiri Pertemuan Tingkat Tinggi Aksi Kecerdasan Buatan atau Artificial
                         Intelligence Action Summit (AIAS) yang berlangsung di Paris, Prancis pada 10–11 Februari 2025.
