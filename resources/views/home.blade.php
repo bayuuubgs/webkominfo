@@ -292,7 +292,7 @@
                         link="{{ route('home.berita.detail') }}" type="" alt="Berita Gubernur" />
                 </div>
                 <div class="min-w-[300px] md:min-w-[400px] h-auto">
-                    <x-card-berita image="{{ asset('storage/assets/gubernur_4.jpeg') }}"
+                    <x-card-berita image="{{ asset('storage/assets/gubernur4.jpg') }}"
                         title="Gubernur Jatim Resmi Lantik Bupati-Wakil Bupati Magetan Periode 2025-2030"
                         date="24 Mei 2025 7:48:50" category="Gubernur"
                         description="Jatim Newsroom - Gubernur Jawa Timur Khofifah Indar Parawansa melantik Nanik Endang Rusminiarti dan Suyatni Priasmoro sebagai Bupati dan Wakil Bupati"
