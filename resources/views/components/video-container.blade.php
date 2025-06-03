@@ -16,22 +16,24 @@
     <!-- Informasi Video -->
     <div class="bg-white p-5 rounded-b-xl shadow-md -mt-[2px]">
         <!-- Kategori & Tanggal -->
-        <div class="flex items-center gap-6 mb-2">
-            @if ($category)
-                <x-label-kategori :text="$category" />
-            @endif
 
+        <h3 class="text-h2M lg:text-h2 text-gray-900 mb-2">
+            {{ $title }}
+        </h3>
+
+        <div class="flex items-center justify-between md:justify-start gap-6 mb-2">
             @if ($publishedAt)
                 <div class="text-pM lg:text-p text-gray-500">{{ $publishedAt }}</div>
             @endif
-        </div>
 
-        <h3 class="text-h3M lg:text-h3 font-bold text-gray-900 mb-2">
-            {{ $title }}
-        </h3>
+            @if ($category)
+                <x-label-kategori :text="$category" class="ml-auto" />
+            @endif
+        </div>
 
         <p class="text-pM lg:text-p text-gray-700 text-justify line-clamp-5 xl:line-clamp-4 2xl:line-clamp-3">
             {{ $description }}
         </p>
     </div>
+
 </div>

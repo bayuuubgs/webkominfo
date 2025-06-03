@@ -28,13 +28,13 @@
         <div class="bg-white rounded-xl shadow-md pt-4">
 
             <!-- Kategori & Tanggal -->
-            <div class="flex p-[20px] flex-wrap items-center gap-[24px] mb-[8px] -mt-2">
+            <div class="flex p-[20px] flex-wrap items-center gap-6 mb-2 -mt-2">
                 <x-label-kategori text="PON XXI ACEH–SUMUT 2024" />
                 <p class="text-p font-light text-gray-500">17 Oktober 2024 20:49</p>
             </div>
 
             <!-- Judul -->
-            <p class="text-h3 px-[20px] font-bold mb-[8px] -mt-4">PON XXI Aceh–Sumut 2024</p>
+            <p class="text-h2M lg:text-h1 px-5 mb-2 -mt-4">PON XXI Aceh–Sumut 2024</p>
 
             <!-- Deskripsi -->
             <div :class="expanded ? 'max-h-full px-5' : 'max-h-[96px] overflow-hidden px-5'"
@@ -130,32 +130,32 @@
         <div class="">
             <x-card-slider :rows="1">
                 <div class="min-w-[300px] md:min-w-[400px] h-auto">
-                    <x-card-berita image="/storage/assets/galeri1.jpeg" title="PON XXI Aceh-Sumut 2024"
-                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH" description="" link=""
+                    <x-card-berita image="/storage/assets/galeri1.jpeg" title="Mandiri U20 Challenge Series 2025"
+                        date="1 April 2025 22:16:48" category="OLAH RAGA" description="" link=""
                         type="isBlue" read-more-text=""/>
                 </div>
                 <div class="min-w-[300px] md:min-w-[400px] h-auto">
-                    <x-card-berita image="/storage/assets/galeri2.jpg" title="PON XXI Aceh-Sumut 2024"
+                    <x-card-berita image="/storage/assets/galeri2.jpg" title="PON XXI Aceh-Sumut 2024 - CABOR Sepak Bola Putra"
+                        date="17 Oktober 2024 20:49:12" category="PON XXI ACEH-SUMUT" description="" link=""
+                        type="isBlue" read-more-text="" />
+                </div>
+                <div class="min-w-[300px] md:min-w-[400px] h-auto">
+                    <x-card-berita image="/storage/assets/galeri4.jpeg" title="PON XXI Aceh-Sumut 2024 - CABOR Tenis Lapangan"
                         date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH" description="" link=""
                         type="isBlue" read-more-text="" />
                 </div>
                 <div class="min-w-[300px] md:min-w-[400px] h-auto">
-                    <x-card-berita image="/storage/assets/galeri1.jpeg" title="PON XXI Aceh-Sumut 2024"
+                    <x-card-berita image="/storage/assets/galeri5.jpg" title="Kadis Kominfo Lepas Kontingen E-Sport Jatim"
                         date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH" description="" link=""
                         type="isBlue" read-more-text="" />
                 </div>
                 <div class="min-w-[300px] md:min-w-[400px] h-auto">
-                    <x-card-berita image="/storage/assets/galeri2.jpg" title="PON XXI Aceh-Sumut 2024"
+                    <x-card-berita image="/storage/assets/galeri6.jpg" title="Grand Final Kerapan Sapi Piala Presiden Tahun 2024"
                         date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH" description="" link=""
                         type="isBlue" read-more-text="" />
                 </div>
                 <div class="min-w-[300px] md:min-w-[400px] h-auto">
-                    <x-card-berita image="/storage/assets/galeri3.jpg" title="PON XXI Aceh-Sumut 2024"
-                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH" description="" link=""
-                        type="isBlue" read-more-text="" />
-                </div>
-                <div class="min-w-[300px] md:min-w-[400px] h-auto">
-                    <x-card-berita image="/storage/assets/galeri.png" title="PON XXI Aceh-Sumut 2024"
+                    <x-card-berita image="/storage/assets/galeri7.jpg" title="Pj Gubernur Jawa Timur Lakukan Penandatangan Berita Acara Pelantikan"
                         date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH" description="" link=""
                         type="isBlue" read-more-text="" />
                 </div>
