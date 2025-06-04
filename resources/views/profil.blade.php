@@ -162,7 +162,7 @@
         ['image' => asset('storage/assets/unitkerja1.jpg'), 'text' => 'Informasi dan Komunikasi Publik', 'link' => '/home/bidangsekretariat', 'alt' => 'Thumbnail Gambar Terkait'],
         ['image' => asset('storage/assets/unitkerja2.jpg'), 'text' => 'Aplikasi dan Informatika', 'link' => '/home/bidangsekretariat', 'alt' => 'Thumbnail Gambar Terkait'],
         ['image' => asset('storage/assets/unitkerja3.jpg'), 'text' => 'Data dan Statistik', 'link' => '/home/bidangsekretariat', 'alt' => 'Thumbnail Gambar Terkait'],
-        ['image' => asset('storage/assets/unitkerja4.jpg'), 'text' => 'Pengaduan dan Keamanan Informasi', 'link' => '/home/bidangsekretariat', 'alt' => 'Thumbnail Gambar Terkait'],
+        ['image' => asset('storage/assets/unitkerja4.jpg'), 'text' => 'Persandian dan Keamanan Informasi', 'link' => '/home/bidangsekretariat', 'alt' => 'Thumbnail Gambar Terkait'],
     ]" />
         </div>
     </section>

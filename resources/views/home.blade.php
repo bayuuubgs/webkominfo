@@ -524,14 +524,9 @@
 
             <swiper-slide class="relative group rounded-lg md:rounded-xl overflow-hidden transition-all duration-500">
                 <a href="home.galerifoto.detail">
-<<<<<<< HEAD
-                    <img src="{{ asset('storage/assets/galeri4.jpeg') }}" alt="slider tiga"
-                        class="w-full h-full object-cover" />
-=======
                     <img src="{{ asset('storage/assets/galeri5.jpg') }}" alt="slider empat"
                         class="w-full h-full object-cover" />
 
->>>>>>> 4d25d539dce1b6f618d2f78c72705ac6528162d2
                     <div class="absolute inset-0 opacity-0 group-hover:opacity-70 transition-opacity duration-500"
                         style="background: linear-gradient(180deg, rgba(30,22,91,0.5) 22%, rgba(45,33,136,0.7) 30%, rgba(0,0,0,1) 78%);">
                     </div>
