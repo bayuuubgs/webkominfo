@@ -20,6 +20,11 @@
 
     <div class="flex justify-center px-5 md:px-16">
         <div class="grid grid-cols-1 xl:grid-cols-2 gap-x-5 w-full">
+            <x-card-list-publikasi image="{{ asset('storage/assets/video4.jpg') }}"
+                title="INFO JAWA TIMUR MINGGU KE-4 BULAN MARET I 28 MARET 2025" category="UMUM"
+                date="28 Maret 2025 08:38"
+                description="INFO JATIM edisi Minggu ke-4 bulan Maret 2025 menyajikan beragam kegiatan di lingkungan Pemprov Jatim dalam sepekan"
+                link="{{ route('home.video.detail') }}" />
             <x-card-list-publikasi image="{{ asset('storage/assets/video1.jpg') }}"
                 title="INFO JATIM EDISI MINGGU KE-2 BULAN APRIL | 18 APRIL 2025" category="UMUM"
                 date="11 Februari 2025 08:38"
@@ -32,11 +37,6 @@
                 title="INFO JAWA TIMUR MINGGU KE-4 BULAN MARET I 28 MARET 2025" category="UMUM"
                 date="11 Februari 2025 08:38"
                 description="Kilas Informasi Kegiatan Gubernur Jawa Timur dan Kegiatan di Lingkungan Pemerintah Provinsi Jawa Timur. Edisi Pekan Ke-4"
-                link="{{ route('home.video.detail') }}" />
-            <x-card-list-publikasi image="{{ asset('storage/assets/video4.jpg') }}"
-                title="Strategi Cerdas Jatim Antisipasi Lonjakan Pengunjung Saat Libur Lebaran" category="UMUM"
-                date="11 Februari 2025 08:38"
-                description="Kali ini di Episode 60, kita akan membahas topik yang seringkali menjadi sorotan saat musim liburan tiba, yaitu bagaimana"
                 link="{{ route('home.video.detail') }}" />
             <x-card-list-publikasi image="{{ asset('storage/assets/video5.jpg') }}"
                 title="INFO JAWA TIMUR MINGGU KE-3 BULAN MARET I 22 MARET 2025" category="UMUM"

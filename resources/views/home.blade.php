@@ -65,7 +65,7 @@
                         class="label-kategori w-[160px] bg-backgroundred text-secondary70 shadow-sm px-4 py-1.5 rounded-full text-pM lg:text-p text-center mb-2">
                         BERITA TERKINI
                     </span>
-                    <h1 class="text-displayM lg:text-display pb-1 line-clamp-4 md:line-clamp-3">
+                    <h1 class="text-displayM lg:text-display pb-1 line-clamp-4 md:line-clamp-3 ">
                         DPRD Jawa Timur Usulkan Tambahan Alokasi Anggaran untuk Padat Karya dan UMKM
                     </h1>
                     <p class="text-h3M lg:text-h3 pt-2 line-clamp-5 md:line-clamp-4 lg:line-clamp-3 text-justify">
