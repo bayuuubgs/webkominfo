@@ -17,9 +17,10 @@
     <!-- Gambar Utama -->
     <section class="bg-white relative max-h-dvh overflow-hidden">
         <img x-ref="heroImg" src="/storage/assets/galeri.png" alt="Foto Utama"
-            class="w-full h-auto max-h-dvh object-cover mx-auto block -z-40"
-            @load="updateOffset()">
-        <div class="absolute w-full inset-0 bg-gradient-to-b from-primary100/25 via-transparent to-primary100/100 pointer-events-none"></div>
+            class="w-full h-auto max-h-dvh object-cover mx-auto block -z-40" @load="updateOffset()">
+        <div
+            class="absolute w-full inset-0 bg-gradient-to-b from-primary100/25 via-transparent to-primary100/100 pointer-events-none">
+        </div>
     </section>
 
     <!-- Section Melayang -->
@@ -34,54 +35,23 @@
             </div>
 
             <!-- Judul -->
-            <p class="text-h2M lg:text-h1 px-5 mb-2 -mt-4">PON XXI Aceh–Sumut 2024</p>
+            <p class="text-h2M lg:text-h1 px-5 mb-2 -mt-4">PON XXI Aceh–Sumut 2024 - CABOR Sepatu Roda Putra</p>
 
             <!-- Deskripsi -->
             <div :class="expanded ? 'max-h-full px-5' : 'max-h-[96px] overflow-hidden px-5'"
                 class="relative px-5 text-gray-700 leading-relaxed text-justify transition-all duration-300 ease-in-out">
                 <span>
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-                    dicta sunt explicabo.
-                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
-                    magni dolores eos
-                    qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui consectetur, adipisci velit,
-                    sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
-                    voluptatem...
-                    <span x-show="expanded">
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                        laudantium,
-                        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-                        dicta sunt explicabo.
-                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                        consequuntur magni dolores eos
-                        qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui consectetur, adipisci
-                        velit,
-                        sed quia non numquam eius modi tempora incidunt ut labore totam rem aperiam, eaque ipsa quae ab
-                        illo inventore veritatis et quasi architecto beatae vitae
-                        dicta sunt explicabo.
-                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                        consequuntur magni dolores eos totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
-                        quasi architecto beatae vitae
-                        dicta sunt explicabo.
-                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                        consequuntur magni dolores eos totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
-                        quasi architecto beatae vitae
-                        dicta sunt explicabo.
-                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                        consequuntur magni dolores eos
-                    </span>
-                </span>
+                    Di lintasan panas PON XXI Aceh–Sumut 2024, para atlet sepatu roda putra dari Jawa Timur menunjukkan
+                    kelasnya. Dengan kecepatan tinggi dan teknik yang matang, mereka bukan hanya bersaing—mereka
+                    mendominasi.
 
-                <!-- Tombol "Baca Selengkapnya" & "Lebih Sedikit" -->
-                <div class="text-right">
-                    <button x-show="!expanded" @click="expanded = true" class="text-primary font-semibold">
-                        Baca Selengkapnya
-                    </button>
-                    <button x-show="expanded" @click="expanded = false" class="text-primary font-semibold">
-                        Lebih Sedikit
-                    </button>
-                </div>
+                    Setiap dorongan roda di aspal bukan sekadar gerakan, tapi cerminan dari kerja keras bertahun-tahun.
+                    Keringat yang jatuh di tengah latihan, rasa lelah yang ditahan saat uji coba, dan mental baja yang
+                    dibentuk sejak awal—semuanya tumpah ruah dalam setiap detik perlombaan.
+
+                    Jawa Timur bukan datang untuk sekadar hadir. Kami datang untuk bersaing, untuk menginspirasi, dan
+                    untuk membawa pulang kebanggaan.
+                </span>
             </div>
 
             <!-- Galeri Foto -->
@@ -105,7 +75,7 @@
             <div class="mt-6 flex justify-center">
                 <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-[1px]">
                     @foreach ($galeri as $image)
-                        <x-card-galeri :image="$image['image']" :alt="$image['alt']"/>
+                        <x-card-galeri :image="$image['image']" :alt="$image['alt']" />
                     @endforeach
                 </div>
             </div>
@@ -131,31 +101,32 @@
             <x-card-slider :rows="1">
                 <div class="min-w-[300px] md:min-w-[400px] h-auto">
                     <x-card-berita image="/storage/assets/galeri1.jpeg" title="Mandiri U20 Challenge Series 2025"
-                        date="1 April 2025 22:16:48" category="OLAH RAGA" description="" link=""
-                        type="isBlue" read-more-text=""/>
+                        date="1 April 2025 22:16:48" category="OLAH RAGA" description="" link="" type="isBlue"
+                        read-more-text="" />
                 </div>
                 <div class="min-w-[300px] md:min-w-[400px] h-auto">
-                    <x-card-berita image="/storage/assets/galeri2.jpg" title="PON XXI Aceh-Sumut 2024 - CABOR Sepak Bola Putra"
-                        date="17 Oktober 2024 20:49:12" category="PON XXI ACEH-SUMUT" description="" link=""
-                        type="isBlue" read-more-text="" />
+                    <x-card-berita image="/storage/assets/galeri2.jpg"
+                        title="PON XXI Aceh-Sumut 2024 - CABOR Sepak Bola Putra" date="17 Oktober 2024 20:49:12"
+                        category="PON XXI ACEH-SUMUT" description="" link="" type="isBlue" read-more-text="" />
                 </div>
                 <div class="min-w-[300px] md:min-w-[400px] h-auto">
-                    <x-card-berita image="/storage/assets/galeri4.jpeg" title="PON XXI Aceh-Sumut 2024 - CABOR Tenis Lapangan"
-                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH" description="" link=""
-                        type="isBlue" read-more-text="" />
+                    <x-card-berita image="/storage/assets/galeri4.jpeg"
+                        title="PON XXI Aceh-Sumut 2024 - CABOR Tenis Lapangan" date="18-Februari-2025 09.30"
+                        category="SETDA / PERANGKAT DAERAH" description="" link="" type="isBlue" read-more-text="" />
                 </div>
                 <div class="min-w-[300px] md:min-w-[400px] h-auto">
-                    <x-card-berita image="/storage/assets/galeri5.jpg" title="Kadis Kominfo Lepas Kontingen E-Sport Jatim"
-                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH" description="" link=""
-                        type="isBlue" read-more-text="" />
+                    <x-card-berita image="/storage/assets/galeri5.jpg"
+                        title="Kadis Kominfo Lepas Kontingen E-Sport Jatim" date="18-Februari-2025 09.30"
+                        category="SETDA / PERANGKAT DAERAH" description="" link="" type="isBlue" read-more-text="" />
                 </div>
                 <div class="min-w-[300px] md:min-w-[400px] h-auto">
-                    <x-card-berita image="/storage/assets/galeri6.jpg" title="Grand Final Kerapan Sapi Piala Presiden Tahun 2024"
-                        date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH" description="" link=""
-                        type="isBlue" read-more-text="" />
+                    <x-card-berita image="/storage/assets/galeri6.jpg"
+                        title="Grand Final Kerapan Sapi Piala Presiden Tahun 2024" date="18-Februari-2025 09.30"
+                        category="SETDA / PERANGKAT DAERAH" description="" link="" type="isBlue" read-more-text="" />
                 </div>
                 <div class="min-w-[300px] md:min-w-[400px] h-auto">
-                    <x-card-berita image="/storage/assets/galeri7.jpg" title="Pj Gubernur Jawa Timur Lakukan Penandatangan Berita Acara Pelantikan"
+                    <x-card-berita image="/storage/assets/galeri7.jpg"
+                        title="Pj Gubernur Jawa Timur Lakukan Penandatangan Berita Acara Pelantikan"
                         date="18-Februari-2025 09.30" category="SETDA / PERANGKAT DAERAH" description="" link=""
                         type="isBlue" read-more-text="" />
                 </div>
