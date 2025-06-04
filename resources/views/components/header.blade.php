@@ -643,7 +643,7 @@
                         class="w-[18px] filter brightness-50 hover:brightness-100 hover:drop-shadow-xl transition duration-50 ease-out"
                         src="/storage/assets/search.png" alt="Search"></a>
                 <a href="#"><img
-                        class="w-[18px] filter brightness-50 hover:brightness-100 hover:drop-shadow-xl transition duration-50 ease-out"
+                        class="w-[19px] filter brightness-50 hover:brightness-100 hover:drop-shadow-xl transition duration-50 ease-out"
                         src="/storage/assets/youtube.png" alt="YouTube"></a>
                 <a href="#"><img
                         class="w-[16px] filter brightness-50 hover:brightness-100 hover:drop-shadow-xl transition duration-50 ease-out"
