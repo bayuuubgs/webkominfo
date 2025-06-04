@@ -56,7 +56,7 @@
     <x-breadcrumb-home />
 
     <div class="relative font-responsive bg-cover bg-center h-[calc(100dvh-126px)]"
-        style="background-image: url({{ asset('storage/assets/card-bg-biru.png') }});">
+        style="background-image: url({{ asset('storage/assets/beritautama.jpg') }});">
         <div
             class="absolute bottom-0 left-0 right-0 h-[80%] bg-gradient-to-t from-primary100 via-[#05003290] to-transparent">
             <div class="absolute inset-0 flex items-end">
@@ -65,14 +65,16 @@
                         class="label-kategori w-[160px] bg-backgroundred text-secondary70 shadow-sm px-4 py-1.5 rounded-full text-pM lg:text-p text-center mb-2">
                         BERITA TERKINI
                     </span>
-                    <h1 class="text-displayM lg:text-display font-bold mb-4 line-clamp-4 md:line-clamp-3">
-                        Resmi Dilantik, Gubernur Khofifah dan Wagub Emil Siap Sinergikan Nawa Bhakti Satya dengan Asta
-                        Cita
+                    <h1 class="text-displayM lg:text-display pb-1 line-clamp-4 md:line-clamp-3 md:text-justify">
+                        DPRD Jawa Timur Usulkan Tambahan Alokasi Anggaran untuk Padat Karya dan UMKM
                     </h1>
-                    <p class="hidden md:block text-h3M lg:text-h3 line-clamp-3 lg:line-clamp-2">
-                        Menteri Komunikasi dan Digital (Menkomdigi), Meutya Hafid, mewakili Presiden
-                        Prabowo Subianto menghadiri Pertemuan Tingkat Tinggi Aksi Kecerdasan Buatan atau Artificial
-                        Intelligence Action Summit (AIAS) yang berlangsung di Paris, Prancis pada 10–11 Februari 2025.
+                    <p class="text-h3M lg:text-h3 pt-2 line-clamp-5 md:line-clamp-4 lg:line-clamp-3 text-justify">
+                        Dewan Perwakilan Rakyat Daerah (DPRD) Jawa Timur berharap dan mengusulkan tambahan alokasi
+                        anggaran sebesar Rp250 miliar untuk mendukung program padat karya produktif, pelatihan vokasi,
+                        hingga pemberdayaan UMKM. Hal ini disampaikan oleh Anggota DPRD Jatim , Dewanti Rumpoko,
+                        membacakan jawaban akhir Fraksi PDIP Jatim atas Laporan Pertanggungjawaban Pelaksanaan APBD
+                        Provinsi Jawa Timur Tahun Anggaran 2024.
+
                     </p>
                 </div>
             </div>
@@ -217,7 +219,7 @@
 
     <section class="bg-primary100 relative">
         <div class="px-5 md:px-16 pt-8 pb-4">
-            <x-section-header title="Berita Setda/" highlight="Perangkat Daerah" buttonText="Selengkapnya"
+            <x-section-header title="Berita Setda /" highlight="Perangkat Daerah" buttonText="Selengkapnya"
                 buttonVariant="white" type="white" buttonHref="{{ route('home.berita') }}" />
         </div>
 
@@ -271,38 +273,38 @@
         <div class="pl-5 md:pl-16 pb-3">
             <x-card-slider :rows="1">
                 <div class="min-w-[300px] md:min-w-[400px] h-auto">
-                    <x-card-berita image="{{ asset('storage/assets/wagub1.jpg') }}"
-                        title="Wagub Emil Dardak Paparkan Konsep Jatim Gerbang Baru Nusantara di Halal Bihalal ASN Pemprov"
-                        date="8 April 2025 15:34:15" category="Gubernur"
-                        description="Jatim Newsroom - Saat momentum halalbihalal bersama 10.000 Aparatur Sipil Negara (ASN) di lingkungan Pemprov Jatim di Jatim Expo Surabaya, Wakil Gubernur Jawa Timur"
+                    <x-card-berita image="{{ asset('storage/assets/gubernur_1.jpg') }}"
+                        title="Pemprov Jatim Terus Dekatkan Layanan bagi Warga Kepulauan" date=" 31 Mei 2025 17:29:32"
+                        category="Gubernur"
+                        description="Jatim Newsroom - Upaya mendekatkan layanan kesehatan bagi warga kepulauan  di Jawa Timur terus dilakukan. Melalui Pelayanan Kesehatan Bergerak (Yankes Bergerak),"
                         link="{{ route('home.berita.detail') }}" type="" alt="Berita Gubernur" />
                 </div>
                 <div class="min-w-[300px] md:min-w-[400px] h-auto">
-                    <x-card-berita image="{{ asset('storage/assets/wagub2.jpeg') }}"
-                        title="Wagub Emil Ajak DPD REI Jatim Dorong Pertumbuhan Ekonomi Lewat Multiplier Effect Sektor Properti"
-                        date="13 Maret 2025 23:25:09" category="Gubernur"
-                        description="Jatim Newsroom - Wakil Gubernur Jawa Timur, Emil Elestianto Dardak, mengajak jajaran Dewan Pengurus Daerah (DPD) Real Estate Indonesia (REI) Jawa Timur untuk turut andil sebagai pengungkit perekonomian Jatim melalui Multiplier Effect dari pengembangan sektor properti. "
+                    <x-card-berita image="{{ asset('storage/assets/gubernur_2.jpg') }}"
+                        title="Gubernur Khofifah : Targetkan Dividen Rp.150 M dari BPR Jatim Usai Suntikan Modal Rp.500 M"
+                        date="28 Mei 2025 21:27:33" category="Gubernur"
+                        description="Jatim Newsroom – Gubernur Jawa Timur, Khofifah Indar Parawansa, menyatakan bahwa penyertaan modal sebesar Rp500 miliar kepada PT BPR Jatim (Perseroda)"
                         link="{{ route('home.berita.detail') }}" type="" alt="Berita Gubernur" />
                 </div>
                 <div class="min-w-[300px] md:min-w-[400px] h-auto">
-                    <x-card-berita image="{{ asset('storage/assets/wagub3.jpeg') }}"
-                        title="Wagub Emil Komitmen Dorong Pelaku Usaha Menengah Lebih Maju"
-                        date="12 Maret 2025 21:32:21" category="Gubernur"
-                        description="Jatim Newsroom - Wakil Gubernur Jawa Timur, Emil Elestianto Dardak, menyampaikan komitmennya untuk mendorong para pelaku usaha menengah menjadi lebih maju. Menurutnya, hal ini menunjukkan bahwa pemerintah hadir untuk mendukung para pengusaha yang termasuk dalam kategori menengah."
+                    <x-card-berita image="{{ asset('storage/assets/gubernur_3.jpg') }}"
+                        title="Peringati HLUN 2025, Gubernur Jatim Kunjungi Panti Werdha Usia Anugerah di Surabaya"
+                        date="29 Mei 2025 16:25:41" category="Gubernur"
+                        description="Jatim Newsroom - Gubernur Jawa Timur, Khofifah Indar Parawansa, memperingati Hari Lanjut Usia Nasional (HLUN) Tahun 2025 dengan mengunjungi Panti"
                         link="{{ route('home.berita.detail') }}" type="" alt="Berita Gubernur" />
                 </div>
                 <div class="min-w-[300px] md:min-w-[400px] h-auto">
-                    <x-card-berita image="{{ asset('storage/assets/wagub4.jpg') }}"
-                        title="Wagub Emil : Perguruan Tinggi Jadi Pendorong Kemajuan Ekonomi Syariah di Jatim"
-                        date="25 Januari 2024 10:47:34" category="Gubernur"
-                        description="Wakil Gubernur Jawa Timur, Emil Elestianto Dardak, saat menjadi pembicara Stadium Generale di Institut Agama Islam Nahdlatul Ulama (IAINU) Kab. Tuban, Rabu (24/1/2024)"
+                    <x-card-berita image="{{ asset('storage/assets/gubernur4.jpg') }}"
+                        title="Gubernur Jatim Resmi Lantik Bupati-Wakil Bupati Magetan Periode 2025-2030"
+                        date="24 Mei 2025 7:48:50" category="Gubernur"
+                        description="Jatim Newsroom - Gubernur Jawa Timur Khofifah Indar Parawansa melantik Nanik Endang Rusminiarti dan Suyatni Priasmoro sebagai Bupati dan Wakil Bupati"
                         link="{{ route('home.berita.detail') }}" type="" alt="Berita Gubernur" />
                 </div>
-                <div class="min-w-[300px] md:min-w-[400px] h-auto">
-                    <x-card-berita image="{{ asset('storage/assets/wagub5.jpg') }}"
-                        title="Keluhkan Listrik Dipadamkan. Warga Rusunawa Gunungsari Diterima Wagub Emil"
-                        date="12 Januari 2024 13:06:17" category="Gubernur"
-                        description="Wakil Gubernur Jawa Timur, Emil Elestianto Dardak saat menerima perwakilan warga rusunawa Gunungsari di lobby DPRD Jatim. (Pca)"
+                 <div class="min-w-[300px] md:min-w-[400px] h-auto">
+                    <x-card-berita image="{{ asset('storage/assets/gubernur_5.jpg') }}"
+                        title="Gubernur Jatim Serahkan Bantuan Sosial untuk Warga Kabupaten Bangkalan"
+                        date="23 Mei 2025 22:35:35" category="Gubernur"
+                        description="Jatim Newsroom - Gubernur Jawa Timur, Khofifah Indar Parawansa, memberikan berbagai bantuan sosial kepada warga Bangkalan, Jumat (23/5/2025). Berlangsung di Pendopo Agung Kabupaten Bangkalan,"
                         link="{{ route('home.berita.detail') }}" type="" alt="Berita Gubernur" />
                 </div>
             </x-card-slider>
@@ -311,55 +313,8 @@
 
     <section class="bg-primary100 relative">
         <div class="px-5 md:px-16 pt-8 pb-4">
-            <x-section-header title="Berita Wakil" highlight="Gubernur" buttonText="Selengkapnya"
-                buttonVariant="white" type="white" buttonHref="{{ route('home.berita') }}" />
-        </div>
-
-        <div class="pl-5 md:pl-16 pb-[14px]">
-            <x-card-slider :rows="1">
-                <div class="min-w-[300px] md:min-w-[400px] h-auto">
-                    <x-card-berita image="{{ asset('storage/assets/forda1.jpg') }}"
-                        title="FORDA II Jatim 2024 Resmi Ditutup, Kota Surabaya Juara Umum"
-                        date="4 Desember 2024 23:57:22" category="Wakil Gubernur"
-                        description="KORMI Kota Surabaya sebagai Juara Umum pada Festival Olahraga Masyarakat Daerah (FORDA) II Jawa Timur tahun 2024. Foto: Ryan JNR"
-                        link="{{ route('home.berita.detail') }}" type="secondary" alt="Berita Wagub" />
-                </div>
-                <div class="min-w-[300px] md:min-w-[400px] h-auto">
-                    <x-card-berita image="{{ asset('storage/assets/forda2.jpg') }}"
-                        title="FORDA Jatim II/2024 - Pertandingan Dai Kyokushin Karate Indonesia (DKKI) Sukses Digelar"
-                        date="4 Desember 2024 21:16:14" category="Wakil Gubernur"
-                        description="Jatim Newsroom – Pertandingan Dai Kyokushin Karate Indonesia menjadi salah satu ajang dalam Festival Olahraga Masyarakat Daerah Provinsi Jawa Timur II Tahun 2024 (FORDA Jatim II/2024), yang dilaksanakan hari ini, 4 Desember 2024, di Gelanggang Remaja Surabaya."
-                        link="{{ route('home.berita.detail') }}" type="secondary" alt="Berita Wagub" />
-                </div>
-                <div class="min-w-[300px] md:min-w-[400px] h-auto">
-                    <x-card-berita image="{{ asset('storage/assets/forda3.jpeg') }}"
-                        title="Induk Olahraga Orienteering pada FORDA II Jatim Umumkan Juara"
-                        date="4 Desember 2024 19:37:45" category="Wakil Gubernur"
-                        description="Jatim Newsroom - Pertandingan Orienteering dalam ajang Festival Olahraga Masyarakat Daerah (FORDA) II Jawa Timur Tahun 2024 Induk Organisasi Olahraga (Inorga) Federasi Orienteering Nasional Indonesia (FONI) telah berlangsung hingga pengumuman juara di Stadion Gelora Bung Tomo (GBT) Rabu,"
-                        link="{{ route('home.berita.detail') }}" type="secondary" alt="Berita Wagub" />
-                </div>
-                <div class="min-w-[300px] md:min-w-[400px] h-auto">
-                    <x-card-berita image="{{ asset('storage/assets/forda4.jpg') }}"
-                        title="Surabaya Borong Medali INORGA INATKF Forda II Jatim 2024"
-                        date="4 Desember 2024 19:28:18" category="Wakil Gubernur"
-                        description="Jatim Newsroom - Pertandingan Induk Organisasi Olahraga (INORGA) Indonesia Tradisional Karate Federation (INATKF) dalam ajang Festival Olahraga Masyarakat Daerah (FORDA) II Jawa Timur 2024 yang berlangsung di Gor Indor Gedung Gelora Bung Tomo (GBT) Surabaya, Rabu (4/12/2024)."
-                        link="{{ route('home.berita.detail') }}" type="secondary" alt="Berita Wagub" />
-                </div>
-                <div class="min-w-[300px] md:min-w-[400px] h-auto">
-                    <x-card-berita image="{{ asset('storage/assets/forda5.jpg') }}"
-                        title="Kabupaten Magetan Raih Emas di FORDA II Jawa Timur 2024"
-                        date="3 Desember 2024 17:59:42" category="Wakil Gubernur"
-                        description="Jatim Newsroom – Di tengah keterbatasan, Kabupaten Magetan berhasil mencuri perhatian di ajang Inorga Tarung Bebas Indonesia (TBI) FORDA II Jawa Timur 2024. Hanya mengirimkan satu atlet, Magetan mampu membawa pulang medali emas lewat penampilan gemilang Qurratu Ain Khairina di kelas kadet putri 51 kilogram."
-                        link="{{ route('home.berita.detail') }}" type="secondary" alt="Berita Wagub" />
-                </div>
-            </x-card-slider>
-        </div>
-    </section>
-
-    <section class="bg-gray10 relative">
-        <div class="px-5 md:px-16 pt-8 pb-4">
-            <x-section-header title="Berita Forda " highlight="Jatim 2024" buttonText="Selengkapnya"
-                buttonVariant="blue" type="blue" buttonHref="{{ route('home.berita') }}" />
+            <x-section-header title="Berita Wakil" highlight="Gubernur" buttonText="Selengkapnya" buttonVariant="white"
+                type="white" buttonHref="{{ route('home.berita') }}" />
         </div>
 
         <div class="pl-5 md:pl-16 pb-3">
@@ -367,41 +322,122 @@
                 <div class="min-w-[300px] md:min-w-[400px] h-auto">
                     <x-card-berita image="{{ asset('storage/assets/wagub1.jpg') }}"
                         title="Wagub Emil Dardak Paparkan Konsep Jatim Gerbang Baru Nusantara di Halal Bihalal ASN Pemprov"
-                        date="8 April 2025 15:34:15" category="Forda Jatim 2024"
+                        date="8 April 2025 15:34:15" category="Wakil Gubernur"
                         description="Jatim Newsroom - Saat momentum halalbihalal bersama 10.000 Aparatur Sipil Negara (ASN) di lingkungan Pemprov Jatim di Jatim Expo Surabaya, Wakil Gubernur Jawa Timur"
-                        link="{{ route('home.berita.detail') }}" type="" alt="Berita Forda" />
+                        link="{{ route('home.berita.detail') }}" type="secondary" alt="Berita Wakil Gubernur" />
                 </div>
                 <div class="min-w-[300px] md:min-w-[400px] h-auto">
                     <x-card-berita image="{{ asset('storage/assets/wagub2.jpeg') }}"
                         title="Wagub Emil Ajak DPD REI Jatim Dorong Pertumbuhan Ekonomi Lewat Multiplier Effect Sektor Properti"
-                        date="13 Maret 2025 23:25:09" category="Forda Jatim 2024"
+                        date="13 Maret 2025 23:25:09" category="Wakil Gubernur"
                         description="Jatim Newsroom - Wakil Gubernur Jawa Timur, Emil Elestianto Dardak, mengajak jajaran Dewan Pengurus Daerah (DPD) Real Estate Indonesia (REI) Jawa Timur untuk turut andil sebagai pengungkit perekonomian Jatim melalui Multiplier Effect dari pengembangan sektor properti. "
-                        link="{{ route('home.berita.detail') }}" type="" alt="Berita Forda" />
+                        link="{{ route('home.berita.detail') }}" type="secondary" alt="Berita Wakil Gubernur" />
                 </div>
                 <div class="min-w-[300px] md:min-w-[400px] h-auto">
                     <x-card-berita image="{{ asset('storage/assets/wagub3.jpeg') }}"
                         title="Wagub Emil Komitmen Dorong Pelaku Usaha Menengah Lebih Maju"
-                        date="12 Maret 2025 21:32:21" category="Forda Jatim 2024"
+                        date="12 Maret 2025 21:32:21" category="Wakil Gubernur"
                         description="Jatim Newsroom - Wakil Gubernur Jawa Timur, Emil Elestianto Dardak, menyampaikan komitmennya untuk mendorong para pelaku usaha menengah menjadi lebih maju. Menurutnya, hal ini menunjukkan bahwa pemerintah hadir untuk mendukung para pengusaha yang termasuk dalam kategori menengah."
-                        link="{{ route('home.berita.detail') }}" type="" alt="Berita Forda" />
+                        link="{{ route('home.berita.detail') }}" type="secondary" alt="Berita Wakil Gubernur" />
                 </div>
                 <div class="min-w-[300px] md:min-w-[400px] h-auto">
                     <x-card-berita image="{{ asset('storage/assets/wagub4.jpg') }}"
                         title="Wagub Emil : Perguruan Tinggi Jadi Pendorong Kemajuan Ekonomi Syariah di Jatim"
-                        date="25 Januari 2024 10:47:34" category="Forda Jatim 2024"
+                        date="25 Januari 2024 10:47:34" category="Wakil Gubernur"
                         description="Wakil Gubernur Jawa Timur, Emil Elestianto Dardak, saat menjadi pembicara Stadium Generale di Institut Agama Islam Nahdlatul Ulama (IAINU) Kab. Tuban, Rabu (24/1/2024)"
-                        link="{{ route('home.berita.detail') }}" type="" alt="Berita Forda" />
+                        link="{{ route('home.berita.detail') }}" type="secondary" alt="Berita Wakil Gubernur" />
                 </div>
-                <div class="min-w-[300px] md:min-w-[400px] h-auto">
-                    <x-card-berita image="{{ asset('storage/assets/wagub5.jpg') }}"
-                        title="Keluhkan Listrik Dipadamkan. Warga Rusunawa Gunungsari Diterima Wagub Emil"
-                        date="12 Januari 2024 13:06:17" category="Forda Jatim 2024"
-                        description="Wakil Gubernur Jawa Timur, Emil Elestianto Dardak saat menerima perwakilan warga rusunawa Gunungsari di lobby DPRD Jatim. (Pca)"
-                        link="{{ route('home.berita.detail') }}" type="" alt="Berita Forda" />
+                 <div class="min-w-[300px] md:min-w-[400px] h-auto">
+                    <x-card-berita image="{{ asset('storage/assets/wagub_5.jpg') }}"
+                        title="Wagub Emil : Sinergi dan Sinkronisasi Jadi Kunci dalam Rencana Pembangunan Provinsi Jawa Timur"
+                        date="29 April 2025 22:52:50" category="Wakil Gubernur"
+                        description="Jatim Newsroom - Wakil Gubernur Jawa Timur, Emil Elestianto Dardak, menekankan adanya sinergi dan sinkronisasi dalam rencana pembangunan Provinsi Jawa Timur. Demikian disampaikannya,"
+                        link="{{ route('home.berita.detail') }}" type="secondary" alt="Berita Wakil Gubernur" />
                 </div>
             </x-card-slider>
         </div>
     </section>
+
+    <section class="bg-gray10 relative">
+        <div class="px-5 md:px-16 pt-8 pb-4">
+            <x-section-header title="Berita Porprov " highlight="Jatim IX 2025" buttonText="Selengkapnya"
+                buttonVariant="blue" type="blue" buttonHref="{{ route('home.berita') }}" />
+        </div>
+
+        <div class="pl-5 md:pl-16 pb-3">
+            <x-card-slider :rows="1">
+                <div class="min-w-[300px] md:min-w-[400px] h-auto">
+                    <x-card-berita image="{{ asset('storage/assets/porprov1.jpeg') }}"
+                        title="Tim Sepak Bola Sidoarjo Matangkan Persiapan Jelang Porprov Jatim 2025"
+                        date="8 Mei 2025 10:24:24" category="Porprov Jatim IX 2025"
+                        description="Jatim Newsroom – Tim sepak bola Kabupaten Sidoarjo mulai mematangkan persiapan mereka untuk menghadapi Pekan Olahraga Provinsi (Porprov) Jawa Timur 2025"
+                        link="{{ route('home.berita.detail') }}" type="" alt="Berita Porprov" />
+                </div>
+                <div class="min-w-[300px] md:min-w-[400px] h-auto">
+                    <x-card-berita image="{{ asset('storage/assets/porprov2.jpeg') }}"
+                        title="Pengprov Kodrat Jatim Siap Sukseskan Poprorv IX" date="28 April 2025 19:18:40"
+                        category="Porprov Jatim IX 2025"
+                        description="Jatim Newsroom- Pengprov Keluarga Olahraga Tarung Derajat (Kodrat) Jawa Timur bertekad ikut menyukseskan gelaran Pekan Olahraga Provinsi (Porprov) Jatim IX"
+                        link="{{ route('home.berita.detail') }}" type="" alt="Berita Porprov" />
+                </div>
+                <div class="min-w-[300px] md:min-w-[400px] h-auto">
+                    <x-card-berita image="{{ asset('storage/assets/porprov3.jpeg') }}"
+                        title="IPSI Kota Blitar Siapkan 17 Atlet Pencak Silat untuk Porprov IX Jatim 2025"
+                        date="6 Mei 2025 13:44:01" category="Porprov Jatim IX 2025"
+                        description="Jatim Newsroom - Menjelang gelaran Pekan Olahraga Provinsi (Porprov) IX Jawa Timur Tahun 2025, Ikatan Pencak Silat Indonesia (IPSI) Kota Blitar terus mematangkan persiapan."
+                        link="{{ route('home.berita.detail') }}" type="" alt="Berita Porprov" />
+                </div>
+                <div class="min-w-[300px] md:min-w-[400px] h-auto">
+                    <x-card-berita image="{{ asset('storage/assets/porprov4.jpg') }}"
+                        title="Empat Cabor Jalani Pra Porprov Jatim 2025, Sepak Bola hingga Bola Basket Siap Bertanding"
+                        date=" 11 April 2025 17:47:07" category="Porprov Jatim IX 2025"
+                        description="Jatim Newsroom – Menjelang gelaran Pekan Olahraga Provinsi (Porprov) Jawa Timur IX 2025 yang dijadwalkan berlangsung pada 28 Juni hingga 5 Juli 2025,"
+                        link="{{ route('home.berita.detail') }}" type="" alt="Berita Porprov" />
+                </div>
+            </x-card-slider>
+        </div>
+    </section>
+
+    <section class="bg-primary100 relative">
+        <div class="px-5 md:px-16 pt-8 pb-4">
+            <x-section-header title="Berita Kabar " highlight="Haji 2025" buttonText="Selengkapnya"
+                buttonVariant="white" type="white" buttonHref="{{ route('home.berita') }}" />
+        </div>
+
+        <div class="pl-5 md:pl-16 pb-[14px]">
+            <x-card-slider :rows="1">
+                <div class="min-w-[300px] md:min-w-[400px] h-auto">
+                    <x-card-berita image="{{ asset('storage/assets/haji1.jpg') }}"
+                        title="PPIH Embarkasi Surabaya Ingatkan Jemaah Selalu Jaga Keamanan Diri Selama Ibadah Haji"
+                        date="28 Mei 2025 19:44:18" category="Kabar Haji 2025"
+                        description="Jatim Newsroom - Menanggapi adanya kabar seorang jemaah haji Embarkasi Surabaya dari Kloter 58 yang mengalami perampasan uang rupiah dan riyal saat naik taksi di Mekah,"
+                        link="{{ route('home.berita.detail') }}" type="secondary" alt="Berita Kabar Haji 2025" />
+                </div>
+                <div class="min-w-[300px] md:min-w-[400px] h-auto">
+                    <x-card-berita image="{{ asset('storage/assets/haji2.jpg') }}"
+                        title="Jemaah Asal NTT Wafat di RSUD Haji Surabaya" date=" 27 Mei 2025 19:54:44"
+                        category="Kabar Haji 2025"
+                        description="Jatim Newsroom - Kabar duka datang dari Panitia Penyelanggara Ibadah Haji (PPIH) Embarkasi Surabaya, bahwa terdapat satu jemaah haji asal Provinsi Nusa Tenggara Timur (NTT)"
+                        link="{{ route('home.berita.detail') }}" type="secondary" alt="Berita Kabar Haji 2025" />
+                </div>
+                <div class="min-w-[300px] md:min-w-[400px] h-auto">
+                    <x-card-berita image="{{ asset('storage/assets/haji3.jpg') }}"
+                        title="Menjelang Puncak Haji PPIH Embarkasi Surabaya Pesankan Jemaah Jaga Stamina Selama Ibadah"
+                        date="28 Mei 2025 19:25:36" category="Kabar Haji 2025"
+                        description="Jatim Newsroom - Masa pemberangkatan jemaah ibadah haji ke tanah suci telah memasuki gelombang dua dan mendekati akhir, dengan Kelompok Terbang (Kloter)"
+                        link="{{ route('home.berita.detail') }}" type="secondary" alt="Berita Kabar Haji 2025" />
+                </div>
+                <div class="min-w-[300px] md:min-w-[400px] h-auto">
+                    <x-card-berita image="{{ asset('storage/assets/haji4.jpg') }}"
+                        title="Lepas Keberangkatan Jemaah Haji dari Embarkasi Surabaya Wagub NTT Berpesan Sabar dan Ikhlas"
+                        date="27 Mei 2025 19:43:25" category="Kabar Haji 2025"
+                        description="Jatim Newsroom - Masa operasional ibadah haji yang telah memasuki pemberangkatan Kelompok Terbang (Kloter) 74 diisi oleh jemaah asal Provinsi Nusa Tenggara Timur (NTT)."
+                        link="{{ route('home.berita.detail') }}" type="secondary" alt="Berita Kabar Haji 2025" />
+                </div>
+            </x-card-slider>
+        </div>
+    </section>
+
 
     <section class="bg-gray10 font-responsive">
         <div class="px-5 md:px-16 pt-8 pb-4">

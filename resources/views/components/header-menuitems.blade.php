@@ -31,7 +31,7 @@
                 type="button"
                 @click="open = !open"
                 :class="{ 'bg-gray-50 rounded-xl': open }"
-                class="flex items-center gap-x-4 w-full text-left p-4 transition duration-200 ease-out"
+                class="flex items-center gap-x-4 w-full text-left p-3 transition duration-200 ease-out"
             >
                 {{-- Icon --}}
                 <div 
@@ -87,7 +87,7 @@
                         @endphp
 
                         <a href="{{ $sub['link'] ?? '#' }}"
-                            class="group/submenu flex gap-x-4 items-center p-4 rounded-lg transition duration-200 ease-out
+                            class="group/submenu flex gap-x-4 items-center p-3 rounded-lg transition duration-200 ease-out
                                 {{ $subActive ? 'bg-gray-50' : 'hover:bg-gray-50' }}"
                         >
                             <div class="flex-none flex items-center justify-center size-10 rounded-lg transition
@@ -118,7 +118,7 @@
 
             {{-- Tanpa Arrow --}}
             <a href="{{ $link }}"
-                class="group/menu-item flex gap-x-4 items-center p-4 rounded-lg transition w-full
+                class="group/menu-item flex gap-x-4 items-center p-3 rounded-lg transition w-full
                     {{ $isActive ? 'bg-gray-50 text-gray-900' : 'hover:bg-gray-50 text-gray70' }}"
             >
                 <div class="flex-none flex items-center justify-center size-10 rounded-lg transition 
