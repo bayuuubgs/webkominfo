@@ -300,6 +300,13 @@
                         description="Jatim Newsroom - Gubernur Jawa Timur Khofifah Indar Parawansa melantik Nanik Endang Rusminiarti dan Suyatni Priasmoro sebagai Bupati dan Wakil Bupati"
                         link="{{ route('home.berita.detail') }}" type="" alt="Berita Gubernur" />
                 </div>
+                 <div class="min-w-[300px] md:min-w-[400px] h-auto">
+                    <x-card-berita image="{{ asset('storage/assets/gubernur_5.jpg') }}"
+                        title="Gubernur Jatim Serahkan Bantuan Sosial untuk Warga Kabupaten Bangkalan"
+                        date="23 Mei 2025 22:35:35" category="Gubernur"
+                        description="Jatim Newsroom - Gubernur Jawa Timur, Khofifah Indar Parawansa, memberikan berbagai bantuan sosial kepada warga Bangkalan, Jumat (23/5/2025). Berlangsung di Pendopo Agung Kabupaten Bangkalan,"
+                        link="{{ route('home.berita.detail') }}" type="" alt="Berita Gubernur" />
+                </div>
             </x-card-slider>
         </div>
     </section>
@@ -338,6 +345,13 @@
                         title="Wagub Emil : Perguruan Tinggi Jadi Pendorong Kemajuan Ekonomi Syariah di Jatim"
                         date="25 Januari 2024 10:47:34" category="Wakil Gubernur"
                         description="Wakil Gubernur Jawa Timur, Emil Elestianto Dardak, saat menjadi pembicara Stadium Generale di Institut Agama Islam Nahdlatul Ulama (IAINU) Kab. Tuban, Rabu (24/1/2024)"
+                        link="{{ route('home.berita.detail') }}" type="secondary" alt="Berita Wakil Gubernur" />
+                </div>
+                 <div class="min-w-[300px] md:min-w-[400px] h-auto">
+                    <x-card-berita image="{{ asset('storage/assets/wagub_5.jpg') }}"
+                        title="Wagub Emil : Sinergi dan Sinkronisasi Jadi Kunci dalam Rencana Pembangunan Provinsi Jawa Timur"
+                        date="29 April 2025 22:52:50" category="Wakil Gubernur"
+                        description="Jatim Newsroom - Wakil Gubernur Jawa Timur, Emil Elestianto Dardak, menekankan adanya sinergi dan sinkronisasi dalam rencana pembangunan Provinsi Jawa Timur. Demikian disampaikannya,"
                         link="{{ route('home.berita.detail') }}" type="secondary" alt="Berita Wakil Gubernur" />
                 </div>
             </x-card-slider>

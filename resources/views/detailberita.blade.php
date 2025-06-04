@@ -21,74 +21,47 @@
             <div class="lg:col-span-2 space-y-5 flex flex-col bg-gray10 p-4 md:p-5 rounded-xl shadow-md">
 
                 <div class="space-y-2 flex flex-col rounded-md">
-                    <p class="text-gray70 text-h1M md:text-h1">Menkomdigi Wakili Presiden RI di
-                        AI
-                        Action Summit Paris</p>
-                    <p class="text-gray50 text-justify"><strong>Tayang:</strong> Selasa, 3 Juni 2025 10:31 WIB</p>
+                    <p class="text-gray70 text-h1M md:text-h1">Plt Gubernur Jatim Beri Hadiah Laptop Animator Game Roblox Asal Blitar</p>
+                    <p class="text-gray50 text-justify"><strong>Tayang: </strong>2 Juni 2025 22:04:41 </p>
                 </div>
 
                 <div class="space-y-3 flex flex-col rounded-md">
-                    <img class="rounded-t-md md:rounded-lg" src="{{ asset('storage/assets/detailberita2.png') }}"
+                    <img class="rounded-t-md md:rounded-lg" src="{{ asset('storage/assets/detailberita1.jpeg') }}"
                         alt="Foto Berita">
-                    <p class="text-gray50 text-center italic">Menteri Komunikasi dan Digital (Menkomdigri), Meutya
-                        Hafid, bersama jajaran
-                        Kemkomdigri RI. Foto: dok. Kemkomdigri</p>
+                    <p class="text-gray50 text-center italic">Pelaksana Tugas (Plt) Gubernur Jawa Timur, Emil Elestianto Dardak, menyambangi rumah sekaligus mengapresiasi salah satu siswa berprestasi dari MTsN 1 Kota Blitar, Al Divi Rarindrayana, di Jalan Kenari, Kelurahan Plosorekep,Senin (2/6/2025) Foro: rafli JNR</p>
                 </div>
 
 
                 <div class="space-y-5 text-gray70 text-justify">
-                    <p><strong>Jatim Newsroom</strong> - Menteri Komunikasi dan Digital (Menkomdigi), Meutya Hafid,
-                        mewakili Presiden Prabowo Subianto menghadiri Pertemuan Tingkat Tinggi Aksi Kecerdasan Buatan
-                        atau Artificial Intelligence Action Summit (AIAS) yang berlangsung di Paris, Prancis pada 10-11
-                        Februari 2025.</p>
+                    <p><strong>Jatim Newsroom</strong> - Pelaksana Tugas (Plt) Gubernur Jawa Timur, Emil Elestianto Dardak, menyambangi rumah sekaligus mengapresiasi salah satu siswa berprestasi dari MTsN 1 Kota Blitar, Al Divi Rarindrayana, di Jalan Kenari, Kelurahan Plosorekep,Senin (2/6/2025)</p>
 
-                    <p>Melalui siaran pers Menkkomdigi, Sabtu (8/2/2025), disebutkan bahwa Konferensi tersebut merupakan
-                        forum internasional yang mempertemukan perwakilan lebih dari 100 negara, termasuk kepala negara,
-                        menteri, CEO perusahaan, dan pimpinan organisasi internasional.</p>
+                    <p>Sebagai bentuk apresiasi dan rasa bangga, Emil memberikan hadiah berupa laptop kepada Al Divi untuk menunjang kegiatannya sebagai game animator. Selain itu, Google Indonesia juga memberikan hadiah berupa Galaxy Tab yang diserahkan oleh Emil kepada Al Divi./p>
 
-                    <p>“AIAS bertujuan untuk mendorong diskusi dan langkah nyata terkait perkembangan dan tata kelola AI
-                        di tingkat global. Forum itu juga menjadi lanjutan dari AI Safety Summit yang digelar di Inggris
-                        pada November 2023 dan AI Seoul Summit (AISS) di Korea Selatan pada Mei 2024 lalu,” ujar
-                        Menkomdigi.</p>
+                    <p>Didampingi Wali Kota Blitar Syauqul Muhibbin, Kepala Dinas Pendidikan Jatim Aries Agung Paewai, dan Kepala Dinas Kominfo Jatim Sherlita Ratna Dewi Agustin, Emil menyampaikan rasa bangganya kepada Al Divi Rarindrayana atas prestasi yang resmi direkrut Perusahaan Developer Game Roblox Internasional sebagai game animator sejak September 2024.</p>
 
-                    <p>Sebelumnya Presiden Prancis, Emmanuel Macron, telah mengirimkan undangan kepada Presiden Republik
-                        Indonesia, Prabowo Subianto untuk hadir secara langsung pada AIAS, yang merupakan pertemuan
-                        tingkat tinggi para Kepala Negara.</p>
+                    <p>“Mas Divi ini sudah lulus dari MTsN 1 Kota Blitar, sekolah almamaternya Mas Wali. Ayah dan Ibunya ini yang luar biasa. Awalnya Mas Divi ini senang main game. Kemudian di satu game ini ditekuni, jangan gampang bosan. Siapa tahu itu akan mengasah konsistensi dan keterampilan,” kata Emil.</p>
 
-                    <p>Selain menghadiri AIAS, Menkomdigi juga diminta oleh UNESCO untuk mempresentasikan metodologi
-                        penilaian kesiapan atau "readiness assessment method" pada acara sampingan (side event) yang
-                        akan digelar pada 10 Februari 2025.</p>
+                    <p>“Akhirnya ternyata Mas Divi berteman cukup luas dengan anak yang sekarang sudah kuliah. Dari situ, membuat animasi karakter, kemudian ada klien yang mampu beli. Ini ada laptop dan tab semoga semakin menambah semangat untuk berkreasi di animasi,” lanjutnya.</p>
 
-                    <p><strong>Rangkaian Acara AIAS 2025 di Paris</strong><br>
-                        Rangkaian acara AIAS dimulai pada 6 Februari 2025, dengan perjamuan peserta di Elysee Palace dan
-                        acara High Level Segment di Grand Palais. Selama beberapa hari, berbagai diskusi dan acara akan
-                        digelar, termasuk Science Day pada 6-7 Februari, Cultural Weekend pada 8-9 Februari, serta
-                        Diskusi Meja Bundar dan Jamuan Kepala Negara pada 10 Februari. Puncak acara akan dilanjutkan
-                        dengan Leaders Plenary dan Penutupan pada 11 Februari.</p>
+                    <p>Animasi ini, tambah Emil, dilakukan lewat software yang namanya Blended. Komputernya dibuat bagus tidak hanya untuk game saja, tapi buat memproduksi karakter animasi tadi.</p>
+                    
+                    <p>“Jadi tadi pakai Komputer dengan perangkat dan spesifikasi tertentu. Semua diracik sendiri, artinya, sudah paham bakatnya kemana,” terangnya.</p>
+                    
+                     <div class="space-y-3 flex flex-col rounded-md">
+                    <img class="rounded-t-md md:rounded-lg" src="{{ asset('storage/assets/detailberita2.jpeg') }}"
+                        alt="Foto Berita">
+                    <p class="text-gray50 text-center italic">Pelaksana Tugas (Plt) Gubernur Jawa Timur, Emil Elestianto Dardak, menyambangi rumah sekaligus mengapresiasi salah satu siswa berprestasi dari MTsN 1 Kota Blitar, Al Divi Rarindrayana, di Jalan Kenari, Kelurahan Plosorekep,Senin (2/6/2025) Foro: rafli JNR</p>
+                    </div>
 
-                    <p>Peluang untuk terlibat dalam ekosistem AI global akan semakin terbuka apabila Indonesia memiliki
-                        regulasi yang tepat dalam pengembangan teknologi tersebut. Kolaborasi antara pemerintah,
-                        industri, akademisi, dan masyarakat sangat penting untuk menciptakan kebijakan yang optimal
-                        dalam penggunaan dan pengembangan AI.</p>
+                    <p>“Bisa di animasi, bisa juga teknik informatika. Maka karena itu, hari ini kami hadir ingin melihat langsung tempat kerjanya seperti apa,” imbuhnya.</p>
 
-                    <p>"Keterlibatan proaktif seluruh pemangku kepentingan dalam regulasi dan pengembangan AI sangat
-                        penting, sehingga Indonesia dapat memanfaatkan potensi teknologi AI yang dapat memberikan
-                        manfaat maksimal bagi masyarakat dan sektor-sektor terkait," ujar Menkomdigi.</p>
+                    <p>Menurutnya prestasi Al Divi, tentunya tidak lepas dari peran kedua orang tua dan lingkungan sekolah maupun sosialnya. “Apresiasi kepada Ayah dan Ibunya yang memberi dukungan. Anak biasanya kalau main game, ada dua pilihannya, di los ne (dibiarkan) atau justru dilarang total. Nah yang dibutuhkan adalah yang mau invest waktu untuk langsung memfasilitasi dan mengawasi secara bersamaan,” tuturnya.</p>
 
-                    <p>Sebagai langkah awal, Kementerian Komunikasi dan Digital (Kemkomdigi) juga telah menginisiasi
-                        Dialog Kebijakan AI yang membahas tantangan serta potensinya di berbagai sektor seperti
-                        e-commerce, perbankan, kesehatan, pendidikan, hingga keberlanjutan.</p>
+                    <p>“Karena beberapa waktu lalu saya ke RS Menur, itu di sana ada yang kecanduan game online bahkan membahayakan. Maka ini yang menjadi tantangannya, bagaimana screen time menjadi learning time. Tentu itu akan menjadi sesuatu yang produktif,” jelasnya.</p>
 
-                    <p>Sektor e-commerce Indonesia yang diproyeksikan mencapai USD150 miliar pada 2030 harus siap
-                        mengadopsi AI untuk memberikan manfaat yang lebih besar bagi semua pihak.</p>
+                    <p>Di akhir Emil menyampaikan pesan untuk Al Divi, untuk terus mengasah akal, pikiran dan mental. "Karena nanti akan ketemu kejenuhan, jika sudah terasah maka akan mudah untuk terus mendapatkan ide berkreasi,” pungkasnya.(red)</p>
 
-                    <p>Dengan pengaturan yang tepat, Menkomdigi meyakini Indonesia akan menjadi pemain utama dalam
-                        ekosistem teknologi AI global. Sebagai negara yang aktif berpartisipasi dalam forum
-                        internasional seperti AIAS, Indonesia dapat memastikan bahwa perkembangan teknologi ini berjalan
-                        seiring dengan kebutuhan dan tantangan yang dihadapi dunia, termasuk dalam hal regulasi dan
-                        pemanfaatannya.</p>
-
-                    <p><strong>#Kemkomdigi RI</strong></p>
+                    <p><strong>#Emil Elestianto Dardak #Plt Gubernur Jatim #Animator Roblox Blitar</strong></p>
                 </div>
 
             </div>

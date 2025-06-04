@@ -20,10 +20,10 @@
 
     <div class="flex justify-center px-5 md:px-16">
         <div class="grid grid-cols-1 xl:grid-cols-2 gap-x-5 w-full">
-            <x-card-list-publikasi image="{{ asset('storage/assets/beritasetda1.jpg') }}"
-                title="Guru Besar Unair Inovasikan Model Peningkatan Kualitas Hidup Anak Penderita Kanker"
-                category="UMUM" date="11 Februari 2025 08:38"
-                description="Jatim Newsroom - Kanker anak merupakan salah satu tantangan yang besar dalam dunia kesehatan. Rektor Universitas Airlangga (Unair) Surabaya berpesan pada lulusan periode"
+            <x-card-list-publikasi image="{{ asset('storage/assets/detailberita1.jpeg') }}"
+                title="Plt Gubernur Jatim Beri Hadiah Laptop Animator Game Roblox Asal Blitar"
+                category="UMUM" date="2 Juni 2025 22:04:41"
+                description="Jatim Newsroom - Pelaksana Tugas (Plt) Gubernur Jawa Timur, Emil Elestianto Dardak, menyambangi rumah sekaligus mengapresiasi salah satu siswa berprestasi dari MTsN 1 Kota Blitar, Al Divi Rarindrayana,"
                 ratio="3:2" link="{{ route('home.berita.detail') }}" 
                 alt="Thumbnail Gambar Terkait"/>
             <x-card-list-publikasi image="{{ asset('storage/assets/beritasetda2.jpeg') }}"
